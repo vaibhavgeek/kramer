@@ -1,0 +1,67 @@
+I"	function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('\n\n<div class="search">\n  <form class="search-holder">\n    <input id="global-search" type="search" autocomplete="off">\n    ');
+    
+      __out.push(this.Icon('magnifier'));
+    
+      __out.push('\n    <div class="empty-search js-emptySearch">\n      ');
+    
+      __out.push(this.Icon('diagonal-cross'));
+    
+      __out.push('\n    </div>\n  </form>\n  <div class="logo js-toggleNotifications">\n\n  </div>\n  <div class="global-search-menu">\n    <a href="#search" class="global-search-detail-link nav-tab nav-tab--search js-details-link">\n      <div class="nav-tab-icon">\n        ');
+    
+      __out.push(this.Icon('searchdetail'));
+    
+      __out.push('\n      </div>\n      <div class="nav-tab-name flex u-textTruncate">\n        ');
+    
+      __out.push(this.T('Show Search Details'));
+    
+      __out.push('\n        ');
+    
+      __out.push(this.Icon('long-arrow-down'));
+    
+      __out.push('\n      </div>\n    </a>\n    <ul class="global-search-result js-global-search-result" role="menu"></ul>\n  </div>\n</div>\n<div class="menu js-menu"></div>\n<div class="tasks tasks-navigation"></div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

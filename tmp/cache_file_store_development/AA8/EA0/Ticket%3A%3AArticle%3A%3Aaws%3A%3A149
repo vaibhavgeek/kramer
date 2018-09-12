@@ -1,0 +1,10 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETi•I"ticket_id;Ti„I"type_id;TiI"sender_id;TiI"	from;TI"0"Vaibhav Maheshwari" <thelogoweb@gmail.com>;TI"to;TI""chavi.cutehapchhavi@gmail.com;TI"cc;T0I"subject;TI"!Thanks for your inquiry (hi);TI"reply_to;T0I"message_id;TI"*<20180907135014.132.913640@localhost>;TI"message_id_md5;TI"%1e3b38f32f44e4e102ed6f4d1b20e463;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"j<div>Your request <b>(Ticket#25132)</b> has been received and will be reviewed by our support staff.</div>
+<br>
+<div>To provide additional information, please reply to this email or click on the following link (for initial login, please request a new password):
+<a href="http://localhost/#ticket/zoom/132" rel="nofollow noreferrer noopener" target="_blank">http://localhost/#ticket/zoom/132</a>
+</div>
+<br>
+<div>Your ChaturBots HelpDesk Team</div>
+<br>
+<div><i><a href="https://zammad.com" rel="nofollow noreferrer noopener" target="_blank" title="https://zammad.com">Zammad</a>, your customer support system</i></div>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"perform_origin;TI"trigger;TI"email_address_id;TiI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Timeí ÀªnîÈ:	zoneI"UTC;FI"UTC;T@*I"updated_at;TU;	[Iu;
+í ÀhkîÈ;I"UTC;F@+@0:@created_atf1536328215.0950463:@expires_inf6.048e5

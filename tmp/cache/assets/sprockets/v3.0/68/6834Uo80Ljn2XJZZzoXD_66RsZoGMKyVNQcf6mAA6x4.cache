@@ -1,0 +1,59 @@
+I"Ó(function() {
+  var BotRouter,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.Bot = (function(superClass) {
+    extend(Bot, superClass);
+
+    function Bot() {
+      return Bot.__super__.constructor.apply(this, arguments);
+    }
+
+    Bot.prototype.header = 'Bot Settings';
+
+    Bot.prototype.authenticateRequired = true;
+
+    Bot.prototype.configKey = 'NavBarBot';
+
+    return Bot;
+
+  })(App.ControllerNavSidbar);
+
+  BotRouter = (function(superClass) {
+    extend(BotRouter, superClass);
+
+    BotRouter.prototype.requiredPermission = ['*'];
+
+    function BotRouter(params) {
+      BotRouter.__super__.constructor.apply(this, arguments);
+      this.authenticateCheckRedirect();
+      App.TaskManager.execute({
+        key: 'Bot',
+        controller: 'Bot',
+        params: {},
+        show: true,
+        persistent: true
+      });
+    }
+
+    return BotRouter;
+
+  })(App.ControllerPermanent);
+
+  App.Config.set('bot', BotRouter, 'Routes');
+
+  App.Config.set('Bot', {
+    controller: 'Bot',
+    permission: ['admin.*']
+  }, 'permanentTask');
+
+  App.Config.set('Bot Conifguration', {
+    prio: 1000,
+    name: 'Bot Configuration',
+    target: '#bot',
+    permission: ['admin.*']
+  }, 'NavBarBot');
+
+}).call(this);
+:ET

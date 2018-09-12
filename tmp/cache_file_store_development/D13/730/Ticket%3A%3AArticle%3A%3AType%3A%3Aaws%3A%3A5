@@ -1,0 +1,4 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETi
+I"	name;TI"
+phone;TI"	note;T0I"communication;TTI"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM ÀˆPÉ:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	M ÀˆPÉ;
+I"UTC;F@@:@created_atf1536503438.3045382:@expires_inf6.048e5

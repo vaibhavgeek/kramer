@@ -1,0 +1,33 @@
+I"Â(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.ChannelWeb = (function(superClass) {
+    extend(ChannelWeb, superClass);
+
+    ChannelWeb.prototype.requiredPermission = 'admin.channel_web';
+
+    ChannelWeb.prototype.header = 'Web';
+
+    function ChannelWeb() {
+      ChannelWeb.__super__.constructor.apply(this, arguments);
+      this.title('Web', true);
+      this.tabs = [
+        {
+          name: 'Settings',
+          target: 'w-setting',
+          controller: App.SettingsArea,
+          params: {
+            area: 'CustomerWeb::Base'
+          }
+        }
+      ];
+      this.render();
+    }
+
+    return ChannelWeb;
+
+  })(App.ControllerTabs);
+
+}).call(this);
+:ET
