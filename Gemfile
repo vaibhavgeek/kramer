@@ -141,7 +141,14 @@ group :development, :test do
 
   # UI tests w/ Selenium
   gem 'selenium-webdriver'
-
+  gem 'capistrano-rvm'
+  gem 'capistrano-nginx'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails'
+  gem 'capistrano-rails-db'
+  gem 'capistrano-rails-console'
+  gem 'capistrano-upload-config'
+  gem 'sshkit-sudo'
   # livereload on template changes (html, js, css)
   gem 'guard',             require: false
   gem 'guard-livereload',  require: false

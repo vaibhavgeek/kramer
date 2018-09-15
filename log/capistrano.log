@@ -1,0 +1,28 @@
+# Logfile created on 2018-09-14 15:58:42 +0530 by logger.rb/56815
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-14 15:58:42 +0530 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [49d9a6b6] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [49d9a6b6] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-14 16:18:08 +0530 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [900456ef] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [900456ef] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-14 16:23:06 +0530 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [795b97b3] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [795b97b3] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-15 16:25:24 +0530 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [fac1b120] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [fac1b120] Command: [ -d ~/.rvm ]
+ DEBUG [814e1e60] Finished in 5.373 seconds with exit status 1 (failed).
+ DEBUG [5038da7c] Running [ -d /usr/local/rvm ] as deployer@35.200.142.222
+ DEBUG [5038da7c] Command: [ -d /usr/local/rvm ]
+ DEBUG [968ff227] Finished in 0.223 seconds with exit status 1 (failed).
+ DEBUG [8e7b1075] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
+ DEBUG [8e7b1075] Command: ~/.rvm/bin/rvm version
+ DEBUG [78643992] 	bash: /home/deployer/.rvm/bin/rvm: No such file or directory
