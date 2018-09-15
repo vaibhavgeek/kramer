@@ -26,3 +26,144 @@
  DEBUG [8e7b1075] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
  DEBUG [8e7b1075] Command: ~/.rvm/bin/rvm version
  DEBUG [78643992] 	bash: /home/deployer/.rvm/bin/rvm: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-15 16:42:51 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [dfe5353f] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [dfe5353f] Command: [ -d ~/.rvm ]
+ DEBUG [bc8c7130] Finished in 5.161 seconds with exit status 0 (successful).
+ DEBUG [63dd573f] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
+ DEBUG [63dd573f] Command: ~/.rvm/bin/rvm version
+ DEBUG [4dc28616] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [4dc28616] Finished in 0.877 seconds with exit status 0 (successful).
+ DEBUG [c6eb764a] Running ~/.rvm/bin/rvm current as deployer@35.200.142.222
+ DEBUG [c6eb764a] Command: ~/.rvm/bin/rvm current
+ DEBUG [9453620c] 	ruby-2.4.4
+ DEBUG [9453620c] Finished in 0.613 seconds with exit status 0 (successful).
+ DEBUG [8506d063] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.142.222
+ DEBUG [8506d063] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [bf6f848e] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [bf6f848e] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [64a26b3b] Running /usr/bin/env mkdir -p /tmp as deployer@35.200.142.222
+ DEBUG [64a26b3b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c02576a9] Finished in 0.342 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-cb_krammer-production-vaibhav.sh 0.0%
+  INFO Uploading /tmp/git-ssh-cb_krammer-production-vaibhav.sh 100.0%
+  INFO [6eb08f90] Running /usr/bin/env chmod 700 /tmp/git-ssh-cb_krammer-production-vaibhav.sh as deployer@35.200.142.222
+ DEBUG [6eb08f90] Command: /usr/bin/env chmod 700 /tmp/git-ssh-cb_krammer-production-vaibhav.sh
+  INFO [765ed58d] Finished in 0.346 seconds with exit status 0 (successful).
+  INFO [c332b34f] Running /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD as deployer@35.200.142.222
+ DEBUG [c332b34f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cb_krammer-production-vaibhav.sh" ; /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD )
+ DEBUG [1a5bd3d5] 	Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+ DEBUG [1a5bd3d5] 	Permission denied (publickey).
+ DEBUG [1a5bd3d5] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-15 16:44:29 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0c6dc845] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [0c6dc845] Command: [ -d ~/.rvm ]
+ DEBUG [4f11edfd] Finished in 5.239 seconds with exit status 0 (successful).
+ DEBUG [e303ebef] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
+ DEBUG [e303ebef] Command: ~/.rvm/bin/rvm version
+ DEBUG [e038d040] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [e038d040] Finished in 0.715 seconds with exit status 0 (successful).
+ DEBUG [b2c085cb] Running ~/.rvm/bin/rvm current as deployer@35.200.142.222
+ DEBUG [b2c085cb] Command: ~/.rvm/bin/rvm current
+ DEBUG [518c9708] 	ruby-2.4.4
+ DEBUG [518c9708] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [5e31015a] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.142.222
+ DEBUG [5e31015a] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [16d71930] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [16d71930] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [9cc65f77] Running /usr/bin/env mkdir -p /tmp as deployer@35.200.142.222
+ DEBUG [9cc65f77] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e9b331d9] Finished in 0.346 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-cb_krammer-production-vaibhav.sh 0.0%
+  INFO Uploading /tmp/git-ssh-cb_krammer-production-vaibhav.sh 100.0%
+  INFO [8231f1a3] Running /usr/bin/env chmod 700 /tmp/git-ssh-cb_krammer-production-vaibhav.sh as deployer@35.200.142.222
+ DEBUG [8231f1a3] Command: /usr/bin/env chmod 700 /tmp/git-ssh-cb_krammer-production-vaibhav.sh
+  INFO [08afd0de] Finished in 0.330 seconds with exit status 0 (successful).
+  INFO [c2d6a9cb] Running /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD as deployer@35.200.142.222
+ DEBUG [c2d6a9cb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cb_krammer-production-vaibhav.sh" ; /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD )
+ DEBUG [a6791e85] 	Permission denied (publickey).
+ DEBUG [a6791e85] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-15 16:47:38 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [58ad8a92] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [58ad8a92] Command: [ -d ~/.rvm ]
+ DEBUG [fb85b141] Finished in 4.558 seconds with exit status 0 (successful).
+ DEBUG [9b04c092] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
+ DEBUG [9b04c092] Command: ~/.rvm/bin/rvm version
+ DEBUG [044b8b3a] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [044b8b3a] Finished in 0.461 seconds with exit status 0 (successful).
+ DEBUG [18f29890] Running ~/.rvm/bin/rvm current as deployer@35.200.142.222
+ DEBUG [18f29890] Command: ~/.rvm/bin/rvm current
+ DEBUG [715d429a] 	ruby-2.4.4
+ DEBUG [715d429a] Finished in 0.834 seconds with exit status 0 (successful).
+ DEBUG [4ef0b6a5] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.142.222
+ DEBUG [4ef0b6a5] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [54619f80] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [54619f80] Finished in 0.819 seconds with exit status 0 (successful).
+  INFO [dfd7aad1] Running /usr/bin/env mkdir -p /tmp as deployer@35.200.142.222
+ DEBUG [dfd7aad1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f1848f0d] Finished in 0.245 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-cb_krammer-production-vaibhav.sh 0.0%
+  INFO Uploading /tmp/git-ssh-cb_krammer-production-vaibhav.sh 100.0%
+  INFO [8bd75552] Running /usr/bin/env chmod 700 /tmp/git-ssh-cb_krammer-production-vaibhav.sh as deployer@35.200.142.222
+ DEBUG [8bd75552] Command: /usr/bin/env chmod 700 /tmp/git-ssh-cb_krammer-production-vaibhav.sh
+  INFO [8479bf8c] Finished in 0.264 seconds with exit status 0 (successful).
+  INFO [0761c731] Running /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD as deployer@35.200.142.222
+ DEBUG [0761c731] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-cb_krammer-production-vaibhav.sh" ; /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD )
+ DEBUG [4a095520] 	Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+ DEBUG [4a095520] 	Permission denied (publickey).
+ DEBUG [4a095520] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-15 16:53:31 +0530 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8cd38be2] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [8cd38be2] Command: [ -d ~/.rvm ]
+ DEBUG [1ee047d9] Finished in 4.508 seconds with exit status 0 (successful).
+ DEBUG [cd7fc3a0] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
+ DEBUG [cd7fc3a0] Command: ~/.rvm/bin/rvm version
+ DEBUG [7e424137] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [7e424137] Finished in 0.880 seconds with exit status 0 (successful).
+ DEBUG [577b2872] Running ~/.rvm/bin/rvm current as deployer@35.200.142.222
+ DEBUG [577b2872] Command: ~/.rvm/bin/rvm current
+ DEBUG [5a1d39c2] 	ruby-2.4.4
+ DEBUG [5a1d39c2] Finished in 0.614 seconds with exit status 0 (successful).
+ DEBUG [257725b5] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.142.222
+ DEBUG [257725b5] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [040d02b8] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [040d02b8] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO Copied: config/database.yml.example to ./config/database.production.yml
+  INFO Copied: config/secrets.yml.example to ./config/secrets.production.yml
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-15 16:54:48 +0530 cap production config:init
+  INFO ---------------------------------------------------------------------------
+ DEBUG [63195422] Running [ -d ~/.rvm ] as deployer@35.200.142.222
+ DEBUG [63195422] Command: [ -d ~/.rvm ]
+ DEBUG [dd329565] Finished in 4.619 seconds with exit status 0 (successful).
+ DEBUG [e667d1c3] Running ~/.rvm/bin/rvm version as deployer@35.200.142.222
+ DEBUG [e667d1c3] Command: ~/.rvm/bin/rvm version
+ DEBUG [a2d677ac] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [a2d677ac] Finished in 1.051 seconds with exit status 0 (successful).
+ DEBUG [ab5d75f4] Running ~/.rvm/bin/rvm current as deployer@35.200.142.222
+ DEBUG [ab5d75f4] Command: ~/.rvm/bin/rvm current
+ DEBUG [8ec2f7c1] 	ruby-2.4.4
+ DEBUG [8ec2f7c1] Finished in 0.818 seconds with exit status 0 (successful).
+ DEBUG [2497dee2] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.142.222
+ DEBUG [2497dee2] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [6e7ae083] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [6e7ae083] Finished in 0.702 seconds with exit status 0 (successful).
+  WARN Already Exists: ./config/database.production.yml
+  WARN Already Exists: ./config/secrets.production.yml
