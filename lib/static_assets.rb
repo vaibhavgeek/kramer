@@ -1,175 +1,175 @@
-module StaticAssets
+# module StaticAssets
 
-=begin
+# =begin
 
-  file_attributes = StaticAssets.data_url_attributes(data_url)
+#   file_attributes = StaticAssets.data_url_attributes(data_url)
 
-returns
+# returns
 
-  {
-    mime_type: 'image/png',
-    content: image_bin_content,
-    file_extention: 'png',
-  }
+#   {
+#     mime_type: 'image/png',
+#     content: image_bin_content,
+#     file_extention: 'png',
+#   }
 
-=end
+# =end
 
-  def self.data_url_attributes(data_url)
-    data = {}
-    if data_url =~ /^data:(.+?);base64,(.+?)$/
-      data[:mime_type] = $1
-      data[:content]   = Base64.decode64($2)
-      if data[:mime_type] =~ %r{/(.+?)$}
-        data[:file_extention] = $1
-      end
-      return data
-    end
-    raise "Unable to parse data url: #{data_url.substr(0, 100)}"
-  end
+#   def self.data_url_attributes(data_url)
+#     data = {}
+#     if data_url =~ /^data:(.+?);base64,(.+?)$/
+#       data[:mime_type] = $1
+#       data[:content]   = Base64.decode64($2)
+#       if data[:mime_type] =~ %r{/(.+?)$}
+#         data[:file_extention] = $1
+#       end
+#       return data
+#     end
+#     raise "Unable to parse data url: #{data_url.substr(0, 100)}"
+#   end
 
-=begin
+# =begin
 
-store image 1:1 in backend and return filename
+# store image 1:1 in backend and return filename
 
-  filename = StaticAssets.store_raw(content, content_type)
+#   filename = StaticAssets.store_raw(content, content_type)
 
-returns
+# returns
 
-  filename # hash.png
+#   filename # hash.png
 
-=end
+# =end
 
-  def self.store_raw(content, content_type)
-    Store.remove(object: 'System::Logo', o_id: 1)
-    file = Store.add(
-      object: 'System::Logo',
-      o_id: 1,
-      data: content,
-      filename: 'logo_raw',
-      preferences: {
-        'Content-Type' => content_type
-      },
-      created_by_id: 1,
-    )
-    filename(file)
-  end
+#   def self.store_raw(content, content_type)
+#     Store.remove(object: 'System::Logo', o_id: 1)
+#     file = Store.add(
+#       object: 'System::Logo',
+#       o_id: 1,
+#       data: content,
+#       filename: 'logo_raw',
+#       preferences: {
+#         'Content-Type' => content_type
+#       },
+#       created_by_id: 1,
+#     )
+#     filename(file)
+#   end
 
-=begin
+# =begin
 
-read image 1:1 size in backend and return file (Store model)
+# read image 1:1 size in backend and return file (Store model)
 
-  store = StaticAssets.read_raw
+#   store = StaticAssets.read_raw
 
-returns
+# returns
 
-  store # Store model, e.g. store.content or store.preferences
+#   store # Store model, e.g. store.content or store.preferences
 
-=end
+# =end
 
-  def self.read_raw
-    list = Store.list(object: 'System::Logo', o_id: 1)
-    if list && list[0]
-      return Store.find( list[0] )
-    end
-    raise 'No such raw logo!'
-  end
+#   def self.read_raw
+#     list = Store.list(object: 'System::Logo', o_id: 1)
+#     if list && list[0]
+#       return Store.find( list[0] )
+#     end
+#     raise 'No such raw logo!'
+#   end
 
-=begin
+# =begin
 
-store image in right size (resized) in backend and return filename
+# store image in right size (resized) in backend and return filename
 
-  filename = StaticAssets.store( content, content_type )
+#   filename = StaticAssets.store( content, content_type )
 
-returns
+# returns
 
-  filename # hash.png
+#   filename # hash.png
 
-=end
+# =end
 
-  def self.store(content, content_type)
-    Store.remove(object: 'System::Logo', o_id: 2)
-    file = Store.add(
-      object: 'System::Logo',
-      o_id: 2,
-      data: content,
-      filename: 'logo',
-      preferences: {
-        'Content-Type' => content_type
-      },
-      created_by_id: 1,
-    )
-    StaticAssets.sync
-    filename(file)
-  end
+#   def self.store(content, content_type)
+#     Store.remove(object: 'System::Logo', o_id: 2)
+#     file = Store.add(
+#       object: 'System::Logo',
+#       o_id: 2,
+#       data: content,
+#       filename: 'logo',
+#       preferences: {
+#         'Content-Type' => content_type
+#       },
+#       created_by_id: 1,
+#     )
+#     StaticAssets.sync
+#     filename(file)
+#   end
 
-=begin
+# =begin
 
-read image size from backend (if not exists, read 1:1 size) and return file (Store model)
+# read image size from backend (if not exists, read 1:1 size) and return file (Store model)
 
-  store = StaticAssets.read
+#   store = StaticAssets.read
 
-returns
+# returns
 
-  store # Store model, e.g. store.content or store.preferences
+#   store # Store model, e.g. store.content or store.preferences
 
-=end
+# =end
 
-  def self.read
+#   def self.read
 
-    # use reduced dimensions
-    list = Store.list(object: 'System::Logo', o_id: 2)
+#     # use reduced dimensions
+#     list = Store.list(object: 'System::Logo', o_id: 2)
 
-    # as fallback use 1:1
-    if !list || !list[0]
-      list = Store.list(object: 'System::Logo', o_id: 1)
-    end
+#     # as fallback use 1:1
+#     if !list || !list[0]
+#       list = Store.list(object: 'System::Logo', o_id: 1)
+#     end
 
-    # store hash in config
-    return  if !list || !list[0]
+#     # store hash in config
+#     return  if !list || !list[0]
 
-    file = Store.find(list[0].id)
-    filelocation = filename(file)
-    Setting.set('product_logo', filelocation)
-    file
-  end
+#     file = Store.find(list[0].id)
+#     filelocation = filename(file)
+#     Setting.set('product_logo', filelocation)
+#     file
+#   end
 
-=begin
+# =begin
 
-generate filename based on Store model
+# generate filename based on Store model
 
-  filename = StaticAssets.filename(store)
+#   filename = StaticAssets.filename(store)
 
-=end
+# =end
 
-  def self.filename(file)
-    hash = Digest::MD5.hexdigest(file.content)
-    extention = ''
-    if file.preferences['Content-Type'].match?(/jpg|jpeg/i)
-      extention = '.jpg'
-    elsif file.preferences['Content-Type'].match?(/png/i)
-      extention = '.png'
-    elsif file.preferences['Content-Type'].match?(/gif/i)
-      extention = '.gif'
-    elsif file.preferences['Content-Type'].match?(/svg/i)
-      extention = '.svg'
-    end
-    "#{hash}#{extention}"
-  end
+#   def self.filename(file)
+#     hash = Digest::MD5.hexdigest(file.content)
+#     extention = ''
+#     if file.preferences['Content-Type'].match?(/jpg|jpeg/i)
+#       extention = '.jpg'
+#     elsif file.preferences['Content-Type'].match?(/png/i)
+#       extention = '.png'
+#     elsif file.preferences['Content-Type'].match?(/gif/i)
+#       extention = '.gif'
+#     elsif file.preferences['Content-Type'].match?(/svg/i)
+#       extention = '.svg'
+#     end
+#     "#{hash}#{extention}"
+#   end
 
-=begin
+# =begin
 
-sync image to fs (public/assets/images/hash.png)
+# sync image to fs (public/assets/images/hash.png)
 
-  StaticAssets.sync
+#   StaticAssets.sync
 
-=end
+# =end
 
-  def self.sync
-    file = read
-    return if !file
-    path = Rails.root.join('public', 'assets', 'images', filename(file))
-    File.open(path, 'wb') do |f|
-      f.puts file.content
-    end
-  end
-end
+#   def self.sync
+#     file = read
+#     return if !file
+#     path = Rails.root.join('public', 'assets', 'images', filename(file))
+#     File.open(path, 'wb') do |f|
+#       f.puts file.content
+#     end
+#   end
+# end
