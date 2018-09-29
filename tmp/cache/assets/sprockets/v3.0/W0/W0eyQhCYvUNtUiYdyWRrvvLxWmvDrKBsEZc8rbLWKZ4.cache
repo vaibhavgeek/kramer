@@ -1,0 +1,99 @@
+I"x(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SettingsAreaItem = (function(superClass) {
+    extend(SettingsAreaItem, superClass);
+
+    SettingsAreaItem.prototype.template = 'settings/item';
+
+    SettingsAreaItem.prototype.events = {
+      'submit form': 'update'
+    };
+
+    function SettingsAreaItem() {
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      SettingsAreaItem.__super__.constructor.apply(this, arguments);
+      this.render();
+    }
+
+    SettingsAreaItem.prototype.render = function() {
+      var attribute, directValue, i, item, j, k, len, len1, len2, ref, ref1, ref2;
+      if (!this.setting.options) {
+        throw "No such options for " + this.setting.name;
+      }
+      if (!this.setting.options.form) {
+        throw "No such options.form for " + this.setting.name;
+      }
+      directValue = 0;
+      ref = this.setting.options['form'];
+      for (i = 0, len = ref.length; i < len; i++) {
+        item = ref[i];
+        directValue += 1;
+      }
+      if (directValue > 1) {
+        ref1 = this.setting.options['form'];
+        for (j = 0, len1 = ref1.length; j < len1; j++) {
+          item = ref1[j];
+          item['default'] = this.setting.state_current.value[item.name];
+        }
+      } else {
+        item['default'] = this.setting.state_current.value;
+      }
+      this.configure_attributes = this.setting.options['form'];
+      ref2 = this.configure_attributes;
+      for (k = 0, len2 = ref2.length; k < len2; k++) {
+        attribute = ref2[k];
+        if (attribute.tag === 'boolean') {
+          attribute.translate = true;
+        }
+      }
+      this.html(App.view(this.template)({
+        setting: this.setting
+      }));
+      return new App.ControllerForm({
+        el: this.el.find('.form-item'),
+        model: {
+          configure_attributes: this.configure_attributes,
+          className: ''
+        },
+        autofocus: false
+      });
+    };
+
+    SettingsAreaItem.prototype.update = function(e) {
+      var directData, directValue, i, item, len, params, ref, value;
+      e.preventDefault();
+      this.formDisable(e);
+      params = this.formParam(e.target);
+      directValue = 0;
+      directData = void 0;
+      ref = this.setting.options['form'];
+      for (i = 0, len = ref.length; i < len; i++) {
+        item = ref[i];
+        directValue += 1;
+        directData = params[item.name];
+      }
+      value = void 0;
+      if (directValue > 1) {
+        value = params;
+      } else {
+        value = directData;
+      }
+      return App.Setting.set(this.setting['name'], value, {
+        doneLocal: (function(_this) {
+          return function() {
+            return _this.formEnable(e);
+          };
+        })(this)
+      });
+    };
+
+    return SettingsAreaItem;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

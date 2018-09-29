@@ -1,0 +1,95 @@
+I"ôfunction(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      var defaultValue, key, options, ref, role, screen, screenOptions;
+    
+      __out.push('<div>\n  <table class="settings-list" style="width: 100%;">\n    <thead>\n      <tr>\n        <th>');
+    
+      __out.push(this.T('Permissions'));
+    
+      __out.push('\n        <th>');
+    
+      __out.push(this.T('Screen'));
+    
+      __out.push('\n        <th style="width: 50%;">');
+    
+      __out.push(this.T('Options'));
+    
+      __out.push('\n    </thead>\n    <tbody>\n      ');
+    
+      ref = this.data;
+      for (role in ref) {
+        screenOptions = ref[role];
+        __out.push('\n        <tr>\n          <td class="settings-list-control-cell">\n            ');
+        __out.push(__sanitize(role));
+        __out.push('\n          <td class="settings-list-control-cell">\n          <td class="settings-list-row-control">\n        ');
+        for (screen in screenOptions) {
+          options = screenOptions[screen];
+          __out.push('\n        <tr>\n          <td class="settings-list-control-cell">\n          <td class="settings-list-control-cell">\n            ');
+          __out.push(__sanitize(screen));
+          __out.push('\n          <td class="settings-list-row-control">\n            ');
+          for (key in options) {
+            defaultValue = options[key];
+            __out.push('\n              ');
+            __out.push(this.T(key));
+            __out.push(': <input class="js-boolean" name="screens::');
+            __out.push(__sanitize(screen));
+            __out.push('::');
+            __out.push(__sanitize(role));
+            __out.push('::');
+            __out.push(__sanitize(key));
+            __out.push('" type="checkbox" ');
+            if (this.params && this.params.screens && this.params.screens[screen] && this.params.screens[screen][role] && this.params.screens[screen][role][key] === true) {
+              __out.push('checked');
+            }
+            __out.push(' value="true">\n            ');
+          }
+          __out.push('\n        ');
+        }
+        __out.push('\n      ');
+      }
+    
+      __out.push('\n    </tbody>\n  </table>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

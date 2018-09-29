@@ -1,0 +1,107 @@
+I"–(function() {
+  var Widget;
+
+  Widget = (function() {
+    function Widget() {
+      var Menu, MenuItem, badgeDataURL, createDefault, electron, ipc, menu, remote, setBadge, setBadgeOSX, setBadgeWindows;
+      if (!window.require) {
+        return;
+      }
+      electron = window.require('electron');
+      if (!electron) {
+        return;
+      }
+      remote = electron.remote;
+      ipc = electron.ipcRenderer;
+      App.Event.bind('window-title-set', function(arg) {
+        return ipc.send('window-title-set', arg);
+      });
+      App.Event.bind('online_notification_counter', function(e) {
+        return setBadge(e);
+      });
+      ipc.on('global-shortcut', function(e, arg) {
+        return App.Event.trigger('global-shortcut', arg);
+      });
+      Menu = remote.Menu;
+      MenuItem = remote.MenuItem;
+      createDefault = function() {
+        var menu;
+        menu = new Menu();
+        menu.append(new MenuItem({
+          label: 'Cut',
+          role: 'cut'
+        }));
+        menu.append(new MenuItem({
+          label: 'Copy',
+          role: 'copy'
+        }));
+        menu.append(new MenuItem({
+          label: 'Paste',
+          role: 'paste'
+        }));
+        menu.append(new MenuItem({
+          label: 'Select All',
+          role: 'selectall'
+        }));
+        return menu;
+      };
+      menu = createDefault();
+      window.addEventListener('contextmenu', function(e) {
+        menu.popup(remote.getCurrentWindow());
+        return false;
+      });
+      badgeDataURL = function(text) {
+        var canvas, ctx, scale, size;
+        scale = 2;
+        size = 16 * scale;
+        canvas = document.createElement('canvas');
+        canvas.setAttribute('width', size);
+        canvas.setAttribute('height', size);
+        ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF1744';
+        ctx.beginPath();
+        ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = '#ffffff';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.font = (10 * scale) + 'px sans-serif';
+        ctx.fillText(text, size / 2, size / 2, size);
+        return canvas.toDataURL();
+      };
+      setBadgeWindows = function(content) {
+        var dataURL, sendBadge;
+        sendBadge = function(dataURL, description) {
+          return electron.ipcRenderer.send('win32-overlay', {
+            overlayDataURL: dataURL,
+            description: description,
+            content: content
+          });
+        };
+        if (content !== '') {
+          dataURL = badgeDataURL(content.toString());
+          return sendBadge(dataURL, 'You have unread messages (' + content + ')');
+        } else {
+          return sendBadge(null, 'You have no unread messages');
+        }
+      };
+      setBadgeOSX = function(content) {
+        return remote.app.dock.setBadge(content);
+      };
+      setBadge = function(content) {
+        if (process.platform === 'win32') {
+          return setBadgeWindows(content);
+        } else if (process.platform === 'darwin') {
+          return setBadgeOSX(content);
+        }
+      };
+    }
+
+    return Widget;
+
+  })();
+
+  App.Config.set('aaa_electron_events', Widget, 'Navigations');
+
+}).call(this);
+:ET

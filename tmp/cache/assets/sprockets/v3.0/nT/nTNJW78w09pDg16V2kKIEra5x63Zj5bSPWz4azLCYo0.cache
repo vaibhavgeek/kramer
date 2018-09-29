@@ -1,0 +1,37 @@
+I"Ÿ(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.TicketZoomTimeUnit = (function(superClass) {
+    extend(TicketZoomTimeUnit, superClass);
+
+    function TicketZoomTimeUnit() {
+      this.render = bind(this.render, this);
+      return TicketZoomTimeUnit.__super__.constructor.apply(this, arguments);
+    }
+
+    TicketZoomTimeUnit.prototype.model = 'Ticket';
+
+    TicketZoomTimeUnit.prototype.observe = {
+      time_unit: true
+    };
+
+    TicketZoomTimeUnit.prototype.render = function(ticket) {
+      if (!this.permissionCheck('ticket.agent')) {
+        return;
+      }
+      if (!ticket.time_unit) {
+        return;
+      }
+      return this.html(App.view('ticket_zoom/time_unit')({
+        ticket: ticket
+      }));
+    };
+
+    return TicketZoomTimeUnit;
+
+  })(App.ObserverController);
+
+}).call(this);
+:ET

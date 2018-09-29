@@ -1,0 +1,34 @@
+I"ÿ(function() {
+  App.UiElement.autocompletion_ajax = (function() {
+    function autocompletion_ajax() {}
+
+    autocompletion_ajax.render = function(attribute, params) {
+      var object, searchableAjaxSelectObject, valueName;
+      if (params == null) {
+        params = {};
+      }
+      if (params[attribute.name] || attribute.value) {
+        object = App[attribute.relation].find(params[attribute.name] || attribute.value);
+        valueName = object.displayName();
+      }
+      searchableAjaxSelectObject = new App.SearchableAjaxSelect({
+        attribute: {
+          value: params[attribute.name] || attribute.value,
+          valueName: valueName,
+          name: attribute.name,
+          id: params.organization_id || attribute.value,
+          placeholder: App.i18n.translateInline('Search...'),
+          limit: 40,
+          object: attribute.relation,
+          ajax: true
+        }
+      });
+      return searchableAjaxSelectObject.element();
+    };
+
+    return autocompletion_ajax;
+
+  })();
+
+}).call(this);
+:ET

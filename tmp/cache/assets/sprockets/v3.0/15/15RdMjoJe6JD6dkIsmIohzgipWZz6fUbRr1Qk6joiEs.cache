@@ -1,0 +1,41 @@
+I"<(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.UiElement.selectTicketAttributes = (function(superClass) {
+    extend(selectTicketAttributes, superClass);
+
+    function selectTicketAttributes() {
+      return selectTicketAttributes.__super__.constructor.apply(this, arguments);
+    }
+
+    selectTicketAttributes.render = function(attribute, params) {
+      var attributeOptionsArray, name, nameTmp, ref, row;
+      attributeOptionsArray = [];
+      ref = App.Ticket.attributesGet();
+      for (name in ref) {
+        row = ref[name];
+        if (row.type !== 'password' && row.type !== 'tag' && row.name !== 'tags') {
+          nameTmp = row.name;
+          if (row.name.substr(row.name.length - 4, 4) === '_ids') {
+            nameTmp = row.name.substr(0, row.name.length - 4);
+          } else if (row.name.substr(row.name.length - 3, 3) === '_id') {
+            nameTmp = row.name.substr(0, row.name.length - 3);
+          }
+          attributeOptionsArray.push({
+            value: nameTmp,
+            name: row.display
+          });
+        }
+      }
+      attribute.sortBy = null;
+      attribute.options = attributeOptionsArray;
+      return App.UiElement.select.render(attribute, params);
+    };
+
+    return selectTicketAttributes;
+
+  })(App.UiElement.ApplicationUiElement);
+
+}).call(this);
+:ET

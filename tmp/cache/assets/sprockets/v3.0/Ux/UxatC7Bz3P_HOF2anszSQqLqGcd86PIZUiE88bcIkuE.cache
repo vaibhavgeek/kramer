@@ -1,0 +1,19 @@
+I"÷(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SettingsAreaStorageProvider = (function(superClass) {
+    extend(SettingsAreaStorageProvider, superClass);
+
+    function SettingsAreaStorageProvider() {
+      return SettingsAreaStorageProvider.__super__.constructor.apply(this, arguments);
+    }
+
+    SettingsAreaStorageProvider.prototype.template = 'settings/storage_provider';
+
+    return SettingsAreaStorageProvider;
+
+  })(App.SettingsAreaItem);
+
+}).call(this);
+:ET
