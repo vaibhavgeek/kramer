@@ -19964,3 +19964,968 @@ D, [2018-09-15T16:41:40.048323 #11195] DEBUG -- :   [1m[36mStore::Provider::DB
 D, [2018-09-15T16:41:40.873200 #11195] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT  "settings"."updated_at" FROM "settings" ORDER BY "settings"."updated_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
 D, [2018-09-15T16:41:40.873844 #11195] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "settings"."name", "settings"."state_current" FROM "settings" ORDER BY "settings"."id" ASC[0m
 D, [2018-09-15T16:41:40.884405 #11195] DEBUG -- :   [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "models_searchable"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.740753 #5903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mSHOW server_version;[0m
+D, [2018-09-18T22:48:21.811455 #5903] DEBUG -- :   [1m[36mStore::Object Load (2.1ms)[0m  [1m[34mSELECT  "store_objects".* FROM "store_objects" WHERE "store_objects"."name" = $1 LIMIT $2[0m  [["name", "System::Logo"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.830960 #5903] DEBUG -- :   [1m[36mStore Load (1.9ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."store_object_id" = 3 AND "stores"."o_id" = $1 ORDER BY created_at ASC, id ASC[0m  [["o_id", 2]]
+D, [2018-09-18T22:48:21.844362 #5903] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.849007 #5903] DEBUG -- :   [1m[36mStore::File Load (1.5ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.863270 #5903] DEBUG -- :   [1m[36mStore::Provider::DB Load (2.4ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.874380 #5903] DEBUG -- :   [1m[36mSetting Load (1.9ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "product_logo"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.888952 #5903] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:48:21.905846 #5903] DEBUG -- : Setting.reset_change_id: set new cache, 869919574
+D, [2018-09-18T22:48:21.907006 #5903] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:48:21.908414 #5903]  INFO -- : Setting.set('product_logo', "73a4aa758e6629c9ad420d2e312af0a0.png")
+D, [2018-09-18T22:48:21.909131 #5903] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.909997 #5903] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.911221 #5903] DEBUG -- :   [1m[36mStore::File Load (0.2ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:48:21.911958 #5903] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:23.146606 #5903] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT  "settings"."updated_at" FROM "settings" ORDER BY "settings"."updated_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+D, [2018-09-18T22:48:23.147281 #5903] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "settings"."name", "settings"."state_current" FROM "settings" ORDER BY "settings"."id" ASC[0m
+D, [2018-09-18T22:48:23.157860 #5903] DEBUG -- :   [1m[36mSetting Load (0.3ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "models_searchable"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.223456 #5911] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mSHOW server_version;[0m
+D, [2018-09-18T22:48:30.292158 #5911] DEBUG -- :   [1m[36mStore Load (0.8ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."store_object_id" = 3 AND "stores"."o_id" = $1 ORDER BY created_at ASC, id ASC[0m  [["o_id", 2]]
+D, [2018-09-18T22:48:30.312862 #5911] DEBUG -- :   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.316578 #5911] DEBUG -- :   [1m[36mStore::File Load (0.4ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.329638 #5911] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.5ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.339554 #5911] DEBUG -- :   [1m[36mSetting Load (0.6ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "product_logo"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.355148 #5911] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:48:30.367333 #5911] DEBUG -- : Setting.reset_change_id: set new cache, 494326212
+D, [2018-09-18T22:48:30.368340 #5911] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:48:30.369790 #5911]  INFO -- : Setting.set('product_logo', "73a4aa758e6629c9ad420d2e312af0a0.png")
+D, [2018-09-18T22:48:30.370491 #5911] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.371300 #5911] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.372217 #5911] DEBUG -- :   [1m[36mStore::File Load (0.2ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:48:30.373060 #5911] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.2ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:31.252480 #5911] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT  "settings"."updated_at" FROM "settings" ORDER BY "settings"."updated_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+D, [2018-09-18T22:48:31.258250 #5911] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "settings"."name", "settings"."state_current" FROM "settings" ORDER BY "settings"."id" ASC[0m
+D, [2018-09-18T22:48:31.267605 #5911] DEBUG -- :   [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "models_searchable"], ["LIMIT", 1]]
+D, [2018-09-18T22:48:32.712997 #5911] DEBUG -- :   [1m[35mSQL (5.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+D, [2018-09-18T22:48:50.686048 #5911] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+D, [2018-09-18T22:49:00.856954 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mSHOW server_version;[0m
+D, [2018-09-18T22:49:00.928804 #6208] DEBUG -- :   [1m[36mStore Load (0.8ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."store_object_id" = 3 AND "stores"."o_id" = $1 ORDER BY created_at ASC, id ASC[0m  [["o_id", 2]]
+D, [2018-09-18T22:49:00.951546 #6208] DEBUG -- :   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+D, [2018-09-18T22:49:00.955843 #6208] DEBUG -- :   [1m[36mStore::File Load (0.5ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:49:00.969686 #6208] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.5ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:00.980579 #6208] DEBUG -- :   [1m[36mSetting Load (0.6ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "product_logo"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:00.997480 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:01.010837 #6208] DEBUG -- : Setting.reset_change_id: set new cache, 136097597
+D, [2018-09-18T22:49:01.011747 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:01.013476 #6208]  INFO -- : Setting.set('product_logo', "73a4aa758e6629c9ad420d2e312af0a0.png")
+D, [2018-09-18T22:49:01.014233 #6208] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:49:01.015091 #6208] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:01.016086 #6208] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:49:01.017062 #6208] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:02.175041 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT  "settings"."updated_at" FROM "settings" ORDER BY "settings"."updated_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+D, [2018-09-18T22:49:02.175722 #6208] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "settings"."name", "settings"."state_current" FROM "settings" ORDER BY "settings"."id" ASC[0m
+D, [2018-09-18T22:49:02.185862 #6208] DEBUG -- :   [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "models_searchable"], ["LIMIT", 1]]
+I, [2018-09-18T22:49:03.375736 #6208]  INFO -- : Started GET "/" for ::1 at 2018-09-18 22:49:03 +0530
+D, [2018-09-18T22:49:03.423272 #6208] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2018-09-18T22:49:03.491102 #6208]  INFO -- : Processing by InitController#index as HTML
+I, [2018-09-18T22:49:03.515054 #6208]  INFO -- :   Rendering init/index.html.erb within layouts/application
+I, [2018-09-18T22:49:03.515899 #6208]  INFO -- :   Rendered init/index.html.erb within layouts/application (0.7ms)
+D, [2018-09-18T22:49:04.262466 #6208] DEBUG -- :   [1m[36mSetting Load (0.7ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:04.263130 #6208]  INFO -- : Completed 200 OK in 772ms (Views: 749.0ms | ActiveRecord: 9.1ms)
+
+
+D, [2018-09-18T22:49:04.264530 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.265773 #6208] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "sessions" SET "data" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["data", "BAh7CEkiCXBpbmcGOgZFRkkiGTIwMTgtMDktMThUMTc6MTk6MDNaBjsAVEki\nD3VzZXJfYWdlbnQGOwBGIm5Nb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZf\nNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENo\ncm9tZS82OC4wLjM0NDAuMTA2IFNhZmFyaS81MzcuMzZJIhBfY3NyZl90b2tl\nbgY7AEZJIjFUU1RITnF4UDkrd3BzRVZEa1pFNmk3ejM0c1pFWnBWNWFsUlY1\nb0ZkNVdrPQY7AEY=\n"], ["updated_at", "2018-09-18 17:19:04.264722"], ["id", 34]]
+D, [2018-09-18T22:49:04.266861 #6208] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:04.279824 #6208]  INFO -- : Started GET "/assets/application.css" for ::1 at 2018-09-18 22:49:04 +0530
+I, [2018-09-18T22:49:04.294044 #6208]  INFO -- : Started GET "/assets/application.js" for ::1 at 2018-09-18 22:49:04 +0530
+D, [2018-09-18T22:49:04.317150 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.318825 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:04.327769 #6208]  INFO -- : Started GET "/assets/application-print.css" for ::1 at 2018-09-18 22:49:04 +0530
+D, [2018-09-18T22:49:04.435228 #6208] DEBUG -- :   [1m[35m (14.5ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.438965 #6208] DEBUG -- :   [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.440429 #6208] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:04.440667 #6208] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:04.716948 #6208]  INFO -- : Started POST "/api/v1/signshow" for ::1 at 2018-09-18 22:49:04 +0530
+I, [2018-09-18T22:49:04.741193 #6208]  INFO -- : Processing by SessionsController#show as JSON
+I, [2018-09-18T22:49:04.741267 #6208]  INFO -- :   Parameters: {"fingerprint"=>"-1992429858"}
+D, [2018-09-18T22:49:04.746636 #6208] DEBUG -- :   [1m[36mObjectLookup Load (0.7ms)[0m  [1m[34mSELECT  "object_lookups".* FROM "object_lookups" WHERE "object_lookups"."name" = $1 LIMIT $2[0m  [["name", "Ticket"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:04.751222 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (1.5ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 2], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:04.759050 #6208] DEBUG -- :   [1m[36mObjectLookup Load (0.3ms)[0m  [1m[34mSELECT  "object_lookups".* FROM "object_lookups" WHERE "object_lookups"."name" = $1 LIMIT $2[0m  [["name", "TicketArticle"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:04.760769 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.4ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 3], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:04.765199 #6208] DEBUG -- :   [1m[36mObjectLookup Load (0.3ms)[0m  [1m[34mSELECT  "object_lookups".* FROM "object_lookups" WHERE "object_lookups"."name" = $1 LIMIT $2[0m  [["name", "User"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:04.767750 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.5ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 1], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:04.779362 #6208] DEBUG -- :   [1m[36mObjectLookup Load (0.3ms)[0m  [1m[34mSELECT  "object_lookups".* FROM "object_lookups" WHERE "object_lookups"."name" = $1 LIMIT $2[0m  [["name", "Organization"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:04.782153 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.5ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 4], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:04.786720 #6208] DEBUG -- :   [1m[36mObjectLookup Load (0.5ms)[0m  [1m[34mSELECT  "object_lookups".* FROM "object_lookups" WHERE "object_lookups"."name" = $1 LIMIT $2[0m  [["name", "Group"], ["LIMIT", 1]]
+D, [2018-09-18T22:49:04.790321 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.5ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 5], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:04.795887 #6208] DEBUG -- :   [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT name, preferences FROM "settings" WHERE "settings"."frontend" = $1[0m  [["frontend", "t"]]
+D, [2018-09-18T22:49:04.817055 #6208] DEBUG -- :   [1m[36mLocale Load (1.2ms)[0m  [1m[34mSELECT "locales".* FROM "locales" WHERE "locales"."active" = $1[0m  [["active", "t"]]
+D, [2018-09-18T22:49:04.839331 #6208] DEBUG -- :   [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:04.840610 #6208]  INFO -- : Completed 200 OK in 99ms (Views: 22.1ms | ActiveRecord: 8.0ms)
+
+
+D, [2018-09-18T22:49:04.841872 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.843642 #6208] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "sessions" SET "data" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["data", "BAh7CEkiCXBpbmcGOgZFRkkiGTIwMTgtMDktMThUMTc6MTk6MDRaBjsAVEki\nD3VzZXJfYWdlbnQGOwBGIm5Nb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZf\nNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENo\ncm9tZS82OC4wLjM0NDAuMTA2IFNhZmFyaS81MzcuMzZJIhBfY3NyZl90b2tl\nbgY7AEZJIjFUU1RITnF4UDkrd3BzRVZEa1pFNmk3ejM0c1pFWnBWNWFsUlY1\nb0ZkNVdrPQY7AEY=\n"], ["updated_at", "2018-09-18 17:19:04.842569"], ["id", 34]]
+D, [2018-09-18T22:49:04.845203 #6208] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:04.856122 #6208]  INFO -- : Started GET "/api/v1/translations/lang/en-us?_=1537291144625" for ::1 at 2018-09-18 22:49:04 +0530
+I, [2018-09-18T22:49:04.890572 #6208]  INFO -- : Processing by TranslationsController#lang as JSON
+I, [2018-09-18T22:49:04.890644 #6208]  INFO -- :   Parameters: {"_"=>"1537291144625", "locale"=>"en-us"}
+D, [2018-09-18T22:49:04.907379 #6208] DEBUG -- :   [1m[35m (14.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "translations" WHERE "translations"."locale" = $1[0m  [["locale", "de-de"]]
+D, [2018-09-18T22:49:04.917287 #6208] DEBUG -- :   [1m[36mTranslation Load (8.7ms)[0m  [1m[34mSELECT "translations".* FROM "translations" WHERE "translations"."locale" = $1 AND ("translations"."target" != $2) ORDER BY "translations"."source" ASC[0m  [["locale", "en-us"], ["target", ""]]
+D, [2018-09-18T22:49:04.921828 #6208] DEBUG -- :   [1m[36mSetting Load (0.9ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:04.922723 #6208]  INFO -- : Completed 200 OK in 32ms (Views: 0.8ms | ActiveRecord: 23.9ms)
+
+
+D, [2018-09-18T22:49:04.924140 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.924824 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:04.929899 #6208]  INFO -- : Started GET "/ws" for ::1 at 2018-09-18 22:49:04 +0530
+D, [2018-09-18T22:49:04.958726 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:04.959641 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+F, [2018-09-18T22:49:04.960379 #6208] FATAL -- :   
+F, [2018-09-18T22:49:04.960442 #6208] FATAL -- : ActionController::RoutingError (No route matches [GET] "/ws"):
+F, [2018-09-18T22:49:04.960489 #6208] FATAL -- :   
+F, [2018-09-18T22:49:04.960571 #6208] FATAL -- : actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+I, [2018-09-18T22:49:05.151243 #6208]  INFO -- : Started POST "/api/v1/message_send" for ::1 at 2018-09-18 22:49:05 +0530
+I, [2018-09-18T22:49:05.164419 #6208]  INFO -- : Processing by LongPollingController#message_send as JSON
+I, [2018-09-18T22:49:05.164508 #6208]  INFO -- :   Parameters: {"data"=>{"event"=>"login"}}
+I, [2018-09-18T22:49:05.165421 #6208]  INFO -- : client(6051492996) new client connection
+D, [2018-09-18T22:49:05.167009 #6208] DEBUG -- :   [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:05.167410 #6208]  INFO -- : Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+D, [2018-09-18T22:49:05.168196 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:05.168715 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:05.172315 #6208]  INFO -- : Started POST "/api/v1/message_receive" for ::1 at 2018-09-18 22:49:05 +0530
+I, [2018-09-18T22:49:05.180905 #6208]  INFO -- : Started POST "/api/v1/message_send" for ::1 at 2018-09-18 22:49:05 +0530
+I, [2018-09-18T22:49:05.192237 #6208]  INFO -- : Processing by LongPollingController#message_receive as JSON
+I, [2018-09-18T22:49:05.192320 #6208]  INFO -- :   Parameters: {"client_id"=>"6051492996"}
+I, [2018-09-18T22:49:05.193817 #6208]  INFO -- : Processing by LongPollingController#message_send as JSON
+I, [2018-09-18T22:49:05.193880 #6208]  INFO -- :   Parameters: {"client_id"=>"6051492996", "data"=>{"event"=>"login", "fingerprint"=>"-1992429858"}}
+D, [2018-09-18T22:49:05.195520 #6208] DEBUG -- :   [1m[36mSetting Load (0.3ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:05.195876 #6208]  INFO -- : Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+D, [2018-09-18T22:49:05.196609 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:05.197130 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:12.203983 #6208] DEBUG -- :   [1m[36mSetting Load (1.3ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:12.205313 #6208]  INFO -- : Completed 200 OK in 7013ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+D, [2018-09-18T22:49:12.208000 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.209580 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:12.213976 #6208]  INFO -- : Started POST "/api/v1/message_receive" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.228960 #6208]  INFO -- : Processing by LongPollingController#message_receive as JSON
+I, [2018-09-18T22:49:12.229044 #6208]  INFO -- :   Parameters: {"client_id"=>"6051492996"}
+I, [2018-09-18T22:49:12.449124 #6208]  INFO -- : Started GET "/" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.465308 #6208]  INFO -- : Processing by InitController#index as HTML
+I, [2018-09-18T22:49:12.467605 #6208]  INFO -- :   Rendering init/index.html.erb within layouts/application
+I, [2018-09-18T22:49:12.468155 #6208]  INFO -- :   Rendered init/index.html.erb within layouts/application (0.4ms)
+D, [2018-09-18T22:49:12.505555 #6208] DEBUG -- :   [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:12.505966 #6208]  INFO -- : Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+D, [2018-09-18T22:49:12.506889 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.508077 #6208] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "sessions" SET "data" = $1, "updated_at" = $2 WHERE "sessions"."id" = $3[0m  [["data", "BAh7CEkiCXBpbmcGOgZFRkkiGTIwMTgtMDktMThUMTc6MTk6MTJaBjsAVEki\nD3VzZXJfYWdlbnQGOwBGIm5Nb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZf\nNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENo\ncm9tZS82OC4wLjM0NDAuMTA2IFNhZmFyaS81MzcuMzZJIhBfY3NyZl90b2tl\nbgY7AEZJIjFUU1RITnF4UDkrd3BzRVZEa1pFNmk3ejM0c1pFWnBWNWFsUlY1\nb0ZkNVdrPQY7AEY=\n"], ["updated_at", "2018-09-18 17:19:12.507138"], ["id", 34]]
+D, [2018-09-18T22:49:12.515051 #6208] DEBUG -- :   [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:12.528713 #6208]  INFO -- : Started GET "/assets/application.css" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.548588 #6208]  INFO -- : Started GET "/assets/application.js" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.562120 #6208]  INFO -- : Started GET "/assets/application-print.css" for ::1 at 2018-09-18 22:49:12 +0530
+D, [2018-09-18T22:49:12.574465 #6208] DEBUG -- :   [1m[35m (25.6ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.575515 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:12.626450 #6208] DEBUG -- :   [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.627330 #6208] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.627813 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:12.628117 #6208] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:12.714281 #6208]  INFO -- : Started POST "/api/v1/signshow" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.724274 #6208]  INFO -- : Processing by SessionsController#show as JSON
+I, [2018-09-18T22:49:12.724326 #6208]  INFO -- :   Parameters: {"fingerprint"=>"-1992429858"}
+D, [2018-09-18T22:49:12.725701 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.4ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 2], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:12.729512 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.4ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 3], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:12.732721 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.4ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 1], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:12.738504 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.4ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 4], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:12.740919 #6208] DEBUG -- :   [1m[36mObjectManager::Attribute Load (0.3ms)[0m  [1m[34mSELECT "object_manager_attributes".* FROM "object_manager_attributes" WHERE "object_manager_attributes"."object_lookup_id" = $1 AND "object_manager_attributes"."active" = $2 AND "object_manager_attributes"."to_create" = $3 AND "object_manager_attributes"."to_delete" = $4 ORDER BY position ASC, name ASC[0m  [["object_lookup_id", 5], ["active", "t"], ["to_create", "f"], ["to_delete", "f"]]
+D, [2018-09-18T22:49:12.744010 #6208] DEBUG -- :   [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT name, preferences FROM "settings" WHERE "settings"."frontend" = $1[0m  [["frontend", "t"]]
+D, [2018-09-18T22:49:12.755507 #6208] DEBUG -- :   [1m[36mLocale Load (0.4ms)[0m  [1m[34mSELECT "locales".* FROM "locales" WHERE "locales"."active" = $1[0m  [["active", "t"]]
+D, [2018-09-18T22:49:12.763558 #6208] DEBUG -- :   [1m[36mSetting Load (0.3ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:12.763917 #6208]  INFO -- : Completed 200 OK in 39ms (Views: 8.3ms | ActiveRecord: 3.1ms)
+
+
+D, [2018-09-18T22:49:12.764751 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.765360 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:12.770987 #6208]  INFO -- : Started GET "/api/v1/translations/lang/en-us?_=1537291152632" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.780996 #6208]  INFO -- : Processing by TranslationsController#lang as JSON
+I, [2018-09-18T22:49:12.781055 #6208]  INFO -- :   Parameters: {"_"=>"1537291152632", "locale"=>"en-us"}
+D, [2018-09-18T22:49:12.782784 #6208] DEBUG -- :   [1m[36mSetting Load (0.6ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:12.783150 #6208]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+D, [2018-09-18T22:49:12.783896 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.784490 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:12.788137 #6208]  INFO -- : Started GET "/ws" for ::1 at 2018-09-18 22:49:12 +0530
+D, [2018-09-18T22:49:12.799379 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.800115 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+F, [2018-09-18T22:49:12.801098 #6208] FATAL -- :   
+F, [2018-09-18T22:49:12.801284 #6208] FATAL -- : ActionController::RoutingError (No route matches [GET] "/ws"):
+F, [2018-09-18T22:49:12.801366 #6208] FATAL -- :   
+F, [2018-09-18T22:49:12.801669 #6208] FATAL -- : actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+I, [2018-09-18T22:49:12.935249 #6208]  INFO -- : Started POST "/api/v1/message_send" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.945028 #6208]  INFO -- : Processing by LongPollingController#message_send as JSON
+I, [2018-09-18T22:49:12.945087 #6208]  INFO -- :   Parameters: {"data"=>{"event"=>"login"}}
+I, [2018-09-18T22:49:12.945411 #6208]  INFO -- : client(2021766280) new client connection
+D, [2018-09-18T22:49:12.947077 #6208] DEBUG -- :   [1m[36mSetting Load (0.4ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:12.947483 #6208]  INFO -- : Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+D, [2018-09-18T22:49:12.948325 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.949001 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:12.952606 #6208]  INFO -- : Started POST "/api/v1/message_receive" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.960499 #6208]  INFO -- : Started POST "/api/v1/message_send" for ::1 at 2018-09-18 22:49:12 +0530
+I, [2018-09-18T22:49:12.970015 #6208]  INFO -- : Processing by LongPollingController#message_receive as JSON
+I, [2018-09-18T22:49:12.970354 #6208]  INFO -- :   Parameters: {"client_id"=>"2021766280"}
+I, [2018-09-18T22:49:12.971854 #6208]  INFO -- : Processing by LongPollingController#message_send as JSON
+I, [2018-09-18T22:49:12.971910 #6208]  INFO -- :   Parameters: {"client_id"=>"2021766280", "data"=>{"event"=>"login", "fingerprint"=>"-1992429858"}}
+D, [2018-09-18T22:49:12.973729 #6208] DEBUG -- :   [1m[36mSetting Load (0.6ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:12.974123 #6208]  INFO -- : Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+D, [2018-09-18T22:49:12.974885 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:12.975487 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:18.132157 #6208]  INFO -- : Started GET "/rails/db" for ::1 at 2018-09-18 22:49:18 +0530
+D, [2018-09-18T22:49:19.239398 #6208] DEBUG -- :   [1m[36mSetting Load (1.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:19.240923 #6208]  INFO -- : Completed 200 OK in 7011ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+D, [2018-09-18T22:49:19.244126 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:19.246322 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:20.003865 #6208]  INFO -- : Processing by RailsDb::DashboardController#index as HTML
+D, [2018-09-18T22:49:20.004724 #6208] DEBUG -- :   [1m[36mSetting Load (25.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:20.009014 #6208]  INFO -- : Completed 200 OK in 7038ms (Views: 0.5ms | ActiveRecord: 25.2ms)
+
+
+D, [2018-09-18T22:49:20.018393 #6208] DEBUG -- :   [1m[35m (6.5ms)[0m  [1m[35mBEGIN[0m
+I, [2018-09-18T22:49:20.019775 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application
+I, [2018-09-18T22:49:20.021361 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application (1.4ms)
+D, [2018-09-18T22:49:20.023061 #6208] DEBUG -- :   [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:20.028793 #6208]  INFO -- : Started POST "/api/v1/message_receive" for ::1 at 2018-09-18 22:49:20 +0530
+I, [2018-09-18T22:49:20.048371 #6208]  INFO -- : Processing by LongPollingController#message_receive as JSON
+I, [2018-09-18T22:49:20.051282 #6208]  INFO -- :   Parameters: {"client_id"=>"2021766280"}
+I, [2018-09-18T22:49:20.051905 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_header.html.erb (6.9ms)
+I, [2018-09-18T22:49:20.062948 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_sidebar.html.erb (9.7ms)
+I, [2018-09-18T22:49:20.067107 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_gems.html.erb (0.5ms)
+I, [2018-09-18T22:49:20.067224 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_footer.html.erb (3.4ms)
+I, [2018-09-18T22:49:20.067506 #6208]  INFO -- : Completed 200 OK in 62ms (Views: 54.2ms | ActiveRecord: 0.8ms)
+
+
+D, [2018-09-18T22:49:20.068795 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:20.069664 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:20.079804 #6208]  INFO -- : Started GET "/assets/rails_db/application.css" for ::1 at 2018-09-18 22:49:20 +0530
+I, [2018-09-18T22:49:20.098291 #6208]  INFO -- : Started GET "/assets/rails_db/application.js" for ::1 at 2018-09-18 22:49:20 +0530
+I, [2018-09-18T22:49:20.113954 #6208]  INFO -- : Started GET "/assets/rails_db/logo_mini.png" for ::1 at 2018-09-18 22:49:20 +0530
+I, [2018-09-18T22:49:20.124989 #6208]  INFO -- : Started GET "/assets/rails_db/logo.png" for ::1 at 2018-09-18 22:49:20 +0530
+D, [2018-09-18T22:49:20.143892 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:20.152586 #6208] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:20.153216 #6208] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:20.154167 #6208] DEBUG -- :   [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:20.155021 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:20.155509 #6208] DEBUG -- :   [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:20.166909 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:20.167857 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:27.060870 #6208] DEBUG -- :   [1m[36mSetting Load (1.2ms)[0m  [1m[34mSELECT "settings".* FROM "settings" WHERE "settings"."area" = $1 ORDER BY "settings"."name" ASC[0m  [["area", "Transaction::Backend::Sync"]]
+I, [2018-09-18T22:49:27.062183 #6208]  INFO -- : Completed 200 OK in 7011ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+D, [2018-09-18T22:49:27.064791 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:27.066237 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:35.549110 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/data" for ::1 at 2018-09-18 22:49:35 +0530
+I, [2018-09-18T22:49:35.576830 #6208]  INFO -- : Processing by RailsDb::TablesController#data as JS
+I, [2018-09-18T22:49:35.577052 #6208]  INFO -- :   Parameters: {"table_id"=>"signatures"}
+D, [2018-09-18T22:49:35.597235 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+I, [2018-09-18T22:49:35.638160 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.js.erb
+I, [2018-09-18T22:49:35.642625 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_exp_col.html.erb (0.3ms)
+I, [2018-09-18T22:49:35.690169 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (40.7ms)
+I, [2018-09-18T22:49:35.698123 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (7.0ms)
+D, [2018-09-18T22:49:35.717750 #6208] DEBUG -- :   [1m[36m Load (0.3ms)[0m  [1m[34mSELECT  "signatures".* FROM "signatures" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+I, [2018-09-18T22:49:35.741691 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (8.6ms)
+I, [2018-09-18T22:49:35.742784 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_sql.html.erb (0.2ms)
+I, [2018-09-18T22:49:35.742870 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_data.html.erb (103.3ms)
+I, [2018-09-18T22:49:35.743804 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.js.erb (105.5ms)
+I, [2018-09-18T22:49:35.743988 #6208]  INFO -- : Completed 200 OK in 167ms (Views: 94.3ms | ActiveRecord: 24.0ms)
+
+
+D, [2018-09-18T22:49:35.744995 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:35.745644 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:43.320064 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/destroy?pk_id=1" for ::1 at 2018-09-18 22:49:43 +0530
+I, [2018-09-18T22:49:43.353869 #6208]  INFO -- : Processing by RailsDb::TablesController#destroy as JS
+I, [2018-09-18T22:49:43.354004 #6208]  INFO -- :   Parameters: {"pk_id"=>"1", "table_id"=>"signatures"}
+D, [2018-09-18T22:49:43.363674 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+D, [2018-09-18T22:49:43.421440 #6208] DEBUG -- :   [1m[35m (9.5ms)[0m  [1m[31mDELETE FROM signatures WHERE id = '1';[0m
+I, [2018-09-18T22:49:43.422244 #6208]  INFO -- : Completed 500 Internal Server Error in 68ms (ActiveRecord: 16.1ms)
+
+
+F, [2018-09-18T22:49:43.425082 #6208] FATAL -- :   
+F, [2018-09-18T22:49:43.425222 #6208] FATAL -- : ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "signatures" violates foreign key constraint "fk_rails_5538295cdc" on table "groups"
+DETAIL:  Key (id)=(1) is still referenced from table "groups".
+: DELETE FROM signatures WHERE id = '1';):
+F, [2018-09-18T22:49:43.425360 #6208] FATAL -- :   
+F, [2018-09-18T22:49:43.425832 #6208] FATAL -- : activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `async_exec'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `block (2 levels) in execute'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+activesupport (5.1.5) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:72:in `block in execute'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2 levels) in log'
+/home/vaibhav/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in log'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:71:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:11:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:47:in `delete'
+rails_db (2.0.3) lib/rails_db/database.rb:8:in `delete'
+rails_db (2.0.3) lib/rails_db/table.rb:46:in `delete'
+rails_db (2.0.3) app/controllers/rails_db/tables_controller.rb:56:in `destroy'
+actionpack (5.1.5) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+railties (5.1.5) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.5) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/builder.rb:63:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+I, [2018-09-18T22:49:51.366499 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/destroy?pk_id=1" for ::1 at 2018-09-18 22:49:51 +0530
+I, [2018-09-18T22:49:51.401550 #6208]  INFO -- : Processing by RailsDb::TablesController#destroy as JS
+I, [2018-09-18T22:49:51.401664 #6208]  INFO -- :   Parameters: {"pk_id"=>"1", "table_id"=>"signatures"}
+D, [2018-09-18T22:49:51.411932 #6208] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+D, [2018-09-18T22:49:51.460674 #6208] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[31mDELETE FROM signatures WHERE id = '1';[0m
+I, [2018-09-18T22:49:51.460966 #6208]  INFO -- : Completed 500 Internal Server Error in 59ms (ActiveRecord: 8.3ms)
+
+
+F, [2018-09-18T22:49:51.462310 #6208] FATAL -- :   
+F, [2018-09-18T22:49:51.462368 #6208] FATAL -- : ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "signatures" violates foreign key constraint "fk_rails_5538295cdc" on table "groups"
+DETAIL:  Key (id)=(1) is still referenced from table "groups".
+: DELETE FROM signatures WHERE id = '1';):
+F, [2018-09-18T22:49:51.462414 #6208] FATAL -- :   
+F, [2018-09-18T22:49:51.462546 #6208] FATAL -- : activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `async_exec'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `block (2 levels) in execute'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+activesupport (5.1.5) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:72:in `block in execute'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2 levels) in log'
+/home/vaibhav/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in log'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:71:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:11:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:47:in `delete'
+rails_db (2.0.3) lib/rails_db/database.rb:8:in `delete'
+rails_db (2.0.3) lib/rails_db/table.rb:46:in `delete'
+rails_db (2.0.3) app/controllers/rails_db/tables_controller.rb:56:in `destroy'
+actionpack (5.1.5) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+railties (5.1.5) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.5) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/builder.rb:63:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+I, [2018-09-18T22:49:53.572855 #6208]  INFO -- : Started GET "/rails/db/tables/activity_streams/data" for ::1 at 2018-09-18 22:49:53 +0530
+I, [2018-09-18T22:49:53.584912 #6208]  INFO -- : Processing by RailsDb::TablesController#data as JS
+I, [2018-09-18T22:49:53.584989 #6208]  INFO -- :   Parameters: {"table_id"=>"activity_streams"}
+D, [2018-09-18T22:49:53.600818 #6208] DEBUG -- :   [1m[35m (7.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "activity_streams"[0m
+I, [2018-09-18T22:49:53.634233 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.js.erb
+I, [2018-09-18T22:49:53.638002 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_exp_col.html.erb (0.2ms)
+I, [2018-09-18T22:49:53.653449 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (9.0ms)
+I, [2018-09-18T22:49:53.661656 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (7.3ms)
+D, [2018-09-18T22:49:53.680463 #6208] DEBUG -- :   [1m[36m Load (0.3ms)[0m  [1m[34mSELECT  "activity_streams".* FROM "activity_streams" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+I, [2018-09-18T22:49:53.701164 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (7.0ms)
+I, [2018-09-18T22:49:53.708097 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (5.0ms)
+I, [2018-09-18T22:49:53.714430 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.720774 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.728044 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (5.5ms)
+I, [2018-09-18T22:49:53.734582 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.740915 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.747178 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.753554 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.760918 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (5.5ms)
+I, [2018-09-18T22:49:53.767343 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.773698 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.779999 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.787289 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (5.5ms)
+I, [2018-09-18T22:49:53.794329 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (5.0ms)
+I, [2018-09-18T22:49:53.800761 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.807088 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.813440 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.820667 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (5.5ms)
+I, [2018-09-18T22:49:53.827165 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.7ms)
+I, [2018-09-18T22:49:53.833418 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.6ms)
+I, [2018-09-18T22:49:53.839021 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.1ms)
+I, [2018-09-18T22:49:53.844538 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.0ms)
+I, [2018-09-18T22:49:53.851114 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.9ms)
+I, [2018-09-18T22:49:53.856921 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (4.2ms)
+D, [2018-09-18T22:49:53.863981 #6208] DEBUG -- :   [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "activity_streams"[0m
+I, [2018-09-18T22:49:53.885009 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_sql.html.erb (0.2ms)
+I, [2018-09-18T22:49:53.885099 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_data.html.erb (249.8ms)
+I, [2018-09-18T22:49:53.887464 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.js.erb (253.1ms)
+I, [2018-09-18T22:49:53.887646 #6208]  INFO -- : Completed 200 OK in 303ms (Views: 130.1ms | ActiveRecord: 136.8ms)
+
+
+D, [2018-09-18T22:49:53.888709 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:53.889327 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:55.608305 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/data" for ::1 at 2018-09-18 22:49:55 +0530
+I, [2018-09-18T22:49:55.633600 #6208]  INFO -- : Processing by RailsDb::TablesController#data as HTML
+I, [2018-09-18T22:49:55.633674 #6208]  INFO -- :   Parameters: {"table_id"=>"signatures"}
+D, [2018-09-18T22:49:55.644102 #6208] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+I, [2018-09-18T22:49:55.694283 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.html.erb within layouts/rails_db/application
+I, [2018-09-18T22:49:55.698134 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_exp_col.html.erb (0.3ms)
+I, [2018-09-18T22:49:55.716149 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (10.6ms)
+I, [2018-09-18T22:49:55.727951 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (10.9ms)
+D, [2018-09-18T22:49:55.751799 #6208] DEBUG -- :   [1m[36m Load (0.4ms)[0m  [1m[34mSELECT  "signatures".* FROM "signatures" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+I, [2018-09-18T22:49:55.783921 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (11.6ms)
+I, [2018-09-18T22:49:55.784997 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_sql.html.erb (0.3ms)
+I, [2018-09-18T22:49:55.785093 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_data.html.erb (89.9ms)
+I, [2018-09-18T22:49:55.785206 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.html.erb within layouts/rails_db/application (90.8ms)
+I, [2018-09-18T22:49:55.798288 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_header.html.erb (2.7ms)
+I, [2018-09-18T22:49:55.808167 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_sidebar.html.erb (9.0ms)
+I, [2018-09-18T22:49:55.811322 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_gems.html.erb (0.5ms)
+I, [2018-09-18T22:49:55.811410 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_footer.html.erb (2.6ms)
+I, [2018-09-18T22:49:55.811596 #6208]  INFO -- : Completed 200 OK in 178ms (Views: 98.8ms | ActiveRecord: 25.3ms)
+
+
+D, [2018-09-18T22:49:55.812701 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:55.813344 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:55.827533 #6208]  INFO -- : Started GET "/assets/rails_db/application.css" for ::1 at 2018-09-18 22:49:55 +0530
+I, [2018-09-18T22:49:55.840818 #6208]  INFO -- : Started GET "/assets/rails_db/application.js" for ::1 at 2018-09-18 22:49:55 +0530
+I, [2018-09-18T22:49:55.841821 #6208]  INFO -- : Started GET "/assets/rails_db/logo_mini.png" for ::1 at 2018-09-18 22:49:55 +0530
+D, [2018-09-18T22:49:55.878745 #6208] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:55.883164 #6208] DEBUG -- :   [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:55.886551 #6208] DEBUG -- :   [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:55.887493 #6208] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:49:55.887680 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:49:55.890327 #6208] DEBUG -- :   [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:49:59.443045 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/destroy?pk_id=1" for ::1 at 2018-09-18 22:49:59 +0530
+I, [2018-09-18T22:49:59.461988 #6208]  INFO -- : Processing by RailsDb::TablesController#destroy as JS
+I, [2018-09-18T22:49:59.462068 #6208]  INFO -- :   Parameters: {"pk_id"=>"1", "table_id"=>"signatures"}
+D, [2018-09-18T22:49:59.470053 #6208] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+D, [2018-09-18T22:49:59.529224 #6208] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM signatures WHERE id = '1';[0m
+I, [2018-09-18T22:49:59.529524 #6208]  INFO -- : Completed 500 Internal Server Error in 67ms (ActiveRecord: 6.5ms)
+
+
+F, [2018-09-18T22:49:59.530986 #6208] FATAL -- :   
+F, [2018-09-18T22:49:59.531047 #6208] FATAL -- : ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "signatures" violates foreign key constraint "fk_rails_5538295cdc" on table "groups"
+DETAIL:  Key (id)=(1) is still referenced from table "groups".
+: DELETE FROM signatures WHERE id = '1';):
+F, [2018-09-18T22:49:59.531095 #6208] FATAL -- :   
+F, [2018-09-18T22:49:59.531335 #6208] FATAL -- : activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `async_exec'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `block (2 levels) in execute'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+activesupport (5.1.5) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:72:in `block in execute'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2 levels) in log'
+/home/vaibhav/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in log'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:71:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:11:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:47:in `delete'
+rails_db (2.0.3) lib/rails_db/database.rb:8:in `delete'
+rails_db (2.0.3) lib/rails_db/table.rb:46:in `delete'
+rails_db (2.0.3) app/controllers/rails_db/tables_controller.rb:56:in `destroy'
+actionpack (5.1.5) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+railties (5.1.5) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.5) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/builder.rb:63:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+I, [2018-09-18T22:50:01.411076 #6208]  INFO -- : Started GET "/rails/db/tables/signatures" for ::1 at 2018-09-18 22:50:01 +0530
+I, [2018-09-18T22:50:01.444265 #6208]  INFO -- : Processing by RailsDb::TablesController#show as JS
+I, [2018-09-18T22:50:01.444368 #6208]  INFO -- :   Parameters: {"id"=>"signatures"}
+I, [2018-09-18T22:50:01.464960 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/show.js.erb
+I, [2018-09-18T22:50:01.475683 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_exp_col.html.erb (0.3ms)
+I, [2018-09-18T22:50:01.516539 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_show.html.erb (46.1ms)
+I, [2018-09-18T22:50:01.517228 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/show.js.erb (52.2ms)
+I, [2018-09-18T22:50:01.517430 #6208]  INFO -- : Completed 200 OK in 73ms (Views: 21.7ms | ActiveRecord: 38.2ms)
+
+
+D, [2018-09-18T22:50:01.518337 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:50:01.518947 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:50:02.147687 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/data" for ::1 at 2018-09-18 22:50:02 +0530
+I, [2018-09-18T22:50:02.179591 #6208]  INFO -- : Processing by RailsDb::TablesController#data as JS
+I, [2018-09-18T22:50:02.179697 #6208]  INFO -- :   Parameters: {"table_id"=>"signatures"}
+D, [2018-09-18T22:50:02.186690 #6208] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+I, [2018-09-18T22:50:02.221201 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.js.erb
+I, [2018-09-18T22:50:02.224840 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_exp_col.html.erb (0.2ms)
+I, [2018-09-18T22:50:02.238403 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (8.1ms)
+I, [2018-09-18T22:50:02.246678 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (7.0ms)
+D, [2018-09-18T22:50:02.265298 #6208] DEBUG -- :   [1m[36m Load (0.2ms)[0m  [1m[34mSELECT  "signatures".* FROM "signatures" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+I, [2018-09-18T22:50:02.287788 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (8.7ms)
+I, [2018-09-18T22:50:02.288753 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_sql.html.erb (0.3ms)
+I, [2018-09-18T22:50:02.288833 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_data.html.erb (66.5ms)
+I, [2018-09-18T22:50:02.289794 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.js.erb (68.5ms)
+I, [2018-09-18T22:50:02.289977 #6208]  INFO -- : Completed 200 OK in 110ms (Views: 59.3ms | ActiveRecord: 13.7ms)
+
+
+D, [2018-09-18T22:50:02.291017 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:50:02.291697 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:50:04.023535 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/data" for ::1 at 2018-09-18 22:50:04 +0530
+I, [2018-09-18T22:50:04.062284 #6208]  INFO -- : Processing by RailsDb::TablesController#data as HTML
+I, [2018-09-18T22:50:04.062395 #6208]  INFO -- :   Parameters: {"table_id"=>"signatures"}
+D, [2018-09-18T22:50:04.070462 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+I, [2018-09-18T22:50:04.115927 #6208]  INFO -- :   Rendering /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.html.erb within layouts/rails_db/application
+I, [2018-09-18T22:50:04.122101 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_exp_col.html.erb (0.4ms)
+I, [2018-09-18T22:50:04.139886 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (10.8ms)
+I, [2018-09-18T22:50:04.163505 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_condition_fields.html.erb (22.8ms)
+D, [2018-09-18T22:50:04.189780 #6208] DEBUG -- :   [1m[36m Load (0.4ms)[0m  [1m[34mSELECT  "signatures".* FROM "signatures" LIMIT $1 OFFSET $2[0m  [["LIMIT", 25], ["OFFSET", 0]]
+I, [2018-09-18T22:50:04.219594 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_row.html.erb (11.5ms)
+I, [2018-09-18T22:50:04.221050 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_sql.html.erb (0.5ms)
+I, [2018-09-18T22:50:04.221157 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/_data.html.erb (104.0ms)
+I, [2018-09-18T22:50:04.221280 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/tables/data.html.erb within layouts/rails_db/application (105.2ms)
+I, [2018-09-18T22:50:04.233376 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_header.html.erb (2.7ms)
+I, [2018-09-18T22:50:04.246250 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_sidebar.html.erb (12.0ms)
+I, [2018-09-18T22:50:04.250141 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_gems.html.erb (0.7ms)
+I, [2018-09-18T22:50:04.250281 #6208]  INFO -- :   Rendered /home/vaibhav/.rvm/gems/ruby-2.4.4/gems/rails_db-2.0.3/app/views/rails_db/shared/_footer.html.erb (3.4ms)
+I, [2018-09-18T22:50:04.250563 #6208]  INFO -- : Completed 200 OK in 188ms (Views: 116.6ms | ActiveRecord: 21.1ms)
+
+
+D, [2018-09-18T22:50:04.252976 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:50:04.253898 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:50:04.273728 #6208]  INFO -- : Started GET "/assets/rails_db/application.css" for ::1 at 2018-09-18 22:50:04 +0530
+I, [2018-09-18T22:50:04.290403 #6208]  INFO -- : Started GET "/assets/rails_db/application.js" for ::1 at 2018-09-18 22:50:04 +0530
+I, [2018-09-18T22:50:04.304549 #6208]  INFO -- : Started GET "/assets/rails_db/logo_mini.png" for ::1 at 2018-09-18 22:50:04 +0530
+D, [2018-09-18T22:50:04.329543 #6208] DEBUG -- :   [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:50:04.329676 #6208] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:50:04.331308 #6208] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:50:04.331850 #6208] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-09-18T22:50:04.339576 #6208] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:50:04.340291 #6208] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:50:06.790327 #6208]  INFO -- : Started GET "/rails/db/tables/signatures/destroy?pk_id=1" for ::1 at 2018-09-18 22:50:06 +0530
+I, [2018-09-18T22:50:06.822847 #6208]  INFO -- : Processing by RailsDb::TablesController#destroy as JS
+I, [2018-09-18T22:50:06.822944 #6208]  INFO -- :   Parameters: {"pk_id"=>"1", "table_id"=>"signatures"}
+D, [2018-09-18T22:50:06.829542 #6208] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "signatures"[0m
+D, [2018-09-18T22:50:06.881157 #6208] DEBUG -- :   [1m[35m (0.9ms)[0m  [1m[31mDELETE FROM signatures WHERE id = '1';[0m
+I, [2018-09-18T22:50:06.881461 #6208]  INFO -- : Completed 500 Internal Server Error in 58ms (ActiveRecord: 4.6ms)
+
+
+F, [2018-09-18T22:50:06.883748 #6208] FATAL -- :   
+F, [2018-09-18T22:50:06.883849 #6208] FATAL -- : ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "signatures" violates foreign key constraint "fk_rails_5538295cdc" on table "groups"
+DETAIL:  Key (id)=(1) is still referenced from table "groups".
+: DELETE FROM signatures WHERE id = '1';):
+F, [2018-09-18T22:50:06.883910 #6208] FATAL -- :   
+F, [2018-09-18T22:50:06.884113 #6208] FATAL -- : activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `async_exec'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:73:in `block (2 levels) in execute'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:46:in `block in permit_concurrent_loads'
+activesupport (5.1.5) lib/active_support/concurrency/share_lock.rb:185:in `yield_shares'
+activesupport (5.1.5) lib/active_support/dependencies/interlock.rb:45:in `permit_concurrent_loads'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:72:in `block in execute'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2 levels) in log'
+/home/vaibhav/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in log'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log'
+activerecord (5.1.5) lib/active_record/connection_adapters/postgresql/database_statements.rb:71:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:11:in `execute'
+rails_db (2.0.3) lib/rails_db/adapters/base_adapter.rb:47:in `delete'
+rails_db (2.0.3) lib/rails_db/database.rb:8:in `delete'
+rails_db (2.0.3) lib/rails_db/table.rb:46:in `delete'
+rails_db (2.0.3) app/controllers/rails_db/tables_controller.rb:56:in `destroy'
+actionpack (5.1.5) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+railties (5.1.5) lib/rails/railtie.rb:185:in `public_send'
+railties (5.1.5) lib/rails/railtie.rb:185:in `method_missing'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:17:in `block in <class:Constraints>'
+actionpack (5.1.5) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/strategy.rb:190:in `call!'
+omniauth (1.7.1) lib/omniauth/strategy.rb:168:in `call'
+omniauth (1.7.1) lib/omniauth/builder.rb:63:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+D, [2018-09-18T22:50:30.870119 #5911] DEBUG -- :   [1m[35mSQL (1.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+D, [2018-09-18T22:50:40.324371 #5911] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "signatures"[0m
+D, [2018-09-18T22:50:57.054099 #5911] DEBUG -- :   [1m[35mSQL (7.5ms)[0m  [1m[31mDELETE FROM "groups"[0m
+D, [2018-09-18T22:51:24.257206 #6382] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[35mSHOW server_version;[0m
+D, [2018-09-18T22:51:24.293162 #6382] DEBUG -- :   [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."store_object_id" = 3 AND "stores"."o_id" = $1 ORDER BY created_at ASC, id ASC[0m  [["o_id", 2]]
+D, [2018-09-18T22:51:24.303911 #6382] DEBUG -- :   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.306070 #6382] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.312980 #6382] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.318214 #6382] DEBUG -- :   [1m[36mSetting Load (0.3ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "product_logo"], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.326130 #6382] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-18T22:51:24.332574 #6382] DEBUG -- : Setting.reset_change_id: set new cache, 659806135
+D, [2018-09-18T22:51:24.333045 #6382] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-18T22:51:24.333746 #6382]  INFO -- : Setting.set('product_logo', "73a4aa758e6629c9ad420d2e312af0a0.png")
+D, [2018-09-18T22:51:24.334183 #6382] DEBUG -- :   [1m[36mStore::File Load (0.2ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.334687 #6382] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.2ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.335256 #6382] DEBUG -- :   [1m[36mStore::File Load (0.2ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-18T22:51:24.335684 #6382] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.2ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-18T22:51:25.078111 #6382] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT  "settings"."updated_at" FROM "settings" ORDER BY "settings"."updated_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+D, [2018-09-18T22:51:25.078753 #6382] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT "settings"."name", "settings"."state_current" FROM "settings" ORDER BY "settings"."id" ASC[0m
+D, [2018-09-18T22:51:25.088521 #6382] DEBUG -- :   [1m[36mSetting Load (0.2ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "models_searchable"], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.369711 #3925] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mSHOW server_version;[0m
+D, [2018-09-28T23:48:05.441510 #3925] DEBUG -- :   [1m[36mStore::Object Load (2.2ms)[0m  [1m[34mSELECT  "store_objects".* FROM "store_objects" WHERE "store_objects"."name" = $1 LIMIT $2[0m  [["name", "System::Logo"], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.461459 #3925] DEBUG -- :   [1m[36mStore Load (2.0ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."store_object_id" = 3 AND "stores"."o_id" = $1 ORDER BY created_at ASC, id ASC[0m  [["o_id", 2]]
+D, [2018-09-28T23:48:05.475286 #3925] DEBUG -- :   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.480122 #3925] DEBUG -- :   [1m[36mStore::File Load (1.5ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.494540 #3925] DEBUG -- :   [1m[36mStore::Provider::DB Load (2.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.505730 #3925] DEBUG -- :   [1m[36mSetting Load (1.8ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "product_logo"], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.520505 #3925] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-09-28T23:48:05.540858 #3925] DEBUG -- : Setting.reset_change_id: set new cache, 312961781
+D, [2018-09-28T23:48:05.541903 #3925] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-09-28T23:48:05.543444 #3925]  INFO -- : Setting.set('product_logo', "73a4aa758e6629c9ad420d2e312af0a0.png")
+D, [2018-09-28T23:48:05.544189 #3925] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.545105 #3925] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.546480 #3925] DEBUG -- :   [1m[36mStore::File Load (0.3ms)[0m  [1m[34mSELECT  "store_files".* FROM "store_files" WHERE "store_files"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-09-28T23:48:05.547277 #3925] DEBUG -- :   [1m[36mStore::Provider::DB Load (0.3ms)[0m  [1m[34mSELECT  "store_provider_dbs".* FROM "store_provider_dbs" WHERE "store_provider_dbs"."sha" = $1 LIMIT $2[0m  [["sha", "8180fbd3b72f3fbf6e4e22d187ee0632ad7b63f72c6bcf22e59ed4d0ba381b24"], ["LIMIT", 1]]
+D, [2018-09-28T23:48:06.796967 #3925] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[34mSELECT  "settings"."updated_at" FROM "settings" ORDER BY "settings"."updated_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+D, [2018-09-28T23:48:06.798041 #3925] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT "settings"."name", "settings"."state_current" FROM "settings" ORDER BY "settings"."id" ASC[0m
+D, [2018-09-28T23:48:06.816378 #3925] DEBUG -- :   [1m[36mSetting Load (0.3ms)[0m  [1m[34mSELECT  "settings".* FROM "settings" WHERE "settings"."name" = $1 LIMIT $2[0m  [["name", "models_searchable"], ["LIMIT", 1]]

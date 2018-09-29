@@ -35,7 +35,7 @@ set :repo_url, 'git@github.com:maheshahir/cb_krammar.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 set :rails_env, 'production'
-server '35.200.142.222', user: "#{fetch(:user)}", roles: %w{app db web}, primary: true
+server '35.200.189.171', user: "#{fetch(:user)}", roles: %w{app db web}, primary: true
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :pty, true
 
