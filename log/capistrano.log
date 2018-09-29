@@ -7974,3 +7974,642 @@ remote: Compressing objects:   4% (1/22)   [K
  DEBUG [a81bf4a0] 	[sudo] password for deployer: 
  DEBUG [a81bf4a0] 	
   INFO [a81bf4a0] Finished in 0.734 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-29 19:25:05 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a7489a31] Running [ -d ~/.rvm ] as deployer@35.200.189.171
+ DEBUG [a7489a31] Command: [ -d ~/.rvm ]
+ DEBUG [878bfcb4] Finished in 4.579 seconds with exit status 0 (successful).
+ DEBUG [88a0852d] Running ~/.rvm/bin/rvm version as deployer@35.200.189.171
+ DEBUG [88a0852d] Command: ~/.rvm/bin/rvm version
+ DEBUG [196a028f] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [196a028f] Finished in 0.528 seconds with exit status 0 (successful).
+ DEBUG [ff6bf3af] Running ~/.rvm/bin/rvm current as deployer@35.200.189.171
+ DEBUG [ff6bf3af] Command: ~/.rvm/bin/rvm current
+ DEBUG [4cb9dd3f] 	ruby-2.4.4
+ DEBUG [4cb9dd3f] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [2a5e0574] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.189.171
+ DEBUG [2a5e0574] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [08bb4bfe] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [08bb4bfe] Finished in 1.234 seconds with exit status 0 (successful).
+  INFO [db53efb7] Running /usr/bin/env mkdir -p /tmp as deployer@35.200.189.171
+ DEBUG [db53efb7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c81ef146] Finished in 0.330 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-chaturbots-production-vaibhav.sh 0.0%
+  INFO Uploading /tmp/git-ssh-chaturbots-production-vaibhav.sh 100.0%
+  INFO [bfcee938] Running /usr/bin/env chmod 700 /tmp/git-ssh-chaturbots-production-vaibhav.sh as deployer@35.200.189.171
+ DEBUG [bfcee938] Command: /usr/bin/env chmod 700 /tmp/git-ssh-chaturbots-production-vaibhav.sh
+  INFO [b25fb00c] Finished in 1.292 seconds with exit status 0 (successful).
+  INFO [86c76d41] Running /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD as deployer@35.200.189.171
+ DEBUG [86c76d41] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD )
+ DEBUG [4884da51] 	3e4427d9e2d174768bcdd2cb4c81be9063c7539d	HEAD
+  INFO [4884da51] Finished in 4.507 seconds with exit status 0 (successful).
+  INFO [be9aebcb] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared /home/deployer/apps/chaturbots/releases as deployer@35.200.189.171
+ DEBUG [be9aebcb] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared /home/deployer/apps/chaturbots/releases
+  INFO [4f3a261c] Finished in 0.223 seconds with exit status 0 (successful).
+  INFO [3d189fe2] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/shared/public/assets as deployer@35.200.189.171
+ DEBUG [3d189fe2] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/shared/public/assets
+  INFO [e9bd1341] Finished in 0.235 seconds with exit status 0 (successful).
+  INFO [b5835e0f] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/config as deployer@35.200.189.171
+ DEBUG [b5835e0f] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/config
+  INFO [08e62ca0] Finished in 0.227 seconds with exit status 0 (successful).
+ DEBUG [5cf02896] Running if test ! -d /home/deployer/apps/chaturbots/shared; then echo "Directory does not exist '/home/deployer/apps/chaturbots/shared'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [5cf02896] Command: if test ! -d /home/deployer/apps/chaturbots/shared; then echo "Directory does not exist '/home/deployer/apps/chaturbots/shared'" 1>&2; false; fi
+ DEBUG [912500ba] Finished in 0.216 seconds with exit status 0 (successful).
+  INFO Uploading config ./config/database.production.yml as config/database.yml
+ DEBUG Uploading /home/deployer/apps/chaturbots/shared/config/database.yml 0.0%
+  INFO Uploading /home/deployer/apps/chaturbots/shared/config/database.yml 100.0%
+  INFO Uploading config ./config/secrets.production.yml as config/secrets.yml
+ DEBUG Uploading /home/deployer/apps/chaturbots/shared/config/secrets.yml 0.0%
+  INFO Uploading /home/deployer/apps/chaturbots/shared/config/secrets.yml 100.0%
+ DEBUG Uploading /home/deployer/apps/chaturbots/shared/config/puma.rb 0.0%
+  INFO Uploading /home/deployer/apps/chaturbots/shared/config/puma.rb 100.0%
+ DEBUG Uploading /tmp/nginx_chaturbots_production 0.0%
+  INFO Uploading /tmp/nginx_chaturbots_production 100.0%
+  INFO [938b1452] Running /usr/bin/env sudo mv /tmp/nginx_chaturbots_production /etc/nginx/sites-available/chaturbots_production as deployer@35.200.189.171
+ DEBUG [938b1452] Command: /usr/bin/env sudo mv /tmp/nginx_chaturbots_production /etc/nginx/sites-available/chaturbots_production
+ DEBUG [938b1452] 	[sudo] password for deployer: 
+ DEBUG [938b1452] 	
+  INFO [938b1452] Finished in 6.626 seconds with exit status 0 (successful).
+  INFO [389017b2] Running /usr/bin/env sudo ln -fs /etc/nginx/sites-available/chaturbots_production /etc/nginx/sites-enabled/chaturbots_production as deployer@35.200.189.171
+ DEBUG [389017b2] Command: /usr/bin/env sudo ln -fs /etc/nginx/sites-available/chaturbots_production /etc/nginx/sites-enabled/chaturbots_production
+ DEBUG [389017b2] 	[sudo] password for deployer: 
+ DEBUG [389017b2] 	
+  INFO [389017b2] Finished in 0.327 seconds with exit status 0 (successful).
+ DEBUG [95b9f37b] Running [ -f /home/deployer/apps/chaturbots/shared/config/database.yml ] as deployer@35.200.189.171
+ DEBUG [95b9f37b] Command: [ -f /home/deployer/apps/chaturbots/shared/config/database.yml ]
+ DEBUG [edf3e052] Finished in 0.219 seconds with exit status 0 (successful).
+ DEBUG [5be6b7e9] Running [ -f /home/deployer/apps/chaturbots/shared/config/secrets.yml ] as deployer@35.200.189.171
+ DEBUG [5be6b7e9] Command: [ -f /home/deployer/apps/chaturbots/shared/config/secrets.yml ]
+ DEBUG [9424b39c] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [89eaf8ee] Running [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [89eaf8ee] Command: [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ]
+ DEBUG [5d66d919] Finished in 0.219 seconds with exit status 0 (successful).
+ DEBUG [2cdd4282] Running [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [2cdd4282] Command: [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ]
+ DEBUG [459cb337] Finished in 0.278 seconds with exit status 0 (successful).
+ DEBUG [d49577d4] Running [ -f /home/deployer/apps/chaturbots/current/REVISION ] as deployer@35.200.189.171
+ DEBUG [d49577d4] Command: [ -f /home/deployer/apps/chaturbots/current/REVISION ]
+ DEBUG [048518c2] Finished in 0.234 seconds with exit status 0 (successful).
+ DEBUG [3f1db7dc] Running /usr/bin/env cat /home/deployer/apps/chaturbots/current/REVISION 2>/dev/null as deployer@35.200.189.171
+ DEBUG [3f1db7dc] Command: /usr/bin/env cat /home/deployer/apps/chaturbots/current/REVISION 2>/dev/null
+ DEBUG [d50413b6] 	fc9bc9788d97a3994b15c4fc79b637b8004d4312
+ DEBUG [d50413b6] Finished in 0.287 seconds with exit status 0 (successful).
+ DEBUG [41716381] Running [ -f /home/deployer/apps/chaturbots/repo/HEAD ] as deployer@35.200.189.171
+ DEBUG [41716381] Command: [ -f /home/deployer/apps/chaturbots/repo/HEAD ]
+ DEBUG [d98d08a9] Finished in 0.233 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/chaturbots/repo
+ DEBUG [dcd487b1] Running if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [dcd487b1] Command: if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi
+ DEBUG [50b17f31] Finished in 0.225 seconds with exit status 0 (successful).
+  INFO [216c1645] Running /usr/bin/env git remote set-url origin git@github.com:maheshahir/cb_krammar.git as deployer@35.200.189.171
+ DEBUG [216c1645] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git remote set-url origin git@github.com:maheshahir/cb_krammar.git )
+  INFO [b411b22f] Finished in 0.246 seconds with exit status 0 (successful).
+  INFO [3da89937] Running /usr/bin/env git remote update --prune as deployer@35.200.189.171
+ DEBUG [3da89937] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4ad250dc] 	Fetching origin
+ DEBUG [4ad250dc] 	remote: Enumerating objects: 7148, done.[K
+ DEBUG [4ad250dc] 	remote: Counting objects:   0% (1/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:   1% (72/7148)   [Kremote: Counting objects:   2% (143/7148)   [Kremote: Counting objects:   3% (215/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:   4% (286/7148)   [Kremote: Counting objects:   5% (358/7148)   [Kremote: Counting objects:   6% (429/7148)   [Kremote: Counting objects:   7% (501/7148)   [Kremote: Counting objects:   8% (572/7148)   [Kremote: Counting objects:   9% (644/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  10% (715/7148)   [Kremote: Counting objects:  11% (787/7148)   [Kremote: Counting objects:  12% (858/7148)   [Kremote: Counting objects:  13% (930/7148)   [Kremote: Counting objects:  14% (1001/7148)   [Kremote: Counting objects:  15% (1073/7148)   [Kremote: Counting objects:  16% (1144/7148)   [Kremote: Counting objects:  17% (1216/7148)   [Kremote: Counting objects:  18% (1287/7148)   [Kremote: Counting objects:  19% (1359/7148)   [Kremote: Counting objects:  20% (1430/7148)   [Kremote: Counting objects:  21% (1502/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  22% (1573/7148)   [Kremote: Counting objects:  23% (1645/7148)   [Kremote: Counting objects:  24% (1716/7148)   [Kremote: Counting objects:  25% (1787/7148)   [Kremote: Counting objects:  26% (1859/7148)   [Kremote: Counting objects:  27% (1930/7148)   [Kremote: Counting objects:  28% (2002/7148)   [Kremote: Counting objects:  29% (2073/7148)   [Kremote: Counting objects:  30% (2145/7148)   [Kremote: Counting objects:  31% (2216/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  32% (2288/7148)   [Kremote: Counting objects:  33% (2359/7148)   [Kremote: Counting objects:  34% (2431/7148)   [Kremote: Counting objects:  35% (2502/7148)   [Kremote: Counting objects:  36% (2574/7148)   [Kremote: Counting objects:  37% (2645/7148)   [Kremote: Counting objects:  38% (2717/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  39% (2788/7148)   [Kremote: Counting objects:  40% (2860/7148)   [Kremote: Counting objects:  41% (2931/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  42% (3003/7148)   [Kremote: Counting objects:  43% (3074/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  44% (3146/7148)   [Kremote: Counting objects:  45% (3217/7148)   [Kremote: Counting objects:  46% (3289/7148)   [Kremote: Counting objects:  47% (3360/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  48% (3432/7148)   [Kremote: Counting objects:  49% (3503/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  50% (3574/7148)   [Kremote: Counting objects:  51% (3646/7148)   [Kremote: Counting objects:  52% (3717/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  53% (3789/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  54% (3860/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  55% (3932/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  56% (4003/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  57% (4075/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  58% (4146/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  59% (4218/7148)   [Kremote: Counting objects:  60% (4289/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  61% (4361/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  62% (4432/7148)   [Kremote: Counting objects:  63% (4504/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  64% (4575/7148)   [Kremote: Counting objects:  65% (4647/7148)   [Kremote: Counting objects:  66% (4718/7148)   [Kremote: Counting objects:  67% (4790/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  68% (4861/7148)   [Kremote: Counting objects:  69% (4933/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  70% (5004/7148)   [Kremote: Counting objects:  71% (5076/7148)   [Kremote: Counting objects:  72% (5147/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  73% (5219/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  74% (5290/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  75% (5361/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  76% (5433/7148)   [Kremote: Counting objects:  77% (5504/7148)   [Kremote: Counting objects:  78% (5576/7148)   [Kremote: Counting objects:  79% (5647/7148)   [Kremote: Counting objects:  80% (5719/7148)   [Kremote: Counting objects:  81% (5790/7148)   [Kremote: Counting objects:  82% (5862/7148)   [Kremote: Counting objects:  83% (5933/7148)   [Kremote: Counting objects:  84% (6005/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  85% (6076/7148)   [Kremote: Counting objects:  86% (6148/7148)   [Kremote: Counting objects:  87% (6219/7148)   [Kremote: Counting objects:  88% (6291/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  89% (6362/7148)   [Kremote: Counting objects:  90% (6434/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  91% (6505/7148)   [Kremote: Counting objects:  92% (6577/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  93% (6648/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  94% (6720/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  95% (6791/7148)   [Kremote: Counting objects:  96% (6863/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  97% (6934/7148)   [K
+ DEBUG [4ad250dc] 	remote: Counting objects:  98% (7006/7148)   [Kremote: Counting objects:  99% (7077/7148)   [Kremote: Counting objects: 100% (7148/7148)   [Kremote: Counting objects: 100% (7148/7148), done.[K
+remote: Compressing objects:   0% (1/4440)   [Kremote: Compressing objects:   1% (45/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:   2% (89/4440)   [Kremote: Compressing objects:   3% (134/4440)   [Kremote: Compressing objects:   4% (178/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:   5% (222/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:   6% (267/4440)   [Kremote: Compressing objects:   7% (311/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:   8% (356/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:   9% (400/4440)   [Kremote: Compressing objects:  10% (444/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  11% (489/4440)   [Kremote: Compressing objects:  12% (533/4440)   [Kremote: Compressing objects:  13% (578/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  14% (622/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  15% (666/4440)   [Kremote: Compressing objects:  16% (711/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  17% (755/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  18% (800/4440)   [Kremote: Compressing objects:  19% (844/4440)   [Kremote: Compressing objects:  20% (888/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  21% (933/4440)   [Kremote: Compressing objects:  22% (977/4440)   [Kremote: Compressing objects:  23% (1022/4440)   [Kremote: Compressing objects:  24% (1066/4440)   [Kremote: Compressing objects:  25% (1110/4440)   [Kremote: Compressing objects:  26% (1155/4440)   [Kremote: Compressing objects:  27% (1199/4440)   [Kremote: Compressing objects:  28% (1244/4440)   [Kremote: Compressing objects:  29% (1288/4440)   [Kremote: Compressing objects:  30% (1332/4440)   [Kremote: Compressing objects:  31% (1377/4440)   [Kremote: Compressing objects:  32% (1421/4440)   [Kremote: Compressing objects:  33% (1466/4440)   [Kremote: Compressing objects:  34% (1510/4440)   [Kremote: Compressing objects:  35% (1554/4440)   [Kremote: Compressing objects:  36% (1599/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  37% (1643/4440)   [Kremote: Compressing objects:  38% (1688/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  39% (1732/4440)   [Kremote: Compressing objects:  40% (1776/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  41% (1821/4440)   [Kremote: Compressing objects:  42% (1865/4440)   [Kremote: Compressing objects:  43% (1910/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  44% (1954/4440)   [Kremote: Compressing objects:  45% (1998/4440)   [Kremote: Compressing objects:  46% (2043/4440)   [Kremote: Compressing objects:  47% (2087/4440)   [Kremote: Compressing objects:  48% (2132/4440)   [Kremote: Compressing objects:  49% (2176/4440)   [Kremote: Compressing objects:  50% (2220/4440)   [Kremote: Compressing objects:  51% (2265/4440)   [Kremote: Compressing objects:  52% (2309/4440)   [Kremote: Compressing objects:  53% (2354/4440)   [Kremote: Compressing objects:  54% (2398/4440)   [Kremote: Compressing objects:  55% (2442/4440)   [Kremote: Compressing objects:  56% (2487/4440)   [Kremote: Compressing objects:  57% (2531/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  58% (2576/4440)   [Kremote: Compressing objects:  59% (2620/4440)   [Kremote: Compressing objects:  60% (2664/4440)   [Kremote: Compressing objects:  61% (2709/4440)   [Kremote: Compressing objects:  62% (2753/4440)   [Kremote: Compressing objects:  63% (2798/4440)   [Kremote: Compressing objects:  64% (2842/4440)   [Kremote: Compressing objects:  65% (2886/4440)   [Kremote: Compressing objects:  66% (2931/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  67% (2975/4440)   [Kremote: Compressing objects:  68% (3020/4440)   [Kremote: Compressing objects:  69% (3064/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  70% (3108/4440)   [Kremote: Compressing objects:  71% (3153/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  72% (3197/4440)   [Kremote: Compressing objects:  73% (3242/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  74% (3286/4440)   [Kremote: Compressing objects:  75% (3330/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  76% (3375/4440)   [Kremote: Compressing objects:  77% (3419/4440)   [Kremote: Compressing objects:  78% (3464/4440)   [Kremote: Compressing objects:  79% (3508/4440)   [Kremote: Compressing objects:  80% (3552/4440)   [Kremote: Compressing objects:  81% (3597/4440)   [Kremote: Compressing objects:  82% (3641/4440)   [Kremote: Compressing objects:  83% (3686/4440)   [Kremote: Compressing objects:  84% (3730/4440)   [Kremote: Compressing objects:  85% (3774/4440)   [Kremote: Compressing objects:  86% (3819/4440)   [Kremote: Compressing objects:  87% (3863/4440)   [Kremote: Compressing objects:  88% (3908/4440)   [Kremote: Compressing objects:  89% (3952/4440)   [Kremote: Compressing objects:  90% (3996/4440)   [Kremote: Compressing objects:  91% (4041/4440)   [Kremote: Compressing objects:  92% (4085/4440)   [Kremote: Compressing objects:  93% (4130/4440)   [Kremote: Compressing objects:  94% (4174/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  95% (4218/4440)   [Kremote: Compressing objects:  96% (4263/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  97% (4307/4440)   [Kremote: Compressing objects:  98% (4352/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects:  99% (4396/4440)   [Kremote: Compressing objects: 100% (4440/4440)   [K
+ DEBUG [4ad250dc] 	remote: Compressing objects: 100% (4440/4440), done.[K
+ DEBUG [4ad250dc] 	Receiving objects:   0% (1/6537)   
+ DEBUG [4ad250dc] 	Receiving objects:   0% (10/6537), 820.00 KiB | 763.00 KiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   0% (10/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   1% (66/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   2% (131/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   3% (197/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   4% (262/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   5% (327/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   6% (393/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   7% (458/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   8% (523/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:   9% (589/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  10% (654/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  11% (720/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  12% (785/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  13% (850/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  14% (916/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  15% (981/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  16% (1046/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  17% (1112/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  18% (1177/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  19% (1243/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  20% (1308/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  21% (1373/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  22% (1439/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  23% (1504/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  24% (1569/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  25% (1635/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  26% (1700/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  27% (1765/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  28% (1831/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  29% (1896/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  30% (1962/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  31% (2027/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  32% (2092/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  33% (2158/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  34% (2223/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  35% (2288/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  36% (2354/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  37% (2419/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  38% (2485/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  39% (2550/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  40% (2615/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  41% (2681/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  42% (2746/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  43% (2811/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  44% (2877/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  45% (2942/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  46% (3008/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  47% (3073/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  48% (3138/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  49% (3204/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  50% (3269/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  51% (3334/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  52% (3400/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  53% (3465/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  54% (3530/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  55% (3596/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  56% (3661/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  57% (3727/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  58% (3792/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  59% (3857/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  60% (3923/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  61% (3988/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  62% (4053/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  63% (4119/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  64% (4184/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  65% (4250/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  66% (4315/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  67% (4380/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  68% (4446/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  69% (4511/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  70% (4576/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  71% (4642/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  72% (4707/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  73% (4773/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  74% (4838/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  75% (4903/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  76% (4969/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  77% (5034/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  78% (5099/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  79% (5165/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  80% (5230/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  81% (5295/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  82% (5361/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  83% (5426/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  84% (5492/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  85% (5557/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  86% (5622/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  87% (5688/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  88% (5753/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  89% (5818/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  90% (5884/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  91% (5949/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  92% (6015/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  93% (6080/6537), 6.68 MiB | 3.12 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  94% (6145/6537), 10.68 MiB | 3.99 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  95% (6211/6537), 10.68 MiB | 3.99 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  96% (6276/6537), 10.68 MiB | 3.99 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  97% (6341/6537), 10.68 MiB | 3.99 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  98% (6407/6537), 10.68 MiB | 3.99 MiB/s   
+ DEBUG [4ad250dc] 	Receiving objects:  99% (6472/6537), 10.68 MiB | 3.99 MiB/s   
+ DEBUG [4ad250dc] 	remote: Total 6537 (delta 1094), reused 6535 (delta 1092), pack-reused 0[K
+ DEBUG [4ad250dc] 	Receiving objects: 100% (6537/6537), 10.68 MiB | 3.99 MiB/s   Receiving objects: 100% (6537/6537), 11.06 MiB | 3.99 MiB/s, done.
+ DEBUG [4ad250dc] 	Resolving deltas:   0% (0/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   1% (12/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   2% (22/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   3% (35/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   4% (45/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   5% (59/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   8% (92/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:   9% (100/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  13% (148/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  22% (242/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  23% (253/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  24% (263/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  26% (291/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  27% (300/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  28% (311/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  29% (324/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  32% (351/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  34% (372/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  36% (399/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  38% (416/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  40% (440/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  41% (450/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  43% (473/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  44% (482/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  45% (493/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  46% (507/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  47% (519/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  49% (538/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  51% (565/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  52% (569/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  55% (602/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  56% (618/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  57% (632/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  59% (647/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  60% (660/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  61% (669/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  62% (680/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  63% (691/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  64% (701/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  65% (714/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  66% (728/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  67% (734/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  68% (747/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  69% (765/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  70% (766/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  71% (778/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  72% (790/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  73% (799/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  74% (812/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  75% (821/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  76% (832/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  77% (843/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  78% (855/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  79% (865/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  80% (877/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  81% (887/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  82% (898/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  83% (909/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  84% (919/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  85% (930/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  86% (941/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  87% (952/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  88% (963/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  89% (976/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  90% (985/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  91% (997/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  92% (1007/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  93% (1018/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  94% (1029/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  95% (1040/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  96% (1051/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  97% (1062/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  98% (1073/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas:  99% (1084/1094)   
+ DEBUG [4ad250dc] 	Resolving deltas: 100% (1094/1094)   Resolving deltas: 100% (1094/1094), completed with 154 local objects.
+ DEBUG [4ad250dc] 	From github.com:maheshahir/cb_krammar
+   fc9bc97..3e4427d  master     -> master
+  INFO [4ad250dc] Finished in 8.374 seconds with exit status 0 (successful).
+ DEBUG [34726bb9] Running if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [34726bb9] Command: if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi
+ DEBUG [e009c3c2] Finished in 0.204 seconds with exit status 0 (successful).
+  INFO [85073605] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929135532 as deployer@35.200.189.171
+ DEBUG [85073605] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929135532 )
+  INFO [d28c57ac] Finished in 0.352 seconds with exit status 0 (successful).
+  INFO [fe17c33a] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/chaturbots/releases/20180929135532 as deployer@35.200.189.171
+ DEBUG [fe17c33a] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/chaturbots/releases/20180929135532 )
+  INFO [56a1ea11] Finished in 1.485 seconds with exit status 0 (successful).
+ DEBUG [dbf35b43] Running if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [dbf35b43] Command: if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi
+ DEBUG [75844bb5] Finished in 0.330 seconds with exit status 0 (successful).
+ DEBUG [ec23e41a] Running /usr/bin/env git rev-list --max-count=1 master as deployer@35.200.189.171
+ DEBUG [ec23e41a] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [a7004c41] 	3e4427d9e2d174768bcdd2cb4c81be9063c7539d
+ DEBUG [a7004c41] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [e0aced44] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929135532; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929135532'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [e0aced44] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929135532; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929135532'" 1>&2; false; fi
+ DEBUG [f4302cce] Finished in 0.296 seconds with exit status 0 (successful).
+  INFO [cfd4904c] Running /usr/bin/env echo "3e4427d9e2d174768bcdd2cb4c81be9063c7539d" > REVISION as deployer@35.200.189.171
+ DEBUG [cfd4904c] Command: cd /home/deployer/apps/chaturbots/releases/20180929135532 && /usr/bin/env echo "3e4427d9e2d174768bcdd2cb4c81be9063c7539d" > REVISION
+  INFO [0e97bf41] Finished in 0.221 seconds with exit status 0 (successful).
+  INFO [dc15d20b] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929135532/config as deployer@35.200.189.171
+ DEBUG [dc15d20b] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929135532/config
+  INFO [4c9d3f98] Finished in 0.247 seconds with exit status 0 (successful).
+ DEBUG [04e2b73e] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml ] as deployer@35.200.189.171
+ DEBUG [04e2b73e] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml ]
+ DEBUG [a5072d3b] Finished in 0.223 seconds with exit status 1 (failed).
+ DEBUG [028c3755] Running [ -f /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml ] as deployer@35.200.189.171
+ DEBUG [028c3755] Command: [ -f /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml ]
+ DEBUG [43c783de] Finished in 0.243 seconds with exit status 0 (successful).
+  INFO [907bdfdb] Running /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml as deployer@35.200.189.171
+ DEBUG [907bdfdb] Command: /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml
+  INFO [c2467b8b] Finished in 0.221 seconds with exit status 0 (successful).
+  INFO [7ae0b571] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/database.yml /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml as deployer@35.200.189.171
+ DEBUG [7ae0b571] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/database.yml /home/deployer/apps/chaturbots/releases/20180929135532/config/database.yml
+  INFO [b337b46e] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [a6772a0d] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml ] as deployer@35.200.189.171
+ DEBUG [a6772a0d] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml ]
+ DEBUG [e83049c6] Finished in 0.219 seconds with exit status 1 (failed).
+ DEBUG [fdca0c8f] Running [ -f /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml ] as deployer@35.200.189.171
+ DEBUG [fdca0c8f] Command: [ -f /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml ]
+ DEBUG [d98e92d9] Finished in 0.219 seconds with exit status 0 (successful).
+  INFO [9963d9f1] Running /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml as deployer@35.200.189.171
+ DEBUG [9963d9f1] Command: /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml
+  INFO [2a3f610b] Finished in 0.220 seconds with exit status 0 (successful).
+  INFO [96ee5835] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/secrets.yml /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml as deployer@35.200.189.171
+ DEBUG [96ee5835] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/secrets.yml /home/deployer/apps/chaturbots/releases/20180929135532/config/secrets.yml
+  INFO [e9fa3a01] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [e4b8529b] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [e4b8529b] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb ]
+ DEBUG [381ecfc8] Finished in 0.217 seconds with exit status 1 (failed).
+ DEBUG [e716dd1c] Running [ -f /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [e716dd1c] Command: [ -f /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb ]
+ DEBUG [206678f2] Finished in 0.238 seconds with exit status 0 (successful).
+  INFO [ecf76234] Running /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb as deployer@35.200.189.171
+ DEBUG [ecf76234] Command: /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb
+  INFO [8909bbb0] Finished in 0.222 seconds with exit status 0 (successful).
+  INFO [646e3a54] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/puma.rb /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb as deployer@35.200.189.171
+ DEBUG [646e3a54] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/puma.rb /home/deployer/apps/chaturbots/releases/20180929135532/config/puma.rb
+  INFO [6091af56] Finished in 0.245 seconds with exit status 0 (successful).
+  INFO [af07ec61] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929135532 /home/deployer/apps/chaturbots/releases/20180929135532/tmp /home/deployer/apps/chaturbots/releases/20180929135532/vendor /home/deployer/apps/chaturbots/releases/20180929135532/public as deployer@35.200.189.171
+ DEBUG [af07ec61] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929135532 /home/deployer/apps/chaturbots/releases/20180929135532/tmp /home/deployer/apps/chaturbots/releases/20180929135532/vendor /home/deployer/apps/chaturbots/releases/20180929135532/public
+  INFO [ca15839d] Finished in 0.220 seconds with exit status 0 (successful).
+ DEBUG [cf05417c] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/log ] as deployer@35.200.189.171
+ DEBUG [cf05417c] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/log ]
+ DEBUG [4f6b2aea] Finished in 0.257 seconds with exit status 1 (failed).
+ DEBUG [e74c9983] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/log ] as deployer@35.200.189.171
+ DEBUG [e74c9983] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/log ]
+ DEBUG [05a6407b] Finished in 0.307 seconds with exit status 0 (successful).
+  INFO [a0811b3e] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929135532/log as deployer@35.200.189.171
+ DEBUG [a0811b3e] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929135532/log
+  INFO [634b63a9] Finished in 0.535 seconds with exit status 0 (successful).
+  INFO [02e195b3] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/releases/20180929135532/log as deployer@35.200.189.171
+ DEBUG [02e195b3] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/releases/20180929135532/log
+  INFO [fe502e7d] Finished in 0.215 seconds with exit status 0 (successful).
+ DEBUG [f7182c21] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids ] as deployer@35.200.189.171
+ DEBUG [f7182c21] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids ]
+ DEBUG [c83df850] Finished in 0.218 seconds with exit status 1 (failed).
+ DEBUG [51dc367b] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids ] as deployer@35.200.189.171
+ DEBUG [51dc367b] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids ]
+ DEBUG [8998eeb5] Finished in 0.229 seconds with exit status 0 (successful).
+  INFO [e0fadbdf] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids as deployer@35.200.189.171
+ DEBUG [e0fadbdf] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids
+  INFO [c5c80133] Finished in 0.228 seconds with exit status 0 (successful).
+  INFO [01f2b36c] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids as deployer@35.200.189.171
+ DEBUG [01f2b36c] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/releases/20180929135532/tmp/pids
+  INFO [4351a561] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [0e1dafbc] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/tmp/cache ] as deployer@35.200.189.171
+ DEBUG [0e1dafbc] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/tmp/cache ]
+ DEBUG [f29d99ca] Finished in 0.219 seconds with exit status 1 (failed).
+ DEBUG [268d9c8d] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/tmp/cache ] as deployer@35.200.189.171
+ DEBUG [268d9c8d] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/tmp/cache ]
+ DEBUG [9c0ad0a5] Finished in 0.236 seconds with exit status 1 (failed).
+  INFO [f5f90e76] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/releases/20180929135532/tmp/cache as deployer@35.200.189.171
+ DEBUG [f5f90e76] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/releases/20180929135532/tmp/cache
+  INFO [6ae6bf5e] Finished in 0.223 seconds with exit status 0 (successful).
+ DEBUG [b3ffd4f4] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/tmp/sockets ] as deployer@35.200.189.171
+ DEBUG [b3ffd4f4] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/tmp/sockets ]
+ DEBUG [abedfd6c] Finished in 0.254 seconds with exit status 1 (failed).
+ DEBUG [c55b2be9] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/tmp/sockets ] as deployer@35.200.189.171
+ DEBUG [c55b2be9] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/tmp/sockets ]
+ DEBUG [9b386c04] Finished in 0.224 seconds with exit status 1 (failed).
+  INFO [6acdaa4e] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/releases/20180929135532/tmp/sockets as deployer@35.200.189.171
+ DEBUG [6acdaa4e] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/releases/20180929135532/tmp/sockets
+  INFO [a48c15d7] Finished in 0.236 seconds with exit status 0 (successful).
+ DEBUG [45df3488] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/vendor/bundle ] as deployer@35.200.189.171
+ DEBUG [45df3488] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/vendor/bundle ]
+ DEBUG [a9a93056] Finished in 0.221 seconds with exit status 1 (failed).
+ DEBUG [1c1913f6] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/vendor/bundle ] as deployer@35.200.189.171
+ DEBUG [1c1913f6] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/vendor/bundle ]
+ DEBUG [9b0a6f7d] Finished in 0.229 seconds with exit status 1 (failed).
+  INFO [012b76d3] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/releases/20180929135532/vendor/bundle as deployer@35.200.189.171
+ DEBUG [012b76d3] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/releases/20180929135532/vendor/bundle
+  INFO [5e2611ba] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [344d6ba4] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/public/system ] as deployer@35.200.189.171
+ DEBUG [344d6ba4] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/public/system ]
+ DEBUG [cbcebf28] Finished in 0.251 seconds with exit status 1 (failed).
+ DEBUG [cff8583b] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/public/system ] as deployer@35.200.189.171
+ DEBUG [cff8583b] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/public/system ]
+ DEBUG [47ed905b] Finished in 0.220 seconds with exit status 1 (failed).
+  INFO [78f63645] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/releases/20180929135532/public/system as deployer@35.200.189.171
+ DEBUG [78f63645] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/releases/20180929135532/public/system
+  INFO [c0c3bc6c] Finished in 0.222 seconds with exit status 0 (successful).
+ DEBUG [412a6589] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/public/uploads ] as deployer@35.200.189.171
+ DEBUG [412a6589] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/public/uploads ]
+ DEBUG [726f9a93] Finished in 0.215 seconds with exit status 1 (failed).
+ DEBUG [128fa9f8] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/public/uploads ] as deployer@35.200.189.171
+ DEBUG [128fa9f8] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/public/uploads ]
+ DEBUG [60775e9a] Finished in 0.230 seconds with exit status 1 (failed).
+  INFO [aaa9db2a] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/releases/20180929135532/public/uploads as deployer@35.200.189.171
+ DEBUG [aaa9db2a] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/releases/20180929135532/public/uploads
+  INFO [c64fd04e] Finished in 0.221 seconds with exit status 0 (successful).
+ DEBUG [fead8d5f] Running [ -L /home/deployer/apps/chaturbots/releases/20180929135532/public/assets ] as deployer@35.200.189.171
+ DEBUG [fead8d5f] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929135532/public/assets ]
+ DEBUG [5914611a] Finished in 0.232 seconds with exit status 1 (failed).
+ DEBUG [6699fd8f] Running [ -d /home/deployer/apps/chaturbots/releases/20180929135532/public/assets ] as deployer@35.200.189.171
+ DEBUG [6699fd8f] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929135532/public/assets ]
+ DEBUG [b4d49124] Finished in 0.223 seconds with exit status 0 (successful).
+  INFO [14f3cac0] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929135532/public/assets as deployer@35.200.189.171
+ DEBUG [14f3cac0] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929135532/public/assets
+  INFO [adadf8e7] Finished in 0.226 seconds with exit status 0 (successful).
+  INFO [95e4597e] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/assets /home/deployer/apps/chaturbots/releases/20180929135532/public/assets as deployer@35.200.189.171
+ DEBUG [95e4597e] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/assets /home/deployer/apps/chaturbots/releases/20180929135532/public/assets
+  INFO [45f6ec6a] Finished in 0.262 seconds with exit status 0 (successful).
+ DEBUG [869dfb06] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929135532; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929135532'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [869dfb06] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929135532; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929135532'" 1>&2; false; fi
+ DEBUG [10a74080] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [4dbe398b] Running ~/.rvm/bin/rvm default do bundle check --path /home/deployer/apps/chaturbots/shared/bundle as deployer@35.200.189.171
+ DEBUG [4dbe398b] Command: cd /home/deployer/apps/chaturbots/releases/20180929135532 && ~/.rvm/bin/rvm default do bundle check --path /home/deployer/apps/chaturbots/shared/bundle
+ DEBUG [e1719d71] 	[31mThe following gems are missing[0m
+[31m * net-ssh (5.0.2)[0m
+[31m * net-scp (1.2.1)[0m
+ DEBUG [e1719d71] 	[31m * sshkit (1.17.0)[0m
+ DEBUG [e1719d71] 	[31m * airbrussh (1.3.0)[0m
+[31m * ast (2.4.0)[0m
+ DEBUG [e1719d71] 	[31m * debug_inspector (0.0.3)[0m
+ DEBUG [e1719d71] 	[31m * binding_of_caller (0.8.0)[0m
+ DEBUG [e1719d71] 	[31m * byebug (10.0.2)[0m
+ DEBUG [e1719d71] 	[31m * capistrano (3.11.0)[0m
+ DEBUG [e1719d71] 	[31m * capistrano-bundler (1.3.0)[0m
+ DEBUG [e1719d71] 	[31m * capistrano-nginx (1.0.0)[0m
+ DEBUG [e1719d71] 	[31m * capistrano-rails (1.4.0)[0m
+ DEBUG [e1719d71] 	[31m * sshkit-interactive (0.3.0)[0m
+ DEBUG [e1719d71] 	[31m * capistrano-rails-console (2.3.0)[0m
+[31m * capistrano-rails-db (0.0.2)[0m
+ DEBUG [e1719d71] 	[31m * capistrano-rvm (0.1.2)[0m
+ DEBUG [e1719d71] 	[31m * capistrano-upload-config (0.8.2)[0m
+ DEBUG [e1719d71] 	[31m * capistrano3-puma (3.1.1)[0m
+ DEBUG [e1719d71] 	[31m * childprocess (0.9.0)[0m
+ DEBUG [e1719d71] 	[31m * codemirror-rails (5.16.0)[0m
+ DEBUG [e1719d71] 	[31m * coderay (1.1.2)[0m
+ DEBUG [e1719d71] 	[31m * coffeelint (1.16.1)[0m
+ DEBUG [e1719d71] 	[31m * country-select (1.1.1)[0m
+ DEBUG [e1719d71] 	[31m * docile (1.1.5)[0m
+ DEBUG [e1719d71] 	[31m * simplecov-html (0.10.2)[0m
+ DEBUG [e1719d71] 	[31m * simplecov (0.15.1)[0m
+ DEBUG [e1719d71] 	[31m * tins (1.15.1)[0m
+ DEBUG [e1719d71] 	[31m * term-ansicolor (1.6.0)[0m
+ DEBUG [e1719d71] 	[31m * coveralls (0.7.1)[0m
+ DEBUG [e1719d71] 	[31m * safe_yaml (1.0.4)[0m
+ DEBUG [e1719d71] 	[31m * crack (0.4.3)[0m
+ DEBUG [e1719d71] 	[31m * diff-lcs (1.3)[0m
+ DEBUG [e1719d71] 	[31m * factory_bot (4.8.2)[0m
+ DEBUG [e1719d71] 	[31m * factory_bot_rails (4.8.2)[0m
+ DEBUG [e1719d71] 	[31m * faraday-http-cache (2.0.0)[0m
+ DEBUG [e1719d71] 	[31m * formatador (0.2.5)[0m
+ DEBUG [e1719d71] 	[31m * sawyer (0.8.1)[0m
+ DEBUG [e1719d71] 	[31m * octokit (4.7.0)[0m
+ DEBUG [e1719d71] 	[31m * rainbow (3.0.0)[0m
+ DEBUG [e1719d71] 	[31m * retriable (2.1.0)[0m
+ DEBUG [e1719d71] 	[31m * github_changelog_generator (1.14.3)[0m
+ DEBUG [e1719d71] 	[31m * ruby_dep (1.5.0)[0m
+ DEBUG [e1719d71] 	[31m * listen (3.1.5)[0m
+ DEBUG [e1719d71] 	[31m * lumberjack (1.0.12)[0m
+ DEBUG [e1719d71] 	[31m * nenv (0.3.0)[0m
+ DEBUG [e1719d71] 	[31m * shellany (0.0.1)[0m
+ DEBUG [e1719d71] 	[31m * notiffany (0.1.1)[0m
+ DEBUG [e1719d71] 	[31m * pry (0.11.3)[0m
+ DEBUG [e1719d71] 	[31m * guard (2.14.1)[0m
+ DEBUG [e1719d71] 	[31m * guard-compat (1.2.1)[0m
+ DEBUG [e1719d71] 	[31m * guard-livereload (2.5.2)[0m
+ DEBUG [e1719d71] 	[31m * guard-symlink (0.1.1)[0m
+ DEBUG [e1719d71] 	[31m * hashdiff (0.3.7)[0m
+ DEBUG [e1719d71] 	[31m * interception (0.5)[0m
+ DEBUG [e1719d71] 	[31m * kaminari-core (1.1.1)[0m
+ DEBUG [e1719d71] 	[31m * kaminari-actionview (1.1.1)[0m
+ DEBUG [e1719d71] 	[31m * kaminari-activerecord (1.1.1)[0m
+ DEBUG [e1719d71] 	[31m * kaminari (1.1.1)[0m
+ DEBUG [e1719d71] 	[31m * parallel (1.12.1)[0m
+ DEBUG [e1719d71] 	[31m * parser (2.5.0.5)[0m
+ DEBUG [e1719d71] 	[31m * pluginator (1.5.0)[0m
+ DEBUG [e1719d71] 	[31m * power_assert (1.1.1)[0m
+ DEBUG [e1719d71] 	[31m * powerpack (0.1.1)[0m
+ DEBUG [e1719d71] 	[31m * pre-commit (0.37.0)[0m
+ DEBUG [e1719d71] 	[31m * pry-rails (0.3.6)[0m
+ DEBUG [e1719d71] 	[31m * slop (3.6.0)[0m
+ DEBUG [e1719d71] 	[31m * pry-remote (0.1.8)[0m
+ DEBUG [e1719d71] 	[31m * pry-rescue (1.4.5)[0m
+ DEBUG [e1719d71] 	[31m * pry-stack_explorer (0.4.9.2)[0m
+ DEBUG [e1719d71] 	[31m * rack-livereload (0.3.16)[0m
+ DEBUG [e1719d71] 	[31m * ransack (2.0.1)[0m
+ DEBUG [e1719d71] 	[31m * simple_form (4.0.1)[0m
+ DEBUG [e1719d71] 	[31m * unicode-display_width (1.3.0)[0m
+ DEBUG [e1719d71] 	[31m * terminal-table (1.8.0)[0m
+ DEBUG [e1719d71] 	[31m * rails_db (2.0.3)[0m
+ DEBUG [e1719d71] 	[31m * rspec-support (3.7.0)[0m
+ DEBUG [e1719d71] 	[31m * rspec-core (3.7.0)[0m
+ DEBUG [e1719d71] 	[31m * rspec-expectations (3.7.0)[0m
+ DEBUG [e1719d71] 	[31m * rspec-mocks (3.7.0)[0m
+ DEBUG [e1719d71] 	[31m * rspec-rails (3.7.2)[0m
+ DEBUG [e1719d71] 	[31m * ruby-progressbar (1.9.0)[0m
+ DEBUG [e1719d71] 	[31m * rubocop (0.54.0)[0m
+ DEBUG [e1719d71] 	[31m * rubyzip (1.2.1)[0m
+ DEBUG [e1719d71] 	[31m * selenium-webdriver (3.13.1)[0m
+ DEBUG [e1719d71] 	[31m * simplecov-rcov (0.2.3)[0m
+ DEBUG [e1719d71] 	[31m * sqlite3 (1.3.13)[0m
+ DEBUG [e1719d71] 	[31m * sshkit-sudo (0.1.0)[0m
+ DEBUG [e1719d71] 	[31m * test-unit (3.2.6)[0m
+ DEBUG [e1719d71] 	[31m * webmock (3.1.1)[0m
+ DEBUG [e1719d71] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [e1719d71] Finished in 1.157 seconds with exit status 1 (failed).
+  INFO [cebef199] Running ~/.rvm/bin/rvm default do bundle install --path /home/deployer/apps/chaturbots/shared/bundle --without development test --deployment --quiet as deployer@35.200.189.171
+ DEBUG [cebef199] Command: cd /home/deployer/apps/chaturbots/releases/20180929135532 && ~/.rvm/bin/rvm default do bundle install --path /home/deployer/apps/chaturbots/shared/bundle --without development test --deployment --quiet
+  INFO [9b9d2e19] Finished in 3.415 seconds with exit status 0 (successful).
+ DEBUG [e3e7a4b1] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929135532; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929135532'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [e3e7a4b1] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929135532; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929135532'" 1>&2; false; fi
+ DEBUG [808e81ae] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [80779ed1] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as deployer@35.200.189.171
+ DEBUG [80779ed1] Command: cd /home/deployer/apps/chaturbots/releases/20180929135532 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [b4d92dea] 	rake aborted!
+Errno::ENOENT: No such file or directory @ rb_sysopen - /home/deployer/apps/chaturbots/releases/20180929135532/public/assets/images/3c676fadbec096b76f0fdcb407b4dce3.png
+ DEBUG [b4d92dea] 	/home/deployer/apps/chaturbots/releases/20180929135532/lib/static_assets.rb:171:in `initialize'
+/home/deployer/apps/chaturbots/releases/20180929135532/lib/static_assets.rb:171:in `open'
+/home/deployer/apps/chaturbots/releases/20180929135532/lib/static_assets.rb:171:in `sync'
+/home/deployer/apps/chaturbots/releases/20180929135532/config/initializers/logo.rb:4:in `<top (required)>'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:286:in `load'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:286:in `block in load'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:258:in `load_dependency'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:286:in `load'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/engine.rb:655:in `block in load_config_initializer'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/notifications.rb:168:in `instrument'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/engine.rb:654:in `load_config_initializer'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/engine.rb:612:in `block (2 levels) in <class:Engine>'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/engine.rb:611:in `each'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/engine.rb:611:in `block in <class:Engine>'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/initializable.rb:30:in `instance_exec'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/initializable.rb:30:in `run'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/initializable.rb:59:in `block in run_initializers'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/initializable.rb:48:in `each'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/initializable.rb:48:in `tsort_each_child'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/initializable.rb:58:in `run_initializers'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/application.rb:353:in `initialize!'
+/home/deployer/apps/chaturbots/releases/20180929135532/config/environment.rb:5:in `<top (required)>'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:292:in `require'
+ DEBUG [b4d92dea] 	/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:292:in `block in require'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:258:in `load_dependency'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/activesupport-5.1.5/lib/active_support/dependencies.rb:292:in `require'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/application.rb:329:in `require_environment!'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/railties-5.1.5/lib/rails/application.rb:445:in `block in run_tasks_blocks'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/home/deployer/apps/chaturbots/shared/bundle/ruby/2.4.0/gems/rake-12.3.1/exe/rake:27:in `<top (required)>'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/cli/exec.rb:74:in `load'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/cli/exec.rb:74:in `kernel_load'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/cli/exec.rb:28:in `run'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/cli.rb:424:in `exec'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/cli.rb:27:in `dispatch'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/cli.rb:18:in `start'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/exe/bundle:30:in `block in <top (required)>'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+/home/deployer/.rvm/gems/ruby-2.4.4/gems/bundler-1.16.4/exe/bundle:22:in `<top (required)>'
+/home/deployer/.rvm/gems/ruby-2.4.4/bin/bundle:23:in `load'
+/home/deployer/.rvm/gems/ruby-2.4.4/bin/bundle:23:in `<main>'
+/home/deployer/.rvm/gems/ruby-2.4.4/bin/ruby_executable_hooks:15:in `eval'
+/home/deployer/.rvm/gems/ruby-2.4.4/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [b4d92dea] 	Tasks: TOP => environment
+(See full trace by running task with --trace)
