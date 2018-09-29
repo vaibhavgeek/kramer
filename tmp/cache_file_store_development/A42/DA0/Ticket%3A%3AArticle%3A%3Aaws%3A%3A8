@@ -1,11 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"ticket_id;Ti	I"type_id;TiI"sender_id;TiI"	from;TI"0"Vaibhav Maheshwari" <thelogoweb@gmail.com>;TI"to;TI"nicole.braun@zammad.org;TI"cc;T0I"subject;TI",Thanks for your inquiry (Test Ticket! );TI"reply_to;T0I"message_id;TI"'<20180904112624.4.71143@localhost>;TI"message_id_md5;TI"%0f526475dc20b5484167ca2ade650caa;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"f<div>Your request <b>(Ticket#25004)</b> has been received and will be reviewed by our support staff.</div>
-<br>
-<div>To provide additional information, please reply to this email or click on the following link (for initial login, please request a new password):
-<a href="http://localhost/#ticket/zoom/4" rel="nofollow noreferrer noopener" target="_blank">http://localhost/#ticket/zoom/4</a>
-</div>
-<br>
-<div>Your ChaturBots HelpDesk Team</div>
-<br>
-<div><i><a href="https://zammad.com" rel="nofollow noreferrer noopener" title="https://zammad.com" target="_blank">Zammad</a>, your customer support system</i></div>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"perform_origin;TI"trigger;TI"email_address_id;TiI"delivery_retry;TiI"delivery_channel_id;TiI"delivery_status_message;T0I"delivery_status;TI"success;TI"delivery_status_date;TU: ActiveSupport::TimeWithZone[Iu:	Timeì À4MÑQ	:	zoneI"UTC;F:nano_numiØ:nano_deni:submicro"G I"Etc/UTC;T@-I"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU;	[Iu;
-‹ À‹i;I"UTC;FI"UTC;T@6I"updated_at;TU;	[Iu;
-ì ÀðOÑQ;I"UTC;F@7@<:@created_atf1536331750.0931807:@expires_inf6.048e5

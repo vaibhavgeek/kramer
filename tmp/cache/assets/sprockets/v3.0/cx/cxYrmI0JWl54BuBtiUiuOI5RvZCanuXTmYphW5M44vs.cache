@@ -1,0 +1,44 @@
+I",(function() {
+  var Index,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Index = (function(superClass) {
+    extend(Index, superClass);
+
+    function Index() {
+      this.clues = bind(this.clues, this);
+      Index.__super__.constructor.apply(this, arguments);
+      this.navupdate('#', true);
+      this.clues();
+    }
+
+    Index.prototype.clues = function() {
+      return new App.FirstStepsClues({
+        el: this.el,
+        onComplete: (function(_this) {
+          return function() {
+            App.Ajax.request({
+              id: 'preferences',
+              type: 'PUT',
+              url: _this.apiPath + "/users/preferences",
+              data: JSON.stringify({
+                intro: true
+              }),
+              processData: true
+            });
+            return _this.navigate('#');
+          };
+        })(this)
+      });
+    };
+
+    return Index;
+
+  })(App.Controller);
+
+  App.Config.set('clues', Index, 'Routes');
+
+}).call(this);
+:ET

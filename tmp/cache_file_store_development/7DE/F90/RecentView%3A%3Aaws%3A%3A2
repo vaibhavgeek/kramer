@@ -1,2 +1,2 @@
 o: ActiveSupport::Cache::Entry:@value{
-I"id:ETiI"recent_view_object_id;TiI"	o_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeP†¿‰Ji0:	zoneI"UTC;FI"UTC;T@:@created_atf1535904727.732022:@expires_inf6.048e5
+I"id:ETiI"recent_view_object_id;TiI"	o_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time≠£¿:Ñv:	zoneI"UTC;FI"UTC;T@:@created_atf1538227774.8348594:@expires_inf6.048e5

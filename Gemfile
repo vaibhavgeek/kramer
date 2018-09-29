@@ -118,7 +118,7 @@ gem 'viewpoint'
 # Gems used only for develop/test and not required
 # in production environments by default.
 group :development, :test do
-
+  gem 'country-select'
   # debugging
   gem 'rails_db'
   gem 'byebug'

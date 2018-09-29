@@ -7447,3 +7447,530 @@ remote: Compressing objects:  33% (1/3)   [Kremote: Compressing objects:  66% 
  DEBUG [be142b17] 	[sudo] password for deployer: 
  DEBUG [be142b17] 	
   INFO [be142b17] Finished in 5.559 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-09-29 15:56:19 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [17bc0fe2] Running [ -d ~/.rvm ] as deployer@35.200.189.171
+ DEBUG [17bc0fe2] Command: [ -d ~/.rvm ]
+ DEBUG [1a1c6e12] Finished in 5.015 seconds with exit status 0 (successful).
+ DEBUG [2296bd21] Running ~/.rvm/bin/rvm version as deployer@35.200.189.171
+ DEBUG [2296bd21] Command: ~/.rvm/bin/rvm version
+ DEBUG [2b83b6ef] 	rvm 1.29.4 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [2b83b6ef] Finished in 0.852 seconds with exit status 0 (successful).
+ DEBUG [b654b881] Running ~/.rvm/bin/rvm current as deployer@35.200.189.171
+ DEBUG [b654b881] Command: ~/.rvm/bin/rvm current
+ DEBUG [0885622e] 	ruby-2.4.4
+ DEBUG [0885622e] Finished in 0.818 seconds with exit status 0 (successful).
+ DEBUG [587c6745] Running ~/.rvm/bin/rvm default do ruby --version as deployer@35.200.189.171
+ DEBUG [587c6745] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [f488ca3d] 	ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+ DEBUG [f488ca3d] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [a62a6ac7] Running /usr/bin/env mkdir -p /tmp as deployer@35.200.189.171
+ DEBUG [a62a6ac7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e1f3778e] Finished in 0.391 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-chaturbots-production-vaibhav.sh 0.0%
+  INFO Uploading /tmp/git-ssh-chaturbots-production-vaibhav.sh 100.0%
+  INFO [a1a1b1ef] Running /usr/bin/env chmod 700 /tmp/git-ssh-chaturbots-production-vaibhav.sh as deployer@35.200.189.171
+ DEBUG [a1a1b1ef] Command: /usr/bin/env chmod 700 /tmp/git-ssh-chaturbots-production-vaibhav.sh
+  INFO [a21b9d6b] Finished in 0.614 seconds with exit status 0 (successful).
+  INFO [14a7ba7b] Running /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD as deployer@35.200.189.171
+ DEBUG [14a7ba7b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git ls-remote git@github.com:maheshahir/cb_krammar.git HEAD )
+ DEBUG [5eb1a46f] 	fc9bc9788d97a3994b15c4fc79b637b8004d4312	HEAD
+  INFO [5eb1a46f] Finished in 4.095 seconds with exit status 0 (successful).
+  INFO [4c5b69e3] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared /home/deployer/apps/chaturbots/releases as deployer@35.200.189.171
+ DEBUG [4c5b69e3] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared /home/deployer/apps/chaturbots/releases
+  INFO [47575916] Finished in 0.221 seconds with exit status 0 (successful).
+  INFO [1d018e7b] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/shared/public/assets as deployer@35.200.189.171
+ DEBUG [1d018e7b] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/shared/public/assets
+  INFO [2877e484] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [14864278] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/config as deployer@35.200.189.171
+ DEBUG [14864278] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/shared/config
+  INFO [c93a64fa] Finished in 0.775 seconds with exit status 0 (successful).
+ DEBUG [2d7d379e] Running if test ! -d /home/deployer/apps/chaturbots/shared; then echo "Directory does not exist '/home/deployer/apps/chaturbots/shared'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [2d7d379e] Command: if test ! -d /home/deployer/apps/chaturbots/shared; then echo "Directory does not exist '/home/deployer/apps/chaturbots/shared'" 1>&2; false; fi
+ DEBUG [62ffe946] Finished in 0.205 seconds with exit status 0 (successful).
+  INFO Uploading config ./config/database.production.yml as config/database.yml
+ DEBUG Uploading /home/deployer/apps/chaturbots/shared/config/database.yml 0.0%
+  INFO Uploading /home/deployer/apps/chaturbots/shared/config/database.yml 100.0%
+  INFO Uploading config ./config/secrets.production.yml as config/secrets.yml
+ DEBUG Uploading /home/deployer/apps/chaturbots/shared/config/secrets.yml 0.0%
+  INFO Uploading /home/deployer/apps/chaturbots/shared/config/secrets.yml 100.0%
+ DEBUG Uploading /home/deployer/apps/chaturbots/shared/config/puma.rb 0.0%
+  INFO Uploading /home/deployer/apps/chaturbots/shared/config/puma.rb 100.0%
+ DEBUG Uploading /tmp/nginx_chaturbots_production 0.0%
+  INFO Uploading /tmp/nginx_chaturbots_production 100.0%
+  INFO [2c82da49] Running /usr/bin/env sudo mv /tmp/nginx_chaturbots_production /etc/nginx/sites-available/chaturbots_production as deployer@35.200.189.171
+ DEBUG [2c82da49] Command: /usr/bin/env sudo mv /tmp/nginx_chaturbots_production /etc/nginx/sites-available/chaturbots_production
+ DEBUG [2c82da49] 	[sudo] password for deployer: 
+ DEBUG [2c82da49] 	
+  INFO [2c82da49] Finished in 4.980 seconds with exit status 0 (successful).
+  INFO [aa41231b] Running /usr/bin/env sudo ln -fs /etc/nginx/sites-available/chaturbots_production /etc/nginx/sites-enabled/chaturbots_production as deployer@35.200.189.171
+ DEBUG [aa41231b] Command: /usr/bin/env sudo ln -fs /etc/nginx/sites-available/chaturbots_production /etc/nginx/sites-enabled/chaturbots_production
+ DEBUG [aa41231b] 	[sudo] password for deployer: 
+ DEBUG [aa41231b] 	
+  INFO [aa41231b] Finished in 0.545 seconds with exit status 0 (successful).
+ DEBUG [b8cd77cf] Running [ -f /home/deployer/apps/chaturbots/shared/config/database.yml ] as deployer@35.200.189.171
+ DEBUG [b8cd77cf] Command: [ -f /home/deployer/apps/chaturbots/shared/config/database.yml ]
+ DEBUG [09508082] Finished in 0.259 seconds with exit status 0 (successful).
+ DEBUG [eab19411] Running [ -f /home/deployer/apps/chaturbots/shared/config/secrets.yml ] as deployer@35.200.189.171
+ DEBUG [eab19411] Command: [ -f /home/deployer/apps/chaturbots/shared/config/secrets.yml ]
+ DEBUG [238516e1] Finished in 0.445 seconds with exit status 0 (successful).
+ DEBUG [e22853fb] Running [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [e22853fb] Command: [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ]
+ DEBUG [7253d0ee] Finished in 0.269 seconds with exit status 0 (successful).
+ DEBUG [08c93021] Running [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [08c93021] Command: [ -f /home/deployer/apps/chaturbots/shared/config/puma.rb ]
+ DEBUG [bee6908e] Finished in 0.228 seconds with exit status 0 (successful).
+ DEBUG [05b78e0a] Running [ -f /home/deployer/apps/chaturbots/current/REVISION ] as deployer@35.200.189.171
+ DEBUG [05b78e0a] Command: [ -f /home/deployer/apps/chaturbots/current/REVISION ]
+ DEBUG [95894935] Finished in 0.347 seconds with exit status 0 (successful).
+ DEBUG [8dfd0242] Running /usr/bin/env cat /home/deployer/apps/chaturbots/current/REVISION 2>/dev/null as deployer@35.200.189.171
+ DEBUG [8dfd0242] Command: /usr/bin/env cat /home/deployer/apps/chaturbots/current/REVISION 2>/dev/null
+ DEBUG [5d97b10b] 	ce4fc09d03d64f678c1236a4d496b16d833c2053
+ DEBUG [5d97b10b] Finished in 0.351 seconds with exit status 0 (successful).
+ DEBUG [950b0b55] Running [ -f /home/deployer/apps/chaturbots/repo/HEAD ] as deployer@35.200.189.171
+ DEBUG [950b0b55] Command: [ -f /home/deployer/apps/chaturbots/repo/HEAD ]
+ DEBUG [d797f8d0] Finished in 0.226 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/apps/chaturbots/repo
+ DEBUG [6aa3637c] Running if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [6aa3637c] Command: if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi
+ DEBUG [9e1c4c08] Finished in 0.684 seconds with exit status 0 (successful).
+  INFO [0922dcec] Running /usr/bin/env git remote set-url origin git@github.com:maheshahir/cb_krammar.git as deployer@35.200.189.171
+ DEBUG [0922dcec] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git remote set-url origin git@github.com:maheshahir/cb_krammar.git )
+  INFO [71f96833] Finished in 0.449 seconds with exit status 0 (successful).
+  INFO [eb50cbb1] Running /usr/bin/env git remote update --prune as deployer@35.200.189.171
+ DEBUG [eb50cbb1] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ad85cdfe] 	Fetching origin
+ DEBUG [ad85cdfe] 	remote: Enumerating objects: 128, done.[K
+remote: Counting objects:   0% (1/128)   [Kremote: Counting objects:   1% (2/128)   [Kremote: Counting objects:   2% (3/128)   [Kremote: Counting objects:   3% (4/128)   [Kremote: Counting objects:   4% (6/128)   [Kremote: Counting objects:   5% (7/128)   [Kremote: Counting objects:   6% (8/
+ DEBUG [ad85cdfe] 	128)   [Kremote: Counting objects:   7% (9/128)   [Kremote: Counting objects:   8% (11/128)   [Kremote: Counting objects:   9% (12/128)   [Kremote: Counting objects:  10% (13/128)   [Kremote: Counting objects:  11% (15/128)   [Kremote: Counting objects:  12% (16/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  13% (17/128)   [Kremote: Counting objects:  14% (18/128)   [Kremote: Counting objects:  15% (20/128)   [Kremote: Counting objects:  16% (21/128)   [Kremote: Counting objects:  17% (22/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  18% (24/128)   [Kremote: Counting objects:  19% (25/128)   [Kremote: Counting objects:  20% (26/128)   [Kremote: Counting object
+ DEBUG [ad85cdfe] 	s:  21% (27/128)   [Kremote: Counting objects:  22% (29/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  23% (30/128)   [Kremote: Counting objects:  24% (31/128)   [Kremote: Counting objects:  25% (32/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  26% (34/128)   [Kremote: Counting objects:  27% (35/128)   [Kremote: Counting objects:  28% (36
+ DEBUG [ad85cdfe] 	/128)   [Kremote: Counting objects:  29% (38/128)   [Kremote: Counting objects:  30% (39/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  31% (40/128)   [Kremote: Counting objects:  32% (41/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  33% (43/128)   [Kremote: Counting objects:  34% (44/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  35% (45/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  36% (47/128)   [Kremote: Counting objects:  37% (48/128)   [Kremote: Counting objects:  38% (49/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting ob
+ DEBUG [ad85cdfe] 	jects:  39% (50/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  40% (52/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  41% (53/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  42% (54/128)   
+ DEBUG [ad85cdfe] 	[K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  43% (56/128)   [Kremote: Counting objects:  44% (57/128)   [Kremote: Counting objects:  45% (58/128)   [Kremote: Counting objects:  46%
+ DEBUG [ad85cdfe] 	 (59/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  47% (61/128)   [Kremote: Counting objects:  48% (62/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  49% (63/128)   [Kremote: Counting o
+ DEBUG [ad85cdfe] 	bjects:  50% (64/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  51% (66/128)   [Kremote: Counting objects:  52% (67/128)   [Kremote: Counting objects:  53% (68/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  54% (70/128)   [K
+ DEBUG [ad85cdfe] 	remote: Counting objects:  55% (71/128)   [Kremote: Counting objects:  56% (72/128)   [Kremote: Counting objects:  57% (73/128)   [Kremote: Counting objects:  58% (75/128)   [Kremote: Counting objects:  59% (76/128)   [Kremote: Counting objects:  60% (77/128)   [Kremote: Counting objects:  61% (79/128)   [Kremote: Counting objects:  62% (80/128)   [Kremote: Counting objects:  63% (81/128)   [Kremote: Counting objects:  64% (82/128)   [Kremote: Counting objects:  65% (84/128)   [Kremote: Counting objects:  66% (85/128)   [Kremote: Counting objects:  67% (86/128)   [Kremote: Counting objects:  68% (88/128)   [Kremote: Counting objects:  69% (89/128)   [Kremote: Counting objects:  70% (90/128)   [Kremote: Counting objects:  71% (91/128)   [Kremote: Counting objects:  72% (93/128)   [Kremote: Counting objects:  73% (94/128)   [Kremote: Counting objects:  74% (95/128)   [Kremote: Counting objects:  75% (96/128)   [Kremote: Counting objects:  76% (98/128)   [Kremote: Counting objects:  77% (99/128)   [Kremote: Counting objects:  78% (100/128)   [Kremote: Counting objects:  79% (102/128)   [Kremote: Counting objects:  80% (103/128)   [Kremote: Counting objects:  81% (104/128)   [Kremote: Counting objects:  82% (105/128)   [Kremote: Co
+ DEBUG [ad85cdfe] 	unting objects:  83% (107/128)   [Kremote: Counting objects:  84% (108/128)   [Kremote: Counting objects:  85% (109/128)   [Kremote: Counting objects:  86% (111/128)   [Kremote: Counting objects:  87% (112/128)   [Kremote: Counting objects:  88% (113/128)   [Kremote: Counting objects:  89% (114/128)   [Kremote: Counting objects:  90% (116/128)   [Kremote: Counting objects:  91% (117/128)   [Kremote: Counting objects:  92% (118/128)   [Kremote: Counting objects:  93% (120/128)   [Kremote: Counting objects:  94% (121/128)   [Kremote: Counting objects:  95% (122/128)   [Kremote: Counting objects:  96% (123/128)   [Kremote: Counting objects:  97% (125/128)   [Kremote: Counting objects:  98% (126/128)   [Kremote: Counting objects:  99% (127/128)   [Kremote: Counting objects: 100% (128/128)   [Kremote: Counting objects: 100% (128/128), done.[K
+remote: Compressing objects:   4% (1/22)   [K
+ DEBUG [ad85cdfe] 	remote: Compressing objects:   9% (2/22)   [Kremote: Compressing objects:  13% (3/22)   [Kremote: Compressing objects:  18% (4/22)   [Kremote: Compressing objects:  22% (5/22)   [Kremote: Compressing objects:  27% (6/22)   [Kremote: Compressing objects:  31% (7/22)   [Kremote: Compressing objects:  36% (8/22)   [Kremote: Compressing objects:  40% (9/22)   [Kremote: Compressing objects:  45% (10/22)   [Kremote: Compressing objects:  50% (11/22)   [Kremote: Compressing objects:  54% (12/22)   [Kremote: Compressing objects:  59% (13/22)   [Kremote: Compressing objects:  63% (14/22)   [K
+ DEBUG [ad85cdfe] 	remote: Compressing objects:  68% (15/22)   [Kremote: Compressing objects:  72% (16/22)   [Kremote: Compressing objects:  77% (17/22)   [Kremote: Compressing objects:  81% (18/22)   [Kremote: Compressing objects:  86% (19/22)   [Kremote: Compressing objects:  90% (20/22)   [Kremote: Compressing objects:  95% (21/22)   [Kremote: Compressing objects: 100% (22/22)   [Kremote: Compressing objects: 100% (22/22), done.[K
+ DEBUG [ad85cdfe] 	Unpacking objects:   1% (1/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:   2% (2/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:   4% (3/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:   5% (4/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:   7% (5/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:   8% (6/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  10% (7/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  11% (8/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  13% (9/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  14% (10/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  16% (11/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  17% (12/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  19% (13/68)   
+ DEBUG [ad85cdfe] 	remote: Total 68 (delta 41), reused 66 (delta 39), pack-reused 0[K
+ DEBUG [ad85cdfe] 	Unpacking objects:  20% (14/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  22% (15/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  23% (16/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  25% (17/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  26% (18/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  27% (19/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  29% (20/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  30% (21/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  32% (22/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  33% (23/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  35% (24/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  36% (25/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  38% (26/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  39% (27/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  41% (28/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  42% (29/68)   Unpacking objects:  44% (30/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  45% (31/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  47% (32/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  48% (33/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  50% (34/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  51% (35/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  52% (36/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  54% (37/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  55% (38/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  57% (39/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  58% (40/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  60% (41/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  61% (42/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  63% (43/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  64% (44/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  66% (45/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  67% (46/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  69% (47/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  70% (48/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  72% (49/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  73% (50/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  75% (51/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  76% (52/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  77% (53/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  79% (54/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  80% (55/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  82% (56/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  83% (57/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  85% (58/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  86% (59/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  88% (60/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  89% (61/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  91% (62/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  92% (63/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  94% (64/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  95% (65/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  97% (66/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects:  98% (67/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects: 100% (68/68)   
+ DEBUG [ad85cdfe] 	Unpacking objects: 100% (68/68), done.
+ DEBUG [ad85cdfe] 	From github.com:maheshahir/cb_krammar
+   ce4fc09..fc9bc97  master     -> master
+  INFO [ad85cdfe] Finished in 4.955 seconds with exit status 0 (successful).
+ DEBUG [9b0559dc] Running if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [9b0559dc] Command: if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi
+ DEBUG [7b58ff55] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [715a616a] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645 as deployer@35.200.189.171
+ DEBUG [715a616a] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645 )
+  INFO [ab0696bc] Finished in 0.598 seconds with exit status 0 (successful).
+  INFO [a77bd42b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/chaturbots/releases/20180929102645 as deployer@35.200.189.171
+ DEBUG [a77bd42b] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/apps/chaturbots/releases/20180929102645 )
+  INFO [b65256d9] Finished in 1.151 seconds with exit status 0 (successful).
+ DEBUG [3b342f11] Running if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [3b342f11] Command: if test ! -d /home/deployer/apps/chaturbots/repo; then echo "Directory does not exist '/home/deployer/apps/chaturbots/repo'" 1>&2; false; fi
+ DEBUG [15fc898c] Finished in 0.735 seconds with exit status 0 (successful).
+ DEBUG [ed4ccdea] Running /usr/bin/env git rev-list --max-count=1 master as deployer@35.200.189.171
+ DEBUG [ed4ccdea] Command: cd /home/deployer/apps/chaturbots/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-chaturbots-production-vaibhav.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1d8302f0] 	fc9bc9788d97a3994b15c4fc79b637b8004d4312
+ DEBUG [1d8302f0] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [d6a9f154] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [d6a9f154] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi
+ DEBUG [c56eb512] Finished in 0.650 seconds with exit status 0 (successful).
+  INFO [47ae8cff] Running /usr/bin/env echo "fc9bc9788d97a3994b15c4fc79b637b8004d4312" > REVISION as deployer@35.200.189.171
+ DEBUG [47ae8cff] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && /usr/bin/env echo "fc9bc9788d97a3994b15c4fc79b637b8004d4312" > REVISION
+  INFO [9b69f4e9] Finished in 0.339 seconds with exit status 0 (successful).
+  INFO [db3c7687] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645/config as deployer@35.200.189.171
+ DEBUG [db3c7687] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645/config
+  INFO [bb199bfe] Finished in 0.301 seconds with exit status 0 (successful).
+ DEBUG [4d890484] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml ] as deployer@35.200.189.171
+ DEBUG [4d890484] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml ]
+ DEBUG [daf76f44] Finished in 0.437 seconds with exit status 1 (failed).
+ DEBUG [494a99d0] Running [ -f /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml ] as deployer@35.200.189.171
+ DEBUG [494a99d0] Command: [ -f /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml ]
+ DEBUG [26832c3b] Finished in 0.622 seconds with exit status 0 (successful).
+  INFO [01a61856] Running /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml as deployer@35.200.189.171
+ DEBUG [01a61856] Command: /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml
+  INFO [d98b979a] Finished in 0.339 seconds with exit status 0 (successful).
+  INFO [a59bfd48] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/database.yml /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml as deployer@35.200.189.171
+ DEBUG [a59bfd48] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/database.yml /home/deployer/apps/chaturbots/releases/20180929102645/config/database.yml
+  INFO [78bf7f97] Finished in 0.330 seconds with exit status 0 (successful).
+ DEBUG [840aac5f] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml ] as deployer@35.200.189.171
+ DEBUG [840aac5f] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml ]
+ DEBUG [daf39d83] Finished in 0.687 seconds with exit status 1 (failed).
+ DEBUG [1b1bb58a] Running [ -f /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml ] as deployer@35.200.189.171
+ DEBUG [1b1bb58a] Command: [ -f /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml ]
+ DEBUG [b8a5fd13] Finished in 0.267 seconds with exit status 0 (successful).
+  INFO [36a61743] Running /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml as deployer@35.200.189.171
+ DEBUG [36a61743] Command: /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml
+  INFO [84ca2484] Finished in 0.509 seconds with exit status 0 (successful).
+  INFO [86cd5e53] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/secrets.yml /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml as deployer@35.200.189.171
+ DEBUG [86cd5e53] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/secrets.yml /home/deployer/apps/chaturbots/releases/20180929102645/config/secrets.yml
+  INFO [5187192a] Finished in 0.239 seconds with exit status 0 (successful).
+ DEBUG [1f13ad14] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [1f13ad14] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb ]
+ DEBUG [2d184dcf] Finished in 0.621 seconds with exit status 1 (failed).
+ DEBUG [25e15070] Running [ -f /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb ] as deployer@35.200.189.171
+ DEBUG [25e15070] Command: [ -f /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb ]
+ DEBUG [d9a205b8] Finished in 0.198 seconds with exit status 0 (successful).
+  INFO [a0bdb78a] Running /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb as deployer@35.200.189.171
+ DEBUG [a0bdb78a] Command: /usr/bin/env rm /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb
+  INFO [bc646130] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO [ead9e4ed] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/puma.rb /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb as deployer@35.200.189.171
+ DEBUG [ead9e4ed] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/config/puma.rb /home/deployer/apps/chaturbots/releases/20180929102645/config/puma.rb
+  INFO [796c26ca] Finished in 0.308 seconds with exit status 0 (successful).
+  INFO [d7be1de9] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645 /home/deployer/apps/chaturbots/releases/20180929102645/tmp /home/deployer/apps/chaturbots/releases/20180929102645/vendor /home/deployer/apps/chaturbots/releases/20180929102645/public as deployer@35.200.189.171
+ DEBUG [d7be1de9] Command: /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645 /home/deployer/apps/chaturbots/releases/20180929102645/tmp /home/deployer/apps/chaturbots/releases/20180929102645/vendor /home/deployer/apps/chaturbots/releases/20180929102645/public
+  INFO [82e557b1] Finished in 0.230 seconds with exit status 0 (successful).
+ DEBUG [4294ac6a] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/log ] as deployer@35.200.189.171
+ DEBUG [4294ac6a] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/log ]
+ DEBUG [314c00d8] Finished in 0.274 seconds with exit status 1 (failed).
+ DEBUG [c568af35] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/log ] as deployer@35.200.189.171
+ DEBUG [c568af35] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/log ]
+ DEBUG [022e39ba] Finished in 0.593 seconds with exit status 0 (successful).
+  INFO [9c20efae] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929102645/log as deployer@35.200.189.171
+ DEBUG [9c20efae] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929102645/log
+  INFO [766b534c] Finished in 0.327 seconds with exit status 0 (successful).
+  INFO [1ccf021c] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/releases/20180929102645/log as deployer@35.200.189.171
+ DEBUG [1ccf021c] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/log /home/deployer/apps/chaturbots/releases/20180929102645/log
+  INFO [893cdea8] Finished in 0.560 seconds with exit status 0 (successful).
+ DEBUG [ebc2ca49] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids ] as deployer@35.200.189.171
+ DEBUG [ebc2ca49] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids ]
+ DEBUG [2ba14f0d] Finished in 0.207 seconds with exit status 1 (failed).
+ DEBUG [5f1bc603] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids ] as deployer@35.200.189.171
+ DEBUG [5f1bc603] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids ]
+ DEBUG [84eefb9f] Finished in 0.739 seconds with exit status 0 (successful).
+  INFO [173d8369] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids as deployer@35.200.189.171
+ DEBUG [173d8369] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids
+  INFO [dbe10906] Finished in 0.402 seconds with exit status 0 (successful).
+  INFO [da332736] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids as deployer@35.200.189.171
+ DEBUG [da332736] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/pids /home/deployer/apps/chaturbots/releases/20180929102645/tmp/pids
+  INFO [9a500de0] Finished in 0.328 seconds with exit status 0 (successful).
+ DEBUG [1ad45979] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/tmp/cache ] as deployer@35.200.189.171
+ DEBUG [1ad45979] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/tmp/cache ]
+ DEBUG [0161e36a] Finished in 0.393 seconds with exit status 1 (failed).
+ DEBUG [97a9dd3f] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/tmp/cache ] as deployer@35.200.189.171
+ DEBUG [97a9dd3f] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/tmp/cache ]
+ DEBUG [445ca560] Finished in 0.346 seconds with exit status 1 (failed).
+  INFO [459c0d6f] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/releases/20180929102645/tmp/cache as deployer@35.200.189.171
+ DEBUG [459c0d6f] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/cache /home/deployer/apps/chaturbots/releases/20180929102645/tmp/cache
+  INFO [2cd828ef] Finished in 0.882 seconds with exit status 0 (successful).
+ DEBUG [6b7a6ca7] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/tmp/sockets ] as deployer@35.200.189.171
+ DEBUG [6b7a6ca7] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/tmp/sockets ]
+ DEBUG [ef984946] Finished in 1.433 seconds with exit status 1 (failed).
+ DEBUG [20065006] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/tmp/sockets ] as deployer@35.200.189.171
+ DEBUG [20065006] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/tmp/sockets ]
+ DEBUG [15693bf2] Finished in 0.332 seconds with exit status 1 (failed).
+  INFO [8951a62a] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/releases/20180929102645/tmp/sockets as deployer@35.200.189.171
+ DEBUG [8951a62a] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/tmp/sockets /home/deployer/apps/chaturbots/releases/20180929102645/tmp/sockets
+  INFO [6bc2135d] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [4028e201] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/vendor/bundle ] as deployer@35.200.189.171
+ DEBUG [4028e201] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/vendor/bundle ]
+ DEBUG [4ad40f5d] Finished in 0.521 seconds with exit status 1 (failed).
+ DEBUG [4ae86e34] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/vendor/bundle ] as deployer@35.200.189.171
+ DEBUG [4ae86e34] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/vendor/bundle ]
+ DEBUG [b9d3e9b8] Finished in 0.244 seconds with exit status 1 (failed).
+  INFO [aec3aba7] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/releases/20180929102645/vendor/bundle as deployer@35.200.189.171
+ DEBUG [aec3aba7] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/vendor/bundle /home/deployer/apps/chaturbots/releases/20180929102645/vendor/bundle
+  INFO [caeb491c] Finished in 0.634 seconds with exit status 0 (successful).
+ DEBUG [b5c88488] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/public/system ] as deployer@35.200.189.171
+ DEBUG [b5c88488] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/public/system ]
+ DEBUG [37145b03] Finished in 0.333 seconds with exit status 1 (failed).
+ DEBUG [45b26fb9] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/public/system ] as deployer@35.200.189.171
+ DEBUG [45b26fb9] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/public/system ]
+ DEBUG [26b2d99e] Finished in 0.320 seconds with exit status 1 (failed).
+  INFO [3df3c99a] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/releases/20180929102645/public/system as deployer@35.200.189.171
+ DEBUG [3df3c99a] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/system /home/deployer/apps/chaturbots/releases/20180929102645/public/system
+  INFO [9a6836d8] Finished in 0.292 seconds with exit status 0 (successful).
+ DEBUG [5a247045] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/public/uploads ] as deployer@35.200.189.171
+ DEBUG [5a247045] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/public/uploads ]
+ DEBUG [d36ccfe2] Finished in 0.336 seconds with exit status 1 (failed).
+ DEBUG [bb1974d1] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/public/uploads ] as deployer@35.200.189.171
+ DEBUG [bb1974d1] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/public/uploads ]
+ DEBUG [f1a07540] Finished in 0.229 seconds with exit status 1 (failed).
+  INFO [0342aac6] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/releases/20180929102645/public/uploads as deployer@35.200.189.171
+ DEBUG [0342aac6] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/uploads /home/deployer/apps/chaturbots/releases/20180929102645/public/uploads
+  INFO [930780ad] Finished in 0.260 seconds with exit status 0 (successful).
+ DEBUG [57dbd62e] Running [ -L /home/deployer/apps/chaturbots/releases/20180929102645/public/assets ] as deployer@35.200.189.171
+ DEBUG [57dbd62e] Command: [ -L /home/deployer/apps/chaturbots/releases/20180929102645/public/assets ]
+ DEBUG [b64d85df] Finished in 0.296 seconds with exit status 1 (failed).
+ DEBUG [f27d1dd4] Running [ -d /home/deployer/apps/chaturbots/releases/20180929102645/public/assets ] as deployer@35.200.189.171
+ DEBUG [f27d1dd4] Command: [ -d /home/deployer/apps/chaturbots/releases/20180929102645/public/assets ]
+ DEBUG [eb1efc18] Finished in 0.310 seconds with exit status 0 (successful).
+  INFO [74c7be19] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929102645/public/assets as deployer@35.200.189.171
+ DEBUG [74c7be19] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180929102645/public/assets
+  INFO [758d8010] Finished in 0.246 seconds with exit status 0 (successful).
+  INFO [8ba793d8] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/assets /home/deployer/apps/chaturbots/releases/20180929102645/public/assets as deployer@35.200.189.171
+ DEBUG [8ba793d8] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/shared/public/assets /home/deployer/apps/chaturbots/releases/20180929102645/public/assets
+  INFO [00977ce3] Finished in 0.264 seconds with exit status 0 (successful).
+ DEBUG [7cd3c116] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [7cd3c116] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi
+ DEBUG [6940f9dd] Finished in 0.216 seconds with exit status 0 (successful).
+ DEBUG [e695d355] Running ~/.rvm/bin/rvm default do bundle check --path /home/deployer/apps/chaturbots/shared/bundle as deployer@35.200.189.171
+ DEBUG [e695d355] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && ~/.rvm/bin/rvm default do bundle check --path /home/deployer/apps/chaturbots/shared/bundle
+ DEBUG [c0db2db0] 	[31mThe following gems are missing[0m
+ DEBUG [c0db2db0] 	[31m * net-ssh (5.0.2)[0m
+[31m * net-scp (1.2.1)[0m
+[31m * sshkit (1.17.0)[0m
+[31m * airbrussh (1.3.0)[0m
+ DEBUG [c0db2db0] 	[31m * ast (2.4.0)[0m
+ DEBUG [c0db2db0] 	[31m * debug_inspector (0.0.3)[0m
+ DEBUG [c0db2db0] 	[31m * binding_of_caller (0.8.0)[0m
+ DEBUG [c0db2db0] 	[31m * byebug (10.0.2)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano (3.11.0)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-bundler (1.3.0)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-nginx (1.0.0)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-rails (1.4.0)[0m
+ DEBUG [c0db2db0] 	[31m * sshkit-interactive (0.3.0)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-rails-console (2.3.0)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-rails-db (0.0.2)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-rvm (0.1.2)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano-upload-config (0.8.2)[0m
+ DEBUG [c0db2db0] 	[31m * capistrano3-puma (3.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * childprocess (0.9.0)[0m
+ DEBUG [c0db2db0] 	[31m * codemirror-rails (5.16.0)[0m
+ DEBUG [c0db2db0] 	[31m * coderay (1.1.2)[0m
+ DEBUG [c0db2db0] 	[31m * coffeelint (1.16.1)[0m
+ DEBUG [c0db2db0] 	[31m * docile (1.1.5)[0m
+ DEBUG [c0db2db0] 	[31m * simplecov-html (0.10.2)[0m
+ DEBUG [c0db2db0] 	[31m * simplecov (0.15.1)[0m
+ DEBUG [c0db2db0] 	[31m * tins (1.15.1)[0m
+ DEBUG [c0db2db0] 	[31m * term-ansicolor (1.6.0)[0m
+ DEBUG [c0db2db0] 	[31m * coveralls (0.7.1)[0m
+ DEBUG [c0db2db0] 	[31m * safe_yaml (1.0.4)[0m
+ DEBUG [c0db2db0] 	[31m * crack (0.4.3)[0m
+ DEBUG [c0db2db0] 	[31m * diff-lcs (1.3)[0m
+ DEBUG [c0db2db0] 	[31m * factory_bot (4.8.2)[0m
+ DEBUG [c0db2db0] 	[31m * factory_bot_rails (4.8.2)[0m
+ DEBUG [c0db2db0] 	[31m * faraday-http-cache (2.0.0)[0m
+ DEBUG [c0db2db0] 	[31m * formatador (0.2.5)[0m
+ DEBUG [c0db2db0] 	[31m * sawyer (0.8.1)[0m
+ DEBUG [c0db2db0] 	[31m * octokit (4.7.0)[0m
+ DEBUG [c0db2db0] 	[31m * rainbow (3.0.0)[0m
+ DEBUG [c0db2db0] 	[31m * retriable (2.1.0)[0m
+ DEBUG [c0db2db0] 	[31m * github_changelog_generator (1.14.3)[0m
+ DEBUG [c0db2db0] 	[31m * ruby_dep (1.5.0)[0m
+ DEBUG [c0db2db0] 	[31m * listen (3.1.5)[0m
+ DEBUG [c0db2db0] 	[31m * lumberjack (1.0.12)[0m
+ DEBUG [c0db2db0] 	[31m * nenv (0.3.0)[0m
+ DEBUG [c0db2db0] 	[31m * shellany (0.0.1)[0m
+ DEBUG [c0db2db0] 	[31m * notiffany (0.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * pry (0.11.3)[0m
+ DEBUG [c0db2db0] 	[31m * guard (2.14.1)[0m
+ DEBUG [c0db2db0] 	[31m * guard-compat (1.2.1)[0m
+ DEBUG [c0db2db0] 	[31m * guard-livereload (2.5.2)[0m
+ DEBUG [c0db2db0] 	[31m * guard-symlink (0.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * hashdiff (0.3.7)[0m
+ DEBUG [c0db2db0] 	[31m * interception (0.5)[0m
+ DEBUG [c0db2db0] 	[31m * kaminari-core (1.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * kaminari-actionview (1.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * kaminari-activerecord (1.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * kaminari (1.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * parallel (1.12.1)[0m
+ DEBUG [c0db2db0] 	[31m * parser (2.5.0.5)[0m
+ DEBUG [c0db2db0] 	[31m * pluginator (1.5.0)[0m
+ DEBUG [c0db2db0] 	[31m * power_assert (1.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * powerpack (0.1.1)[0m
+ DEBUG [c0db2db0] 	[31m * pre-commit (0.37.0)[0m
+ DEBUG [c0db2db0] 	[31m * pry-rails (0.3.6)[0m
+ DEBUG [c0db2db0] 	[31m * slop (3.6.0)[0m
+ DEBUG [c0db2db0] 	[31m * pry-remote (0.1.8)[0m
+ DEBUG [c0db2db0] 	[31m * pry-rescue (1.4.5)[0m
+ DEBUG [c0db2db0] 	[31m * pry-stack_explorer (0.4.9.2)[0m
+ DEBUG [c0db2db0] 	[31m * rack-livereload (0.3.16)[0m
+ DEBUG [c0db2db0] 	[31m * ransack (2.0.1)[0m
+ DEBUG [c0db2db0] 	[31m * simple_form (4.0.1)[0m
+ DEBUG [c0db2db0] 	[31m * unicode-display_width (1.3.0)[0m
+ DEBUG [c0db2db0] 	[31m * terminal-table (1.8.0)[0m
+ DEBUG [c0db2db0] 	[31m * rails_db (2.0.3)[0m
+ DEBUG [c0db2db0] 	[31m * rspec-support (3.7.0)[0m
+ DEBUG [c0db2db0] 	[31m * rspec-core (3.7.0)[0m
+ DEBUG [c0db2db0] 	[31m * rspec-expectations (3.7.0)[0m
+ DEBUG [c0db2db0] 	[31m * rspec-mocks (3.7.0)[0m
+ DEBUG [c0db2db0] 	[31m * rspec-rails (3.7.2)[0m
+ DEBUG [c0db2db0] 	[31m * ruby-progressbar (1.9.0)[0m
+ DEBUG [c0db2db0] 	[31m * rubocop (0.54.0)[0m
+ DEBUG [c0db2db0] 	[31m * rubyzip (1.2.1)[0m
+ DEBUG [c0db2db0] 	[31m * selenium-webdriver (3.13.1)[0m
+ DEBUG [c0db2db0] 	[31m * simplecov-rcov (0.2.3)[0m
+ DEBUG [c0db2db0] 	[31m * sqlite3 (1.3.13)[0m
+ DEBUG [c0db2db0] 	[31m * sshkit-sudo (0.1.0)[0m
+ DEBUG [c0db2db0] 	[31m * test-unit (3.2.6)[0m
+ DEBUG [c0db2db0] 	[31m * webmock (3.1.1)[0m
+ DEBUG [c0db2db0] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [c0db2db0] Finished in 1.494 seconds with exit status 1 (failed).
+  INFO [86ca7bf2] Running ~/.rvm/bin/rvm default do bundle install --path /home/deployer/apps/chaturbots/shared/bundle --without development test --deployment --quiet as deployer@35.200.189.171
+ DEBUG [86ca7bf2] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && ~/.rvm/bin/rvm default do bundle install --path /home/deployer/apps/chaturbots/shared/bundle --without development test --deployment --quiet
+  INFO [da9cd302] Finished in 3.581 seconds with exit status 0 (successful).
+ DEBUG [3e0a9cd0] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [3e0a9cd0] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi
+ DEBUG [e28a2050] Finished in 0.331 seconds with exit status 0 (successful).
+  INFO [d76f5596] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as deployer@35.200.189.171
+ DEBUG [d76f5596] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [461fdd7a] 	I, [2018-09-29T10:27:45.133582 #11518]  INFO -- : Writing /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/application-4450211157c8b5a2852c5aabd8cf65940432c8d6d0cf842693e1089127e69bd0.js
+ DEBUG [461fdd7a] 	I, [2018-09-29T10:27:45.134243 #11518]  INFO -- : Writing /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/application-4450211157c8b5a2852c5aabd8cf65940432c8d6d0cf842693e1089127e69bd0.js.gz
+  INFO [461fdd7a] Finished in 26.896 seconds with exit status 0 (successful).
+ DEBUG [c102c6d1] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [c102c6d1] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi
+ DEBUG [49de3db0] Finished in 0.231 seconds with exit status 0 (successful).
+  INFO [165bb187] Running /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645/assets_manifest_backup as deployer@35.200.189.171
+ DEBUG [165bb187] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && /usr/bin/env mkdir -p /home/deployer/apps/chaturbots/releases/20180929102645/assets_manifest_backup
+  INFO [69403802] Finished in 0.231 seconds with exit status 0 (successful).
+ DEBUG [cc4345f9] Running /usr/bin/env ls /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest* as deployer@35.200.189.171
+ DEBUG [cc4345f9] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && /usr/bin/env ls /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest*
+ DEBUG [d7e9944f] 	/home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest-876e51f24458edb126c8e95f694fef71.json
+ DEBUG [d7e9944f] Finished in 0.290 seconds with exit status 0 (successful).
+ DEBUG [7decd5d8] Running /usr/bin/env ls /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest* as deployer@35.200.189.171
+ DEBUG [7decd5d8] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && /usr/bin/env ls /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest*
+ DEBUG [dc84deee] 	/home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest-876e51f24458edb126c8e95f694fef71.json
+ DEBUG [dc84deee] Finished in 0.321 seconds with exit status 0 (successful).
+  INFO [c4247e87] Running /usr/bin/env cp /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest-876e51f24458edb126c8e95f694fef71.json /home/deployer/apps/chaturbots/releases/20180929102645/assets_manifest_backup as deployer@35.200.189.171
+ DEBUG [c4247e87] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && /usr/bin/env cp /home/deployer/apps/chaturbots/releases/20180929102645/public/assets/.sprockets-manifest-876e51f24458edb126c8e95f694fef71.json /home/deployer/apps/chaturbots/releases/20180929102645/assets_manifest_backup
+  INFO [4d44819a] Finished in 0.288 seconds with exit status 0 (successful).
+  INFO [deploy:db:create] Run `rake db:create`
+ DEBUG [972f933b] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [972f933b] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi
+ DEBUG [21fa87ae] Finished in 0.303 seconds with exit status 0 (successful).
+  INFO [fb942518] Running ~/.rvm/bin/rvm default do bundle exec rake db:create as deployer@35.200.189.171
+ DEBUG [fb942518] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:create )
+ DEBUG [a467038c] 	Database 'zammad_prod' already exists
+  INFO [a467038c] Finished in 4.478 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [98f55ac0] Running if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [98f55ac0] Command: if test ! -d /home/deployer/apps/chaturbots/releases/20180929102645; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases/20180929102645'" 1>&2; false; fi
+ DEBUG [5efffa9e] Finished in 0.347 seconds with exit status 0 (successful).
+  INFO [329f0da9] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as deployer@35.200.189.171
+ DEBUG [329f0da9] Command: cd /home/deployer/apps/chaturbots/releases/20180929102645 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+  INFO [290d9130] Finished in 6.613 seconds with exit status 0 (successful).
+  INFO [ea62db9e] Running /usr/bin/env ln -s /home/deployer/apps/chaturbots/releases/20180929102645 /home/deployer/apps/chaturbots/releases/current as deployer@35.200.189.171
+ DEBUG [ea62db9e] Command: /usr/bin/env ln -s /home/deployer/apps/chaturbots/releases/20180929102645 /home/deployer/apps/chaturbots/releases/current
+  INFO [d9355c62] Finished in 0.583 seconds with exit status 0 (successful).
+  INFO [9fa93cc2] Running /usr/bin/env mv /home/deployer/apps/chaturbots/releases/current /home/deployer/apps/chaturbots as deployer@35.200.189.171
+ DEBUG [9fa93cc2] Command: /usr/bin/env mv /home/deployer/apps/chaturbots/releases/current /home/deployer/apps/chaturbots
+  INFO [e667cbe9] Finished in 0.270 seconds with exit status 0 (successful).
+ DEBUG [801807b4] Running /usr/bin/env ls -x /home/deployer/apps/chaturbots/releases as deployer@35.200.189.171
+ DEBUG [801807b4] Command: /usr/bin/env ls -x /home/deployer/apps/chaturbots/releases
+ DEBUG [b5feb5ea] 	20180915123122	20180915125259	20180918125600	20180918131706	20180918132616
+20180929102645
+ DEBUG [b5feb5ea] Finished in 0.560 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 35.200.189.171
+ DEBUG [ccf90710] Running [ -d /home/deployer/apps/chaturbots/current ] as deployer@35.200.189.171
+ DEBUG [ccf90710] Command: [ -d /home/deployer/apps/chaturbots/current ]
+ DEBUG [f01daa4f] Finished in 0.367 seconds with exit status 0 (successful).
+ DEBUG [cfef3d40] Running /usr/bin/env readlink /home/deployer/apps/chaturbots/current as deployer@35.200.189.171
+ DEBUG [cfef3d40] Command: /usr/bin/env readlink /home/deployer/apps/chaturbots/current
+ DEBUG [9d590b2b] 	/home/deployer/apps/chaturbots/releases/20180929102645
+ DEBUG [9d590b2b] Finished in 0.232 seconds with exit status 0 (successful).
+  INFO [23f68181] Running /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180915123122 as deployer@35.200.189.171
+ DEBUG [23f68181] Command: /usr/bin/env rm -rf /home/deployer/apps/chaturbots/releases/20180915123122
+  INFO [9f3a3dde] Finished in 0.641 seconds with exit status 0 (successful).
+ DEBUG [e399bb59] Running if test ! -d /home/deployer/apps/chaturbots/releases; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [e399bb59] Command: if test ! -d /home/deployer/apps/chaturbots/releases; then echo "Directory does not exist '/home/deployer/apps/chaturbots/releases'" 1>&2; false; fi
+ DEBUG [90ccdc93] Finished in 0.587 seconds with exit status 0 (successful).
+  INFO [7b519bf3] Running /usr/bin/env echo "Branch master (at fc9bc9788d97a3994b15c4fc79b637b8004d4312) deployed as release 20180929102645 by vaibhav" >> /home/deployer/apps/chaturbots/revisions.log as deployer@35.200.189.171
+ DEBUG [7b519bf3] Command: cd /home/deployer/apps/chaturbots/releases && /usr/bin/env echo "Branch master (at fc9bc9788d97a3994b15c4fc79b637b8004d4312) deployed as release 20180929102645 by vaibhav" >> /home/deployer/apps/chaturbots/revisions.log
+  INFO [1b68851d] Finished in 0.296 seconds with exit status 0 (successful).
+ DEBUG [dd304a13] Running if test ! -d /home/deployer/apps/chaturbots/current; then echo "Directory does not exist '/home/deployer/apps/chaturbots/current'" 1>&2; false; fi as deployer@35.200.189.171
+ DEBUG [dd304a13] Command: if test ! -d /home/deployer/apps/chaturbots/current; then echo "Directory does not exist '/home/deployer/apps/chaturbots/current'" 1>&2; false; fi
+ DEBUG [0016a075] Finished in 0.227 seconds with exit status 0 (successful).
+ DEBUG [b745e32a] Running [ -f /home/deployer/apps/chaturbots/shared/tmp/pids/puma.pid ] as deployer@35.200.189.171
+ DEBUG [b745e32a] Command: [ -f /home/deployer/apps/chaturbots/shared/tmp/pids/puma.pid ]
+ DEBUG [7e116917] Finished in 0.219 seconds with exit status 0 (successful).
+ DEBUG [adb03d3a] Running /usr/bin/env kill -0 $( cat /home/deployer/apps/chaturbots/shared/tmp/pids/puma.pid ) as deployer@35.200.189.171
+ DEBUG [adb03d3a] Command: cd /home/deployer/apps/chaturbots/current && ( export RACK_ENV="production" ; /usr/bin/env kill -0 $( cat /home/deployer/apps/chaturbots/shared/tmp/pids/puma.pid ) )
+ DEBUG [0808fa80] Finished in 0.224 seconds with exit status 0 (successful).
+  INFO [48c982f0] Running ~/.rvm/bin/rvm default do bundle exec pumactl -S /home/deployer/apps/chaturbots/shared/tmp/pids/puma.state -F /home/deployer/apps/chaturbots/shared/config/puma.rb restart as deployer@35.200.189.171
+ DEBUG [48c982f0] Command: cd /home/deployer/apps/chaturbots/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec pumactl -S /home/deployer/apps/chaturbots/shared/tmp/pids/puma.state -F /home/deployer/apps/chaturbots/shared/config/puma.rb restart )
+ DEBUG [fc847776] 	Command restart sent success
+  INFO [fc847776] Finished in 1.718 seconds with exit status 0 (successful).
+  INFO [a81bf4a0] Running /usr/bin/env sudo service nginx restart as deployer@35.200.189.171
+ DEBUG [a81bf4a0] Command: /usr/bin/env sudo service nginx restart
+ DEBUG [a81bf4a0] 	[sudo] password for deployer: 
+ DEBUG [a81bf4a0] 	
+  INFO [a81bf4a0] Finished in 0.734 seconds with exit status 0 (successful).

@@ -131,6 +131,7 @@ GEM
     composite_primary_keys (10.0.3)
       activerecord (~> 5.1.0, >= 5.1.5)
     concurrent-ruby (1.0.5)
+    country-select (1.1.1)
     coveralls (0.7.1)
       multi_json (~> 1.3)
       rest-client
@@ -575,6 +576,7 @@ DEPENDENCIES
   coffee-script-source
   coffeelint
   composite_primary_keys
+  country-select
   coveralls
   daemons
   dalli

@@ -1,2 +1,2 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETi5I"	name;TI"chat.agent;TI"	note;TI"Access to %s;TI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"translations;T[I"	Chat;TI"not;T[I"chat.customer;TI"active;TTI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM À3¾KÉ:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;	[Iu;
-M Àè»KÉ;I"UTC;F@@I"role_ids;T[i:@created_atf1536503438.5912116:@expires_inf6.048e5
+o: ActiveSupport::Cache::Entry:@value{I"id:ETi5I"	name;TI"chat.agent;TI"	note;TI"Access to %s;TI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"translations;T[I"	Chat;TI"not;T[I"chat.customer;TI"active;TTI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time¬£ÀÍ†0:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;	[Iu;
+¬£À°ƒ0;I"UTC;F@@I"role_ids;T[i:@created_atf1538226241.6577804:@expires_inf6.048e5

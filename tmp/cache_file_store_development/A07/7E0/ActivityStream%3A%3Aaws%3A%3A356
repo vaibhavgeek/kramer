@@ -1,2 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETidI"activity_stream_type_id;Ti	I"activity_stream_object_id;TiI"permission_id;Ti2I"group_id;TiI"	o_id;TiÅI"created_by_id;Ti@I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeÏ†¿%nt:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	Ï†¿p@nt;
-I"UTC;F@@:@created_atf1536326785.7408729:@expires_inf6.048e5

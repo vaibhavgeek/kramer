@@ -1,0 +1,112 @@
+I"ù(function() {
+  App.ImageService = (function() {
+    function ImageService() {}
+
+    ImageService.resizeForAvatar = function(dataURL, x, y, callback) {
+      if (ImageService.checkUrl(dataURL)) {
+        return callback(dataURL);
+      } else {
+        return ImageService.resize(dataURL, x, y, 2, 'image/jpeg', 0.7, callback);
+      }
+    };
+
+    ImageService.resizeForApp = function(dataURL, x, y, callback) {
+      if (ImageService.checkUrl(dataURL)) {
+        return callback(dataURL);
+      } else {
+        return ImageService.resize(dataURL, x, y, 2, 'image/png', 0.7, callback);
+      }
+    };
+
+    ImageService.resize = function(dataURL, x, y, sizeFactor, type, quallity, callback, force) {
+      var imageObject;
+      if (x == null) {
+        x = 'auto';
+      }
+      if (y == null) {
+        y = 'auto';
+      }
+      if (sizeFactor == null) {
+        sizeFactor = 1;
+      }
+      if (force == null) {
+        force = true;
+      }
+      imageObject = new Image();
+      imageObject.onload = function() {
+        var canvas, context, factor, imageHeight, imageWidth, newDataUrl, resize;
+        imageWidth = imageObject.width;
+        imageHeight = imageObject.height;
+        console.log('ImageService', 'current size', imageWidth, imageHeight);
+        console.log('ImageService', 'sizeFactor', sizeFactor);
+        if (y === 'auto' && x === 'auto') {
+          x = imageWidth;
+          y = imageHeight;
+        }
+        if (x !== 'auto' && x > imageWidth) {
+          x = imageWidth;
+        }
+        if (y !== 'auto' && y > imageHeight) {
+          y = imageHeight;
+        }
+        if (y === 'auto') {
+          factor = imageWidth / x;
+          y = imageHeight / factor;
+        }
+        if (x === 'auto') {
+          factor = imageWidth / y;
+          x = imageHeight / factor;
+        }
+        canvas = document.createElement('canvas');
+        resize = false;
+        if ((x < imageWidth && (x * sizeFactor < imageWidth)) || (y < imageHeight && (y * sizeFactor < imageHeight))) {
+          resize = true;
+          x = x * sizeFactor;
+          y = y * sizeFactor;
+          canvas.width = x;
+          canvas.height = y;
+          context = canvas.getContext('2d');
+          context.drawImage(imageObject, 0, 0, x, y);
+        } else {
+          canvas.width = imageWidth;
+          canvas.height = imageHeight;
+          context = canvas.getContext('2d');
+          context.drawImage(imageObject, 0, 0, imageWidth, imageHeight);
+        }
+        if (quallity === 'auto') {
+          if (x < 200 && y < 200) {
+            quallity = 1;
+          } else if (x < 400 && y < 400) {
+            quallity = 0.9;
+          } else if (x < 600 && y < 600) {
+            quallity = 0.8;
+          } else if (x < 900 && y < 900) {
+            quallity = 0.7;
+          } else {
+            quallity = 0.6;
+          }
+        }
+        newDataUrl = canvas.toDataURL(type, quallity);
+        if (resize) {
+          console.log('ImageService', 'resize', x / sizeFactor, y / sizeFactor, quallity, (newDataUrl.length * 0.75) / 1024 / 1024, 'in mb');
+          callback(newDataUrl, x / sizeFactor, y / sizeFactor, true);
+          return;
+        }
+        console.log('ImageService', 'no resize', x, y, quallity, (newDataUrl.length * 0.75) / 1024 / 1024, 'in mb');
+        return callback(newDataUrl, x, y, false);
+      };
+      return imageObject.src = dataURL;
+    };
+
+    ImageService.checkUrl = function(dataURL) {
+      var ignore;
+      ignore = /\.svg$/i;
+      return ignore.test(dataURL);
+    };
+
+    return ImageService;
+
+  })();
+
+}).call(this);
+:ET

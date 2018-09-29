@@ -1,2 +1,2 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"	name;TI"telegram personal-message;TI"	note;T0I"communication;TTI"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM†¿êeP…:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	M†¿êeP…;
-I"UTC;F@@:@created_atf1536503438.3116043:@expires_inf6.048e5
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"	name;TI"telegram personal-message;TI"	note;T0I"communication;TTI"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time¨£¿8¸0:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	¨£¿8¸0;
+I"UTC;F@@:@created_atf1538226241.541815:@expires_inf6.048e5

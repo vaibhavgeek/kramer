@@ -1,2 +1,4 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"state_type_id;TiI"	name;TI"new;TI"next_state_id;T0I"ignore_escalation;TFI"default_create;TTI"default_follow_up;TFI"	note;T0I"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM†¿DN…:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	M†¿ÄgN…;
-I"UTC;F@@:@created_atf1536503438.2804344:@expires_inf6.048e5
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"state_type_id;TiI"	name;TI"new;TI"next_state_id;T0I"ignore_escalation;TFI"default_create;TTI"default_follow_up;TFI"	note;T0I"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time¨£¿Ë∑
+0:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	¨£¿@›
+0;
+I"UTC;F@@:@created_atf1538226241.5177372:@expires_inf6.048e5

@@ -1,0 +1,59 @@
+I"Bfunction(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="fullHeight vertical center justified reset_password fit">\n  <div class="hero-unit">\n    <h2>');
+    
+      __out.push(this.T('Choose your new password.'));
+    
+      __out.push('<small></small></h2>\n    <form>\n      <div class="form-password-change"></div>\n      <div class="form-controls">\n        <a class="btn btn--text btn--subtle js-cancel" href="#/">');
+    
+      __out.push(this.T('Cancel & Go Back'));
+    
+      __out.push('</a>\n        <button class="btn btn--primary js-submit align-right">');
+    
+      __out.push(this.T('Submit'));
+    
+      __out.push('</button>\n      </div>\n    </form>\n  </div>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

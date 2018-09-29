@@ -1,2 +1,2 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"	name;TI"web;TI"	note;T0I"communication;TTI"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM†¿¿]P…:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	M†¿¿]P…;
-I"UTC;F@@:@created_atf1536503438.3104672:@expires_inf6.048e5
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"	name;TI"web;TI"	note;T0I"communication;TTI"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time¨£¿XÕ0:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	¨£¿XÕ0;
+I"UTC;F@@:@created_atf1538226241.5412972:@expires_inf6.048e5
