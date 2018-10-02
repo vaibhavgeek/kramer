@@ -1,7 +1,10 @@
 <style type="text/css">
 .content {
-  position:relative !important;
+  overflow: unset !important;
+  position:absolute !important;
   top:0px;
+  width: 100%;
+  left:0px;
 }
 </style>
 

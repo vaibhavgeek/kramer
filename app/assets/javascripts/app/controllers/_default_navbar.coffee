@@ -1,8 +1,8 @@
 App.Config.set('History', [])
-App.Config.set('Home', { prio: 9000, parent: '', name: 'Dashboard', translate: true, target: '#dashboard', icon: 'dashboard', permission: ['admin.*'] }, 'NavBarRight')
+App.Config.set('Home', { prio: 100, parent: '', name: 'Dashboard', translate: true, target: '#dashboard', icon: 'dashboard', permission: ['admin.*'] }, 'NavBarRight')
 
-App.Config.set('Admin', { prio: 9000, parent: '', name: 'Admin', translate: true, target: '#manage', icon: 'cog', permission: ['admin.*'] }, 'NavBarRight')
-App.Config.set('Bot', { prio: 9000, parent: '', name: 'Bot', translate: true, target: '#bot', icon: 'cog', permission: ['admin.*'] }, 'NavBarRight')
+App.Config.set('Admin', { prio: 9300, parent: '', name: 'Admin', translate: true, target: '#manage', icon: 'cog', permission: ['admin.*'] }, 'NavBarRight')
+App.Config.set('Bot', { prio: 9200, parent: '', name: 'Bot', translate: true, target: '#bot', icon: 'cog', permission: ['admin.*'] }, 'NavBarRight')
 App.Config.set('User', {
   prio:   30000,
   parent: '',

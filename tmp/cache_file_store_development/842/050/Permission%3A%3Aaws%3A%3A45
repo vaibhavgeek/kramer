@@ -1,0 +1,2 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETi2I"	name;TI"ticket.agent;TI"	note;TI"2Access to Agent Tickets based on Group Access;TI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"not;T[I"ticket.customer;TI"plugin;T[I"groups;TI"active;TTI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time¬£À¦C0:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;	[Iu;
+¬£ÀHA0;I"UTC;F@@I"role_ids;T[i:@created_atf1538388335.2155528:@expires_inf6.048e5

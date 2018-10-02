@@ -1993,8 +1993,12 @@ input.has-error {
   top: 60px;
   width: calc(100% - 260px);
   background-color: #f8f9fa;
+  left: 260px;
 }
-
+.right_nav {
+  position: absolute !important;
+  right: 0px;
+}
   .content.fit {
     padding: 10px;
     background: #2c2d36;
@@ -3128,7 +3132,8 @@ footer {
 {
   width: $navigationWidth;
   background: hsl(232,10%,16%);
-  position: relative;
+  position: absolute;
+  height: 100%;
 }
 
   .navigation:empty {
@@ -6842,6 +6847,10 @@ footer {
   position: relative;
 }
 
+.user-menu > .dropdown 
+{
+  margin-right:30px;
+}
 .organizationInfo-avatar {
   @extend .userInfo-avatar;
   @include bidi-style(padding, 18px 0 0 18px, padding, 18px 18px 0 0);

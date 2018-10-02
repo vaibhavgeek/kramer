@@ -1,0 +1,109 @@
+I"a(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.DashboardActivityStream = (function(superClass) {
+    extend(DashboardActivityStream, superClass);
+
+    DashboardActivityStream.prototype.model = false;
+
+    DashboardActivityStream.prototype.template = 'dashboard/activity_stream_item';
+
+    DashboardActivityStream.prototype.uniqKey = 'id';
+
+    DashboardActivityStream.prototype.observe = {
+      updated_at: true
+    };
+
+    DashboardActivityStream.prototype.prepareForObjectListItemSupport = true;
+
+    DashboardActivityStream.prototype.items = [];
+
+    DashboardActivityStream.prototype.insertPosition = 'before';
+
+    function DashboardActivityStream() {
+      this.onRenderEnd = bind(this.onRenderEnd, this);
+      this.itemsAll = bind(this.itemsAll, this);
+      this.itemGet = bind(this.itemGet, this);
+      this.load = bind(this.load, this);
+      this.fetch = bind(this.fetch, this);
+      DashboardActivityStream.__super__.constructor.apply(this, arguments);
+      this.fetch();
+      this.bind('activity_stream_rebuild', this.load);
+    }
+
+    DashboardActivityStream.prototype.fetch = function() {
+      var cache;
+      cache = App.SessionStorage.get('activity_stream');
+      if (cache) {
+        return this.load(cache);
+      } else {
+        return this.ajax({
+          id: 'dashoard_activity_stream',
+          type: 'GET',
+          url: this.apiPath + "/activity_stream?full=true",
+          data: {
+            limit: this.limit || 8
+          },
+          processData: true,
+          success: (function(_this) {
+            return function(data) {
+              return _this.load(data);
+            };
+          })(this)
+        });
+      }
+    };
+
+    DashboardActivityStream.prototype.load = function(data) {
+      App.SessionStorage.set('activity_stream', data);
+      App.ActivityStream.refresh([], {
+        clear: true
+      });
+      App.Collection.loadAssets(data.assets);
+      this.items = App.ActivityStream.search({
+        sortBy: 'created_at',
+        order: 'DESC'
+      });
+      return this.collectionSync(this.items);
+    };
+
+    DashboardActivityStream.prototype.itemGet = function(key) {
+      var i, item, len, ref;
+      ref = this.items;
+      for (i = 0, len = ref.length; i < len; i++) {
+        item = ref[i];
+        if (key === item.id) {
+          return item;
+        }
+      }
+    };
+
+    DashboardActivityStream.prototype.itemDestroy = function(key) {};
+
+    DashboardActivityStream.prototype.itemsAll = function() {
+      return this.items || [];
+    };
+
+    DashboardActivityStream.prototype.onRenderEnd = function() {
+      if (_.isEmpty(this.items)) {
+        return;
+      }
+      return this.el.closest('.sidebar').find('.activity-description').addClass('hidden');
+    };
+
+    DashboardActivityStream.prototype.onRenderItemEnd = function(item, el) {
+      return new App.WidgetAvatar({
+        el: el.find('.js-avatar'),
+        object_id: item.created_by_id,
+        size: 40
+      });
+    };
+
+    return DashboardActivityStream;
+
+  })(App.CollectionController);
+
+}).call(this);
+:ET

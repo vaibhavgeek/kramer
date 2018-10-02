@@ -127,11 +127,13 @@ class App.Controller extends Spine.Controller
   navShow: ->
     return if $('#navigation').is(':visible')
     $('#navigation').removeClass('hide')
+    $('#navigation_vertical').removeClass('hide')
 
   # hide navigation
   navHide: ->
     return if !$('#navigation').is(':visible')
     $('#navigation').addClass('hide')
+    $('#navigation_vertical').addClass('hide')
 
   updateNavMenu: =>
     delay = ->

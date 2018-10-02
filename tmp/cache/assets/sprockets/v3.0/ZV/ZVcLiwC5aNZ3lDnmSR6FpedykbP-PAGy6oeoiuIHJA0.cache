@@ -1,0 +1,103 @@
+I"¢function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      var avatar, cssClass, i, len, ref;
+    
+      __out.push('<div class="page-header">\n  <div class="page-header-title">\n    <h1>');
+    
+      __out.push(this.T('Avatar'));
+    
+      __out.push('</h1>\n  </div>\n  <div class="page-header-meta">\n  ');
+    
+      if (this.webcamSupport) {
+        __out.push('\n    <div class="btn btn--success js-openCamera">');
+        __out.push(this.T('Camera'));
+        __out.push('</div>\n  ');
+      }
+    
+      __out.push('\n    <div class="btn btn--success fileUpload">');
+    
+      __out.push(this.T('Upload'));
+    
+      __out.push('<input type="file" class="js-upload" accept="image/*"></div>\n  </div>\n</div>\n<div class="page-content avatar-gallery">\n  ');
+    
+      ref = this.avatars;
+      for (i = 0, len = ref.length; i < len; i++) {
+        avatar = ref[i];
+        __out.push('\n  <div class="avatar-holder">\n    ');
+        if (avatar.initial) {
+          __out.push('\n      ');
+          cssClass = '';
+          __out.push('\n      ');
+          if (avatar["default"]) {
+            __out.push('\n      ');
+            cssClass = 'is-active';
+            __out.push('\n      ');
+          }
+          __out.push('\n      ');
+          __out.push(App.Session.get().avatar('80', '', cssClass, true, avatar));
+          __out.push('\n    ');
+        } else {
+          __out.push('\n      <span class="avatar size-80 ');
+          if (avatar["default"]) {
+            __out.push('is-active');
+          }
+          __out.push('" data-avatar-id="');
+          __out.push(avatar.id);
+          __out.push('" style="background-image: url(');
+          __out.push(avatar.content);
+          __out.push(')"></span>\n      ');
+          if (avatar.deletable) {
+            __out.push('\n        <div class="avatar-delete">\n          ');
+            __out.push(this.Icon('diagonal-cross'));
+            __out.push('\n        </div>\n      ');
+          }
+          __out.push('\n    ');
+        }
+        __out.push('\n  </div>\n  ');
+      }
+    
+      __out.push('\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

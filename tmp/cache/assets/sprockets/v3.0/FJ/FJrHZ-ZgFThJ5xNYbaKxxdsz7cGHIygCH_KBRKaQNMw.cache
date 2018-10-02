@@ -1,0 +1,21 @@
+I"Ž(function() {
+  App.UiElement.integer = (function() {
+    function integer() {}
+
+    integer.render = function(attribute) {
+      var item;
+      attribute.type = 'number';
+      attribute.step = '1';
+      item = $(App.view('generic/input')({
+        attribute: attribute
+      }));
+      item.data('field-type', 'integer');
+      return item;
+    };
+
+    return integer;
+
+  })();
+
+}).call(this);
+:ET

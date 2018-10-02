@@ -66,4 +66,4 @@ class Index extends App.ControllerSubContent
     if @subscribeId
       App.Setting.unsubscribe(@subscribeId)
 
-# App.Config.set('Integration', { prio: 1000, name: 'Integrations', parent: '#system', target: '#system/integration', controller: Index, permission: ['admin.integration'] }, 'NavBarAdmin')
+App.Config.set('Integration', { prio: 1000, name: 'Integrations', parent: '#channels', target: '#system/integration', controller: Index, permission: ['admin.integration'] }, 'NavBarAdmin')

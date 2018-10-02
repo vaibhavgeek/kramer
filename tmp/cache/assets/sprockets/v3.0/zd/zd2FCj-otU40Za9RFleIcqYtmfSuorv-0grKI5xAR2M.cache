@@ -1,0 +1,119 @@
+I"±function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="');
+    
+      __out.push(__sanitize(this.attribute.tag));
+    
+      __out.push(' form-group');
+    
+      if (this.attribute.item_class) {
+        __out.push(__sanitize(" " + this.attribute.item_class));
+      }
+    
+      __out.push('">\n  <div class="formGroup-label">\n    <label for="');
+    
+      __out.push(__sanitize(this.attribute.id));
+    
+      __out.push('"');
+    
+      if (this.attribute.label_class) {
+        __out.push(' class="');
+        __out.push(__sanitize(this.attribute.label_class));
+        __out.push('"');
+      }
+    
+      __out.push('>');
+    
+      __out.push(this.T(this.attribute.display));
+    
+      __out.push(' <span>');
+    
+      if (!this.attribute["null"]) {
+        __out.push('*');
+      }
+    
+      __out.push('</span></label>\n    ');
+    
+      __out.push(this.item);
+    
+      __out.push('\n    ');
+    
+      if (this.bookmarkable) {
+        __out.push('\n    <div class="align-right js-bookmark formGroup-bookmark">\n      <div class="filled bookmark icon"></div>\n    </div>\n    ');
+      }
+    
+      __out.push('\n    ');
+    
+      if (this.attribute.note) {
+        __out.push('\n    <div class="help-message js-helpMessage" title="');
+        __out.push(this.Ti(this.attribute.note));
+        __out.push('">\n      ');
+        __out.push(this.Icon('help'));
+        __out.push('\n    </div>\n    ');
+      }
+    
+      __out.push('\n  </div>\n  <div class="controls">\n\t');
+    
+      if (this.attribute.remove) {
+        __out.push('<span><a href="#" class="glyphicon glyphicon-minus"></a></span>');
+      }
+    
+      __out.push('\n\t');
+    
+      if (this.attribute.add) {
+        __out.push('<span><a href="#" class="glyphicon glyphicon-plus"></a></span>');
+      }
+    
+      __out.push('\n    <span class="help-inline"></span>\n    <span class="help-block">');
+    
+      if (this.attribute.help) {
+        __out.push(this.T(this.attribute.help));
+      }
+    
+      __out.push(this.attribute.helpLink);
+    
+      __out.push('</span>\n  </div>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

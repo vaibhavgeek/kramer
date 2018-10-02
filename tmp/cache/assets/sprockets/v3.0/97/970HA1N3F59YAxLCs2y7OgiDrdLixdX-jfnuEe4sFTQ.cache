@@ -1,0 +1,121 @@
+I"ö(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SettingsForm = (function(superClass) {
+    extend(SettingsForm, superClass);
+
+    SettingsForm.prototype.events = {
+      'submit form': 'update'
+    };
+
+    function SettingsForm() {
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      SettingsForm.__super__.constructor.apply(this, arguments);
+      this.authenticateCheckRedirect();
+      App.Setting.fetchFull(this.render, {
+        force: false
+      });
+    }
+
+    SettingsForm.prototype.render = function() {
+      var configure_attributes, i, len, localEl, params, setting, settings, value;
+      settings = App.Setting.search({
+        filter: {
+          area: this.area
+        }
+      });
+      if (App.Config.get('system_online_service')) {
+        settings = _.filter(settings, function(setting) {
+          if (setting.online_service) {
+            return;
+          }
+          if (setting.preferences && setting.preferences.online_service_disable) {
+            return;
+          }
+          return setting;
+        });
+        if (_.isEmpty(settings)) {
+          return;
+        }
+      }
+      settings = _.filter(settings, function(setting) {
+        if (setting.preferences && setting.preferences.disabled) {
+          return;
+        }
+        return setting;
+      });
+      settings = _.sortBy(settings, function(setting) {
+        if (!setting.preferences) {
+          return;
+        }
+        return setting.preferences.prio;
+      });
+      localEl = $(App.view('settings/form')({
+        settings: settings
+      }));
+      for (i = 0, len = settings.length; i < len; i++) {
+        setting = settings[i];
+        configure_attributes = setting.options['form'];
+        value = App.Setting.get(setting.name);
+        params = {};
+        params[setting.name] = value;
+        new App.ControllerForm({
+          el: localEl.find("[data-name=" + setting.name + "]"),
+          model: {
+            configure_attributes: configure_attributes
+          },
+          params: params
+        });
+      }
+      return this.html(localEl);
+    };
+
+    SettingsForm.prototype.update = function(e) {
+      var count, name, params, results, ui, value;
+      e.preventDefault();
+      this.formDisable(e);
+      params = this.formParam(e.target);
+      ui = this;
+      count = 0;
+      results = [];
+      for (name in params) {
+        value = params[name];
+        if (App.Setting.findByAttribute('name', name)) {
+          count += 1;
+          results.push(App.Setting.set(name, value, {
+            done: function() {
+              ui.formEnable(e);
+              count -= 1;
+              if (count === 0) {
+                App.Event.trigger('notify', {
+                  type: 'success',
+                  msg: App.i18n.translateContent('Update successful!'),
+                  timeout: 2000
+                });
+              }
+              return App.Setting.preferencesPost(this);
+            },
+            fail: function(settings, details) {
+              return App.Event.trigger('notify', {
+                type: 'error',
+                msg: App.i18n.translateContent(details.error_human || details.error || 'Unable to update object!'),
+                timeout: 2000
+              });
+            }
+          }));
+        } else {
+          results.push(void 0);
+        }
+      }
+      return results;
+    };
+
+    return SettingsForm;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

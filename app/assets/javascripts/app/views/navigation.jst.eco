@@ -1,5 +1,5 @@
 
 <% if !_.isEmpty(@user): %>
-<div class="vertical">
+<div class="vertical right_nav">
   <ul class="user-menu navbar-items-personal"></ul></div>
 <% end %>

@@ -1,0 +1,99 @@
+I"�function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="page-header">\n  <div class="page-header-title">\n    <h1>');
+    
+      __out.push(this.T('Translations'));
+    
+      __out.push(' <small>');
+    
+      __out.push(__sanitize(this.currentLanguage));
+    
+      __out.push('</small></h1>\n  </div>\n  <div class="page-header-meta">\n    <a class="btn btn--success js-syncChanges">');
+    
+      __out.push(this.T('Get latest translations'));
+    
+      __out.push('</a>\n    <a class="btn btn--danger hidden js-changes js-resetChanges">');
+    
+      __out.push(this.T('Reset changes'));
+    
+      __out.push('</a>\n    <a class="btn btn--primary hidden js-changes js-pushChanges">');
+    
+      __out.push(this.T('Push my changes'));
+    
+      __out.push('</a>\n  </div>\n</div>\n<div class="page-content">\n\n  <div class="box box--message">\n    <h2>');
+    
+      __out.push(this.T('Inline translation'));
+    
+      __out.push('</h2>\n    <p>');
+    
+      __out.push(this.T('To make translations easier you can enable and disable the inline translation feature by pressing "%s".', 'ctrl+alt+t'));
+    
+      __out.push('</p>\n    <p>');
+    
+      __out.push(this.T('Text with disabled inline translations looks like'));
+    
+      __out.push(' <button class="btn btn-primary">');
+    
+      __out.push(this.Ti('Some Text'));
+    
+      __out.push('</button></p>\n    <p>');
+    
+      __out.push(this.T('Text with enabled inline translations looks like'));
+    
+      __out.push(' <button class="btn btn-primary"><span class="translation" contenteditable="true">');
+    
+      __out.push(this.Ti('Some Text'));
+    
+      __out.push('</button></span></p>\n    <p>');
+    
+      __out.push(this.T('Just click into the marker and update the words just in place. Enjoy!'));
+    
+      __out.push('</p>\n    <p>');
+    
+      __out.push(this.T('If you want to translate it via the translation table, just go ahead below.'));
+    
+      __out.push('</p>\n  </div>\n\n  <div class="js-ToDo"></div>\n  <div class="js-List"></div>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET
