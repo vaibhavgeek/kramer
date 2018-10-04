@@ -3,7 +3,20 @@ class SubdomainPresent
     request.subdomain.present?
   end
 end
+
+class SubdomainBlank
+  def self.matches?(request)
+    request.subdomain.blank?
+  end
+end
+
 Rails.application.routes.draw do
+  
+  constraints(SubdomainBlank) do
+    resources :accounts, only: [:new, :create]
+    root 'welcome#index'
+  end
+ 
 
   constraints(SubdomainPresent) do
     

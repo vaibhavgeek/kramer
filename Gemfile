@@ -10,6 +10,7 @@ gem 'composite_primary_keys'
 gem 'json'
 gem 'rails-observers'
 gem 'apartment'
+
 # core - application servers
 gem 'puma', group: :puma
 gem 'unicorn', group: :unicorn

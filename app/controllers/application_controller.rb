@@ -12,4 +12,25 @@ class ApplicationController < ActionController::Base
   include ApplicationController::PreventsCsrf
   include ApplicationController::LogsHttpAccess
   include ApplicationController::ChecksAccess
+
+ # protect_from_forgery with: :exception
+
+  before_action :load_schema 
+
+  private 
+  def load_schema
+      Apartment::Tenant.switch!('public')
+      return unless request.subdomain.present?
+
+      account = Account.find_by(subdomain: request.subdomain)
+       if account
+         Apartment::Tenant.switch!(account.subdomain)
+      else
+         redirect_to root_url(subdomain: false)
+      end
+    
+  end
+  
+  
+ 
 end

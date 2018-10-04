@@ -190,9 +190,9 @@ class Index extends App.ControllerContent
     )
 
 App.Config.set('import/zendesk', Index, 'Routes')
-App.Config.set('zendesk', {
-  title: 'Zendesk'
-  name:  'Zendesk'
-  class: 'js-zendesk'
-  url:   '#import/zendesk'
-}, 'ImportPlugins')
+# App.Config.set('zendesk', {
+#   title: 'Zendesk'
+#   name:  'Zendesk'
+#   class: 'js-zendesk'
+#   url:   '#import/zendesk'
+# }, 'ImportPlugins')

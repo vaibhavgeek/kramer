@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1024">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <%= stylesheet_link_tag "welcome" %>
+
+<title> ChaturBots AI HelpDesk </title>
+
+<% if Rails.configuration.assets.debug %>
+<%= javascript_include_tag "welcome" %>
+<% else %>
+<%= javascript_include_tag "welcome", :defer => 'defer' %>
+<% end %>
+<%= javascript_include_tag 'particles.min'%>
+<%= javascript_include_tag 'typed'%>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% flash.each do |msg,name| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+<div class="navbar-fixed">
+<nav role="navigation" class="z-depth-0">
+  <div class="nav-wrapper">
+  <%= image_tag "logo_nav.png" , :style => "width:45px; margin-top:10px; margin-right: 10px;" %>
+
+    <a id="logo-container" href="#" class="brand-logo">ChaturBots</a>
+    <ul class="right hide-on-med-and-down">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Start Free Trial</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">How It Works</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+</div>
+
+
+
+
+
+<%= yield %>
+
+
+</body>
+</html>
