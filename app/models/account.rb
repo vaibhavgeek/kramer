@@ -1,7 +1,7 @@
 class Account < ApplicationRecord
     
-    belongs_to :owner, class_name: 'User'
-    validates :owner, presence: true
+   # belongs_to :owner, class_name: 'User'
+   # validates :owner, presence: true
 
     validates :subdomain, presence: true,
                          uniqueness: { case_sensitive: false },
@@ -9,7 +9,7 @@ class Account < ApplicationRecord
                         exclusion: { in: ['www'], message: 'restricted' }
    
     before_validation :downcase_subdomain
-    accepts_nested_attributes_for :owner
+    # accepts_nested_attributes_for :owner
     private
     def downcase_subdomain
         self.subdomain = subdomain.try(:downcase)

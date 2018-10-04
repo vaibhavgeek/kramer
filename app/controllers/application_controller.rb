@@ -13,8 +13,7 @@ class ApplicationController < ActionController::Base
   include ApplicationController::LogsHttpAccess
   include ApplicationController::ChecksAccess
 
- # protect_from_forgery with: :exception
-
+   
   before_action :load_schema 
 
   private 
