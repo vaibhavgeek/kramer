@@ -53,6 +53,7 @@ namespace :deploy do
   before 'deploy:migrate', 'deploy:db:create'
   after 'puma:smart_restart', 'nginx:restart'
    desc "reload the database with seed data"
+   before 'rails db:reset'
   task :seed do
     run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
   end
