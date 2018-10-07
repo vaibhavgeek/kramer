@@ -27,7 +27,7 @@ server {
   ssl_certificate /etc/letsencrypt/live/chaturbots.com/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/chaturbots.com/privkey.pem;
 
-  ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+  ssl_dhparam /etc/nginx/ssl/dhparam.pem;
 
   ssl_session_cache shared:le_nginx_SSL:10m;
   ssl_session_timeout 180m;
@@ -35,7 +35,7 @@ server {
   ssl_stapling on;
   ssl_stapling_verify on;
 
-  ssl_trusted_certificate /etc/letsencrypt/live/chaturbots.com/chain.pem;
+  ssl_trusted_certificate /etc/nginx/ssl/lets-encrypt-x3-cross-signed.pem;
 
 
 
@@ -63,7 +63,7 @@ server {
     error_log <%= shared_path %>/log/nginx.error.log;
   }
 
-  location /ws {
+  location /ws {  
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection "Upgrade";
