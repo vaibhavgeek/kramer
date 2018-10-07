@@ -787,14 +787,14 @@ App.Auth.login({
 var authWithSession = function() {
   App.Auth.login({
     data: {
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
     },
     success: function(data) {
       test('auth - existing user', function() {
         ok(true, 'authenticated')
         var user = App.Session.get('login')
-        equal('nicole.braun@zammad.org', user, 'session login')
+        equal('vaibhav@chaturbots.com', user, 'session login')
       })
     },
     error: function() {

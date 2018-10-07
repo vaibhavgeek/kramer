@@ -4,12 +4,12 @@ require 'test_helper'
 class AuthTest < ActiveSupport::TestCase
   test 'auth' do
 
-    user = User.find_by(email: 'nicole.braun@zammad.org')
+    user = User.find_by(email: 'vaibhav@chaturbots.com')
     user.update!(
       login: 'nicole.braun',
       firstname: 'Nicole',
       lastname: 'Braun',
-      email: 'nicole.braun@zammad.org',
+      email: 'vaibhav@chaturbots.com',
       password: 'some_pass',
       active: true,
       updated_by_id: 1,
@@ -27,25 +27,25 @@ class AuthTest < ActiveSupport::TestCase
 
       # test 2
       {
-        username: 'nicole.braun@zammad.org',
+        username: 'vaibhav@chaturbots.com',
         password: 'some_pass',
         result: true,
         verify: {
           firstname: 'Nicole',
           lastname: 'Braun',
-          email: 'nicole.braun@zammad.org',
+          email: 'vaibhav@chaturbots.com',
         }
       },
 
       # test 3
       {
-        username: 'nicole.bRaUn@zammad.org',
+        username: 'vaibhav@chaturbots.com',
         password: 'some_pass',
         result: true,
         verify: {
           firstname: 'Nicole',
           lastname: 'Braun',
-          email: 'nicole.braun@zammad.org',
+          email: 'vaibhav@chaturbots.com',
         }
       },
 
@@ -57,7 +57,7 @@ class AuthTest < ActiveSupport::TestCase
         verify: {
           firstname: 'Nicole',
           lastname: 'Braun',
-          email: 'nicole.braun@zammad.org',
+          email: 'vaibhav@chaturbots.com',
         }
       },
 

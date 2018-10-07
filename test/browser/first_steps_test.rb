@@ -111,7 +111,7 @@ class FirstStepsTest < TestCase
     )
     watch_for(
       css:     '.active.content .js-activityContent',
-      value:   'Nicole Braun created Article for Test Ticket!',
+      value:   'Vaibhav Maheshwari created Article for Test Ticket!',
       timeout: 35,
     )
 

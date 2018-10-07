@@ -34,7 +34,7 @@ class OnlineNotificationTest < ActiveSupport::TestCase
       updated_by_id: 1,
       created_by_id: 1
     )
-    @customer_user = User.lookup(email: 'nicole.braun@zammad.org')
+    @customer_user = User.lookup(email: 'vaibhav@chaturbots.com')
 
     calendar1 = Calendar.create_or_update(
       name: 'EU 1 - test',

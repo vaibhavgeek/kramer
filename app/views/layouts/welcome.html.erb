@@ -22,32 +22,29 @@
 <% flash.each do |msg,name| %>
   <%= content_tag :div, msg, :id => "flash_#{name}" %>
 <% end %>
-<div class="navbar-fixed">
-<nav role="navigation" class="z-depth-0">
-  <div class="nav-wrapper">
-  <%= image_tag "logo_nav.png" , :style => "width:45px; margin-top:10px; margin-right: 10px;" %>
 
-    <a id="logo-container" href="#" class="brand-logo">ChaturBots</a>
-    <ul class="right hide-on-med-and-down">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Start Free Trial</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<%= image_tag "logo_nav.png" , :style => "width:45px; margin-top:10px; margin-right: 10px;" %>
 
-    <ul id="nav-mobile" class="side-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">How It Works</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Login</a></li>
+  <a class="navbar-brand" href="#">chaturbots</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+     
     </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
 </nav>
-</div>
-
-
 
 
 

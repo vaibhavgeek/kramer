@@ -130,7 +130,7 @@ Setting.create_if_not_exists(
     controller: 'SettingsAreaLogo',
     permission: ['admin.branding'],
   },
-  state: 'logo.svg',
+  state: 'logo.png',
   frontend: true
 )
 Setting.create_if_not_exists(

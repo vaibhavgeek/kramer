@@ -1,15 +1,15 @@
 FactoryBot.define do
   sequence :email do |n|
-    "nicole.braun#{n}@zammad.org"
+    "vaibhav#{n}@chaturbots.com"
   end
 end
 
 FactoryBot.define do
 
   factory :user do
-    login         'nicole.braun'
-    firstname     'Nicole'
-    lastname      'Braun'
+    login         'vaibhav@chaturbots.com'
+    firstname     'Vaibhav'
+    lastname      'Maheshwari'
     email         { generate(:email) }
     password      nil
     active        true

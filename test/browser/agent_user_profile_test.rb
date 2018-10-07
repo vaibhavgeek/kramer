@@ -18,7 +18,7 @@ class AgentUserProfileTest < TestCase
 
     verify_task(
       data: {
-        title: 'Nicole Braun',
+        title: 'Vaibhav Maheshwari',
       }
     )
 
@@ -85,7 +85,7 @@ class AgentUserProfileTest < TestCase
 
     verify_task(
       data: {
-        title: 'Nicole Braun',
+        title: 'Vaibhav Maheshwari',
       }
     )
 

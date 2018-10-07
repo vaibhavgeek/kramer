@@ -158,7 +158,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -195,7 +195,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk abc], ticket1.tag_list)
     article1 = ticket1.articles.last
     assert_match('Zammad <zammad@localhost>', article1.from)
-    assert_match('nicole.braun@zammad.org', article1.to)
+    assert_match('vaibhav@chaturbots.com', article1.to)
     assert_match('Thanks for your inquiry (some <b>title</b>  äöüß)!', article1.subject)
     assert_match('Braun<br>some &lt;b&gt;title&lt;/b&gt;', article1.body)
     assert_match('&gt; some message &lt;b&gt;note&lt;/b&gt;<br>&gt; new line', article1.body)
@@ -242,7 +242,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket2 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       state: Ticket::State.lookup(name: 'open'),
       priority: Ticket::Priority.lookup(name: '2 normal'),
       updated_by_id: 1,
@@ -269,7 +269,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket3 = Ticket.create!(
       title: "some <b>title</b>\n äöüß3",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -308,7 +308,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk abc article_create_trigger], ticket3.tag_list)
     article3 = ticket3.articles[1]
     assert_match('Zammad <zammad@localhost>', article3.from)
-    assert_match('nicole.braun@zammad.org', article3.to)
+    assert_match('vaibhav@chaturbots.com', article3.to)
     assert_match('Thanks for your inquiry (some <b>title</b>  äöüß3)!', article3.subject)
     assert_match('Braun<br>some &lt;b&gt;title&lt;/b&gt;', article3.body)
     assert_match('&gt; some message note<br>&gt; new line', article3.body)
@@ -316,7 +316,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal('text/html', article3.content_type)
     article3 = ticket3.articles[2]
     assert_match('Zammad <zammad@localhost>', article3.from)
-    assert_match('nicole.braun@zammad.org', article3.to)
+    assert_match('vaibhav@chaturbots.com', article3.to)
     assert_match('Thanks for your inquiry - 1234 check (some <b>title</b>  äöüß3)!', article3.subject)
     assert_equal('text/html', article3.content_type)
 
@@ -428,7 +428,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -449,7 +449,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(1, ticket1.articles.count, 'ticket1.articles verify')
     article1 = ticket1.articles.last
     assert_match('Zammad <zammad@localhost>', article1.from)
-    assert_match('nicole.braun@zammad.org', article1.to)
+    assert_match('vaibhav@chaturbots.com', article1.to)
     assert_match('asdasdas', article1.subject)
     assert_match('dasdasdasd', article1.body)
     assert_equal('text/html', article1.content_type)
@@ -521,7 +521,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -1215,7 +1215,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
       title: 'test 123',
       owner: agent,
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -1352,7 +1352,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
       title: 'test 123',
       #owner: agent,
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -1505,7 +1505,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(1, ticket1.articles.count, 'ticket1.articles verify')
     assert_equal([], ticket1.tag_list)
 
-    ticket1.update!(customer: User.lookup(email: 'nicole.braun@zammad.org') )
+    ticket1.update!(customer: User.lookup(email: 'vaibhav@chaturbots.com') )
 
     UserInfo.current_user_id = agent.id
     Ticket::Article.create!(
@@ -1591,7 +1591,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: 'test 123',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -1708,7 +1708,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
       title: 'test 123',
       #owner: agent,
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -1891,7 +1891,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
       title: 'test 123',
       #owner: agent,
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -2180,7 +2180,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: 'test 123',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -2745,7 +2745,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -2802,7 +2802,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -2871,7 +2871,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -2940,7 +2940,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3007,7 +3007,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       owner_id: admin.id,
       updated_by_id: 1,
       created_by_id: 1,
@@ -3066,7 +3066,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3129,7 +3129,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: 'loop try 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3179,7 +3179,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(4, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[2].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[3].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[3].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3200,7 +3200,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(6, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[4].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[5].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[5].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3221,7 +3221,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(8, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[6].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[7].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[7].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3242,7 +3242,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(10, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[8].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[9].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[9].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3263,7 +3263,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(12, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[10].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[11].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[11].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3284,7 +3284,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(14, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[12].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[13].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[13].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3305,7 +3305,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(16, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[14].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[15].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[15].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3326,7 +3326,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(18, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[16].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[17].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[17].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3347,7 +3347,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1.reload
     assert_equal(20, ticket1.articles.count)
     assert_equal('some_loop_sender@example.com', ticket1.articles[18].from)
-    assert_equal('nicole.braun@zammad.org', ticket1.articles[19].to)
+    assert_equal('vaibhav@chaturbots.com', ticket1.articles[19].to)
 
     Ticket::Article.create!(
       ticket_id: ticket1.id,
@@ -3458,7 +3458,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3495,7 +3495,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk], ticket1.tag_list)
     article1 = ticket1.articles.last
     assert_match('Zammad <zammad@localhost>', article1.from)
-    assert_match('nicole.braun@zammad.org', article1.to)
+    assert_match('vaibhav@chaturbots.com', article1.to)
     assert_match('Thanks for your inquiry (some <b>title</b>  äöüß)!', article1.subject)
     assert_match('Braun<br>some &lt;b&gt;title&lt;/b&gt;', article1.body)
     assert_match('&gt; some message &lt;b&gt;note&lt;/b&gt;<br>&gt; new line', article1.body)
@@ -3585,7 +3585,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: 'test 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3622,7 +3622,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket2 = Ticket.create!(
       title: 'test 2',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3661,7 +3661,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket3 = Ticket.create!(
       title: 'test 3',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3736,7 +3736,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: 'test 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3772,7 +3772,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk], ticket1.tag_list)
     article1 = ticket1.articles.last
     assert_match('Zammad <zammad@localhost>', article1.from)
-    assert_match('nicole.braun@zammad.org', article1.to)
+    assert_match('vaibhav@chaturbots.com', article1.to)
     assert_match('Thanks for your inquiry (test 1)!', article1.subject)
     assert_match('some message', article1.body)
     assert_match('&gt; some message &lt;b&gt;note&lt;/b&gt; hello', article1.body)
@@ -3781,7 +3781,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket2 = Ticket.create!(
       title: 'test 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3852,7 +3852,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket3 = Ticket.create!(
       title: 'test 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3890,7 +3890,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket4 = Ticket.create!(
       title: 'test 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -3926,7 +3926,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk], ticket4.tag_list)
     article4 = ticket4.articles.last
     assert_match('Zammad <zammad@localhost>', article4.from)
-    assert_match('nicole.braun@zammad.org', article4.to)
+    assert_match('vaibhav@chaturbots.com', article4.to)
     assert_match('Thanks for your inquiry (test 1)!', article4.subject)
     assert_match('some message', article4.body)
     assert_match('&gt; some message &lt;b&gt;note&lt;/b&gt; 2', article4.body)
@@ -4026,7 +4026,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -4042,7 +4042,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket2 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -4163,7 +4163,7 @@ class TicketTriggerRecursiveDisabledTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: 'test 1',
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )

@@ -9,7 +9,7 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
-            redirect_to root_path(subdomain: @account.subdomain)
+            redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index"
         else
             render action: 'new'
         end

@@ -13,7 +13,6 @@
 //= require ./app/lib/core/jquery-2.2.1.js
 //= require ./app/lib/core/jquery-ui-1.11.4.js
 //= require rails-ujs
-//= require ./welcome/materialize
 particlesJS.load('particles-js', 'assets/particle-1.json', function() {
     console.log('callback - particles.js config loaded');
   });

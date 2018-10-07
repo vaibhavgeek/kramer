@@ -427,6 +427,7 @@ do($ = window.jQuery, window) ->
         @renderBase()
 
       # disable open button
+      ## CB You need to edit this shit. 
       $(".#{ @options.buttonClass }").addClass @inactiveClass
 
       @setAgentOnlineState 'online'

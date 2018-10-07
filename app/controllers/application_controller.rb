@@ -13,7 +13,6 @@ class ApplicationController < ActionController::Base
   include ApplicationController::LogsHttpAccess
   include ApplicationController::ChecksAccess
 
-   
   before_action :load_schema 
 
   private 
@@ -21,14 +20,16 @@ class ApplicationController < ActionController::Base
       Apartment::Tenant.switch!('public')
       return unless request.subdomain.present?
 
-      account = Account.find_by(subdomain: request.subdomain)
-       if account
+      account = Account.where(subdomain: request.subdomain).first
+      if account
+         
          Apartment::Tenant.switch!(account.subdomain)
       else
-         redirect_to root_url(subdomain: false)
+        redirect_to subdomain: false, :controller => 'welcome', :action => "index"
       end
     
   end
+
   
   
  

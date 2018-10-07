@@ -19,7 +19,7 @@ class AuthTest < TestCase
 
     # login with username/password
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
     )
     tasks_close_all()
@@ -56,7 +56,7 @@ class AuthTest < TestCase
 
     # login with username/password
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       remember_me: true,
     )

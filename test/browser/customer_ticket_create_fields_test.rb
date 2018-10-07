@@ -26,7 +26,7 @@ class CustomerTicketCreateFieldsTest < TestCase
 
     # create customer session and fetch object attributes
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url:      browser_url,
     )

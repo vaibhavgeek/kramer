@@ -2,7 +2,7 @@
 require 'test_helper'
 
 class HistoryTest < ActiveSupport::TestCase
-  current_user = User.lookup(email: 'nicole.braun@zammad.org')
+  current_user = User.lookup(email: 'vaibhav@chaturbots.com')
 
   test 'ticket' do
     tests = [
@@ -127,7 +127,7 @@ class HistoryTest < ActiveSupport::TestCase
             history_type: 'updated',
             history_attribute: 'owner',
             value_from: '-',
-            value_to: 'Nicole Braun',
+            value_to: 'Vaibhav Maheshwari',
             id_from: User.lookup(login: '-').id,
             id_to: current_user.id,
           },

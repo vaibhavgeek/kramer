@@ -1,13 +1,13 @@
 org_community = Organization.create_if_not_exists(
   id: 1,
-  name: 'Zammad Foundation',
+  name: 'ChaturBots AI',
 )
 user_community = User.create_or_update(
   id: 2,
-  login: 'nicole.braun@zammad.org',
-  firstname: 'Nicole',
-  lastname: 'Braun',
-  email: 'nicole.braun@zammad.org',
+  login: 'vaibhav@chaturbots.com',
+  firstname: 'Vaibhav',
+  lastname: 'Maheshwari',
+  email: 'vaibhav@chaturbots.com',
   password: '',
   active: true,
   roles: [ Role.find_by(name: 'Customer') ],
@@ -19,25 +19,23 @@ UserInfo.current_user_id = user_community.id
 if Ticket.count.zero?
   ticket = Ticket.create!(
     group_id: Group.find_by(name: 'Users').id,
-    customer_id: User.find_by(login: 'nicole.braun@zammad.org').id,
-    title: 'Welcome to Zammad!',
+    customer_id: User.find_by(login: 'vaibhav@chaturbots.com').id,
+    title: 'Welcome to ChaturBots!',
   )
   Ticket::Article.create!(
     ticket_id: ticket.id,
     type_id: Ticket::Article::Type.find_by(name: 'phone').id,
     sender_id: Ticket::Article::Sender.find_by(name: 'Customer').id,
-    from: 'Zammad Feedback <feedback@zammad.org>',
+    from: 'ChaturBots Feedback <feedback@chaturbots.com>',
     body: 'Welcome!
 
-  Thank you for choosing Zammad.
+  Thank you for choosing ChaturBots AI.
 
-  You will find updates and patches at https://zammad.org/. Online
-  documentation is available at https://zammad.org/documentation. Get
-  involved (discussions, contributing, ...) at https://zammad.org/participate.
-
+  We are here to help you get started. You can send us an email vaibhav@chaturbots.com or simply say hello
+  at any social media platforms. 
   Regards,
 
-  Your Zammad Team
+  Your ChaturBots Team
   ',
     internal: false,
   )

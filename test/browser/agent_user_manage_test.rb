@@ -162,7 +162,7 @@ class AgentUserManageTest < TestCase
 
     match(
       css: '.content.active .tabsSidebar .sidebar[data-tab="customer"]',
-      value: 'Nicole Braun',
+      value: 'Vaibhav Maheshwari',
     )
 
     click(css: '.content.active .tabsSidebar .sidebar[data-tab="customer"] .js-actions')

@@ -324,7 +324,7 @@
         "url": "",
         "license": "MIT"
     },
-    "logo.svg": {
+    "logo.png": {
         "author": "Zammad",
         "url": "",
         "license": "MIT"
@@ -379,7 +379,7 @@
         "url": "",
         "license": "MIT"
     },
-    "full-logo.svg": {
+    "full-logo.png": {
         "author": "Zammad",
         "url": "",
         "license": "MIT"

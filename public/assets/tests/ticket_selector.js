@@ -266,7 +266,7 @@ window.onload = function() {
           "operator": "is",
           "pre_condition": "specific",
           "value": specificValue,
-          "value_completion": "Nicole Braun <nicole.braun@zammad.org>"
+          "value_completion": "Vaibhav Maheshwari <vaibhav@chaturbots.com>"
         }
       }
     };
@@ -280,7 +280,7 @@ window.onload = function() {
           "operator": "is not",
           "pre_condition": "specific",
           "value": specificValue,
-          "value_completion": "Nicole Braun <nicole.braun@zammad.org>"
+          "value_completion": "Vaibhav Maheshwari <vaibhav@chaturbots.com>"
         }
       }
     };
@@ -293,7 +293,7 @@ window.onload = function() {
           "operator": "is not",
           "pre_condition": "specific",
           "value": specificValue,
-          "value_completion": "Nicole Braun <nicole.braun@zammad.org>"
+          "value_completion": "Vaibhav Maheshwari <vaibhav@chaturbots.com>"
         }
       }
     };
@@ -358,7 +358,7 @@ window.onload = function() {
           "operator": "is",
           "pre_condition": "specific",
           "value": specificValue,
-          "value_completion": "Nicole Braun <nicole.braun@zammad.org>"
+          "value_completion": "Vaibhav Maheshwari <vaibhav@chaturbots.com>"
         }
       }
     };
@@ -372,7 +372,7 @@ window.onload = function() {
           "operator": "is not",
           "pre_condition": "specific",
           "value": specificValue,
-          "value_completion": "Nicole Braun <nicole.braun@zammad.org>"
+          "value_completion": "Vaibhav Maheshwari <vaibhav@chaturbots.com>"
         }
       }
     };
@@ -385,7 +385,7 @@ window.onload = function() {
           "operator": "is not",
           "pre_condition": "specific",
           "value": specificValue,
-          "value_completion": "Nicole Braun <nicole.braun@zammad.org>"
+          "value_completion": "Vaibhav Maheshwari <vaibhav@chaturbots.com>"
         }
       }
     };

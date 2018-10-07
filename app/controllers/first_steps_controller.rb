@@ -218,7 +218,7 @@ class FirstStepsController < ApplicationController
   end
 
   def test_customer
-    User.find_by(login: 'nicole.braun@zammad.org')
+    User.find_by(login: 'vaibhav@chaturbots.com')
   end
 
   def access?

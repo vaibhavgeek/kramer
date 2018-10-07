@@ -173,7 +173,7 @@ class AgentOrganizationProfileTest < TestCase
 
     watch_for(
       css: '.active .profile-window .userList-entry a.user-popover',
-      value: 'Nicole Braun',
+      value: 'Vaibhav Maheshwari',
     )
 
     exists(

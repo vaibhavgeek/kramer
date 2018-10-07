@@ -118,7 +118,7 @@ class NotificationFactoryMailerTest < ActiveSupport::TestCase
 
     ticket1 = Ticket.create(
       group_id: Group.lookup(name: 'Users').id,
-      customer_id: User.lookup(email: 'nicole.braun@zammad.org').id,
+      customer_id: User.lookup(email: 'vaibhav@chaturbots.com').id,
       owner_id: User.lookup(login: '-').id,
       title: 'Notification Settings Test 1!',
       state_id: Ticket::State.lookup(name: 'new').id,
@@ -129,7 +129,7 @@ class NotificationFactoryMailerTest < ActiveSupport::TestCase
 
     ticket2 = Ticket.create(
       group_id: Group.lookup(name: 'Users').id,
-      customer_id: User.lookup(email: 'nicole.braun@zammad.org').id,
+      customer_id: User.lookup(email: 'vaibhav@chaturbots.com').id,
       owner_id: agent1.id,
       title: 'Notification Settings Test 2!',
       state_id: Ticket::State.lookup(name: 'new').id,
@@ -140,7 +140,7 @@ class NotificationFactoryMailerTest < ActiveSupport::TestCase
 
     ticket3 = Ticket.create(
       group_id: group_notification_setting.id,
-      customer_id: User.lookup(email: 'nicole.braun@zammad.org').id,
+      customer_id: User.lookup(email: 'vaibhav@chaturbots.com').id,
       owner_id: User.lookup(login: '-').id,
       title: 'Notification Settings Test 1!',
       state_id: Ticket::State.lookup(name: 'new').id,
@@ -151,7 +151,7 @@ class NotificationFactoryMailerTest < ActiveSupport::TestCase
 
     ticket4 = Ticket.create(
       group_id: group_notification_setting.id,
-      customer_id: User.lookup(email: 'nicole.braun@zammad.org').id,
+      customer_id: User.lookup(email: 'vaibhav@chaturbots.com').id,
       owner_id: agent1.id,
       title: 'Notification Settings Test 2!',
       state_id: Ticket::State.lookup(name: 'new').id,

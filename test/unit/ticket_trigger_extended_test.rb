@@ -745,7 +745,7 @@ Some Text'
         'ticket.organization_id' => {
           'operator' => 'is',
           'pre_condition' => 'specific',
-          'value' => User.lookup(email: 'nicole.braun@zammad.org').organization_id.to_s,
+          'value' => User.lookup(email: 'vaibhav@chaturbots.com').organization_id.to_s,
         }
       },
       perform: {
@@ -798,7 +798,7 @@ Some Text'
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: group1,
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'vaibhav@chaturbots.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -834,7 +834,7 @@ Some Text'
     assert_equal(2, ticket1.articles.count, 'ticket1.articles verify')
     assert_equal(%w[aa kk], ticket1.tag_list)
 
-    email_raw = "From: nicole.braun@zammad.org
+    email_raw = "From: vaibhav@chaturbots.com
 To: zammad@example.com
 Subject: test 1
 X-Zammad-Ticket-Group: #{group1.name}

@@ -14,7 +14,7 @@ class AgentProfilePermissionsTest < TestCase
 
     verify_task(
       data: {
-        title: 'Nicole Braun',
+        title: 'Vaibhav Maheshwari',
       }
     )
 
@@ -80,7 +80,7 @@ class AgentProfilePermissionsTest < TestCase
 
     verify_task(
       data: {
-        title: 'Nicole Braun',
+        title: 'Vaibhav Maheshwari',
       }
     )
   end
@@ -232,7 +232,7 @@ class AgentProfilePermissionsTest < TestCase
 
     watch_for(
       css: '.content.active .sidebar[data-tab="customer"] .sidebar-block [title="Name"]',
-      value: 'Nicole Braun',
+      value: 'Vaibhav Maheshwari',
     )
   end
 
@@ -317,7 +317,7 @@ class AgentProfilePermissionsTest < TestCase
 
     verify_task(
       data: {
-        title: 'Nicole Braun',
+        title: 'Vaibhav Maheshwari',
       }
     )
   end

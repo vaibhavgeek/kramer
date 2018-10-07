@@ -43,7 +43,7 @@ class NotificationFactorySlackTemplateTest < ActiveSupport::TestCase
 
     ticket = Ticket.create(
       group_id: Group.lookup(name: 'Users').id,
-      customer_id: User.lookup(email: 'nicole.braun@zammad.org').id,
+      customer_id: User.lookup(email: 'vaibhav@chaturbots.com').id,
       owner_id: User.lookup(login: '-').id,
       title: 'Welcome to Zammad!',
       state_id: Ticket::State.lookup(name: 'new').id,

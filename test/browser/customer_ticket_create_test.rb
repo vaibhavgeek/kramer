@@ -5,7 +5,7 @@ class CustomerTicketCreateTest < TestCase
   def test_customer_ticket_create_and_verify_state_after_update
     @browser = browser_instance
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url: browser_url,
     )
@@ -168,7 +168,7 @@ class CustomerTicketCreateTest < TestCase
   def test_customer_ticket_create_relogin_with_agent_ticket_create
     @browser = browser_instance
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url: browser_url,
     )
@@ -248,7 +248,7 @@ class CustomerTicketCreateTest < TestCase
     # check if new ticket button is not visible
 
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url: browser_url,
     )
@@ -278,7 +278,7 @@ class CustomerTicketCreateTest < TestCase
     # check if new ticket button is visible
 
     login(
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url: browser_url,
     )

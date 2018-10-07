@@ -61,7 +61,7 @@ class MaintenanceModeTest < TestCase
     )
     login(
       browser: browser2,
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url: browser_url,
       success: false,
@@ -111,7 +111,7 @@ class MaintenanceModeTest < TestCase
     sleep 4
     login(
       browser: browser2,
-      username: 'nicole.braun@zammad.org',
+      username: 'vaibhav@chaturbots.com',
       password: 'test',
       url: browser_url,
     )

@@ -21,7 +21,7 @@ module ApplicationController::PreventsCsrf
     return true if valid_authenticity_token?(session, params[:authenticity_token] || request.headers['X-CSRF-Token'])
     #puts params[:authenticity_token]
     #puts request.headers['X-CSRF-Token']
-    return true
+    #return true
     logger.info 'CSRF token verification failed'
     raise Exceptions::NotAuthorized, 'CSRF token verification failed!'
   end
