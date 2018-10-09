@@ -1,0 +1,48 @@
+I"ê(function() {
+  var DefaultLocale,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DefaultLocale = (function(superClass) {
+    extend(DefaultLocale, superClass);
+
+    function DefaultLocale() {
+      var check;
+      DefaultLocale.__super__.constructor.apply(this, arguments);
+      check = (function(_this) {
+        return function() {
+          var locale, preferences;
+          preferences = App.Session.get('preferences');
+          if (!preferences) {
+            return;
+          }
+          if (!_.isEmpty(preferences.locale)) {
+            return;
+          }
+          locale = App.i18n.get();
+          return _this.ajax({
+            id: "i18n-set-user-" + locale,
+            type: 'PUT',
+            url: (App.Config.get('api_path')) + "/users/preferences",
+            data: JSON.stringify({
+              locale: locale
+            }),
+            processData: true
+          });
+        };
+      })(this);
+      App.Event.bind('auth:login', (function(_this) {
+        return function(session) {
+          return _this.delay(check, 3500, 'default_locale');
+        };
+      })(this));
+    }
+
+    return DefaultLocale;
+
+  })(App.Controller);
+
+  App.Config.set('default_locale', DefaultLocale, 'Widgets');
+
+}).call(this);
+:ET

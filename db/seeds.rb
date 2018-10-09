@@ -38,4 +38,4 @@ Locale.create_if_not_exists(
 #Calendar.init_setup
 
 # install all packages in auto_install
-#Package.auto_install
+Package.auto_install

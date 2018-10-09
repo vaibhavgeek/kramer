@@ -1,0 +1,35 @@
+I"(function() {
+  var Split;
+
+  Split = (function() {
+    function Split() {}
+
+    Split.action = function(actions, ticket, article, ui) {
+      if (ui.permissionCheck('ticket.customer')) {
+        return actions;
+      }
+      actions.push({
+        name: 'split',
+        type: 'split',
+        icon: 'split',
+        href: "#ticket/create/" + article.ticket_id + "/" + article.id
+      });
+      return actions;
+    };
+
+    Split.perform = function(articleContainer, type, ticket, article, ui) {
+      if (type !== 'split') {
+        return true;
+      }
+      ui.navigate("#ticket/create/" + article.ticket_id + "/" + article.id);
+      return true;
+    };
+
+    return Split;
+
+  })();
+
+  App.Config.set('700-Split', Split, 'TicketZoomArticleAction');
+
+}).call(this);
+:ET
