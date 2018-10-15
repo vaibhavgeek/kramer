@@ -1,0 +1,1 @@
+{"event":"config_update","data":{"name":"ui_ticket_create_available_types","value":["phone-in","phone-out","email-out"]}}

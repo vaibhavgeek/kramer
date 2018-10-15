@@ -2,12 +2,12 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 # Examples:
+Cache.clear
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
 
 # clear old caches to start from scratch
-Cache.clear
 
 # this is the __ordered__ list of seed files
 # extend only if needed - try to add your changes

@@ -1,0 +1,51 @@
+I"Ì(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SettingsAreaItemDefaultLocale = (function(superClass) {
+    extend(SettingsAreaItemDefaultLocale, superClass);
+
+    function SettingsAreaItemDefaultLocale() {
+      this.render = bind(this.render, this);
+      return SettingsAreaItemDefaultLocale.__super__.constructor.apply(this, arguments);
+    }
+
+    SettingsAreaItemDefaultLocale.prototype.render = function() {
+      var configure_attributes, i, len, locale, locales, options;
+      options = {};
+      locales = App.Locale.all();
+      for (i = 0, len = locales.length; i < len; i++) {
+        locale = locales[i];
+        options[locale.locale] = locale.name;
+      }
+      configure_attributes = [
+        {
+          name: 'locale_default',
+          display: '',
+          tag: 'searchable_select',
+          "null": false,
+          "class": 'input',
+          options: options,
+          "default": this.setting.state_current.value
+        }
+      ];
+      this.html(App.view(this.template)({
+        setting: this.setting
+      }));
+      return new App.ControllerForm({
+        el: this.el.find('.form-item'),
+        model: {
+          configure_attributes: configure_attributes,
+          className: ''
+        },
+        autofocus: false
+      });
+    };
+
+    return SettingsAreaItemDefaultLocale;
+
+  })(App.SettingsAreaItem);
+
+}).call(this);
+:ET

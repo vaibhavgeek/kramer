@@ -1,0 +1,92 @@
+I"Z(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.GlobalSearch = (function(superClass) {
+    extend(GlobalSearch, superClass);
+
+    function GlobalSearch() {
+      this.close = bind(this.close, this);
+      this.renderTry = bind(this.renderTry, this);
+      this.search = bind(this.search, this);
+      GlobalSearch.__super__.constructor.apply(this, arguments);
+      this.searchResultCache = {};
+      this.lastQuery = void 0;
+      this.apiPath = App.Config.get('api_path');
+      this.ajaxId = "search-" + (Math.floor(Math.random() * 999999));
+    }
+
+    GlobalSearch.prototype.search = function(params) {
+      var currentTime, query;
+      query = params.query;
+      currentTime = new Date;
+      if (this.searchResultCache[query] && this.searchResultCache[query].time > currentTime.setSeconds(currentTime.getSeconds() - 20)) {
+        this.renderTry(this.searchResultCache[query].result, query);
+        return;
+      }
+      return App.Ajax.request({
+        id: this.ajaxId,
+        type: 'GET',
+        url: this.apiPath + "/search",
+        data: {
+          query: query,
+          limit: this.limit || 10
+        },
+        processData: true,
+        success: (function(_this) {
+          return function(data, status, xhr) {
+            var i, item, item_object, item_object_search_attributes, len, ref, result;
+            App.Collection.loadAssets(data.assets);
+            result = {};
+            ref = data.result;
+            for (i = 0, len = ref.length; i < len; i++) {
+              item = ref[i];
+              if (App[item.type] && App[item.type].find) {
+                if (!result[item.type]) {
+                  result[item.type] = [];
+                }
+                item_object = App[item.type].find(item.id);
+                if (item_object.searchResultAttributes) {
+                  item_object_search_attributes = item_object.searchResultAttributes();
+                  result[item.type].push(item_object_search_attributes);
+                } else {
+                  App.Log.error('_globalSearchSingleton', "No such model " + (item.type.toLocaleLowerCase()) + ".searchResultAttributes()");
+                }
+              } else {
+                App.Log.error('_globalSearchSingleton', "No such model App." + item.type);
+              }
+            }
+            return _this.renderTry(result, query);
+          };
+        })(this)
+      });
+    };
+
+    GlobalSearch.prototype.renderTry = function(result, query) {
+      var diff;
+      diff = false;
+      if (this.lastQuery === query && this.searchResultCache[query]) {
+        diff = difference(this.searchResultCache[query].result, result);
+      }
+      if (diff !== false && _.isEmpty(diff)) {
+        return;
+      }
+      this.lastQuery = query;
+      this.searchResultCache[query] = {
+        result: result,
+        time: new Date
+      };
+      return this.render(result);
+    };
+
+    GlobalSearch.prototype.close = function() {
+      return this.lastQuery = void 0;
+    };
+
+    return GlobalSearch;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

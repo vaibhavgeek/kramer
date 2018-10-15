@@ -1,12 +1,12 @@
 class SubdomainPresent
   def self.matches?(request)
-    request.subdomain.present?
+    request.subdomain.present? && request.subdomain != %w( www )
   end
 end
 
 class SubdomainBlank
   def self.matches?(request)
-    request.subdomain.blank?
+    request.subdomain.blank? || request.subdomain == %w( www )
   end
 end
 
@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   constraints(SubdomainBlank) do
     resources :accounts, only: [:new, :create]
     root 'welcome#index'
+    get 'welcome/pricing'
+    get 'welcome/features'
+    get 'welcome/about_us'
   end
  
 

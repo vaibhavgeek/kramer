@@ -1,0 +1,101 @@
+I"(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.TicketZoomOverviewNavigator = (function(superClass) {
+    extend(TicketZoomOverviewNavigator, superClass);
+
+    TicketZoomOverviewNavigator.include(App.TicketNavigable);
+
+    TicketZoomOverviewNavigator.prototype.events = {
+      'click a': 'open'
+    };
+
+    function TicketZoomOverviewNavigator() {
+      this.open = bind(this.open, this);
+      this.render = bind(this.render, this);
+      this.release = bind(this.release, this);
+      var lateUpdate;
+      TicketZoomOverviewNavigator.__super__.constructor.apply(this, arguments);
+      if (!this.overview_id) {
+        return;
+      }
+      lateUpdate = (function(_this) {
+        return function() {
+          return _this.delay(_this.render, 2600, 'overview-navigator');
+        };
+      })(this);
+      this.overview = App.Overview.find(this.overview_id);
+      this.bindId = App.OverviewListCollection.bind(this.overview.link, lateUpdate, false);
+      this.render();
+    }
+
+    TicketZoomOverviewNavigator.prototype.release = function() {
+      return App.OverviewListCollection.unbind(this.bindId);
+    };
+
+    TicketZoomOverviewNavigator.prototype.render = function() {
+      var current_position, found, i, item_next, item_previous, len, next, overview, previous, ref, ticket;
+      if (!this.overview_id) {
+        this.html('');
+        return;
+      }
+      overview = App.OverviewListCollection.get(this.overview.link);
+      if (!overview) {
+        return;
+      }
+      current_position = 0;
+      found = false;
+      item_next = false;
+      item_previous = false;
+      ref = overview.tickets;
+      for (i = 0, len = ref.length; i < len; i++) {
+        ticket = ref[i];
+        current_position += 1;
+        item_next = overview.tickets[current_position];
+        item_previous = overview.tickets[current_position - 2];
+        if (ticket.id === this.ticket_id) {
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        this.html('');
+        return;
+      }
+      if (item_next) {
+        next = App.Ticket.find(item_next.id);
+      }
+      if (item_previous) {
+        previous = App.Ticket.find(item_previous.id);
+      }
+      return this.html(App.view('ticket_zoom/overview_navigator')({
+        title: overview.overview.name,
+        total_count: overview.count,
+        current_position: current_position,
+        next: next,
+        previous: previous
+      }));
+    };
+
+    TicketZoomOverviewNavigator.prototype.open = function(e) {
+      var id, ticketLink, url;
+      e.preventDefault();
+      ticketLink = $(e.target);
+      if ((id = ticketLink.data('id')) != null) {
+        url = ticketLink.attr('href');
+      } else if ((id = ticketLink.closest('a').data('id')) != null) {
+        url = ticketLink.closest('a').attr('href');
+      } else {
+        return;
+      }
+      return this.taskOpenTicket(id, url);
+    };
+
+    return TicketZoomOverviewNavigator;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

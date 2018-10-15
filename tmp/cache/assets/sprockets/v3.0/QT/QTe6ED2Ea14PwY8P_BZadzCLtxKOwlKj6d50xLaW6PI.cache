@@ -1,0 +1,75 @@
+I"E	(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SettingsArea = (function(superClass) {
+    extend(SettingsArea, superClass);
+
+    function SettingsArea() {
+      this.render = bind(this.render, this);
+      SettingsArea.__super__.constructor.apply(this, arguments);
+      this.authenticateCheckRedirect();
+      App.Setting.fetchFull(this.render, {
+        force: false
+      });
+    }
+
+    SettingsArea.prototype.render = function() {
+      var elements, i, item, len, setting, settings;
+      settings = App.Setting.search({
+        filter: {
+          area: this.area
+        }
+      });
+      if (App.Config.get('system_online_service')) {
+        settings = _.filter(settings, function(setting) {
+          if (setting.online_service) {
+            return;
+          }
+          if (setting.preferences && setting.preferences.online_service_disable) {
+            return;
+          }
+          return setting;
+        });
+        if (_.isEmpty(settings)) {
+          return;
+        }
+      }
+      settings = _.filter(settings, function(setting) {
+        if (setting.preferences && setting.preferences.disabled) {
+          return;
+        }
+        return setting;
+      });
+      settings = _.sortBy(settings, function(setting) {
+        if (!setting.preferences) {
+          return;
+        }
+        return setting.preferences.prio;
+      });
+      elements = [];
+      for (i = 0, len = settings.length; i < len; i++) {
+        setting = settings[i];
+        if (setting.preferences.hidden !== true) {
+          if (setting.preferences.controller && App[setting.preferences.controller]) {
+            item = new App[setting.preferences.controller]({
+              setting: setting
+            });
+          } else {
+            item = new App.SettingsAreaItem({
+              setting: setting
+            });
+          }
+          elements.push(item.el);
+        }
+      }
+      return this.html(elements);
+    };
+
+    return SettingsArea;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

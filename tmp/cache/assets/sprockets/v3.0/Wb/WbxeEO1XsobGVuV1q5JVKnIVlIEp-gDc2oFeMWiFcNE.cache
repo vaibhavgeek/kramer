@@ -1,0 +1,75 @@
+I"ifunction(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="alert alert--danger hidden" role="alert"></div>\n<p>\n  ');
+    
+      __out.push(this.T('The tutorial on how to manage a %s is hosted on our [online documentation](https://zammad.org/documentation/channel/telegram).', 'Telegram Bot'));
+    
+      __out.push('\n</p>\n<fieldset>\n  <h2>');
+    
+      __out.push(this.T('Enter your %s App Keys', 'Telegram'));
+    
+      __out.push('</h2>\n  <div class="input form-group">\n    <div class="formGroup-label">\n      <label for="api_token">');
+    
+      __out.push(this.T('%s Api Token', 'Telegram'));
+    
+      __out.push(' <span>*</span></label>\n    </div>\n    <div class="controls">\n      <input id="api_token" type="text" name="api_token" value="" class="form-control" required autocomplete="off">\n    </div>\n  </div>\n  <h2>');
+    
+      __out.push(this.T('Settings'));
+    
+      __out.push('</h2>\n  <div class="input form-group">\n    <div class="formGroup-label">\n      <label for="welcome">');
+    
+      __out.push(this.T('Welcome message'));
+    
+      __out.push(' <span>*</span></label>\n    </div>\n    <div class="controls">\n      <input id="welcome" type="text" name="welcome" value="" placeholder="');
+    
+      __out.push(this.Ti('You are welcome! Just ask me something!'));
+    
+      __out.push('" class="form-control" required autocomplete="off">\n    </div>\n  </div>\n  <div class="input form-group">\n    <div class="formGroup-label">\n      <label for="">');
+    
+      __out.push(this.T('Choose which group %s will get added to.', 'messages'));
+    
+      __out.push(' <span>*</span></label>\n    </div>\n    <div class="controls">\n      <div class="js-messagesGroup"></div>\n    </div>\n  </div>\n</fieldset>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

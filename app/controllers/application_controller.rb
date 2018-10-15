@@ -19,10 +19,9 @@ class ApplicationController < ActionController::Base
   def load_schema
       Apartment::Tenant.switch!('public')
       return unless request.subdomain.present?
-
+      
       account = Account.where(subdomain: request.subdomain).first
       if account
-         
          Apartment::Tenant.switch!(account.subdomain)
       else
         redirect_to subdomain: false, :controller => 'welcome', :action => "index"
