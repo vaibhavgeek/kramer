@@ -5,5 +5,7 @@
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-Rails.application.config.session_store :active_record_store , key: '_zammad_session_' + Digest::MD5.hexdigest(Rails.root.to_s).to_s[5..15] , domain: :all ,  :tld_length => 3   
+Rails.application.config.session_store :active_record_store, key: '_zammad_session_', domain: '.lvh.me'
+
+#Rails.application.config.session_store :active_record_store , key: '_zammad_session_'    
 #Rails.application.config.session_store :cookie_store, key: '_zammad_session_' , domain: :all , 

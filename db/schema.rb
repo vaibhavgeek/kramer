@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181002231129) do
+ActiveRecord::Schema.define(version: 20181016143753) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -758,6 +758,17 @@ ActiveRecord::Schema.define(version: 20181002231129) do
     t.index ["persistent"], name: "index_sessions_on_persistent"
     t.index ["session_id"], name: "index_sessions_on_session_id"
     t.index ["updated_at"], name: "index_sessions_on_updated_at"
+  end
+
+  create_table "sessions_ar", id: :serial, force: :cascade do |t|
+    t.string "session_id", null: false
+    t.boolean "persistent"
+    t.text "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["persistent"], name: "index_sessions_ar_on_persistent"
+    t.index ["session_id"], name: "index_sessions_ar_on_session_id"
+    t.index ["updated_at"], name: "index_sessions_ar_on_updated_at"
   end
 
   create_table "settings", id: :serial, force: :cascade do |t|

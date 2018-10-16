@@ -11,14 +11,14 @@ class App.DashboardFirstSteps extends App.Controller
 
   load: =>
     return if @lastData && !@el.is(':visible')
-    @ajax(
-      type: 'GET'
-      url:  @apiPath + '/first_steps'
-      success: (data) =>
-        return if _.isEqual(@lastData, data)
-        @lastData = data
-        @render(data)
-    )
+    # @ajax(
+    #   type: 'GET'
+    #   url:  @apiPath + '/first_steps'
+    #   success: (data) =>
+    #     return if _.isEqual(@lastData, data)
+    #     @lastData = data
+    #     @render(data)
+    # )
 
   render: (data) ->
     @html App.view('dashboard/first_steps')(

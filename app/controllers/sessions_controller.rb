@@ -47,7 +47,7 @@ class SessionsController < ApplicationController
 
     # sessions created via this
     # controller are persistent
-    session[:persistent] = true
+    session["persistent"] = true
 
     # return new session data
     render  status: :created,

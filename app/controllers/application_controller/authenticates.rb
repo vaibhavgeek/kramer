@@ -17,7 +17,9 @@ module ApplicationController::Authenticates
       return false if user
       raise Exceptions::NotAuthorized, 'Not authorized (token)!'
     end
-
+    puts key
+    puts current_user
+    puts "\n \n \n \n \n \n"
     return false if current_user&.permissions?(key)
     raise Exceptions::NotAuthorized, 'Not authorized (user)!'
   end
@@ -40,10 +42,11 @@ module ApplicationController::Authenticates
   end
 
   def authentication_check_only(auth_param = {})
-    #logger.debug 'authentication_check'
-    #logger.debug params.inspect
-    #logger.debug session.inspect
-    #logger.debug cookies.inspect
+    puts "\n \n \n \n \n \n"
+    logger.debug 'authentication_check'
+    logger.debug params.inspect
+    logger.debug session.inspect
+    logger.debug cookies.inspect
 
     # already logged in, early exit
     if session.id && session[:user_id]
@@ -56,7 +59,7 @@ module ApplicationController::Authenticates
     sso_user = User.sso(params)
     if sso_user
       if authentication_check_prerequesits(sso_user, 'session', auth_param)
-        session[:persistent] = true
+        session["persistent"] = true
         return sso_user
       end
     end

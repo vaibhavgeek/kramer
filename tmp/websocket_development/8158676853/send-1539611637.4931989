@@ -1,1 +1,0 @@
-{"event":"config_update","data":{"name":"defaults_calendar_subscriptions_tickets","value":{"escalation":{"own":true,"not_assigned":false},"new_open":{"own":true,"not_assigned":false},"pending":{"own":true,"not_assigned":false}}}}

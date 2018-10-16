@@ -2,6 +2,7 @@ require File.expand_path('boot', __dir__)
 
 require 'rails/all'
 
+
 # DO NOT REMOVE THIS LINE - see issue #2037
 Bundler.setup
 
@@ -11,6 +12,8 @@ Bundler.require(*Rails.groups)
 
 module Zammad
   class Application < Rails::Application
+    ActiveRecord::SessionStore::Session.table_name = 'sessions_ar'
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -109,4 +112,5 @@ module Zammad
       }
     }
   end
+
 end

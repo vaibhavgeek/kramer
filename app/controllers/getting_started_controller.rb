@@ -114,7 +114,7 @@ curl http://localhost/api/v1/getting_started -v -u #{login}:#{password}
     settings = {}
     if !Setting.get('system_online_service')
       if !params[:url] || params[:url] !~ %r{^(http|https)://.+?$}
-        messages[:url] = 'A URL looks like http://zammad.example.com'
+        messages[:url] = 'A URL looks like http://abc.chaturbots.com'
       end
 
       # split url in http_type and fqdn
@@ -123,7 +123,7 @@ curl http://localhost/api/v1/getting_started -v -u #{login}:#{password}
           settings[:http_type] = $1
           settings[:fqdn] = $2
         else
-          messages[:url] = 'A URL looks like http://zammad.example.com'
+          messages[:url] = 'A URL looks like http://abc.chaturbots.com'
         end
       end
     end
