@@ -2,6 +2,7 @@ class Account < ApplicationRecord
     
    # belongs_to :owner, class_name: 'User'
    # validates :owner, presence: true
+   attr_accessor :firstname, :lastname , :email , :password , :password_confirmation
     restricted = %w(www about projects products stats vaibhav)
     validates :subdomain, presence: true,
                          uniqueness: { case_sensitive: false },

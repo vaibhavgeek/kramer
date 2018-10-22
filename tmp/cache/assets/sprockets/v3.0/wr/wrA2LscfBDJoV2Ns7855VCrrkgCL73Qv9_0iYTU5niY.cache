@@ -1,0 +1,61 @@
+I";(function() {
+  var Index,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Index = (function(superClass) {
+    extend(Index, superClass);
+
+    Index.prototype.requiredPermission = 'admin.organization';
+
+    Index.prototype.header = 'Organizations';
+
+    function Index() {
+      Index.__super__.constructor.apply(this, arguments);
+      new App.ControllerGenericIndex({
+        el: this.el,
+        id: this.id,
+        genericObject: 'Organization',
+        importCallback: function() {
+          return new App.Import({
+            baseUrl: '/api/v1/organizations',
+            container: this.el.closest('.content')
+          });
+        },
+        pageData: {
+          home: 'organizations',
+          object: 'Organization',
+          objects: 'Organizations',
+          navupdate: '#organizations',
+          notes: ['Organizations are for any person in the system. Agents (Owners, Resposbiles, ...) and Customers.'],
+          buttons: [
+            {
+              name: 'Import',
+              'data-type': 'import',
+              "class": 'btn'
+            }, {
+              name: 'New Organization',
+              'data-type': 'new',
+              "class": 'btn--success'
+            }
+          ]
+        },
+        container: this.el.closest('.content')
+      });
+    }
+
+    return Index;
+
+  })(App.ControllerSubContent);
+
+  App.Config.set('Organization', {
+    prio: 2000,
+    name: 'Organizations',
+    parent: '#manage',
+    target: '#manage/organizations',
+    controller: Index,
+    permission: ['admin.organization']
+  }, 'NavBarAdmin');
+
+}).call(this);
+:ET

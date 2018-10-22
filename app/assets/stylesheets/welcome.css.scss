@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree ./welcome/
+ *= require ./jquery-ui.css
+ *
+*/
+/* sets LTR and RTL within the same style call */
+@mixin bidi-style($prop, $value, $inverse-prop, $default-value) {
+  #{$prop}: $value;
+
+  html[dir=rtl] & {
+    #{$inverse-prop}: $value;
+    #{$prop}: $default-value;
+  }
+}
+
+/* adds a property only in RTL */
+@mixin rtl($prop, $value) {
+  html[dir=rtl] & {
+    #{$prop}: $value;
+  }
+}
+h2 {
+  font-size: 20px !important;
+  line-height: 25px !important;
+}
+.u-textTruncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    color: #585856;
+    background: white;
+    border-right: 1px solid #e6e6e6;
+    overflow: auto;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+.nav-stacked > li + li {
+    margin-top: 0;
+  }
+
+  .nav-pills > li > a,
+  .nav-pills > li > a:focus,
+  .nav-pills > li > a:active {
+    color: #0f94d6;
+    width: 270px;
+    border-radius: 0;
+    background: transparent; /* a:focus, a:active with bg: transparent fixes gray focus bg in IE 10 */
+    display: flex;
+    @extend .u-textTruncate;
+  }
+
+  .nav-pills.nav-stacked > li > a,
+  .nav-pills.nav-stacked > li > a:focus,
+  .nav-pills.nav-stacked > li > a:active {
+    padding: 0;
+    height: 40px;
+    line-height: 39px;
+    border-top: 1px solid #f2f2f3;
+  }
+
+  .nav-pills > li:hover > a {
+    background: #f2f2f3;
+  }
+
+  .nav-pills.nav-stacked > li:hover > a,
+  .nav-pills.nav-stacked > li:hover + li:not(.active) > a {
+    border-color: transparent;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    color: white;
+    background: #00356B;
+    border-color: initial;
+  }
+
+  .nav-pills.nav-stacked > li:hover > a,
+  .nav-pills.nav-stacked > li.active > a,
+  .nav-pills.nav-stacked > li.active > a:hover,
+  .nav-pills.nav-stacked > li.active > a:focus {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .sidebar:not(.NavBarAdmin) .nav-pills > li:first-child > a {
+    border-top: none;
+  }
+
+  .nav-pills > li > a > .icon {
+    fill: currentColor;
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: -2px;
+
+    &:first-child {
+      @include bidi-style(margin-right, 5px, margin-right, 0);
+    }
+  }
+
+  .nav-pills > li > a > .badge {
+    margin-left: auto;
+    margin-right: 5px;
+    @include bidi-style(padding-left, 10px, padding-right, 0);
+    @include rtl(margin-left, 5px);
+    @include rtl(margin-right, auto);
+  }
+
+  a.list-group-item.active > .badge,
+  .nav-pills > .active > a > .badge {
+    color: #96969b;
+    background: none;
+  }
+  .NavBarAdmin.sidebar,
+  .NavBarProfile.sidebar, {
+    width: 300px;
+  
+    h2 {
+      margin: 21px 0 12px;
+    }
+  
+    h2:first-child {
+      margin-top: 0;
+    }
+  }
+  
+
+  
+  

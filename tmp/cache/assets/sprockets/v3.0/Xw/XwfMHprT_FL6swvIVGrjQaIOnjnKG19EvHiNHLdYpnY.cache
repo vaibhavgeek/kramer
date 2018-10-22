@@ -1,0 +1,84 @@
+I"”(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.TextModule = (function(superClass) {
+    extend(TextModule, superClass);
+
+    function TextModule() {
+      return TextModule.__super__.constructor.apply(this, arguments);
+    }
+
+    TextModule.configure('TextModule', 'name', 'keywords', 'content', 'active', 'group_ids', 'user_id', 'updated_at');
+
+    TextModule.extend(Spine.Model.Ajax);
+
+    TextModule.url = TextModule.apiPath + '/text_modules';
+
+    TextModule.configure_attributes = [
+      {
+        name: 'name',
+        display: 'Name',
+        tag: 'input',
+        type: 'text',
+        limit: 100,
+        "null": false
+      }, {
+        name: 'keywords',
+        display: 'Keywords',
+        tag: 'input',
+        type: 'text',
+        limit: 100,
+        "null": true
+      }, {
+        name: 'content',
+        display: 'Content',
+        tag: 'richtext',
+        limit: 2000,
+        "null": false,
+        plugins: [
+          {
+            controller: 'WidgetPlaceholder',
+            params: {
+              objects: [
+                {
+                  prefix: 'ticket',
+                  object: 'Ticket',
+                  display: 'Ticket'
+                }, {
+                  prefix: 'user',
+                  object: 'User',
+                  display: 'Current User'
+                }
+              ]
+            }
+          }
+        ],
+        note: 'To select placeholders from a list, just enter "::".'
+      }, {
+        name: 'updated_at',
+        display: 'Updated',
+        tag: 'datetime',
+        readonly: 1
+      }, {
+        name: 'active',
+        display: 'Active',
+        tag: 'active',
+        "default": true
+      }
+    ];
+
+    TextModule.configure_delete = true;
+
+    TextModule.configure_clone = true;
+
+    TextModule.configure_overview = ['name', 'keywords', 'content'];
+
+    TextModule.description = 'Create Text Modules to **spend less time writing responses**. TextModules can include smart variables like the users name or email address.\n\nExamples of snippets are:\n\n* Hello Mrs. #{ticket.customer.lastname},\n* Hello Mr. #{ticket.customer.lastname},\n* Hello #{ticket.customer.firstname},\n* My Name is #{user.firstname},\n\nOf course you can also use multi line snippets.\n\nAvailable objects are:\n* ticket (e. g. ticket.state, ticket.group)\n* ticket.customer (e. g. ticket.customer.firstname, ticket.customer.lastname)\n* ticket.owner (e. g. ticket.owner.firstname, ticket.owner.lastname)\n* ticket.organization (e. g. ticket.organization.name)\n* user (e. g. user.firstname, user.email)\n\nTo select placeholders from a list, just enter "::".\n';
+
+    return TextModule;
+
+  })(App.Model);
+
+}).call(this);
+:ET

@@ -41,6 +41,11 @@
       <%= link_to "Pricing"  , welcome_pricing_path , :class => "nav-link" %>
 
       </li>
+
+      <li class="nav-item <%= active_helper(new_account_path) %>">
+      <%= link_to "Start Free Trial"  , new_account_path , :class => "nav-link" %>
+
+      </li>
      
     </ul>
   </div>

@@ -1,0 +1,76 @@
+I"¹
+(function() {
+  var SidebarArticleAttachments,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  SidebarArticleAttachments = (function(superClass) {
+    extend(SidebarArticleAttachments, superClass);
+
+    function SidebarArticleAttachments() {
+      this.showObjects = bind(this.showObjects, this);
+      this.sidebarItem = bind(this.sidebarItem, this);
+      return SidebarArticleAttachments.__super__.constructor.apply(this, arguments);
+    }
+
+    SidebarArticleAttachments.prototype.sidebarItem = function() {
+      if (!this.Config.get('ui_ticket_zoom_sidebar_article_attachments')) {
+        return;
+      }
+      this.item = {
+        name: 'attachment',
+        badgeIcon: 'paperclip',
+        sidebarHead: 'Attachments',
+        sidebarCallback: this.showObjects,
+        sidebarActions: []
+      };
+      return this.item;
+    };
+
+    SidebarArticleAttachments.prototype.showObjects = function(el) {
+      var article, attachments, html, i, index, len, ref, ticket_article_id;
+      this.el = el;
+      if (_.isEmpty(this.ticket) || _.isEmpty(this.ticket.article_ids)) {
+        this.el.html("<div>" + (App.i18n.translateInline('none')) + "</div>");
+        return;
+      }
+      html = '';
+      ref = this.ticket.article_ids;
+      for (index = i = 0, len = ref.length; i < len; index = ++i) {
+        ticket_article_id = ref[index];
+        if (App.TicketArticle.exists(ticket_article_id)) {
+          article = App.TicketArticle.find(ticket_article_id);
+          attachments = App.TicketArticle.contentAttachments(article);
+          if (!_.isEmpty(attachments)) {
+            html = App.view('ticket_zoom/sidebar_article_attachment')({
+              article: article,
+              attachments: attachments
+            }) + html;
+          }
+        }
+      }
+      this.el.html(html);
+      return this.el.delegate('.js-attachments img', 'click', (function(_this) {
+        return function(e) {
+          return _this.imageView(e);
+        };
+      })(this));
+    };
+
+    SidebarArticleAttachments.prototype.imageView = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      return new App.TicketZoomArticleImageView({
+        image: $(e.target).get(0).outerHTML
+      });
+    };
+
+    return SidebarArticleAttachments;
+
+  })(App.Controller);
+
+  App.Config.set('900-ArticleAttachments', SidebarArticleAttachments, 'TicketZoomSidebar');
+
+}).call(this);
+:ET

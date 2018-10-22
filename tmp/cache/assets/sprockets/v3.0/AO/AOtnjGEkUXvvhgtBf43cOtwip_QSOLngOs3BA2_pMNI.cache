@@ -1,0 +1,112 @@
+I"Ã(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.Run = (function(superClass) {
+    extend(Run, superClass);
+
+    function Run() {
+      this.start = bind(this.start, this);
+      Run.__super__.constructor.apply(this, arguments);
+      this.el = $('#app');
+      App.Event.trigger('app:init');
+      if (!App.Browser.check()) {
+        return;
+      }
+      $('.splash').hide();
+      App.Collection.init();
+      App.Auth.loginCheck(this.start);
+    }
+
+    Run.prototype.start = function() {
+      App.WebSocket.connect();
+      this.frontendTimeUpdate();
+      this.setupWidget('Navigations', 'nav', this.el);
+      this.setupWidget('Widgets', 'widget', this.el);
+      App.ClipBoard.bind(this.el);
+      return App.Event.trigger('app:ready');
+    };
+
+    Run.prototype.setupWidget = function(config, event, el) {
+      var e, i, key, len, sortedKeys, widget, widgets;
+      App.Event.trigger(event + ':init');
+      widgets = App.Config.get(config);
+      if (widgets) {
+        sortedKeys = Object.keys(widgets).sort();
+        for (i = 0, len = sortedKeys.length; i < len; i++) {
+          key = sortedKeys[i];
+          widget = widgets[key];
+          try {
+            new widget({
+              el: el,
+              key: key
+            });
+          } catch (error) {
+            e = error;
+            this.log('error', "widget " + key + ":", e);
+          }
+        }
+      }
+      return App.Event.trigger(event + ':ready');
+    };
+
+    return Run;
+
+  })(App.Controller);
+
+  App.Content = (function(superClass) {
+    extend(Content, superClass);
+
+    Content.prototype.className = 'content flex horizontal';
+
+    function Content() {
+      var Routes, callback, fn, route;
+      Content.__super__.constructor.apply(this, arguments);
+      Routes = this.Config.get('Routes');
+      fn = (function(_this) {
+        return function(route, callback) {
+          return _this.route(route, function(params) {
+            var controller, history;
+            this.log('debug', 'execute page controller', route, params);
+            App.Event.unbindLevel('page');
+            App.Delay.clearLevel('page');
+            App.Interval.clearLevel('page');
+            this.el.unbind();
+            this.el.undelegate();
+            history = App.Config.get('History');
+            if (history[10]) {
+              history.shift();
+            }
+            history.push(window.location.hash);
+            controller = (function(_this) {
+              return function(params) {
+                var e;
+                params.el = _this.el;
+                try {
+                  return new callback(params);
+                } catch (error) {
+                  e = error;
+                  return _this.log('error', "route " + route + ":", e);
+                }
+              };
+            })(this);
+            return controller(params);
+          });
+        };
+      })(this);
+      for (route in Routes) {
+        callback = Routes[route];
+        fn(route, callback);
+      }
+      Spine.Route.setup();
+    }
+
+    return Content;
+
+  })(App.ControllerWidgetPermanent);
+
+  App.Config.set('content', App.Content, 'Widgets');
+
+}).call(this);
+:ET

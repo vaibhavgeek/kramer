@@ -1,0 +1,105 @@
+I"ßfunction(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      var group, i, key, len, permissions, ref, ref1, ref2, text;
+    
+      __out.push('<div style="padding-left: 18px; padding-top: 10px; width: 95%;" class="js-groupList ');
+    
+      if (this.hideGroups) {
+        __out.push('js-groupListHide hidden');
+      }
+    
+      __out.push('">\n  <hr>\n  <table class="settings-list" style="width: 100%;">\n    <thead>\n      <th>');
+    
+      __out.push(this.T('Group'));
+    
+      __out.push('\n      ');
+    
+      ref = this.groupAccesses;
+      for (key in ref) {
+        text = ref[key];
+        __out.push('\n        <th>');
+        __out.push(this.T(text));
+        __out.push('\n      ');
+      }
+    
+      __out.push('\n    <tbody>\n  ');
+    
+      ref1 = this.groups;
+      for (i = 0, len = ref1.length; i < len; i++) {
+        group = ref1[i];
+        __out.push('\n  ');
+        permissions = [];
+        __out.push('\n  ');
+        if (this.params.group_ids && this.params.group_ids[group.id]) {
+          __out.push('\n  ');
+          permissions = this.params.group_ids[group.id];
+          __out.push('\n  ');
+        }
+        __out.push('\n    <tr>\n      <td>\n        ');
+        __out.push(__sanitize(group.displayName()));
+        __out.push('\n      ');
+        ref2 = this.groupAccesses;
+        for (key in ref2) {
+          text = ref2[key];
+          __out.push('\n        <td>\n        <label class="inline-label checkbox-replacement">\n          <input class="js-groupListItem" type="checkbox" value="');
+          __out.push(__sanitize(key));
+          __out.push('" name="group_ids::');
+          __out.push(__sanitize(group.id));
+          __out.push('" ');
+          if (_.contains(permissions, key)) {
+            __out.push('checked');
+          }
+          __out.push('/>\n          ');
+          __out.push(this.Icon('checkbox', 'icon-unchecked'));
+          __out.push('\n          ');
+          __out.push(this.Icon('checkbox-checked', 'icon-checked'));
+          __out.push('\n        </label>\n      ');
+        }
+        __out.push('\n    </tr>\n  ');
+      }
+    
+      __out.push('\n  </table>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

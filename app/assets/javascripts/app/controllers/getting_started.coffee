@@ -297,7 +297,7 @@ class Base extends App.WizardFullScreen
 
     fqdn      = App.Config.get('fqdn')
     http_type = App.Config.get('http_type')
-    if !fqdn || fqdn is 'zammad.example.com'
+    if !fqdn || fqdn is '*.chaturbots.com'
       url = window.location.origin
     else
       url = "#{http_type}://#{fqdn}"

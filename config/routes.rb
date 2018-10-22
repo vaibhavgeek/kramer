@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :accounts, only: [:new, :create]
     root 'welcome#index'
     get 'welcome/pricing'
+    get 'welcome/feature'
     get 'welcome/features'
     get 'welcome/about_us'
   end
