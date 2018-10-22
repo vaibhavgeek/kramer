@@ -1,1 +1,0 @@
-{"event":"resetCollection","data":{"Group":[{"id":1,"signature_id":1,"email_address_id":null,"name":"Users","assignment_timeout":null,"follow_up_possible":"yes","follow_up_assignment":true,"active":true,"note":"Standard Group/Pool for Tickets.","updated_by_id":1,"created_by_id":1,"created_at":"2018-10-21T12:55:42.194Z","updated_at":"2018-10-21T12:55:52.944Z","user_ids":[3]}]}}
