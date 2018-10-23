@@ -12,7 +12,21 @@ Cache.clear
 # this is the __ordered__ list of seed files
 # extend only if needed - try to add your changes
 # to the matching one of the existing files
-seeds = %w[settings user_nr_1 signatures roles permissions groups links ticket_state_types ticket_states ticket_priorities ticket_article_types ticket_article_senders macros community_user_resources overviews channels report_profiles chats object_manager_attributes schedulers triggers karma_activities]
+User.create_if_not_exists(
+  id: 1,
+  login: '-',
+  firstname: '-',
+  lastname: '',
+  email: '',
+  active: false,
+  updated_by_id: 1,
+  created_by_id: 1
+)
+
+UserInfo.current_user_id = 1
+
+
+seeds = %w[settings signatures roles permissions groups links ticket_state_types ticket_states ticket_priorities ticket_article_types ticket_article_senders macros community_user_resources overviews channels report_profiles chats object_manager_attributes schedulers triggers karma_activities]
 
 # loop and require all seedfiles
 # files will get executed automatically

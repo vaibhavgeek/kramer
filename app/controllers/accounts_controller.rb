@@ -1,8 +1,6 @@
-require 'net/http'
-require 'uri'
-require 'json'
+require 'rake'
 class AccountsController < ApplicationController
-    layout 'welcome'
+    layout 'welcome' 
     def new
         @account = Account.new
       #  @account.build_owner 
@@ -13,7 +11,9 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
+            rebuild_searchindex
             create_admin_user(firstname,lastname,email,password)
+            Setting.set('fqdn' , @account.subdomain + ".chaturbots.com")
             redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index" 
         else
             render action: 'new'
@@ -41,9 +41,10 @@ class AccountsController < ApplicationController
         user.email = email
         user.password = password
         user.save!
-
         Setting.set('system_init_done', true)
+        Setting.set('es_url', 'http://localhost:9200')
         Calendar.init_setup(request.remote_ip)
+        
         begin
             TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
         rescue => e
@@ -51,6 +52,11 @@ class AccountsController < ApplicationController
         end
 
     end
+
+    def rebuild_searchindex
+        Zammad::Application.load_tasks
+        Rake::Task['searchindex:rebuild'].execute
+      end
     private
     def account_params
         params.require(:account).permit(:subdomain , :firstname , :lastname , :email , :password , :password_confirmation)

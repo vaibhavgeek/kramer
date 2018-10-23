@@ -56,7 +56,7 @@ class App.Dashboard extends App.Controller
     @clueAccess = false
     if e
       e.preventDefault()
-    @navigate '#clues'
+    # @navigate '#clues'
 
   active: (state) =>
     return @shown if state is undefined
@@ -111,4 +111,4 @@ class DashboardRouter extends App.ControllerPermanent
 
 App.Config.set('dashboard', DashboardRouter, 'Routes')
 App.Config.set('Dashboard', { controller: 'Dashboard', permission: ['*'] }, 'permanentTask')
-# App.Config.set('Dashboard', { prio: 100, parent: '', name: 'Dashboard', target: '#dashboard', key: 'Dashboard', permission: ['ticket.agent'], class: 'dashboard' }, 'NavBar')
+App.Config.set('Dashboard', { prio: 100, parent: '', name: 'Dashboard', target: '#dashboard', key: 'Dashboard', permission: ['ticket.agent'], class: 'dashboard' }, 'NavBar')

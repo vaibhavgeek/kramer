@@ -54,7 +54,7 @@ class App.FirstStepsClues extends App.Controller
 
   constructor: (params) ->
 
-    # $('#app').append('<div class="js-modal--clue"></div>')
+    $('#app').append('<div class="js-modal--clue"></div>')
     params.el = $('#app .js-modal--clue')
 
     super params

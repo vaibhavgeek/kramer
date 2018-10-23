@@ -1,5 +1,3 @@
-
-
 <div class="dashboard main flex center">
   <div class="tabs tabs--big">
     <div class="tab active" data-area="stat-widgets"><%- @T('My Stats') %></div>
