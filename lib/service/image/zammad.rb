@@ -45,7 +45,7 @@ class Service::Image::Zammad
     domain = domain.sub(/^.+?@(.+?)$/, '\1')
 
     domain.downcase!
-    return if domain == 'example.com'
+    return if domain == 'chaturbots.com'
 
     # fetch org logo
     response = UserAgent.post(

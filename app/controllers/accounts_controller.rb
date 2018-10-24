@@ -11,14 +11,13 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
-            create_admin_user(firstname,lastname,email,password)
-            Setting.set('fqdn' , @account.subdomain + ".chaturbots.com")
+            create_admin_user(firstname,lastname,email,password,@account.subdomain)
             redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index" 
         else
             render action: 'new'
         end
     end
-    def create_admin_user(firstname,lastname,email,password)
+    def create_admin_user(firstname,lastname,email,password,subdomain)
         group_ids = []
         role_ids  = []
 
@@ -40,22 +39,27 @@ class AccountsController < ApplicationController
         user.email = email
         user.password = password
         user.save!
-        Setting.set('system_init_done', true)
-        Setting.set('es_url', 'http://localhost:9200')
-        Calendar.init_setup(request.remote_ip)
-        
-        begin
-            TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
-        rescue => e
-            logger.error "Unable to load text modules #{request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us'}: #{e.message}"
-        end
+        set_all_settings_user(subdomain)
 
     end
 
-    def rebuild_searchindex
-        Zammad::Application.load_tasks
-        Rake::Task['searchindex:rebuild'].execute
-      end
+    def set_all_settings_user(sub)
+        Setting.set('system_init_done', true)
+        Setting.set('es_url', 'http://localhost:9200')
+        Calendar.init_setup(request.remote_ip)
+        #begin
+        TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
+        #rescue => e
+        #    logger.error "Unable to load text modules #{request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us'}: #{e.message}"
+        #end
+        models_current = Models.searchable.map(&:to_s)
+        models_config = Setting.get('models_searchable')
+        setting = Setting.find_by(name: 'models_searchable')
+        if setting && models_current != models_config
+          Setting.set('models_searchable', models_current)
+        end
+        Setting.set('fqdn' , sub + ".chaturbots.com")
+    end
     private
     def account_params
         params.require(:account).permit(:subdomain , :firstname , :lastname , :email , :password , :password_confirmation)
