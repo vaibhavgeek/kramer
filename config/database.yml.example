@@ -22,7 +22,7 @@ default: &default
 
 production:
   <<: *default
-  database: zammad_prod
+  database: zammad_production
 
 development:
   <<: *default

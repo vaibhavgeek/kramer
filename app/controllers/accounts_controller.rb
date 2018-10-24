@@ -11,7 +11,6 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
-            rebuild_searchindex
             create_admin_user(firstname,lastname,email,password)
             Setting.set('fqdn' , @account.subdomain + ".chaturbots.com")
             redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index" 
