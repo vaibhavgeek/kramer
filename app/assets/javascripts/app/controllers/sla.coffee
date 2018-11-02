@@ -112,4 +112,4 @@ class Index extends App.ControllerSubContent
 
     "#{hours}:#{minutes}"
 
-#App.Config.set('Sla', { prio: 2900, name: 'SLAs', parent: '#manage', target: '#manage/slas', controller: Index, permission: ['admin.sla'] }, 'NavBarAdmin')
+App.Config.set('Sla', { prio: 2900, name: 'SLAs', parent: '#manage', target: '#manage/slas', controller: Index, permission: ['admin.sla'] }, 'NavBarAdmin')

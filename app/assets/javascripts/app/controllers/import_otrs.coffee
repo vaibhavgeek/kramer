@@ -171,9 +171,9 @@ class Index extends App.ControllerContent
     )
 
 App.Config.set('import/otrs', Index, 'Routes')
-# App.Config.set('otrs', {
-#   title: 'OTRS'
-#   name:  'OTRS'
-#   class: 'js-otrs'
-#   url:   '#import/otrs'
-# }, 'ImportPlugins')
+App.Config.set('otrs', {
+  title: 'OTRS'
+  name:  'OTRS'
+  class: 'js-otrs'
+  url:   '#import/otrs'
+}, 'ImportPlugins')

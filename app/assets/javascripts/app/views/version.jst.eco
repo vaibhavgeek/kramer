@@ -3,6 +3,6 @@
 </div>
 <div class="page-content">
   <p>
-    <%- @T('This is built on top of Zammad version %s', @version) %>
+    <%- @T('This is Zammad version %s', @version) %>
   </p>
 </div>

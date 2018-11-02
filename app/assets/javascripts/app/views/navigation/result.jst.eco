@@ -1,4 +1,3 @@
-
 <% for area, items of @result: %>
   <% if done && items.length > 0: %> <li class="divider"></li> <% end %>
   <% done = true %>

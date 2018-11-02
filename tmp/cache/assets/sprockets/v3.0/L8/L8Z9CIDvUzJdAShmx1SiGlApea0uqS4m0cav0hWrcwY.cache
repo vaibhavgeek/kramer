@@ -1,0 +1,88 @@
+I"ß(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SearchableAjaxSelect = (function(superClass) {
+    extend(SearchableAjaxSelect, superClass);
+
+    function SearchableAjaxSelect() {
+      this.showLoader = bind(this.showLoader, this);
+      this.onAjaxResponse = bind(this.onAjaxResponse, this);
+      this.onInput = bind(this.onInput, this);
+      return SearchableAjaxSelect.__super__.constructor.apply(this, arguments);
+    }
+
+    SearchableAjaxSelect.prototype.onInput = function(event) {
+      var objectString;
+      SearchableAjaxSelect.__super__.onInput.apply(this, arguments);
+      objectString = underscored(this.options.attribute.object);
+      this.apiPath = App.Config.get('api_path');
+      this.searchResultCache = this.searchResultCache || {};
+      this.cacheKey = objectString + "+" + this.query;
+      if (this.searchResultCache[this.cacheKey]) {
+        return this.onAjaxResponse(this.searchResultCache[this.cacheKey]);
+      }
+      clearTimeout(this.loaderTimeoutId);
+      this.loaderTimeoutId = setTimeout(this.showLoader, 1000);
+      return App.Ajax.request({
+        id: this.options.attribute.id,
+        type: 'GET',
+        url: this.apiPath + "/search/" + objectString,
+        data: {
+          query: this.query,
+          limit: this.options.attribute.limit
+        },
+        processData: true,
+        success: this.onAjaxResponse
+      });
+    };
+
+    SearchableAjaxSelect.prototype.onAjaxResponse = function(data, status, xhr) {
+      var i, len, object, options, organization, ref, ticket, user;
+      clearTimeout(this.loaderTimeoutId);
+      this.el.removeClass('is-loading');
+      this.searchResultCache[this.cacheKey] = data;
+      App.Collection.loadAssets(data.assets);
+      options = [];
+      ref = data.result;
+      for (i = 0, len = ref.length; i < len; i++) {
+        object = ref[i];
+        if (object.type === 'Ticket') {
+          ticket = App.Ticket.find(object.id);
+          data = {
+            name: "#" + ticket.number + " - " + ticket.title,
+            value: ticket.id
+          };
+          options.push(data);
+        } else if (object.type === 'User') {
+          user = App.User.find(object.id);
+          data = {
+            name: "" + (user.displayName()),
+            value: user.id
+          };
+          options.push(data);
+        } else if (object.type === 'Organization') {
+          organization = App.Organization.find(object.id);
+          data = {
+            name: "" + (organization.displayName()),
+            value: organization.id
+          };
+          options.push(data);
+        }
+      }
+      this.optionsList.html(this.renderOptions(options));
+      this.refreshElements();
+      return this.filterByQuery(this.query);
+    };
+
+    SearchableAjaxSelect.prototype.showLoader = function() {
+      return this.el.addClass('is-loading');
+    };
+
+    return SearchableAjaxSelect;
+
+  })(App.SearchableSelect);
+
+}).call(this);
+:ET

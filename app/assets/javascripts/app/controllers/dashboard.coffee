@@ -56,7 +56,7 @@ class App.Dashboard extends App.Controller
     @clueAccess = false
     if e
       e.preventDefault()
-    # @navigate '#clues'
+    @navigate '#clues'
 
   active: (state) =>
     return @shown if state is undefined

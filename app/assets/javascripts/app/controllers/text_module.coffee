@@ -29,4 +29,4 @@ class Index extends App.ControllerSubContent
       container: @el.closest('.content')
     )
 
-#App.Config.set('TextModule', { prio: 2300, name: 'Text modules', parent: '#manage', target: '#manage/text_modules', controller: Index, permission: ['admin.text_module'] }, 'NavBarAdmin')
+App.Config.set('TextModule', { prio: 2300, name: 'Text modules', parent: '#manage', target: '#manage/text_modules', controller: Index, permission: ['admin.text_module'] }, 'NavBarAdmin')

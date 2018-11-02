@@ -342,4 +342,4 @@ class TranslationList extends App.Controller
       reset.addClass('hidden')
       reset.closest('tr').removeClass('warning')
 
-#App.Config.set('Translation', { prio: 1800, parent: '#system', name: 'Translations', target: '#system/translation', controller: Index, permission: ['admin.translation'] }, 'NavBarAdmin' )
+App.Config.set('Translation', { prio: 1800, parent: '#system', name: 'Translations', target: '#system/translation', controller: Index, permission: ['admin.translation'] }, 'NavBarAdmin' )

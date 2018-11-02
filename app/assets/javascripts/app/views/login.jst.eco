@@ -1,13 +1,3 @@
-<style type="text/css">
-.content {
-  overflow: unset !important;
-  position:absolute !important;
-  top:0px;
-  width: 100%;
-  left:0px;
-}
-</style>
-
 <div class="login fullscreen">
   <div class="fullscreen-center">
     <div class="fullscreen-body">
@@ -90,5 +80,9 @@
     <% end %>
     </div>
   </div>
- 
+  <div class="poweredBy">
+    <a href="https://zammad.org" target="_blank"><%- @Icon('logo') %></a>
+    <%- @T('Powered by') %>
+    <a href="https://zammad.org" target="_blank"><%- @Icon('logotype', 'logotype') %></a>
+  </div>
 </div>

@@ -1,0 +1,54 @@
+I"°(function() {
+  var Ticket,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Ticket = (function(superClass) {
+    extend(Ticket, superClass);
+
+    Ticket.prototype.requiredPermission = 'admin.ticket';
+
+    Ticket.prototype.header = 'Ticket';
+
+    function Ticket() {
+      Ticket.__super__.constructor.apply(this, arguments);
+      this.title('Ticket', true);
+      this.tabs = [
+        {
+          name: 'Base',
+          'target': 'base',
+          controller: App.SettingsArea,
+          params: {
+            area: 'Ticket::Base'
+          }
+        }, {
+          name: 'Number',
+          'target': 'number',
+          controller: App.SettingsArea,
+          params: {
+            area: 'Ticket::Number'
+          }
+        }, {
+          name: 'Auto Assignment',
+          'target': 'auto_assignment',
+          controller: App.SettingTicketAutoAssignment
+        }
+      ];
+      this.render();
+    }
+
+    return Ticket;
+
+  })(App.ControllerTabs);
+
+  App.Config.set('SettingTicket', {
+    prio: 1700,
+    parent: '#settings',
+    name: 'Ticket',
+    target: '#settings/ticket',
+    controller: Ticket,
+    permission: ['admin.ticket']
+  }, 'NavBarAdmin');
+
+}).call(this);
+:ET

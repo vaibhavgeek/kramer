@@ -2,7 +2,7 @@
 
   <div class="page-header">
     <div class="page-header-title">
-      <h1><%- @T( 'Reports' ) %> <small></small></h1>
+      <h1><%- @T( 'Reporting' ) %> <small></small></h1>
     </div>
   </div>
 

@@ -1,9 +1,3 @@
-<style type="text/css">
-.content {
-  position:relative !important;
-  top:0px;
-}
-</style>
 <div class="reset_password fullscreen">
   <div class="fullscreen-center">
     <div class="hero-unit fullscreen-body">

@@ -18,6 +18,9 @@ class AccountsController < ApplicationController
         end
     end
     def create_admin_user(firstname,lastname,email,password,subdomain)
+        
+        set_all_settings_user(subdomain)
+
         group_ids = []
         role_ids  = []
 
@@ -39,7 +42,6 @@ class AccountsController < ApplicationController
         user.email = email
         user.password = password
         user.save!
-        set_all_settings_user(subdomain)
 
     end
 
@@ -48,7 +50,7 @@ class AccountsController < ApplicationController
         Setting.set('es_url', 'http://localhost:9200')
         Calendar.init_setup(request.remote_ip)
         #begin
-        TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
+        #TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
         #rescue => e
         #    logger.error "Unable to load text modules #{request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us'}: #{e.message}"
         #end

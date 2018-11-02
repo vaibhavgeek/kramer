@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"signature_id;TiI"email_address_id;T0I"	name;TI"
+Users;TI"assignment_timeout;T0I"follow_up_possible;TI"yes;TI"follow_up_assignment;TTI"active;TTI"	note;TI"%Standard Group/Pool for Tickets.;TI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeH®¿˚Ÿb/:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	H®¿ÿ≤V0;
+I"UTC;F@@I"user_ids;T[i:@created_atf1541146336.0197818:@expires_inf6.048e5

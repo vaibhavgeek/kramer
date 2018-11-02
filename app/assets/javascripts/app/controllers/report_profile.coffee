@@ -22,4 +22,4 @@ class Index extends App.ControllerSubContent
       container: @el.closest('.content')
     )
 
-#App.Config.set('ReportProfile', { prio: 8000, name: 'Report Profiles', parent: '#manage', target: '#manage/report_profiles', controller: Index, permission: ['admin.report_profile'] }, 'NavBarAdmin')
+App.Config.set('ReportProfile', { prio: 8000, name: 'Report Profiles', parent: '#manage', target: '#manage/report_profiles', controller: Index, permission: ['admin.report_profile'] }, 'NavBarAdmin')

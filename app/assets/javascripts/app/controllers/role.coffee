@@ -22,4 +22,4 @@ class Index extends App.ControllerSubContent
       container: @el.closest('.content')
     )
 
-#App.Config.set('Role', { prio: 1600, name: 'Roles', parent: '#manage', target: '#manage/roles', controller: Index, permission: ['admin.role'] }, 'NavBarAdmin')
+App.Config.set('Role', { prio: 1600, name: 'Roles', parent: '#manage', target: '#manage/roles', controller: Index, permission: ['admin.role'] }, 'NavBarAdmin')

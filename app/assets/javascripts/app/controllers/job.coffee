@@ -24,4 +24,4 @@ class Index extends App.ControllerSubContent
       large: true
     )
 
-#App.Config.set('Job', { prio: 3400, name: 'Scheduler', parent: '#manage', target: '#manage/job', controller: Index, permission: ['admin.scheduler'] }, 'NavBarAdmin')
+App.Config.set('Job', { prio: 3400, name: 'Scheduler', parent: '#manage', target: '#manage/job', controller: Index, permission: ['admin.scheduler'] }, 'NavBarAdmin')

@@ -88,4 +88,4 @@ class Index extends App.ControllerSubContent
       removeAll: true
     @render()
 
-App.Config.set('Maintenance', { prio: 3600, name: 'Maintenance', parent: '#settings', target: '#system/maintenance', controller: Index, permission: ['admin.maintenance'] }, 'NavBarAdmin')
+App.Config.set('Maintenance', { prio: 3600, name: 'Maintenance', parent: '#system', target: '#system/maintenance', controller: Index, permission: ['admin.maintenance'] }, 'NavBarAdmin')

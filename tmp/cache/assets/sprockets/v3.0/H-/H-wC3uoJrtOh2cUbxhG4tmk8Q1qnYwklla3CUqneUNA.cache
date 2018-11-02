@@ -1,0 +1,42 @@
+I"d(function() {
+  var DefaultRouter,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  DefaultRouter = (function(superClass) {
+    extend(DefaultRouter, superClass);
+
+    function DefaultRouter() {
+      DefaultRouter.__super__.constructor.apply(this, arguments);
+      if (window.location.pathname.substr(0, 5) === '/test') {
+        return;
+      }
+      if (!this.Config.get('system_init_done') && this.Config.get('import_mode')) {
+        this.navigate('#import', true);
+        return;
+      }
+      if (!this.Config.get('system_init_done')) {
+        this.navigate('#getting_started', true);
+        return;
+      }
+      if (this.permissionCheck('ticket.customer')) {
+        this.navigate('#ticket/view/my_tickets', true);
+        return;
+      }
+      if (this.Config.get('default_controller')) {
+        this.navigate(this.Config.get('default_controller'), true);
+        return;
+      }
+      this.navigate('#dashboard', true);
+    }
+
+    return DefaultRouter;
+
+  })(App.Controller);
+
+  App.Config.set('', DefaultRouter, 'Routes');
+
+  App.Config.set('/', DefaultRouter, 'Routes');
+
+}).call(this);
+:ET

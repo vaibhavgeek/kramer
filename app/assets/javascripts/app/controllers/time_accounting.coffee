@@ -222,4 +222,4 @@ class ByOrganization extends App.Controller
       rows: rows
     )
 
-#App.Config.set('TimeAccounting', { prio: 8500, name: 'Time Accounting', parent: '#manage', target: '#manage/time_accounting', controller: Index, permission: ['admin.time_accounting'] }, 'NavBarAdmin')
+App.Config.set('TimeAccounting', { prio: 8500, name: 'Time Accounting', parent: '#manage', target: '#manage/time_accounting', controller: Index, permission: ['admin.time_accounting'] }, 'NavBarAdmin')

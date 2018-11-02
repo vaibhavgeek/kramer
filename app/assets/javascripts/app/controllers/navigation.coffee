@@ -1,5 +1,5 @@
 class App.Navigation extends App.ControllerWidgetPermanent
-  className: 'navigation horizontal'
+  className: 'navigation vertical'
 
   elements:
     '#global-search': 'searchInput'

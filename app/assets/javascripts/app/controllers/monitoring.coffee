@@ -53,4 +53,4 @@ class Index extends App.ControllerSubContent
         @load()
     )
 
-App.Config.set('Monitoring', { prio: 3600, name: 'Status', parent: '#settings', target: '#system/monitoring', controller: Index, permission: ['admin.monitoring'] }, 'NavBarAdmin')
+App.Config.set('Monitoring', { prio: 3600, name: 'Monitoring', parent: '#system', target: '#system/monitoring', controller: Index, permission: ['admin.monitoring'] }, 'NavBarAdmin')

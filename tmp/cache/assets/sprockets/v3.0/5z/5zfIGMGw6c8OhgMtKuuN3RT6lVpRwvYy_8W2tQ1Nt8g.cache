@@ -1,0 +1,84 @@
+I"Î
+(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.WidgetOrganization = (function(superClass) {
+    extend(WidgetOrganization, superClass);
+
+    WidgetOrganization.prototype.events = {
+      'focusout [contenteditable]': 'update'
+    };
+
+    function WidgetOrganization() {
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      this.release = bind(this.release, this);
+      WidgetOrganization.__super__.constructor.apply(this, arguments);
+      this.subscribeId = App.Organization.full(this.organization_id, this.render, false, true);
+    }
+
+    WidgetOrganization.prototype.release = function() {
+      return App.Organization.unsubscribe(this.subscribeId);
+    };
+
+    WidgetOrganization.prototype.render = function(organization) {
+      var attributeConfig, attributeName, name, nameNew, organizationData, ref;
+      if (!organization) {
+        organization = this.u;
+      }
+      organizationData = [];
+      ref = App.Organization.attributesGet('view');
+      for (attributeName in ref) {
+        attributeConfig = ref[attributeName];
+        name = attributeName;
+        nameNew = name.substr(0, name.length - 3);
+        if (nameNew in organization) {
+          name = nameNew;
+        }
+        if ((organization[name] || attributeConfig.tag === 'richtext') && attributeConfig.shown) {
+          if (name !== 'name') {
+            organizationData.push(attributeConfig);
+          }
+        }
+      }
+      this.html(App.view('widget/organization')({
+        organization: organization,
+        organizationData: organizationData
+      }));
+      this.$('[contenteditable]').ce({
+        mode: 'textonly',
+        multiline: true,
+        maxlength: 250
+      });
+      return this.userPopups();
+
+      /*
+      @userTicketPopups(
+        selector: '.user-tickets'
+        user_id:  user.id
+        position: 'right'
+      )
+       */
+    };
+
+    WidgetOrganization.prototype.update = function(e) {
+      var data, name, org, value;
+      name = $(e.target).attr('data-name');
+      value = $(e.target).html();
+      org = App.Organization.find(this.organization_id);
+      if (org[name] !== value) {
+        data = {};
+        data[name] = value;
+        org.updateAttributes(data);
+        return this.log('notice', 'update', name, value, org);
+      }
+    };
+
+    return WidgetOrganization;
+
+  })(App.Controller);
+
+}).call(this);
+:ET
