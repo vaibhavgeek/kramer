@@ -1,2 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"state_type_id;TiI"	name;TI"new;TI"next_state_id;T0I"ignore_escalation;TFI"default_create;TTI"default_follow_up;TFI"	note;T0I"active;TTI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeH¨ÀG¶d/:	zoneI"UTC;FI"UTC;T@I"updated_at;TU;[Iu;	H¨ÀXýd/;
-I"UTC;F@@:@created_atf1541146336.036882:@expires_inf6.048e5
