@@ -1,0 +1,77 @@
+I"w	(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.TicketCustomer = (function(superClass) {
+    extend(TicketCustomer, superClass);
+
+    function TicketCustomer() {
+      this.onSubmit = bind(this.onSubmit, this);
+      return TicketCustomer.__super__.constructor.apply(this, arguments);
+    }
+
+    TicketCustomer.prototype.buttonClose = true;
+
+    TicketCustomer.prototype.buttonCancel = true;
+
+    TicketCustomer.prototype.buttonSubmit = true;
+
+    TicketCustomer.prototype.head = 'Change Customer';
+
+    TicketCustomer.prototype.content = function() {
+      var configure_attributes, controller;
+      configure_attributes = [
+        {
+          name: 'customer_id',
+          display: 'Customer',
+          tag: 'user_autocompletion',
+          "null": false,
+          placeholder: 'Enter Person or Organization/Company',
+          minLengt: 2,
+          disableCreateObject: false
+        }
+      ];
+      controller = new App.ControllerForm({
+        model: {
+          configure_attributes: configure_attributes
+        },
+        autofocus: true
+      });
+      return controller.form;
+    };
+
+    TicketCustomer.prototype.onSubmit = function(e) {
+      var callback, errors, params, ticket;
+      params = this.formParam(e.target);
+      ticket = App.Ticket.find(this.ticket_id);
+      ticket.customer_id = params['customer_id'];
+      errors = ticket.validate();
+      if (!_.isEmpty(errors)) {
+        this.log('error', errors);
+        this.formValidate({
+          form: e.target,
+          errors: errors
+        });
+        return;
+      }
+      this.customer_id = params['customer_id'];
+      callback = (function(_this) {
+        return function() {
+          _this.close();
+          ticket = App.Ticket.find(_this.ticket_id);
+          ticket.article = void 0;
+          return ticket.updateAttributes({
+            customer_id: _this.customer_id
+          });
+        };
+      })(this);
+      return App.User.full(this.customer_id, callback);
+    };
+
+    return TicketCustomer;
+
+  })(App.ControllerModal);
+
+}).call(this);
+:ET

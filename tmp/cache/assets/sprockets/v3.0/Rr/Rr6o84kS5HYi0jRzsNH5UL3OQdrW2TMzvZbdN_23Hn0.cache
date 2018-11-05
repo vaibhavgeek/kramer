@@ -1,0 +1,86 @@
+I"Â(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.SettingsAreaProxy = (function(superClass) {
+    extend(SettingsAreaProxy, superClass);
+
+    SettingsAreaProxy.prototype.events = {
+      'submit form': 'update',
+      'click .js-submit': 'update',
+      'click .js-test': 'testConnection'
+    };
+
+    function SettingsAreaProxy() {
+      this.testConnection = bind(this.testConnection, this);
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      SettingsAreaProxy.__super__.constructor.apply(this, arguments);
+      this.render();
+    }
+
+    SettingsAreaProxy.prototype.render = function() {
+      return this.html(App.view('settings/proxy')({
+        setting: App.Setting.findByAttribute('name', 'proxy'),
+        proxy: App.Setting.get('proxy'),
+        proxy_username: App.Setting.get('proxy_username'),
+        proxy_password: App.Setting.get('proxy_password'),
+        proxy_no: App.Setting.get('proxy_no')
+      }));
+    };
+
+    SettingsAreaProxy.prototype.update = function(e) {
+      var params;
+      e.preventDefault();
+      this.formDisable(e);
+      params = this.formParam(e);
+      App.Setting.set('proxy', params.proxy);
+      App.Setting.set('proxy_username', params.proxy_username);
+      App.Setting.set('proxy_password', params.proxy_password);
+      App.Setting.set('proxy_no', params.proxy_no);
+      this.formEnable(e);
+      return this.render();
+    };
+
+    SettingsAreaProxy.prototype.testConnection = function(e) {
+      var params;
+      e.preventDefault();
+      params = this.formParam(e);
+      return this.ajax({
+        id: 'proxy_test',
+        type: 'POST',
+        url: this.apiPath + "/proxy",
+        data: JSON.stringify(params),
+        processData: true,
+        success: (function(_this) {
+          return function(data, status, xhr) {
+            if (data.result === 'success') {
+              _this.$('.js-test').addClass('hide');
+              _this.$('.js-submit').removeClass('hide');
+              App.Event.trigger('notify', {
+                type: 'success',
+                msg: App.i18n.translateContent('Connection test successful'),
+                timeout: 2000
+              });
+              return;
+            }
+            return new App.ControllerConfirm({
+              head: 'Error',
+              message: data.message,
+              buttonClass: 'btn--success',
+              buttonCancel: false,
+              buttonSubmit: 'Close',
+              container: _this.el.closest('.content')
+            });
+          };
+        })(this)
+      });
+    };
+
+    return SettingsAreaProxy;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

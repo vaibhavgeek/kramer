@@ -1,0 +1,143 @@
+I"³(function() {
+  var Form, Index, State,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Index = (function(superClass) {
+    extend(Index, superClass);
+
+    function Index() {
+      this.render = bind(this.render, this);
+      return Index.__super__.constructor.apply(this, arguments);
+    }
+
+    Index.prototype.featureIntegration = 'idoit_integration';
+
+    Index.prototype.featureName = 'i-doit';
+
+    Index.prototype.featureConfig = 'idoit_config';
+
+    Index.prototype.description = [['This service allows you to connect %s with %s.', 'i-doit', 'Zammad']];
+
+    Index.prototype.events = {
+      'change .js-switch input': 'switch'
+    };
+
+    Index.prototype.render = function() {
+      Index.__super__.render.apply(this, arguments);
+      new Form({
+        el: this.$('.js-form')
+      });
+      return new App.HttpLog({
+        el: this.$('.js-log'),
+        facility: 'idoit'
+      });
+    };
+
+    return Index;
+
+  })(App.ControllerIntegrationBase);
+
+  Form = (function(superClass) {
+    extend(Form, superClass);
+
+    Form.prototype.events = {
+      'submit form': 'update'
+    };
+
+    function Form() {
+      this.validateAndSave = bind(this.validateAndSave, this);
+      this.update = bind(this.update, this);
+      this.render = bind(this.render, this);
+      Form.__super__.constructor.apply(this, arguments);
+      this.render();
+    }
+
+    Form.prototype.currentConfig = function() {
+      return App.Setting.get('idoit_config');
+    };
+
+    Form.prototype.setConfig = function(value) {
+      return App.Setting.set('idoit_config', value, {
+        notify: true
+      });
+    };
+
+    Form.prototype.render = function() {
+      this.config = this.currentConfig();
+      return this.html(App.view('integration/idoit')({
+        config: this.config
+      }));
+    };
+
+    Form.prototype.update = function(e) {
+      e.preventDefault();
+      this.config = this.formParam(e.target);
+      return this.validateAndSave();
+    };
+
+    Form.prototype.validateAndSave = function() {
+      return this.ajax({
+        id: 'idoit',
+        type: 'POST',
+        url: this.apiPath + "/integration/idoit/verify",
+        data: JSON.stringify({
+          method: 'cmdb.object_types',
+          api_token: this.config.api_token,
+          endpoint: this.config.endpoint,
+          client_id: this.config.client_id
+        }),
+        success: (function(_this) {
+          return function(data, status, xhr) {
+            if (data.result === 'failed') {
+              new App.ControllerErrorModal({
+                message: data.message,
+                container: _this.el.closest('.content')
+              });
+              return;
+            }
+            return _this.setConfig(_this.config);
+          };
+        })(this),
+        error: (function(_this) {
+          return function(data, status) {
+            var details;
+            if (status === 'abort') {
+              return;
+            }
+            details = data.responseJSON || {};
+            return _this.notify({
+              type: 'error',
+              msg: App.i18n.translateContent(details.error_human || details.error || 'Unable to save!')
+            });
+          };
+        })(this)
+      });
+    };
+
+    return Form;
+
+  })(App.Controller);
+
+  State = (function() {
+    function State() {}
+
+    State.current = function() {
+      return App.Setting.get('idoit_integration');
+    };
+
+    return State;
+
+  })();
+
+  App.Config.set('IntegrationIdoit', {
+    name: 'i-doit',
+    target: '#system/integration/idoit',
+    description: 'CMDB to document complex relations of your network components.',
+    controller: Index,
+    state: State
+  }, 'NavBarIntegrations');
+
+}).call(this);
+:ET

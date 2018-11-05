@@ -1,0 +1,103 @@
+I"lfunction(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="dropdown-toggle" data-toggle="dropdown">\n  <input\n    class="searchableSelect-shadow form-control js-shadow"\n    ');
+    
+      if (this.attribute.id) {
+        __out.push('id="');
+        __out.push(__sanitize(this.attribute.id));
+        __out.push('"');
+      }
+    
+      __out.push('\n    name="');
+    
+      __out.push(__sanitize(this.attribute.name));
+    
+      __out.push('"\n    ');
+    
+      __out.push(__sanitize(this.attribute.required));
+    
+      __out.push('\n    ');
+    
+      __out.push(__sanitize(this.attribute.autofocus));
+    
+      __out.push('\n    value="');
+    
+      __out.push(__sanitize(this.attribute.value));
+    
+      __out.push('"\n    tabindex="-1"\n  >\n  <input\n    class="searchableSelect-main form-control js-input');
+    
+      if (this.attribute["class"]) {
+        __out.push(__sanitize(" " + this.attribute["class"]));
+      }
+    
+      __out.push('"\n    placeholder="');
+    
+      __out.push(__sanitize(this.attribute.placeholder));
+    
+      __out.push('"\n    value="');
+    
+      __out.push(__sanitize(this.attribute.valueName));
+    
+      __out.push('"\n    autocomplete="off"\n    ');
+    
+      __out.push(__sanitize(this.attribute.required));
+    
+      __out.push('\n   >\n  <div class="searchableSelect-autocomplete">\n    <span class="searchableSelect-autocomplete-invisible js-autocomplete-invisible"></span>\n    <span class="searchableSelect-autocomplete-visible js-autocomplete-visible"></span>\n  </div>\n  ');
+    
+      if (!this.attribute.ajax) {
+        __out.push(this.Icon('arrow-down', 'dropdown-arrow'));
+      }
+    
+      __out.push('\n  <div class="small loading icon"></div>\n</div>\n<div class="dropdown-menu dropdown-menu-left dropdown-menu--has-submenu js-dropdown">\n  <ul class="js-optionsList" role="menu">\n    ');
+    
+      __out.push(this.options);
+    
+      __out.push('\n  </ul>\n  ');
+    
+      __out.push(this.submenus);
+    
+      __out.push('\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

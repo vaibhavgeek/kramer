@@ -1,0 +1,24 @@
+I"£(function() {
+  var Widget;
+
+  Widget = (function() {
+    function Widget() {
+      var banner;
+      if (!App.Config.get('developer_mode')) {
+        return;
+      }
+      if (App.Log.config('banner') === false) {
+        return;
+      }
+      banner = "|\n| Welcome Zammad Developer!\n| You can enable debugging with the following examples (value is a regex):\n|\n| App.Log.config('module', '(websocket|delay|interval)') // enable debugging for websocket, delay and interval class\n| App.Log.config('content', 'send')                      // enable debugging for messages which contain the string 'send'\n| App.Log.config('banner', false)                        // disable this banner\n|\n| App.Log.config()         // current settings\n| App.Log.config('banner') // current setting for banner\n|";
+      console.log(banner);
+    }
+
+    return Widget;
+
+  })();
+
+  App.Config.set('dev_banner', Widget, 'Widgets');
+
+}).call(this);
+:ET

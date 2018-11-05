@@ -1,0 +1,77 @@
+I"L	(function() {
+  App.UiElement.time_range = (function() {
+    function time_range() {}
+
+    time_range.render = function(attribute) {
+      var element, i, j, k, key, range, ranges, results, results1, results2, value, values;
+      ranges = {
+        minute: 'Minute(s)',
+        hour: 'Hour(s)',
+        day: 'Day(s)',
+        month: 'Month(s)',
+        year: 'Year(s)'
+      };
+      for (key in ranges) {
+        value = ranges[key];
+        ranges[key] = App.i18n.translateInline(value);
+      }
+      range = 'minute';
+      if (attribute.value && attribute.value.range) {
+        range = attribute.value.range;
+      }
+      values = {
+        minute: (function() {
+          results = [];
+          for (i = 1; i <= 120; i++){ results.push(i); }
+          return results;
+        }).apply(this),
+        hour: (function() {
+          results1 = [];
+          for (j = 1; j <= 48; j++){ results1.push(j); }
+          return results1;
+        }).apply(this),
+        day: (function() {
+          results2 = [];
+          for (k = 1; k <= 31; k++){ results2.push(k); }
+          return results2;
+        }).apply(this),
+        month: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        year: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+      };
+      element = $(App.view('generic/time_range')({
+        attribute: attribute,
+        ranges: ranges
+      }));
+      this.localRenderPulldown(element.filter('.js-valueRangeSelector'), values[range], attribute);
+      element.find('select.form-control.js-range').on('change', (function(_this) {
+        return function(e) {
+          range = $(e.currentTarget).val();
+          return _this.localRenderPulldown($(e.currentTarget).closest('.js-filterElement').find('.js-valueRangeSelector'), values[range], attribute);
+        };
+      })(this));
+      return element;
+    };
+
+    time_range.localRenderPulldown = function(el, range, attribute) {
+      var count, i, len, select, values;
+      if (!range) {
+        return;
+      }
+      values = {};
+      for (i = 0, len = range.length; i < len; i++) {
+        count = range[i];
+        values[count.toString()] = count.toString();
+      }
+      select = App.view('generic/time_range_value_selector')({
+        attribute: attribute,
+        values: values
+      });
+      return el.html(select);
+    };
+
+    return time_range;
+
+  })();
+
+}).call(this);
+:ET
