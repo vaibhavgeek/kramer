@@ -1,14 +1,15 @@
-# Welcome to Zammad
+# Welcome to chaturbots implrementation of zammad
 
-Zammad is a web based open source helpdesk/customer support system with many
+Chaturbots is a web based open source helpdesk/customer support system with many
 features to manage customer communication via several channels like telephone,
 facebook, twitter, chat and e-mails. It is distributed under the GNU AFFERO
 General Public License (AGPL).
 
 Do you receive many e-mails and want to answer them with a team of agents?
 
-You're going to love Zammad!
+You're going to love Chaturbots!
 
+- About Zammad: [![Code Climate](https://github.com/zammad/zammad )]
 ## Status
 
 - Build: [![Build Status](https://travis-ci.org/zammad/zammad.svg?branch=develop)](https://travis-ci.org/zammad/zammad)
