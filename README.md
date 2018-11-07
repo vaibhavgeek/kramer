@@ -9,6 +9,7 @@ Do you receive many e-mails and want to answer them with a team of agents?
 
 You're going to love Chaturbots!
 
+<<<<<<< HEAD
 - About Zammad: [![Code Climate](https://github.com/zammad/zammad )]
 ## Status
 
@@ -30,19 +31,10 @@ https://docs.zammad.org
 ## Screenshots
 
 https://zammad.org/screenshots
+=======
+- Code: <a href="https://github.com/zammad/zammad"> <img src="https://image.flaticon.com/icons/svg/69/69084.svg" width=80px /></a>
+>>>>>>> 89b89c5c33676d287865e35b3c17fa8ca7690e9b
 
 
 ## REST API
-
 https://docs.zammad.org/en/latest/api-intro.html
-
-
-## Contributing
-
-https://zammad.org/participate
-
-
-Thanks! ❤️ ❤️ ❤️
-
- Your Zammad Team
-
