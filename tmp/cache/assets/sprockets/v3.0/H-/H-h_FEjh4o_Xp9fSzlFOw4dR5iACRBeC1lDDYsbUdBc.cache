@@ -1,0 +1,110 @@
+I"
+function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      var i, len, ref, row;
+    
+      __out.push('<div class="controls controls--select">\n  <select id="');
+    
+      __out.push(__sanitize(this.attribute.id));
+    
+      __out.push('" class="form-control');
+    
+      if (this.attribute["class"]) {
+        __out.push(__sanitize(" " + this.attribute["class"]));
+      }
+    
+      __out.push('" name="');
+    
+      __out.push(__sanitize(this.attribute.name));
+    
+      __out.push('" ');
+    
+      __out.push(__sanitize(this.attribute.multiple));
+    
+      __out.push(' ');
+    
+      __out.push(__sanitize(this.attribute.required));
+    
+      __out.push(' ');
+    
+      __out.push(__sanitize(this.attribute.autofocus));
+    
+      __out.push(' ');
+    
+      if (this.attribute.disabled) {
+        __out.push(' disabled');
+      }
+    
+      __out.push('>\n');
+    
+      if (this.attribute.options) {
+        __out.push('\n');
+        ref = this.attribute.options;
+        for (i = 0, len = ref.length; i < len; i++) {
+          row = ref[i];
+          __out.push('\n    <option value="');
+          __out.push(__sanitize(row.value));
+          __out.push('" ');
+          __out.push(__sanitize(row.selected));
+          __out.push(' ');
+          __out.push(__sanitize(row.disabled));
+          __out.push('>');
+          __out.push(__sanitize(row.name));
+          __out.push('</option>\n');
+        }
+        __out.push('\n');
+      }
+    
+      __out.push('\n  </select>\n  ');
+    
+      if (!this.attribute.multiple) {
+        __out.push('\n    ');
+        __out.push(this.Icon('arrow-down'));
+        __out.push('\n  ');
+      }
+    
+      __out.push('\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

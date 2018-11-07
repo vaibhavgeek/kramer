@@ -1,0 +1,35 @@
+I"ó(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.UiElement.searchable_select = (function(superClass) {
+    extend(searchable_select, superClass);
+
+    function searchable_select() {
+      return searchable_select.__super__.constructor.apply(this, arguments);
+    }
+
+    searchable_select.render = function(attribute, params) {
+      if (attribute.multiple) {
+        attribute.multiple = 'multiple';
+      } else {
+        attribute.multiple = '';
+      }
+      this.getConfigOptionList(attribute, params);
+      this.getRelationOptionList(attribute, params);
+      this.addNullOption(attribute, params);
+      this.sortOptions(attribute, params);
+      this.selectedOptions(attribute, params);
+      this.disabledOptions(attribute, params);
+      this.filterOption(attribute, params);
+      return new App.SearchableSelect({
+        attribute: attribute
+      }).element();
+    };
+
+    return searchable_select;
+
+  })(App.UiElement.ApplicationUiElement);
+
+}).call(this);
+:ET

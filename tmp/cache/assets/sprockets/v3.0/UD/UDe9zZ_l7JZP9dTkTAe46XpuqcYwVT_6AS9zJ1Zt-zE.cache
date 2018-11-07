@@ -1,0 +1,61 @@
+I"[(function() {
+  var ProfileRouter,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.Profile = (function(superClass) {
+    extend(Profile, superClass);
+
+    function Profile() {
+      return Profile.__super__.constructor.apply(this, arguments);
+    }
+
+    Profile.prototype.authenticateRequired = true;
+
+    Profile.prototype.configKey = 'NavBarProfile';
+
+    return Profile;
+
+  })(App.ControllerNavSidbar);
+
+  ProfileRouter = (function(superClass) {
+    extend(ProfileRouter, superClass);
+
+    ProfileRouter.prototype.requiredPermission = ['user_preferences.*'];
+
+    function ProfileRouter(params) {
+      ProfileRouter.__super__.constructor.apply(this, arguments);
+      this.authenticateCheckRedirect();
+      App.TaskManager.execute({
+        key: 'Profile',
+        controller: 'Profile',
+        params: params,
+        show: true,
+        persistent: true
+      });
+    }
+
+    return ProfileRouter;
+
+  })(App.ControllerPermanent);
+
+  App.Config.set('profile', ProfileRouter, 'Routes');
+
+  App.Config.set('profile/:target', ProfileRouter, 'Routes');
+
+  App.Config.set('Profile', {
+    prio: 1000,
+    name: 'Profile',
+    target: '#profile'
+  }, 'NavBarProfile');
+
+  App.Config.set('Profile', {
+    prio: 1700,
+    parent: '#current_user',
+    name: 'Profile',
+    target: '#profile',
+    translate: true
+  }, 'NavBarRight');
+
+}).call(this);
+:ET

@@ -1,0 +1,109 @@
+I"function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="alert alert--danger hidden" role="alert"></div>\n<fieldset>\n\n  <h3>');
+    
+      __out.push(this.T('Search Terms'));
+    
+      __out.push('</h3>\n  <p class="description">');
+    
+      __out.push(this.T('Tweets containing search terms are automatically turned into tickets.'));
+    
+      __out.push('</p>\n\n  <table class="settings-list">\n    <thead>\n      <tr>\n        <th>');
+    
+      __out.push(this.T('Search Term'));
+    
+      __out.push('\n        <th>');
+    
+      __out.push(this.T('Group'));
+    
+      __out.push('\n        <th>');
+    
+      __out.push(this.T('Action'));
+    
+      __out.push('\n    </thead>\n    <tbody class="js-searchTermList">\n      <tr>\n        <td colspan="3">\n          ');
+    
+      __out.push(this.T('Empty'));
+    
+      __out.push('\n    </tbody>\n    <tfoot>\n      <tr>\n        <td colspan="3" class="settings-list-action-cell js-searchTermAdd">\n          ');
+    
+      __out.push(this.Icon('plus-small'));
+    
+      __out.push('\n    </tfoot>\n  </table>\n\n  <h3>');
+    
+      __out.push(this.T('Mentions Group'));
+    
+      __out.push('</h3>\n  <p class="description">');
+    
+      __out.push(this.T('Choose which group %s will get added to.', 'mentions'));
+    
+      __out.push('</p>\n  <div class="js-mentionsGroup"></div>\n\n  <h3>');
+    
+      __out.push(this.T('Direct Messages Group'));
+    
+      __out.push('</h3>\n  <p class="description">');
+    
+      __out.push(this.T('Choose which group %s will get added to.', 'direct messages'));
+    
+      __out.push('</p>\n  <div class="js-directMessagesGroup"></div>\n\n  <h3>');
+    
+      __out.push(this.T('Retweets'));
+    
+      __out.push('</h3>\n  <p class="description">');
+    
+      __out.push(this.T('Choose if retweets should also be converted to tickets.'));
+    
+      __out.push('</p>\n  <input name="track_retweets" type="checkbox" id="setting-chat" value="true" ');
+    
+      if (this.channel.options.sync.track_retweets) {
+        __out.push('checked');
+      }
+    
+      __out.push('> ');
+    
+      __out.push(this.T('Track retweets'));
+    
+      __out.push('\n\n</fieldset>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

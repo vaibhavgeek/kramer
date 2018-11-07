@@ -1,0 +1,85 @@
+I"¨	function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="tokenfield form-control u-positionOrigin">\n  <input class="js-objectId" type="hidden" value="');
+    
+      __out.push(__sanitize(this.value));
+    
+      __out.push('" name="');
+    
+      __out.push(this.attribute.name);
+    
+      __out.push('" tabindex="-1">\n  ');
+    
+      if (this.attribute.multiple) {
+        __out.push('\n    ');
+        __out.push(this.tokens);
+        __out.push('\n  ');
+      }
+    
+      __out.push('\n  <input name="');
+    
+      __out.push(this.attribute.name);
+    
+      __out.push('_completion" class="user-select token-input js-objectSelect" autocapitalize="off" placeholder="');
+    
+      __out.push(this.Ti(this.attribute.placeholder));
+    
+      __out.push('" autocomplete="off" ');
+    
+      __out.push(__sanitize(this.attribute.autofocus));
+    
+      __out.push(' role="textbox" aria-autocomplete="list" value="');
+    
+      __out.push(__sanitize(this.name));
+    
+      __out.push('" aria-haspopup="true">\n  ');
+    
+      if (this.attribute.disableCreateObject !== true) {
+        __out.push(this.Icon('arrow-down', 'dropdown-arrow'));
+      }
+    
+      __out.push('\n</div>\n\n<div class="dropdown-menu" aria-labelledby="customer_id">\n  <ul class="recipientList" role="menu"></ul>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

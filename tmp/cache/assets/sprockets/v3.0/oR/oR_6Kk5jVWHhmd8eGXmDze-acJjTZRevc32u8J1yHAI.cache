@@ -1,0 +1,77 @@
+I"L	function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div class="js-item activity-entry">\n  <div class="activity-avatar js-avatar"></div>\n  <a href="');
+    
+      __out.push(this.item.link);
+    
+      __out.push('" class="activity-body">\n    <span class="activity-message">\n      <span class="activity-text">\n        ');
+    
+      if (this.item.objectNative && this.item.objectNative.activityMessage) {
+        __out.push('\n          ');
+        __out.push(this.item.objectNative.activityMessage(this.item));
+        __out.push('\n        ');
+      } else {
+        __out.push('\n            Need objectNative in item ');
+        __out.push(__sanitize(item.object));
+        __out.push('.find(');
+        __out.push(__sanitize(item.o_id));
+        __out.push(')\n        ');
+      }
+    
+      __out.push('\n      </span>\n      ');
+    
+      __out.push(this.humanTime(this.item.created_at, false, 'activity-time'));
+    
+      __out.push('\n    </span>\n    <span class="activity-icon">\n      ');
+    
+      if (this.item.cssIcon) {
+        __out.push('\n      ');
+        __out.push(this.Icon(this.item.cssIcon));
+        __out.push('\n      ');
+      }
+    
+      __out.push('\n    </span>\n  </a>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
+}:ET

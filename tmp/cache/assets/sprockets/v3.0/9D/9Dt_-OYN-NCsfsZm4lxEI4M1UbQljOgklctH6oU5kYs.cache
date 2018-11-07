@@ -1,0 +1,53 @@
+I"æ(function() {
+  var Delete;
+
+  Delete = (function() {
+    function Delete() {}
+
+    Delete.action = function(actions, ticket, article, ui) {
+      var user;
+      if (ui.permissionCheck('ticket.customer')) {
+        return actions;
+      }
+      if (article.type.name === 'note') {
+        user = void 0;
+        if (App.Session.get('id') === article.created_by_id) {
+          user = App.User.find(App.Session.get('id'));
+          if (user.permission('ticket.agent')) {
+            actions.push({
+              name: 'delete',
+              type: 'delete',
+              icon: 'trash',
+              href: '#'
+            });
+          }
+        }
+      }
+      return actions;
+    };
+
+    Delete.perform = function(articleContainer, type, ticket, article, ui) {
+      var callback;
+      if (type !== 'delete') {
+        return true;
+      }
+      callback = function() {
+        article = App.TicketArticle.find(article.id);
+        return article.destroy();
+      };
+      new App.ControllerConfirm({
+        message: 'Sure?',
+        callback: callback,
+        container: ui.el.closest('.content')
+      });
+      return true;
+    };
+
+    return Delete;
+
+  })();
+
+  App.Config.set('900-Delete', Delete, 'TicketZoomArticleAction');
+
+}).call(this);
+:ET

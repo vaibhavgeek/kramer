@@ -1,0 +1,107 @@
+I"f(function() {
+  var Modal, TranslationSupport,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  TranslationSupport = (function(superClass) {
+    extend(TranslationSupport, superClass);
+
+    function TranslationSupport() {
+      var check;
+      TranslationSupport.__super__.constructor.apply(this, arguments);
+      check = (function(_this) {
+        return function() {
+          var meta, percent;
+          if (!_this.Config.get('system_init_done')) {
+            return;
+          }
+          if (!App.i18n.notTranslatedFeatureEnabled(App.i18n.get())) {
+            return;
+          }
+          if (!_this.permissionCheck('admin.translation')) {
+            return;
+          }
+          if (window.location.hash.toString().match(/getting/)) {
+            return;
+          }
+          meta = App.i18n.meta();
+          percent = parseInt(meta.translated / (meta.total / 100));
+          if (percent > 95) {
+            return;
+          }
+          return new Modal({
+            percent: percent
+          });
+        };
+      })(this);
+      this.bind('i18n:language:change', (function(_this) {
+        return function() {
+          return _this.delay(check, 2500, 'translation_support');
+        };
+      })(this));
+      this.bind('auth:login', (function(_this) {
+        return function() {
+          return _this.delay(check, 2500, 'translation_support');
+        };
+      })(this));
+    }
+
+    return TranslationSupport;
+
+  })(App.Controller);
+
+  App.Config.set('translaton_support', TranslationSupport, 'Widgets');
+
+  Modal = (function(superClass) {
+    extend(Modal, superClass);
+
+    Modal.prototype.buttonClose = true;
+
+    Modal.prototype.buttonCancel = 'No Thanks!';
+
+    Modal.prototype.buttonSubmit = 'Complete translations';
+
+    Modal.prototype.head = 'Help to improve Zammad!';
+
+    Modal.prototype.shown = false;
+
+    function Modal() {
+      this.onSubmit = bind(this.onSubmit, this);
+      this.onCancel = bind(this.onCancel, this);
+      this.content = bind(this.content, this);
+      Modal.__super__.constructor.apply(this, arguments);
+      if (App.LocalStorage.get('translation_support_no', this.Session.get('id'))) {
+        return;
+      }
+      this.render();
+    }
+
+    Modal.prototype.content = function() {
+      var better;
+      better = false;
+      if (this.percent > 80) {
+        better = true;
+      }
+      return App.view('translation/support')({
+        percent: this.percent,
+        better: better
+      });
+    };
+
+    Modal.prototype.onCancel = function() {
+      App.LocalStorage.set('translation_support_no', true, this.Session.get('id'));
+      return this.close();
+    };
+
+    Modal.prototype.onSubmit = function() {
+      this.navigate('#system/translation');
+      return this.close();
+    };
+
+    return Modal;
+
+  })(App.ControllerModal);
+
+}).call(this);
+:ET

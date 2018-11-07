@@ -1,0 +1,57 @@
+I"-(function() {
+  var Security,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Security = (function(superClass) {
+    extend(Security, superClass);
+
+    Security.prototype.requiredPermission = 'admin.security';
+
+    Security.prototype.header = 'Security';
+
+    function Security() {
+      Security.__super__.constructor.apply(this, arguments);
+      this.title('Security', true);
+      this.tabs = [
+        {
+          name: 'Base',
+          'target': 'base',
+          controller: App.SettingsArea,
+          params: {
+            area: 'Security::Base'
+          }
+        }, {
+          name: 'Password',
+          'target': 'password',
+          controller: App.SettingsArea,
+          params: {
+            area: 'Security::Password'
+          }
+        }, {
+          name: 'Third-party Applications',
+          'target': 'third_party_auth',
+          controller: App.SettingsArea,
+          params: {
+            area: 'Security::ThirdPartyAuthentication'
+          }
+        }
+      ];
+      this.render();
+    }
+
+    return Security;
+
+  })(App.ControllerTabs);
+
+  App.Config.set('SettingSecurity', {
+    prio: 1600,
+    parent: '#settings',
+    name: 'Security',
+    target: '#settings/security',
+    controller: Security,
+    permission: ['admin.security']
+  }, 'NavBarAdmin');
+
+}).call(this);
+:ET
