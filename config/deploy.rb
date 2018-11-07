@@ -3,7 +3,7 @@ lock '3.11.0'
 
 set :user, 'deployer'
 set :application, 'chaturbots'
-set :repo_url, 'git@github.com:vaibhavgeek/kramer.git'
+set :repo_url, 'git@github.com:maheshahir/cb_krammar.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
