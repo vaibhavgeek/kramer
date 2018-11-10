@@ -1,97 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETizI"ticket_id;TixI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"([New post] The Long and Short of It;TI"reply_to;T0I"message_id;TI"#<3584907.9285.0@wordpress.com>;TI"message_id_md5;TI"%adafbe55ab1ac14c088001fac37a23a2;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/matt/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/matt/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/" target="_blank">The Long and Short of It</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/matt/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/matt/" target="_blank">Matt</a></span>
-</td>
-</tr>
-</table> <div>
-<p>Would you like some more Twitter in your WordPress? We got ya. As an update to our <a href="http://en.support.wordpress.com/twitter-blackbird-pie/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/twitter-blackbird-pie/" target="_blank">ever-popular Tweet embedding functionality</a> we're supporting <a href="https://dev.twitter.com/blog/tweets-and-buttons" rel="nofollow noreferrer noopener" title="https://dev.twitter.com/blog/tweets-and-buttons" target="_blank">Twitter's new embed API</a> to enable richer, better looking, and more functional Tweets inside your blog posts. To embed a Tweet just <a href="http://en.support.wordpress.com/twitter-blackbird-pie/#using-twitter-blackbird-pie" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/twitter-blackbird-pie/#using-twitter-blackbird-pie" target="_blank">put a permalink to it on its own line</a> or use our <a href="http://en.support.wordpress.com/twitter-embeds/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/twitter-embeds/" target="_blank">new shortcode that allows for extra formatting</a>.</p>
-<p><a href="http://en.blog.wordpress.com/files/2011/12/screen-shot-2011-12-08-at-10-05-13-am.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2011/12/screen-shot-2011-12-08-at-10-05-13-am.png" target="_blank"></a><br> But wait, there's more! Have you ever wished that when you're on Twitter and come across a link to someone's blog post, <a href="https://twitter.com/#!/photomatt/status/140978885364953088" rel="nofollow noreferrer noopener" title="https://twitter.com/#!/photomatt/status/140978885364953088" target="_blank">like this one</a>, you could see a preview of the post without having to click on the link? Now you can, our friends at Twitter have made it so that all <a href="http://wp.me/" rel="nofollow noreferrer noopener" target="_blank">wp.me</a> links can be previewed, including snippets of posts and photos, directly on Twitter.com. In addition to this being something I've personally wanted for a while, we think it'll get a lot more people visiting your blog.</p>
-<p>Â </p>
-<p>Finally, if you <a href="http://en.gravatar.com/profiles/edit/#verified-services" rel="nofollow noreferrer noopener" title="http://en.gravatar.com/profiles/edit/#verified-services" target="_blank">link your Twitter account on your Gravatar profile </a>we've made it so it's easy to follow you right from that page.</p>
-<p>Now go forth and tweetify.</p>
-<p>P.S. You can <a href="http://twitter.com/photomatt/" rel="nofollow noreferrer noopener" title="http://twitter.com/photomatt/" target="_blank">follow me on Twitter here</a>, and <a href="http://matt.wordpress.com" rel="nofollow noreferrer noopener" title="http://matt.wordpress.com" target="_blank">WordPress.com here</a>.</p>
-<p>Â </p>
-<blockquote lang="en">
-<p>The Long and Short of It <a href="http://wp.me/pf2B5-2pL" rel="nofollow noreferrer noopener" target="_blank"> wp.me/pf2B5-2pL</a></p>
-<p>â€”<br>WordPress.com (@wordpressdotcom) <a href="http://twitter.com/#!/wordpressdotcom/status/144839045627916288" rel="nofollow noreferrer noopener" title="http://twitter.com/#!/wordpressdotcom/status/144839045627916288" target="_blank">December 08, 2011</a></p>
-</blockquote> </div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/matt/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/matt/" target="_blank">Matt</a></strong> | December 8, 2011 at 6:00 pm | URL: <a href="http://wp.me/pf2B5-2pL" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2pL</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2011/12/08/the-long-and-short-of-it/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©À«‚åÒ:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-M©À(‚åÒ;I"UTC;F@*@/:@created_atf1541857985.848164:@expires_inf6.048e5

@@ -1,111 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETi¡I"ticket_id;TiŸI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"/[New post] Splinder Importer Now Available;TI"reply_to;T0I"message_id;TI"#<3584907.9527.0@wordpress.com>;TI"message_id_md5;TI"%c680882abe8e8d2ada2a559686c513d9;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"‡%WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/dllh/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/dllh/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/" target="_blank">Splinder Importer Now Available</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/dllh/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/dllh/" target="_blank">Daryl L. L. Houston</a></span>
-</td>
-</tr>
-</table> <div>
-<p>Italian blogging service <a title="Splinder" href="http://splinder.com/" rel="nofollow noreferrer noopener" target="_blank">Splinder.com</a> is closing down at the end of this month, and we'd like to extend a hearty "Benvenuto" to any Splinder users who're looking for a new blogging home. To help make migration easier, we've added a Splinder importer to WordPress.com. If you'd like to make the move, please go ahead and get started now so that there's time before the January 31<sup>st</sup> deadline to work out any issues.</p>
-<h4>Exporting your Splinder Blog</h4>
-<p>To import a Splinder blog, you'll first need to save your export file to your computer by following these steps:</p>
-<p>First, log in to Splinder and click the "Blog" link available at the top of the home page.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder4.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder4.png" target="_blank"></a></p>
-<p>Next, click the "configura" link available at the top of the blog page.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder5.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder5.png" target="_blank"></a></p>
-<p>Now click "Esporta blog e attiva redirect" in the right-hand sidebar.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder6.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder6.png" target="_blank"></a></p>
-<p>Next, download the content of your blog by clicking the link "Clicca qui per scaricare il file con i contenuti del tuo blog."</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder7.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder7.png" target="_blank"></a></p>
-<p>Now you're ready to import the downloaded file into your WordPress.com blog.</p>
-<h4>Importing to WordPress.com</h4>
-<p>Create a WordPress.com account and blog if you haven't already, and then visit Tools -&gt; Import in the admin sidebar. You should find the Splinder importer among the list of importers.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder1.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder1.png" target="_blank"></a></p>
-<p>Click the link to get started. Next, you'll upload the export file you've downloaded to your computer from Splinder.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder2.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder2.png" target="_blank"></a></p>
-<p>Once the importer has validated your import file, you'll be prompted to map users from the old blog to the new.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder3.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder3.png" target="_blank"></a></p>
-<p>If you'd like to have your post images downloaded as well, be sure to tick the "Download and import file attachments" checkbox.</p>
-<p>Once you've submitted the import request, it can take a few minutes to perform the import, and you'll receive an email letting you know that the import finished.</p>
-<p>After you have imported your content into WordPress.com, you can return to your Splinder settings to create a redirect that will forward your old Splinder blog to your new WordPress.com blog. Provide your new WordPress.com blog URL in the field and click the "Attiva redirect" button.</p>
-<p><a href="http://en.blog.wordpress.com/files/2012/01/splinder8.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/01/splinder8.png" target="_blank"></a></p>
-<p>If you have any trouble importing your blog, of course you're welcome to <a title="Contact Support" href="http://en.support.wordpress.com/contact/" rel="nofollow noreferrer noopener" target="_blank">contact support</a>, and one of our Happiness Engineers will be glad to help out. To learn your way around WordPress.com, we encourage you to check out our handy <a title="Learn WordPress.com" href="http://learn.wordpress.com/" rel="nofollow noreferrer noopener" target="_blank">tutorial</a>. We also provide comprehensive feature documentation at our <a title="Support" href="http://en.support.wordpress.com/" rel="nofollow noreferrer noopener" target="_blank">support site</a>. Welcome to WordPress.com!</p>
-</div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/dllh/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/dllh/" target="_blank">Daryl L. L. Houston</a></strong> | January 9, 2012 at 3:00 pm | Tags: <a href="http://en.blog.wordpress.com/?tag=import" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=import" target="_blank">Import</a>, <a href="http://en.blog.wordpress.com/?tag=international" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=international" target="_blank">international</a>, <a href="http://en.blog.wordpress.com/?tag=splinder" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=splinder" target="_blank">splinder</a> | Categories: <a href="http://en.blog.wordpress.com/?cat=43222" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=43222" target="_blank">Import</a>, <a href="http://en.blog.wordpress.com/?cat=5142" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=5142" target="_blank">International</a> | URL: <a href="http://wp.me/pf2B5-2tF" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2tF</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/01/09/splinder-importer-now-available/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©ÀÔ‡ÎÙ:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-M©ÀÀ†ÎÙ;I"UTC;F@*@/:@created_atf1541858090.1235561:@expires_inf6.048e5

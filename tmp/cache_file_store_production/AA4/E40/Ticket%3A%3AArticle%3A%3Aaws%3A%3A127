@@ -1,99 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"ticket_id;Ti}I"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"5[New post] Get Instant Feedback When You Publish;TI"reply_to;T0I"message_id;TI"#<3584907.8676.0@wordpress.com>;TI"message_id_md5;TI"%3156edd510cf5d691143f3fdc212c0ef;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"–WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/sberkun/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/sberkun/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/" target="_blank">Get Instant Feedback When You Publish</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/sberkun/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/sberkun/" target="_blank">Scott Berkun</a></span>
-</td>
-</tr>
-</table> <div>
-<p>For months we've been studying how, when and why people publish their posts, and what the common tasks are people perform afterwards. We know many of you immediately want to see what your post looks like, check for typos, and then share your post to social networks.</p>
-<p>Starting today you'll see a much improved design for giving you feedback and supporting how you work.</p>
-<p>The first thing you'll see, after your browser finishes telling WordPress.com you have a new post, is positive feedback your post was successful. We now notify you as soon as possible that everything went smoothly. At the same time, we're loading your actual post to show you.</p>
-<p><a href="http://en.blog.wordpress.com/files/2011/12/post-post-part1-cropped.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2011/12/post-post-part1-cropped.png" target="_blank"></a></p>
-<p>Once the post loads, which can take a few seconds, you can confirm it looks as you expected. If you find a typo in your post (which can be easier to spot in the published post, than on the edit screen), you can quickly click Edit and switch back into edit mode to fix it.</p>
-<p><a href="http://en.blog.wordpress.com/files/2011/12/post-post-part2-improved.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2011/12/post-post-part2-improved.png" target="_blank"></a></p>
-<p>If everything in your post looks good, you'll notice some smart things we've done to both help improve your post, and to inspire you for the future.</p>
-<p><strong>The progress bar:</strong> we now show a simple progress indicator that helps direct your efforts at a specific target. The goal is automatically set to increments of 5 posts (yes, we are considering allowing this to be customized). An inspiring quotation appears under the bar, as a reward and as motivation for next time. When you reach the goal, you get a nice surprise, and the bar will be reset for next time. Of course posting quality matters as much, or more, than quantity, <a href="http://en.wikipedia.org/wiki/Goal_setting" rel="nofollow noreferrer noopener" title="http://en.wikipedia.org/wiki/Goal_setting" target="_blank">but research shows having clear goals helps both</a>.</p>
-<p><strong>Sharing:</strong> if you have the <a href="http://en.support.wordpress.com/publicize/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/publicize/" target="_blank">Publicize</a> feature turned on, we show how many people were notified through social networks like Twitter and Facebook, with some of their Gravatars so you can learn more about them. If you don't have Publicize active, you'll see easy to use buttons for manually sharing your post on Twitter, Facebook and Google+.</p>
-<p><strong>Tagging:</strong> we also know <a href="http://en.support.wordpress.com/posts/tags/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/posts/tags/" target="_blank">adding tags to your post</a> can make it easier for people to find your work. Based on the content of your post, we use an algorithm to recommend a few tags to add, which you can do with a single click.</p>
-<p>We'll continue to study how you post and improve what we do to support how you work. Happy posting.</p>
-<p>If you'd prefer the classic experience, you can turn <strong>Instant Post Feedback</strong> off from your Dashboard, at Settings, Users, Personal Settings.</p>
-</div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/sberkun/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/sberkun/" target="_blank">Scott Berkun</a></strong> | December 12, 2011 at 6:07 pm | Categories: <a href="http://en.blog.wordpress.com/?cat=9548" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=9548" target="_blank">Features</a>, <a href="http://en.blog.wordpress.com/?cat=23150" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=23150" target="_blank">Posting</a> | URL: <a href="http://wp.me/pf2B5-2fW" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2fW</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2011/12/12/get-instant-feedback-when-you-publish/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©Àêí­Ô:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-M©À€ê­Ô;I"UTC;F@*@/:@created_atf1541858010.5519595:@expires_inf6.048e5

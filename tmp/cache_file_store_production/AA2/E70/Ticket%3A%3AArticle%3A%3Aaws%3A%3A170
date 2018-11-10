@@ -1,102 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiªI"ticket_id;Ti¨I"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"9[New post] Read All Your Favorite Blogs in One Place;TI"reply_to;T0I"message_id;TI"#<3584907.9612.0@wordpress.com>;TI"message_id_md5;TI"%0dd985f184299d5f77c554ec07b769aa;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"ŸWordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/ericarenaejohnson/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/ericarenaejohnson/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2012/01/20/read-blogs/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/01/20/read-blogs/" target="_blank">Read All Your Favorite Blogs in One Place</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/ericarenaejohnson/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/ericarenaejohnson/" target="_blank">Erica Johnson</a></span>
-</td>
-</tr>
-</table> <div>
-<p>If you feel like it's a chore to keep up with all your favorite blogs, you can now read posts from all the blogs you follow (even the ones that aren't on WordPress.com!) in one convenient place on the WordPress.com home page:</p>
-<p>Your <a href="http://wordpress.com/#!/read/" rel="nofollow noreferrer noopener" title="http://wordpress.com/#!/read/" target="_blank">reader</a> displays all the posts across all the <a href="http://en.support.wordpress.com/following" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/following" target="_blank">blogs you follow</a> in the order they were published, with the most recent content appearing at the top. You'll see an excerpt of the introduction to each post, the first image in the post, and thumbnails of any other images that the post contains.</p>
-<p>You can even like and reblog WordPress.com content directly from the reader (we're working on bringing reblogs back to the toolbar!) using the icons in the top right corner of each post:</p>
-<p>Whether you're at the computer or using the <a href="http://en.support.wordpress.com/apps/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/apps/" target="_blank">WordPress app</a> on an Android or iOS mobile device, having all the posts from the blogs you follow in one place makes it easy to find the updates that are important to you, and skip over the ones that aren't.</p>
-<p>Click in the toolbar at the top of any WordPress.com site (you must be logged in to see it) to add new blogs to your reader. For directions on adding blogs from Tumblr, Blogger, and other services to your reader, check out the <a href="http://en.support.wordpress.com/following/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/following/" target="_blank">support document on managing the blogs you follow</a>.</p>
-<h3>Discover New Blogs, Too</h3>
-<p>To find some awesome new WordPress.com blogs you might like, check out the <strong>Recommended Blogs </strong>section of the reader:</p>
-<p>Right now you can browse blogs in twelve different categories, and we'll be adding more very soon.</p>
-<h3>Use WordPress.com as a Real-Time Information Network</h3>
-<p>If you want to see what people are saying about your hometown, favorite sports team, or a concert you attended last night, add any topic to your reader to create a stream of all posts published with that <a href="http://en.support.wordpress.com/posts/tags/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/posts/tags/" target="_blank">tag</a>.</p>
-<p>You can add as many topic streams to your reader as you like. You'll notice frequent updates being published under general topics like "art" and "books," but you can also add more specific topics like "Picasso" or "J. K. Rowling."</p>
-<h3>Want less email?</h3>
-<p>Each time you follow a blog, new posts from that site will appear instantly in your reader, and you'll also receive them by email. If you prefer to receive email notifications on a daily or weekly basis, or not at all, you can <a href="http://wordpress.com/#!/read/subsettings/" rel="nofollow noreferrer noopener" title="http://wordpress.com/#!/read/subsettings/" target="_blank">change your default email settings</a> from the bottom left corner of your reader. You can also <a href="http://wordpress.com/#!/read/edit/" rel="nofollow noreferrer noopener" title="http://wordpress.com/#!/read/edit/" target="_blank">change your email notification preferences on a per-blog basis</a>.</p>
-<h3>Find Friends on WordPress.com</h3>
-<p>Want to see if any of your Facebook and Twitter friends are on WordPress.com? Give the Friend Finder a try:</p>
-<h3>So, how will you use the reader, and what can we do to improve it?</h3> </div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/ericarenaejohnson/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/ericarenaejohnson/" target="_blank">Erica Johnson</a></strong> | January 20, 2012 at 12:04 am | Categories: <a href="http://en.blog.wordpress.com/?cat=1473" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=1473" target="_blank">Reading</a> | URL: <a href="http://wp.me/pf2B5-2v2" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2v2</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2012/01/20/read-blogs/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/01/20/read-blogs/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2012/01/20/read-blogs/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/01/20/read-blogs/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="http://subscribe.wordpress.com/?key=bfff9098de3e72fdf94ba429f45f123f&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2012/01/20/read-blogs/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/01/20/read-blogs/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©Àî>2Û:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-M©À8>2Û;I"UTC;F@*@/:@created_atf1541858117.5139954:@expires_inf6.048e5

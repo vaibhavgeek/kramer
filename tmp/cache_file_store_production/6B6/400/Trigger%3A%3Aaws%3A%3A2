@@ -1,14 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"	name;TI")auto reply (on follow up of tickets);TI"condition;TC:-ActiveSupport::HashWithIndifferentAccess{I"ticket.action;TC;{I"operator;TI"is;TI"
-value;TI"update;TI"article.sender_id;TC;{I"operator;TI"is;TI"
-value;TiI"article.type_id;TC;{I"operator;TI"is;TI"
-value;T[ii
-iI"perform;TC;{I"notification.email;TC;{I"	body;TI"<div>Your follow up for <b>(#{config.ticket_hook}#{ticket.number})</b> has been received and will be reviewed by our support staff.</div>
-<br/>
-<div>To provide additional information, please reply to this email or click on the following link:
-<a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
-</div>
-<br/>
-<div>Your #{config.product_name} Team</div>
-<br/>
-<div><i><a href="https://zammad.com">Zammad</a>, your customer support system</i></div>;TI"recipient;TI"article_last_sender;TI"subject;TI"0Thanks for your follow up (#{ticket.title});TI"disable_notification;TTI"	note;T0I"active;TFI"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time7©ÀV°,':	zoneI"UTC;FI"UTC;T@0I"updated_at;TU;	[Iu;
-7©À®,';I"UTC;F@1@6:@created_atf1541807449.5999355:@expires_inf6.048e5

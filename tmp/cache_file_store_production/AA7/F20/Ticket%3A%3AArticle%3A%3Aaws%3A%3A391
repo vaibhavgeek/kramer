@@ -1,96 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETi‡I"ticket_id;Ti…I"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"([New post] Stay In The Conversation;TI"reply_to;T0I"message_id;TI"$<3584907.10942.0@wordpress.com>;TI"message_id_md5;TI"%3b50097e8473cdde2146accf0c50eca2;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"ƒWordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/beau/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/beau/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2012/05/15/follow-comments/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/15/follow-comments/" target="_blank">Stay In The Conversation</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/beau/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/beau/" target="_blank">Beau Lebens</a></span>
-</td>
-</tr>
-</table> <div>
-<p>It's now much easier for you and your commenters to keep track of the conversations you're involved in across WordPress.com. Some recent tests have shown that by subscribing commenters to new comments by default, they are more likely to stay engaged and come back and comment more on your blog. With that knowledge, we've changed the default comment following behavior to help you get more conversations going on your blog.</p>
-<p>We made the initial changes last week and after great feedback from you we just launched an update. Here's how it works:</p>
-<ul>
-<li>By default, posting a comment will now subscribe you to receive follow-up comments via email for that specific post, keeping you updated on the conversation. This is indicated by the checked box in the comment form.</li>
-<li>If you have a WordPress.com account, you now have a <a href="http://wordpress.com/#!/read/subsettings/" rel="nofollow noreferrer noopener" title="http://wordpress.com/#!/read/subsettings/" target="_blank">global setting</a> to change this so that by default you will not be subscribed. If you don't have an account, then you can <a href="https://en.wordpress.com/signup/?user=1" rel="nofollow noreferrer noopener" title="https://en.wordpress.com/signup/?user=1" target="_blank">create one over here</a>.<br> </li>
-<li>If you don't want email notifications for a thread, just uncheck the box when you post your comment. If you've disabled the feature, you can also subscribe to a specific thread by checking the box in the comment form.<br> </li>
-<li>There is also a link at the bottom of every notification email that will allow you to change your subscription options.<br> </li>
-</ul>
-<p>If you'd like to find out all of the details about how this works, we've also updated our support documentation about <a href="http://en.support.wordpress.com/following-comments/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/following-comments/" target="_blank">following comments</a>.</p>
-</div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/beau/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/beau/" target="_blank">Beau Lebens</a></strong> | May 15, 2012 at 11:01 pm | Tags: <a href="http://en.blog.wordpress.com/?tag=comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=comments" target="_blank">comments</a>, <a href="http://en.blog.wordpress.com/?tag=follow" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=follow" target="_blank">Follow</a>, <a href="http://en.blog.wordpress.com/?tag=notifications" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=notifications" target="_blank">notifications</a> | Categories: <a href="http://en.blog.wordpress.com/?cat=2528" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=2528" target="_blank">Community</a> | URL: <a href="http://wp.me/pf2B5-2Qu" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2Qu</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2012/05/15/follow-comments/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/15/follow-comments/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2012/05/15/follow-comments/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/15/follow-comments/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2012/05/15/follow-comments/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/05/15/follow-comments/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©ÀÖúŽ:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-N©ÀøŽ;I"UTC;F@*@/:@created_atf1541858671.577646:@expires_inf6.048e5

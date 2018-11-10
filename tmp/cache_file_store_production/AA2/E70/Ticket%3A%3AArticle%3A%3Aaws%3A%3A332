@@ -1,93 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiLI"ticket_id;TiJI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI">[New post] Integrate Cool Applications with WordPress.com;TI"reply_to;T0I"message_id;TI"$<3584907.10592.0@wordpress.com>;TI"message_id_md5;TI"%89799218de6daa07cd251f029f77d9e0;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"V"WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/tmoorewp/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/tmoorewp/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/" target="_blank">Integrate Cool Applications with WordPress.com</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/tmoorewp/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/tmoorewp/" target="_blank">Tim Moore</a></span>
-</td>
-</tr>
-</table> <div>
-<p>We are happy to announce our new <a href="http://developer.wordpress.com" rel="nofollow noreferrer noopener" title="http://developer.wordpress.com" target="_blank">REST Application Programming Interface (API)</a> that lets developers explore, interact, and create great new content with the vast community of sites on the <a href="http://wordpress.com" rel="nofollow noreferrer noopener" target="_blank">WordPress.com</a> network and, in the near future, <a href="http://jetpack.me" rel="nofollow noreferrer noopener" title="http://jetpack.me" target="_blank">Jetpack</a>-enabled sites.</p>
-<p>The API gives developers access to posts and comments, as well as the ability to <a href="http://en.support.wordpress.com/following/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/following/" target="_blank">Follow</a>, <a href="http://en.support.wordpress.com/likes/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/likes/" target="_blank">Like</a>, or <a href="http://en.support.wordpress.com/reblogs/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/reblogs/" target="_blank">Reblog</a> content for users. Other features from WordPress.com, like the daily handpicked content on <a href="http://wordpress.com/#!/fresh/" rel="nofollow noreferrer noopener" title="http://wordpress.com/#!/fresh/" target="_blank">Freshly Pressed</a>, are also available through the API.</p>
-<p>An excellent example of an application that uses the new API is the <a href="http://apps.microsoft.com/webpdp/en-us/app/wordpress-com/a47ceb1d-b47c-48b0-ba1c-b81bb6ed2220" rel="nofollow noreferrer noopener" title="http://apps.microsoft.com/webpdp/en-us/app/wordpress-com/a47ceb1d-b47c-48b0-ba1c-b81bb6ed2220" target="_blank">Windows 8 WordPress.com app, available now</a>.</p>
-<p>Our goal with the new API is to simplify the experience of using and adding to the data available on WordPress.com. To do this, we now use the OAuth2 protocol to authenticate requests for data. To retrieve public data, you can make unauthenticated requests. To perform actions, such as making new posts or comments, you would need to make authenticated requests. When the API returns data, we now return a standardized JSON object for ease-of-use.</p>
-<p>The REST API also self-documents itself; as we add new endpoints, the documentation on our <a href="http://developer.wordpress.com/" rel="nofollow noreferrer noopener" title="http://developer.wordpress.com/" target="_blank">Developer Resources blog</a> will auto-update to provide you with the latest information. In addition, you'll also have access to a Developer Console, which will allow you to run real REST API queries and see real JSON data directly in your web browser. <a href="http://developer.wordpress.com/2012/04/11/explore-the-rest-api/" rel="nofollow noreferrer noopener" title="http://developer.wordpress.com/2012/04/11/explore-the-rest-api/" target="_blank">You can read more about the Console here</a>.</p>
-<p>Ready to build an app and integrate it with WordPress.com? Great! You can now <a href="https://developer.wordpress.com/apps/" rel="nofollow noreferrer noopener" title="https://developer.wordpress.com/apps/" target="_blank">sign up for and manage</a> your OAuth2 tokens without waiting through an approval cycle. If you have any questions or feedback on the API, please <a href="http://developer.wordpress.com/contact/" rel="nofollow noreferrer noopener" title="http://developer.wordpress.com/contact/" target="_blank">get in touch with us</a>. Make sure to follow the <a href="http://developer.wordpress.com" rel="nofollow noreferrer noopener" title="http://developer.wordpress.com" target="_blank">Developer Resources blog</a> for news, updates, and documentation about the REST API and other awesome services we are making available to developers seeking to integrate with WordPress.com.</p>
-</div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/tmoorewp/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/tmoorewp/" target="_blank">Tim Moore</a></strong> | April 12, 2012 at 7:00 pm | Categories: <a href="http://en.blog.wordpress.com/?cat=9548" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=9548" target="_blank">Features</a>, <a href="http://en.blog.wordpress.com/?cat=35872" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=35872" target="_blank">New Features</a>, <a href="http://en.blog.wordpress.com/?cat=624" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=624" target="_blank">Technical</a> | URL: <a href="http://wp.me/pf2B5-2KQ" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2KQ</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/04/12/integrate-cool-applications-with-wordpress-com/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©ÀL(™:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-N©ÀÀ'™;I"UTC;F@*@/:@created_atf1541858512.260162:@expires_inf6.048e5

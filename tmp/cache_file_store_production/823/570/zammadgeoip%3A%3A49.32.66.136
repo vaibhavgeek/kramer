@@ -1,2 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"country_code:ETI"IN;TI"country_name;TI"
-India;TI"city_name;TI"Gurgaon;TI"continent_code;TI"AS;TI"continent_name;TI"	Asia;TI"latitude;Tf28.4667I"longitude;Tf77.0333I"time_zone;TI"Asia/Kolkata;T:@created_atf1541805017.2722726:@expires_inf7.776e6

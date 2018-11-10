@@ -1,58 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiµI"ticket_id;Ti³I"type_id;TiI"sender_id;TiI"	from;TI"(Google <privacy-noreply@google.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI":Changes to Google Privacy Policy and Terms of Service;TI"reply_to;T0I"message_id;TI"2<2012.01.24.privacy@notifications.google.com>;TI"message_id_md5;TI"%86e97605192fca924f42160035718825;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"ëChanges to Google Privacy Policy and Terms of Service <table border="0">
-<tbody> <tr>
-<td colspan="4" valign="top"></td>
-<td valign="top">
-<p>Is this email not displaying properly?<br>
-<a href="http://www.google.com/policies" rel="nofollow noreferrer noopener" title="http://www.google.com/policies" target="_blank">View it in your browser.</a></p>
-</td>
-</tr> <tr>
-<td colspan="5" valign="top"> <p>Dear Google user,</p>
-<p>We're getting rid of over 60 different privacy policies across Google and replacing them with one that's a lot shorter and easier to read. Our new policy covers multiple products and features, reflecting our desire to create one beautifully simple and intuitive experience across Google.</p>
-<p>We believe this stuff matters, so please take a few minutes to read our updated Privacy Policy and Terms of Service at <a href="http://www.google.com/policies" rel="nofollow noreferrer noopener" target="_blank">http://www.google.com/policies</a>. These changes will take effect on March 1, 2012. </p>
-<br>
-</td>
-</tr>
-<tr>
-<td colspan="5"> One policy, one Google experience <hr>
-</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td valign="top"> Easy to work across Google <p>Our new policy reflects a single product experience that does what you need, when you want it to. Whether you're reading an email that reminds you to schedule a family get-together or finding a favorite video that you want to share, we want to ensure you can move across Gmail, Calendar, Search, YouTube, or whatever your life calls for with ease.</p>
-</td>
-<td></td>
-<td valign="top"> Tailored for you <p>If you're signed into Google, we can do things like suggest search queries â€“ or tailor your search results â€“ based on the interests you've expressed in Google+, Gmail, and YouTube. We'll better understand which version of Pink or Jaguar you're searching for and get you those results faster.</p>
-</td>
-<td></td>
-<td valign="top"> Easy to share and collaborate <p>When you post or create a document online, you often want others to see and contribute. By remembering the contact information of the people you want to share with, we make it easy for you to share in any Google product or service with minimal clicks and errors.</p>
-</td>
-</tr>
-<tr>
-<td colspan="5">
-<hr>
-</td>
-</tr>
-<tr>
-<td valign="top"> Protecting your privacy hasn't changed <p>Our goal is to provide you with as much transparency and choice as possible, through products like Google Dashboard and Ads Preferences Manager, alongside other tools. Our privacy principles remain unchanged. And we'll never sell your personal information or share it without your permission (other than rare circumstances like valid legal requests).</p>
-</td> <td></td> <td valign="top"> Got questions?<br> We've got answers. <p>Visit our FAQ at <a href="http://www.google.com/policies/faq" rel="nofollow noreferrer noopener" target="_blank">http://www.google.com/policies/faq</a> to read more about the changes. (We figured our users might have a question or twenty-two.)</p>
-</td> <td></td> <td valign="top"> <p>Â </p>
-</td>
-</tr>
-<tr>
-<td colspan="5">
-<hr>
-</td>
-</tr>
-<tr><td colspan="5" valign="top"> Notice of Change <p>March 1, 2012 is when the new Privacy Policy and Terms will come into effect. If you choose to keep using Google once the change occurs, you will be doing so under the new Privacy Policy and Terms of Service.</p>
-<p>Please do not reply to this email. Mail sent to this address cannot be answered. Also, never enter your Google Account password after following a link in an email or chat to an untrusted site. Instead, go directly to the site, such as mail.google.com or www.google.com/accounts. Google will never email you to ask for your password or other sensitive information.</p>
-</td></tr>
-</tbody>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TTI"is-auto-response;TFI"updated_by_id;Ti!I"created_by_id;Ti!I"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©Àª&Ý:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-M©Àà
-&Ý;I"UTC;F@*@/:@created_atf1541858143.7623923:@expires_inf6.048e5

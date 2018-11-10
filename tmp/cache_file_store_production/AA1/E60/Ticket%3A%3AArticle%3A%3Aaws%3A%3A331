@@ -1,114 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{I"id:ETiKI"ticket_id;TiII"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"([New post] How to get more comments;TI"reply_to;T0I"message_id;TI"$<3584907.10413.0@wordpress.com>;TI"message_id_md5;TI"%14f1478d73ec113cf3fd320fd5431bf4;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"D-WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
-<tr>
-<td>
-<div>
-<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
-<tr>
-<td>
-<h2> New post on <strong>WordPress.com News</strong>
-</h2>
-</td>
-<td style="text-align: right;"> </td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
-<tr>
-<td>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td valign="top">
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td style=" vertical-align: top;">
-<a href="http://en.blog.wordpress.com/author/sberkun/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/sberkun/" target="_blank"></a>
-</td>
-<td>
-<h2><a href="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/" target="_blank">How to get more comments</a></h2>
-<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/sberkun/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/sberkun/" target="_blank">Scott Berkun</a></span>
-</td>
-</tr>
-</table> <div>
-<p>People blog for different reasons, but many post with hopes of seeing feedback from readers. Here at <a href="http://www.wordpress.com" rel="nofollow noreferrer noopener" title="http://www.wordpress.com" target="_blank">WordPress.com</a> we've studied why some posts and blogs get more comments than others, and want to share our advice with you.</p>
-<ol>
-<li>
-<strong>You need visitors before you'll get comments. </strong>You won't get comments until people visit your blog. Start by reviewing our famous post on <a href="http://en.blog.wordpress.com/2011/07/28/how-to-get-more-traffic/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/07/28/how-to-get-more-traffic/" target="_blank">How to Get More Traffic</a> to understand the basics of building an audience. Posting on a regular schedule is an important part of building traffic, which will lead to more comments.</li>
-<li>
-<strong>Have a clear and strong position in your posts</strong>. Clarity in writing helps readers form their own opinion to share. A post titled "I'm not sure if I like bananas" is less likely to compel a response than "How I learned to love bananas" or "Why I will never eat a banana again". Writing well and having interesting thoughts is by far the best way to encourage more comments (and follow <a href="http://dailypost.wordpress.com/" rel="nofollow noreferrer noopener" title="http://dailypost.wordpress.com/" target="_blank">The Daily Post</a> for regular advice on writing better). Being provocative, or picking polarizing topics, can help attract comments too, but be careful: the more intentionally provocative you are, the more polarized and uncivil the comments you receive are likely to be.</li>
-<li>
-<strong>Reply to every comment you receive. </strong>This rewards people for leaving a comment, and also shows new readers that you care about comments, encouraging them to leave one too. Be a good host: be more polite and forgiving than your visitors. WordPress.com allows you to <a href="http://en.support.wordpress.com/comment-reply-via-email/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/comment-reply-via-email/" target="_blank">reply to comments via email</a>, a convenient way to keep conversations moving along.</li>
-<li>
-<strong>Ask your friends</strong>. If you are writing about a topic your friends are interested in, send them a link and ask them to comment. If you pick friends with blogs you can offer to return the favor. This ensures every post you make will get at least one comment, provided you're willing to give one in return.</li>
-<li>
-<strong>Start conversations. </strong>In real life, most conversations start by reciprocation. "How is your day going?" "Fine. And you?". In your post, don't just offer an opinion. Supplement your point of view with invitations for other people to offer theirs. At minimum, end posts with a question inviting people to answer.</li>
-<li>
-<strong>Customize the comment prompt</strong>. The text that appears above the comment area is customizable. It says "Leave a Reply" by default but you can make it say whatever you like. We strongly recommend asking a question like "What do you think?" or "What is your opinion?" as questions are requests for people to respond. Go to <a href="http://en.support.wordpress.com/settings/discussion-settings/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/settings/discussion-settings/" target="_blank">Settings-Discussions</a> to make the change.</li>
-<li>
-<strong>Write a response to another blogger's post on your blog</strong>. By excerpting a small paragraph from another blogger's post, and writing a response on your blog with a link back to their post, you invite them to visit your blog. <a href="http://en.support.wordpress.com/pingbacks/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/pingbacks/" target="_blank">WordPress.com automatically tries to contact their blog for you</a>, letting them know you have linked to them. If what you say is interesting, they're likely to comment, or at minimum, respond in a kind with a post on their blog. In both cases you'll be starting a conversation which leads to more comments.</li>
-<li>
-<strong>Use WordPress.com's discussion features</strong>. We've built in lots of goodness to help you start and grow conversations. If you go to <a href="http://en.support.wordpress.com/settings/discussion-settings/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/settings/discussion-settings/" target="_blank">Settings-&gt;Discussions</a> you can find them all. Make sure you have it set to send you an email when you get a comment, so you can reply quickly. If you don't get many comments, consider turning comment moderation off so comments appear immediately (if you have it set to email you when a new comment is left, you can always remove questionable comments quickly).</li>
-<li>
-<strong>Run a contest</strong>. Create ways to encourage first time commenters. After someone has left a first comment on your blog, it's psychologically easier for them to leave a second one: they've broken the ice. Running a competition where you give a prize away, say a $25 amazon gift certificate, to a randomly chosen comment on a post, can encourage many first time commenters, as well as new readers to your blog</li>
-<li>
-<strong>Create interesting polls. </strong>It takes less effort for readers to make a choice in a poll than to write a comment. Use this to your advantage. The more people you get to participate in your polls, the more who will want to return to see the final results and have comments about them. Read about <a href="http://en.support.wordpress.com/polls/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/polls/" target="_blank">creating polls here</a>.</li>
-<li> <strong>Tell relatable stories. </strong>A post where you offer a story that your readers can relate to invites participation. For example, if your blog is about baking cakes, and you share a story about how you messed up a recipe with disastrous yet entertaining consequences, it's easy to ask readers to share their stories of similar disasters.</li>
-<li>
-<strong>Make a post out of the best comments from your readers</strong>. If you see a fantastic comment on your blog, create a post where you quote what they said (and link to their blog if they have one). Show your readers that you value and read their contributions, and more people will be motivated to comment in the future.</li>
-</ol>
-<p>Also See <a href="http://dailypost.wordpress.com/2012/04/03/comment-community/" rel="nofollow noreferrer noopener" title="http://dailypost.wordpress.com/2012/04/03/comment-community/" target="_blank">The Daily Post's advice on Comment Community</a>, and our previous post on <a href="http://en.blog.wordpress.com/2011/02/15/comment-etiquette/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2011/02/15/comment-etiquette/" target="_blank">Comment Etiquette</a>.</p>
-</div>
-<div>
-<strong><a href="http://en.blog.wordpress.com/author/sberkun/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/sberkun/" target="_blank">Scott Berkun</a></strong> | April 12, 2012 at 2:24 pm | Categories: <a href="http://en.blog.wordpress.com/?cat=9548" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=9548" target="_blank">Features</a>, <a href="http://en.blog.wordpress.com/?cat=1921" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=1921" target="_blank">HowTo</a> | URL: <a href="http://wp.me/pf2B5-2HX" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2HX</a>
-</div>
-<p>Â </p>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td><a href="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/#respond" target="_blank">Comment</a></td>
-<td> <a href="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/#comments" target="_blank">See all comments</a>
-</td>
-</tr>
-</table> </td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
-<tr>
-<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
-<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
-<p>
-<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
-<a href="http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/04/12/how-to-get-more-comments/</a>
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
-<tr>
-<td></td>
-</tr>
-</table>
-</div>
-</td>
-</tr>
-</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
-<tr>
-<td align="center">
-<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
-</td>
-</tr>
-</table> <br>
-</td>
-</tr>
-</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©Àfy:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
-N©ÀXby;I"UTC;F@*@/:@created_atf1541858512.331747:@expires_inf6.048e5
