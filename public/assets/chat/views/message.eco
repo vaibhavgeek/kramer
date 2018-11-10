@@ -1,3 +1,0 @@
-<div class="zammad-chat-message zammad-chat-message--<%= @from %><%= @unreadClass %>">
-  <span class="zammad-chat-message-body"<%= " style='background: #{ @background }'" if @background and @from is 'customer' %>><%- @message %></span>
-</div>

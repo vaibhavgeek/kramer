@@ -1,0 +1,96 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiÇI"ticket_id;TiÅI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"&[New post] Comment Notifications!;TI"reply_to;T0I"message_id;TI"#<3584907.9974.0@wordpress.com>;TI"message_id_md5;TI"%a2d28f5a16455802294f84dc1c87fb33;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"ôWordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
+<tr>
+<td>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
+<tr>
+<td>
+<h2> New post on <strong>WordPress.com News</strong>
+</h2>
+</td>
+<td style="text-align: right;"> </td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style=" vertical-align: top;">
+<a href="http://en.blog.wordpress.com/author/gibrown/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/gibrown/" target="_blank"></a>
+</td>
+<td>
+<h2><a href="http://en.blog.wordpress.com/2012/02/10/comment-notifications/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/02/10/comment-notifications/" target="_blank">Comment Notifications!</a></h2>
+<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/gibrown/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/gibrown/" target="_blank">Greg</a></span>
+</td>
+</tr>
+</table> <div>
+<p>A few months ago we added <a title="Notifications, the Pulse of Your Blog" href="http://en.blog.wordpress.com/2011/11/07/notifications-the-pulse-of-your-blog/" rel="nofollow noreferrer noopener" target="_blank">Notifications</a> to the WordPress.com Toolbar and recently we released a <a title="Chrome Extension for WordPress.com Notifications" href="http://en.blog.wordpress.com/2012/01/27/chrome-extension/" rel="nofollow noreferrer noopener" target="_blank">Chrome extension</a> so that you can always keep up with the activity on your blog. Today we're adding comment notifications, complete with comment moderation and reply functionality. When your post receives a comment, you'll get a Notification that looks something like this:</p>
+<p><a href="http://en.blog.wordpress.com/files/2012/02/newcomment.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/02/newcomment.png" target="_blank"></a></p>
+<p>If you're using <a href="http://en.support.wordpress.com/comment-display-options/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/comment-display-options/" target="_blank">threaded comments</a>, you'll see if someone responded directly to you, right in the notification.</p>
+<p>You will see Approve, Spam, and Trash links in your comment notification if you have permission to moderate comments, allowing you to moderate the comment from within the notification:</p>
+<p><a href="http://en.blog.wordpress.com/files/2012/02/moderate.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/02/moderate.png" target="_blank"></a></p>
+<p>Clicking Reply automatically approves a comment and displays an area for you to type a reply in. When you're done, just click Reply and you can get back to whatever you were working on, without having to navigate to the dashboard to manage your comments.</p>
+<p><a href="http://en.blog.wordpress.com/files/2012/02/inlinereply.png" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/files/2012/02/inlinereply.png" target="_blank"></a></p>
+<p>You can still manage comments in your dashboard, but we hope you'll find the comment notification a convenient shortcut.</p>
+<p>For more information about comments and comment moderation: <a title="Comments" href="http://en.support.wordpress.com/comments/" rel="nofollow noreferrer noopener" target="_blank">Comments</a>, <a title="Manage Comments" href="http://en.support.wordpress.com/manage-comments/" rel="nofollow noreferrer noopener" target="_blank">Manage Comments</a>.</p>
+</div>
+<div>
+<strong><a href="http://en.blog.wordpress.com/author/gibrown/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/gibrown/" target="_blank">Greg</a></strong> | February 10, 2012 at 5:46 pm | Categories: <a href="http://en.blog.wordpress.com/?cat=57332" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=57332" target="_blank">Notifications</a> | URL: <a href="http://wp.me/pf2B5-2AS" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2AS</a>
+</div>
+<p>Â </p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://en.blog.wordpress.com/2012/02/10/comment-notifications/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/02/10/comment-notifications/#respond" target="_blank">Comment</a></td>
+<td> <a href="http://en.blog.wordpress.com/2012/02/10/comment-notifications/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/02/10/comment-notifications/#comments" target="_blank">See all comments</a>
+</td>
+</tr>
+</table> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
+<tr>
+<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
+<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
+<p>
+<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
+<a href="http://en.blog.wordpress.com/2012/02/10/comment-notifications/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/02/10/comment-notifications/</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
+<tr>
+<td align="center">
+<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
+</td>
+</tr>
+</table> <br>
+</td>
+</tr>
+</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©À'2à:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
+M©À°0à;I"UTC;F@*@/:@created_atf1541858169.575692:@expires_inf6.048e5

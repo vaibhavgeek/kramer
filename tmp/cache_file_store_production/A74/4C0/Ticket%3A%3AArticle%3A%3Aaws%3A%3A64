@@ -1,0 +1,263 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiEI"ticket_id;TiCI"type_id;TiI"sender_id;TiI"	from;TI"8Telerik Testing Tools <telerik.testing@telerik.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"[Test Studio Adds Support for Firefox 8 and Silverlight 5. Register for R2 SP1 Webinar.;TI"reply_to;TI" telerik.testing@telerik.com;TI"message_id;TI"-<20111121150122.454251F7AA23@elabs5.com>;TI"message_id_md5;TI"%9673d9f3399c4d93135609d028830954;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"å~Telerik TestStudio Newsletter September 2011<table border="0" cellspacing="0" cellpadding="0" align="center" style="text-align: left; padding-bottom: 0px;margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td style="border-bottom: #000 1px solid; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; background: #000; padding-top: 0px;"> </td>
+<td style="text-align: left; padding-bottom: 0px; margin: 0px; padding-left: 0px;padding-right: 0px; background: #000; padding-top: 0px;"><table cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"></td>
+<td valign="top"><table cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody>
+<tr><td></td></tr>
+<tr><td style="text-align: right; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; background:#000; padding-top: 0px;">
+<h2>Monthly Newsletter</h2>
+<h2>November 2011</h2>
+</td></tr>
+<tr><td style="text-align: left;"></td></tr>
+</tbody></table></td>
+</tr></tbody></table></td>
+<td style="border-bottom: #000 1px solid; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; background: #000; padding-top:0px;"> </td>
+</tr>
+<tr>
+<td style="border-bottom: #716f6f 1px solid; background: #000; vertical-align: bottom; border-top: #000 1px solid;"> </td>
+<td style="border-bottom: medium none; border-left: #dcdde0 1px solid; vertical-align: bottom; border-top: #dcdde0 1px solid;border-right: #dcdde0 1px solid;"><table cellspacing="0" cellpadding="0" style="text-align: left; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody><tr>
+<td style="padding-bottom: 0px; padding-left: 0px;padding-right: 0px; vertical-align: bottom; padding-top: 25px;"> </td>
+<td style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px; vertical-align: bottom; padding-top: 25px;"><h2>Editor's Note</h2></td>
+<td style="text-align: right; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 25px;">
+<a title="Facebook" href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,1m1m,ihwa,62w5,2rhm" rel="nofollow noreferrer noopener" target="_blank"></a> <a title="Twitter" href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,lnik,7z5e,62w5,2rhm" rel="nofollow noreferrer noopener" target="_blank"> </a><a title="LinkedIn" href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,2i3x,m10t,62w5,2rhm" rel="nofollow noreferrer noopener" target="_blank"></a>
+</td>
+<td style="padding-bottom: 0px; padding-left: 0px;padding-right: 0px; vertical-align: bottom; padding-top: 25px;"> </td>
+</tr></tbody></table></td>
+<td style="border-bottom: #716f6f 1px solid; background: #000; vertical-align: bottom; border-top: #000 1px solid;"> </td>
+</tr>
+<tr>
+<td style="background: #f7f7f7; vertical-align: top; border-top:#612779 11px solid;"> </td>
+<td style="border-bottom: medium none; border-left: #dcdde0 1px solid; border-top: medium none; border-right: #dcdde0 1px solid;"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td style="padding-bottom: 0px; margin: 0px; padding-left: 0px;padding-right: 0px; padding-top: 0px;"> </td>
+<td valign="top" style="padding-bottom: 10px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><table border="0" cellspacing="0" cellpadding="0" align="left" style="text-align: left; margin: 0px; background: #fff; font-size: 12px;"><tbody>
+<tr><td style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px; font-size: 4px; vertical-align: top; padding-top: 0px;"></td></tr>
+<tr><td style="text-align: left; font-size: 12px; vertical-align: top;"><div>
+<p>We're happy to announce the release of Service Pack 1 for Test Studio 2011 R2! This is a wonderful release which closes out a number of previous issues and adds several great features. Two of my favorite enhancements in the SP1 release may not seem earth shattering, but they directly impact how I use Test Studio, or how previous colleagues of mine could use Test Studio.</p>
+<p>First off, you can now have Test Studio prompt you for a custom element name when you're recording your tests. This feature, off by default, lets you give every element a clear language name right when you record it. We work really hard to have Test Studio provide you a useful name, but there are times we're just not able to determine something useful. Now you can easily provide a great element name right when you record the test, saving you from having to go back and do a lot of renaming in the element explorer. If you've read my blogs or heard me talk over the years you know how important I think great names are, so this feature is something particularly special for me!</p>
+<p>Secondly, you're now able to record tests with your desktop resolution set to different DPI resolutions. I've worked with teammates who had vision difficulties which required them to use a lower DPI in order to get larger text and images on the screen. Previously this caused difficulties with our element highlighting during recording, but now we're able to support those non-default DPIs!</p>
+<p>With my two favorites out of the way, let me move on to cover some of the other great enhancements! I'll start off by pointing out two great additions to our performance testing capability: an improved compare mode, and the ability to get performance profiling data from multiple systems.</p>
+<p>The new compare view features improved visual cues for distinguishing changes between two runs, and you can also expand any step in a comparison to see the exact metrics for both steps in each of their runs. We also now track HTTP errors during the performance run, helping you identify where potential problems may lie.</p>
+<p>Our first release of performance testing enabled you to track Performance Monitor counters on one system during a profiling run. We've expanded that so you can now monitor several different systems during your profile run - you can now get a complete picture across the different tiers of your system.</p>
+<p>Other items on our list of goodies for R2 SP1:</p>
+<ul>
+<li>Manual test runs can now be executed with any browser, not just Internet Explorer. You can also execute manual test runs against WPF applications.</li>
+<li>You can assign a test owner to each test. Failing tests will send a notice to that person.</li>
+<li>The Scheduling server now supports loading custom steps created in .NET 4.0 assemblies.</li>
+</ul>
+<p>Lots of folks worked very hard to get this release rolled out to you. We hope you'll enjoy it!</p>
+<p>Â </p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,14y9,lwv3,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,14y9,lwv3,62w5,2rhm" target="_blank">Download the latest Test Studio now </a></p>
+<p><em><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,egol,bz47,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,egol,bz47,62w5,2rhm" target="_blank">Jim Holmes</a>, <br>Testing Tools Evangelist </em></p>
+</div></td></tr>
+<tr><td style="padding-top: 36px;"><table border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f6f6" style=" background: #f6f6f6;"><tbody>
+<tr><td valign="bottom" style="padding-bottom: 0px; margin: 0px;padding-left: 0px; padding-right: 0px; padding-top: 0px;"></td></tr>
+<tr><td valign="top" style="background: #f6f6f6; vertical-align: middle;"> CONTENTS<br>
+</td></tr>
+<tr><td style="border-bottom-color: #333; padding-bottom: 20px; margin-top: 0px; border-top-color: #333; padding-left: 20px; padding-right: 20px;margin-bottom: 0px; background: #f6f6f6; border-right-color: #333; font-size: 13px; border-left-color: #333; padding-top: 20px;"><table border="0" cellspacing="0" cellpadding="0" style="text-align: left; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font-size: 13px; padding-top: 0px;"><tbody>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom: 7px;padding-left: 0px; padding-right: 0px; padding-top: 0px;"><a href="http:#t1" rel="nofollow noreferrer noopener" title="http://#t1" target="_blank">What's New in SP1 R2 2011 </a></td>
+</tr>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom: 7px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><a href="http:#t2" rel="nofollow noreferrer noopener" title="http://#t2" target="_blank">Register for SP1 Release Webinar </a></td>
+</tr>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom: 7px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><a href="http:#t3" rel="nofollow noreferrer noopener" title="http://#t3" target="_blank">Test Studio Titled Best in VSM Readers Choice Awards </a></td>
+</tr>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom: 7px;"><a href="http:#t4" rel="nofollow noreferrer noopener" title="http://#t4" target="_blank">A Guide to Success - Video Series </a></td>
+</tr>
+<tr>
+<td valign="top" style="font-size: 13px;"></td>
+<td style="padding-bottom: 7px;"><a href="http:#t5" rel="nofollow noreferrer noopener" title="http://#t5" target="_blank">Load/Stress Testing Survey </a></td>
+</tr>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom: 7px;"><a href="http:#t6" rel="nofollow noreferrer noopener" title="http://#t6" target="_blank">EuroSTAR Conference in Manchester, England </a></td>
+</tr>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom:7px;"><a href="http:#t7" rel="nofollow noreferrer noopener" title="http://#t7" target="_blank">Meet Test Studio Team for a Personal Demo in London </a></td>
+</tr>
+<tr>
+<td valign="top" style=" font-size: 13px;"></td>
+<td style="padding-bottom: 7px;"><a href="http:#t8" rel="nofollow noreferrer noopener" title="http://#t8" target="_blank">Save Up to $20K on TFS Licensing with TeamPulse</a></td>
+</tr>
+</tbody></table></td></tr>
+</tbody></table></td></tr>
+<tr><td style="padding-top: 20px;"><h2>News <br>
+</h2></td></tr>
+<tr><td style="border-bottom: #e0e2e1 1px solid; padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top; padding-top: 25px;">
+<h1>What's New in SP1 R2 2011</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px;padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top">
+<p>We just shipped an update to Test Studio R2 2011. In Service Pack 1 we've added:</p>
+<ul>
+<li>Silverlight 5 support</li>
+<li>Firefox 8 support</li>
+<li>A nice update to our just-released performance testing functionality is the profiling of various web apps on multiple machines, saving vast amounts of test execution time.</li>
+<li>Another update to our performance testing is the brand-new "compare view" which helps testers get an idea of an app's most critical performance issues.</li>
+</ul>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,14y9,lwv3,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,14y9,lwv3,62w5,2rhm" target="_blank">Download Test Studio R2 SP1 </a></p>
+</td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="border-bottom: #e0e2e1 1px solid; padding-bottom: 25px; padding-left: 0px; padding-right: 0px;vertical-align: top; padding-top: 25px;">
+<h1>Register for SP1 Release Webinar</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left;border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top">
+<p>To learn some of the highlights of the just-released Service Pack for Test Studio 2011 R2 sign up for our release webinar. It's on November 29, @ 2 p.m. EST. We'll talk about a few new enhancements and you'll learn how to use Test Studio to handle your manual, functional, and performance testing needs. You'll leave the webinar having an understanding of how Test Studio can help you create high-value, maintainable tests to ensure you're delivering great software.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,hsy5,bwhn,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,hsy5,bwhn,62w5,2rhm" target="_blank">Register today </a></p>
+</td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="border-bottom: #e0e2e1 1px solid; padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top; padding-top:25px;">
+<h1>Test Studio Titled Best in VSM Readers Choice Awards</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px;padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top"><p>For the second year in a row Test Studio is selected the Best in the category Software Testing and Quality Assurance in the <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,8u8m,jzeo,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,8u8m,jzeo,62w5,2rhm" target="_blank">Visual Studio Magazine's Readers Choice Awards</a>. We are very proud to receive this recognition, mainly because it comes from you, the people who use our testing solution every day. Your opinion is what matters most to us, and by receiving this award for a second consecutive year, we can't help but feel that we are doing a good job. So thank you for your vote of confidence!</p></td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="border-bottom: #e0e2e1 1px solid; padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top;padding-top: 25px;">
+<h1>A Guide to Success - Video Series</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px;padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top">
+<p>For those of you who already have a Test Studio trial, or have already purchased a Test Studio license, we created a "Guide to Success" video series. The guide is divided into two parts and in this first part you will get a walk through Test Studio's UI and learn how to navigate around its main areas, start recording tests right away and organize them effectively. We'll also cover working with test lists, and executing them in different environments. So what are you waiting for?</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,g2sx,cvuw,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,g2sx,cvuw,62w5,2rhm" target="_blank">Watch now </a></p>
+</td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="border-bottom: #e0e2e1 1px solid; padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top; padding-top:25px;">
+<h1>Load/Stress Testing Survey</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px; padding-bottom: 0px; margin: 0px;padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top">
+<p>We have exciting news to share! We've already started working on the next major feature on the Telerik Test Studio roadmap - Load (Stress) Testing of web applications. We'll really appreciate your input - so share your thoughts in our short survey. You are also very welcome to join our exclusive private beta program. To do so, please leave your email in the last question of the survey. Those who provide the most comprehensive feedback will get a free license for one pack of Virtual Users.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,eo4z,al29,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,eo4z,al29,62w5,2rhm" target="_blank">Take the survey now</a>! It will take you less than 5 minutes to fill in. Thank you.</p>
+</td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="border-bottom: #e0e2e1 1px solid;padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top; padding-top: 25px;">
+<h1>EuroSTAR Conference in Manchester, England</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top"><p>EuroSTAR starts today, and if you're there don't forget to stop by our booth (#57). We have prepared some cool swag, presents and demos for you! Our brand new "I never guess, I test" t-shirts, our super-cool dancing robots, and our special "Tester's Survival Kits" are waiting for you! We are also sponsoring EuroSTAR TestLabs, where Test Studio Solutions Consultant Dan Levy will talk about "Rethinking Functional and Performance Testing". For the latest news from the conference, follow <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,87ap,fg57,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,87ap,fg57,62w5,2rhm" target="_blank">#esconfs</a> on Twitter. Join the discussion and have fun!</p></td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="border-bottom:#e0e2e1 1px solid; padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top; padding-top: 25px;">
+<h1>Meet Test Studio Team for a Personal Demo in London</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top">
+<p>For all of you, who would like to have an in-person demo of Test Studio and are based in England, the Test Studio Team will be in Telerik's London office for a whole week - from November 28, 2011 until December 2nd, 2011. Just drop us a line to let us know you want to meet them and we'll contact you for a personal demo of our testing solution. Don't be shy!</p>
+<p>teleriktesting@telerik.com</p>
+</td>
+</tr></tbody></table>
+</td></tr>
+<tr><td style="padding-bottom: 25px; padding-left: 0px; padding-right: 0px; vertical-align: top; padding-top: 25px;">
+<h1> Save Up to $20K on TFS Licensing with TeamPulse</h1>
+<table cellspacing="0" cellpadding="0" style="border-bottom: 0px; text-align: left; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; border-top: 0px; border-right: 0px;padding-top: 0px;"><tbody><tr>
+<td valign="top"><p></p></td>
+<td valign="top">
+<p>How much time and money would it cost you to capture feedback from 100 external users in your Microsoft TFS projects? Now there is a simple and cost effective way to do that, using Telerik's new web-based Ideas &amp; Feedback Portal, which comes as an extension of our project management tool TeamPulse. Purchase the Portal until the end of 2011 and you will get a free license for TeamPulse.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,c6be,birn,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,c6be,birn,62w5,2rhm" target="_blank">Learn more </a></p>
+</td>
+</tr></tbody></table>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top:0px;">
+<p>Â </p>
+<table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px;padding-right: 0px; padding-top: 0px;"><tbody>
+<tr style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<td> </td>
+<td valign="top" rowspan="3" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><div></div></td>
+</tr>
+<tr><td valign="top" style="padding-left: 20px;"><h3>Tips &amp; Tricks</h3></td></tr>
+<tr><td valign="top" colspan="2"></td></tr>
+<tr style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px;padding-top: 0px;"><td colspan="2" style="padding-bottom: 20px; margin: 0px; padding-left: 16px; padding-right: 16px; background: #f6f6f6; color: #676868; padding-top: 0px;"><p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,9p9d,hk1x,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,9p9d,hk1x,62w5,2rhm" target="_blank">Get Started with Performance Measuring and Benchmarking </a><br><br><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,fqz1,ewk2,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,fqz1,ewk2,62w5,2rhm" target="_blank">Learn How to Create a Manual Test and Convert it to Automated One </a></p></td></tr>
+</tbody></table>
+<p>Â </p>
+<table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody>
+<tr style="padding-bottom:0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<td> </td>
+<td valign="top" rowspan="3" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px;padding-top: 0px;"><div></div></td>
+</tr>
+<tr><td valign="top" style="padding-left: 20px;"><h3>Webinars</h3></td></tr>
+<tr><td valign="top" colspan="2"></td></tr>
+<tr style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><td colspan="2" style="padding-bottom: 20px; margin: 0px; padding-left: 16px;padding-right: 16px; background: #f6f6f6; color: #676868; padding-top: 0px;">
+<p><strong>Weekly live demos</strong><br>We organize weekly live webinars to help you easily get started with Test Studio. These 1-hour demos provide users with an overview of the product capabilities and will help you learn to create automated tests in minutes. It is a great resource for all people who have just downloaded a trial. Because of Thanksgiving celebrations, the next live demo will be held on December 1, 2011 @11:00 AM EST <br><br><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,8zey,bnl0,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,8zey,bnl0,62w5,2rhm" target="_blank">Take a seat </a></p>
+<p><strong>Personal demo</strong> <br>Maybe your case requires a custom approach? Go ahead and send us a personal demo request! That's a great way to get a detailed and personalized demonstration of Test Studio's capabilities. It's you who sets the demo's timing, topic, and flow. <br><br><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,9gyb,fy1c,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,9gyb,fy1c,62w5,2rhm" target="_blank">Sign up now </a></p>
+</td></tr>
+</tbody></table>
+<p>Â </p>
+<table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody>
+<tr style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">
+<td> </td>
+<td valign="top" rowspan="3" style="padding-bottom: 0px;margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><div></div></td>
+</tr>
+<tr><td valign="top" style="padding-left: 20px;"><h3>Videos</h3></td></tr>
+<tr><td valign="top" colspan="2"></td></tr>
+<tr style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><td colspan="2" style="padding-bottom: 20px; margin: 0px; padding-left: 16px; padding-right: 16px; background: #f6f6f6; color: #676868; padding-top: 0px;">
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,185d,3s1y,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,185d,3s1y,62w5,2rhm" target="_blank">Installation and Activation of Test Studio</a><br>Learn how to install and activate Test Studio. The contents of this video apply to both your trial as well as your fully licensed copy of Telerik Test Studio.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,i23j,ksxo,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,i23j,ksxo,62w5,2rhm" target="_blank">Test Studio - Configuring Your Browsers</a><br>After installing Test Studio you'll need to take a few steps to configure your browsers to work properly when recording or running tests. This video walks you through the steps for Internet Explorer and Firefox.</p>
+</td></tr>
+</tbody></table>
+<p>Â </p>
+</td>
+<td style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"> </td>
+</tr></tbody></table></td>
+<td style="background:#f7f7f7; vertical-align: top; border-top: #612779 11px solid;"> </td>
+</tr>
+<tr>
+<td style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px; background: #f7f7f7; padding-top: 0px;"> </td>
+<td align="left" style="border-left: #dcdde0 1px solid; border-right: #dcdde0 1px solid;"><table border="0" cellspacing="0" cellpadding="0" align="left" style="text-align: left;"><tbody><tr><td style=" color: #737474; font-size: 11px;"><table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin:0px; padding-left: 0px; padding-right: 0px; font-size: 11px; padding-top: 0px;"><tbody>
+<tr>
+<td><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,a7ee,2a4o,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,a7ee,2a4o,62w5,2rhm" target="_blank"></a></td>
+<td><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,c3r2,eia1,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,c3r2,eia1,62w5,2rhm" target="_blank"></a></td>
+</tr>
+<tr><td colspan="2"><table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font-size: 12px;padding-top: 0px;"><tbody><tr>
+<td style="text-align: left; padding-bottom: 25px; padding-left: 90px; padding-right: 40px; vertical-align: top; padding-top: 10px;">Industry's leading UI components for .NET, essential tools for code analysis, refactoring, mocking, reporting and data access.</td>
+<td style="text-align: left; padding-bottom: 25px; padding-left: 90px; padding-right: 40px; vertical-align: top; padding-top: 10px;">Agile project management tools for requirements management, planning, scheduling, and project health monitoring.</td>
+</tr></tbody></table></td></tr>
+<tr>
+<td><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,bjbl,1uyz,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,bjbl,1uyz,62w5,2rhm" target="_blank"></a></td>
+<td><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,57de,hjxa,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,57de,hjxa,62w5,2rhm" target="_blank"></a></td>
+</tr>
+<tr><td colspan="2"><table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font-size: 12px;padding-top: 0px;"><tbody><tr>
+<td style="text-align: left; padding-bottom: 25px; padding-left: 90px; padding-right: 40px; vertical-align: top; padding-top: 10px;">Solutions for fast and easy test automation of web and desktop applications: <br>HTML | AJAX | Silverlight | WPF.</td>
+<td style="text-align: left; padding-bottom: 25px; padding-left: 90px; padding-right: 40px; vertical-align: top; padding-top: 10px;">A flexible ASP<i>.</i>NET CMS for the construction and management of commercial websites, community portals, and intranets.</td>
+</tr></tbody></table></td></tr>
+</tbody></table></td></tr></tbody></table></td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; background: #f7f7f7; padding-top: 0px;"> </td>
+</tr>
+<tr>
+<td style="padding-bottom: 20px; padding-left: 0px;padding-right: 0px; background: #191e28; padding-top: 20px;"> </td>
+<td valign="top" style="padding-bottom: 20px; padding-left: 0px; padding-right: 0px; background: #191e28; color: #666; font-size: 11px; padding-top: 20px;"><table cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody><tr>
+<td style="padding-left: 25px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,xwt,1vje,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,xwt,1vje,62w5,2rhm" target="_blank">Contact Us</a> <span style="color: #666;">| </span><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,dnra,dt4w,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,dnra,dt4w,62w5,2rhm" target="_blank">Terms of Use</a> <span style="color: #666;">| </span><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,bv3w,jd05,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,bv3w,jd05,62w5,2rhm" target="_blank">Privacy Policy</a> <br><span style="color: #666;">Copyright Ã‚Â© 2002- 2011 Telerik. All rights reserved.</span>
+</td>
+<td style="text-align: right; padding-right: 25px;">
+<a title="Facebook" href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,1m1m,ihwa,62w5,2rhm" rel="nofollow noreferrer noopener" target="_blank"></a> <a title="Twitter" href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,lnik,7z5e,62w5,2rhm" rel="nofollow noreferrer noopener" target="_blank"> </a><a title="LinkedIn" href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,2i3x,m10t,62w5,2rhm" rel="nofollow noreferrer noopener" target="_blank"></a>
+</td>
+</tr></tbody></table></td>
+<td style="padding-bottom: 20px;padding-left: 0px; padding-right: 0px; background: #191e28; padding-top: 20px;"> </td>
+</tr>
+<tr>
+<td style="padding-bottom: 15px; padding-left: 15px; padding-right: 15px; background: #f7f7f7; padding-top: 15px;"> </td>
+<td align="center" style="border-left: #dcdde0 1pxsolid; padding-bottom: 15px; padding-left: 15px; padding-right: 15px; background: #fff; color: #777; font-size: 11px; border-right: #dcdde0 1px solid; padding-top: 15px;">If you'd prefer not to receive e-mail like this from Telerik in the future, <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,3yxt,cpqx,62w5,2rhm&amp;EMAIL_ADDRESS=vaibhavblogger@gmail.com&amp;SHA1%20Hashed%20Unique%20Client%20Code=D096785C85D37A044EE646AF67EC8DD7E6F1E0C6" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,c18j,i84,3yxt,cpqx,62w5,2rhm&amp;EMAIL_ADDRESS=vaibhavblogger@gmail.com&amp;SHA1%20Hashed%20Unique%20Client%20Code=D096785C85D37A044EE646AF67EC8DD7E6F1E0C6" target="_blank">manage your subscriptions here</a>.</td>
+<td style="padding-bottom: 15px;padding-left: 15px; padding-right: 15px; background: #f7f7f7; padding-top: 15px;"> </td>
+</tr>
+</tbody></table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeM©À)cÊ:	zoneI"UTC;FI"UTC;T@*I"updated_at;TU;	[Iu;
+M©ÀÐ`Ê;I"UTC;F@+@0:@created_atf1541857855.3794856:@expires_inf6.048e5

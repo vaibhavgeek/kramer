@@ -1,0 +1,102 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiXI"ticket_id;TiVI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"J[New post] Add Spotify, Rdio, and GitHubâ€™s Gist Embeds To Your Site;TI"reply_to;T0I"message_id;TI"$<3584907.10649.0@wordpress.com>;TI"message_id_md5;TI"%c2f3cbda6c827640e394440180d3d7d8;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"w#WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
+<tr>
+<td>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
+<tr>
+<td>
+<h2> New post on <strong>WordPress.com News</strong>
+</h2>
+</td>
+<td style="text-align: right;"> </td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style=" vertical-align: top;">
+<a href="http://en.blog.wordpress.com/author/viper007bond/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/viper007bond/" target="_blank"></a>
+</td>
+<td>
+<h2><a href="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/" target="_blank">Add Spotify, Rdio, and GitHubâ€™s Gist Embeds To Your Site</a></h2>
+<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/viper007bond/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/viper007bond/" target="_blank">Alex Mills</a></span>
+</td>
+</tr>
+</table> <div>
+<p>We're happy to announce three new things that you can <a href="http://en.support.wordpress.com/tag/embed/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/tag/embed/" target="_blank">embed</a> into your site!</p>
+<h3>Spotify</h3>
+<p>Embed music from <a href="http://www.spotify.com/" rel="nofollow noreferrer noopener" title="http://www.spotify.com/" target="_blank">Spotify</a> by right-clicking any song, album, or artist in Spotify and selecting "Copy HTTP Link" or "Copy Spotify URI":</p>
+<p>Then paste that into your <a href="http://en.support.wordpress.com/visual-editor/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/visual-editor/" target="_blank">post editor</a>, making sure that it's located on its own line all by itself. You'll end up with something like this when you view your post:</p>
+<p><a href="http://open.spotify.com/track/4bz7uB4edifWKJXSDxwHcs" rel="nofollow noreferrer noopener" target="_blank">http://open.spotify.com/track/4bz7uB4edifWKJXSDxwHcs</a></p>
+<h3>Rdio</h3>
+<p>If you're an <a href="http://www.rdio.com/" rel="nofollow noreferrer noopener" title="http://www.rdio.com/" target="_blank">Rdio</a> user, you can embed music from them too. Copy the URL from your address bar when looking at a track, artist, or playlist and paste that into your post editor. Here are a few examples:</p>
+<p><a href="http://rd.io/x/Q1IjXC8s" rel="nofollow noreferrer noopener" target="_blank">http://rd.io/x/Q1IjXC8s</a></p>
+<p><a href="http://www.rdio.com/#/artist/The_Black_Keys/album/Brothers/" rel="nofollow noreferrer noopener" target="_blank">http://www.rdio.com/#/artist/The_Black_Keys/album/Brothers/</a></p>
+<p><a href="http://www.rdio.com/#/artist/Nine_Inch_Nails/album/The_Downward_Spiral_1/track/Hurt/" rel="nofollow noreferrer noopener" target="_blank">http://www.rdio.com/#/artist/Nine_Inch_Nails/album/The_Downward_Spiral_1/track/Hurt/</a></p>
+<p><a href="http://www.rdio.com/#/people/Pitchfork/playlists/13082/Top_Singles_of_2000-2004/" rel="nofollow noreferrer noopener" target="_blank">http://www.rdio.com/#/people/Pitchfork/playlists/13082/Top_Singles_of_2000-2004/</a></p>
+<p>If you use <a href="http://www.rdio.com/1/#/apps/mac/" rel="nofollow noreferrer noopener" title="http://www.rdio.com/1/#/apps/mac/" target="_blank">the Mac application for Rdio</a> you can copy URLs from there as well. If you click the "Share" button you'll see a URL to copy right at the top. Paste that in to your post editor and you're all set.</p>
+<h3>GitHub's Gist</h3>
+<p>We're big fans of the code repository website <a href="https://github.com/" rel="nofollow noreferrer noopener" title="https://github.com/" target="_blank">GitHub</a> here at Automattic and many of us use their <a href="https://gist.github.com/" rel="nofollow noreferrer noopener" title="https://gist.github.com/" target="_blank">Gist code snippets website</a>. While we already have <a href="http://en.support.wordpress.com/code/posting-source-code/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/code/posting-source-code/" target="_blank">a cool way to embed code</a> into your site, we realize many of you want to post Gist-hosted snippets too so starting today you can. Again, just copy/paste the URL out of your address bar onto it's own line in the post editor.</p>
+<p><a href="https://gist.github.com/2314628" rel="nofollow noreferrer noopener" target="_blank">https://gist.github.com/2314628</a></p>
+</div>
+<div>
+<strong><a href="http://en.blog.wordpress.com/author/viper007bond/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/viper007bond/" target="_blank">Alex Mills</a></strong> | April 18, 2012 at 11:14 pm | Tags: <a href="http://en.blog.wordpress.com/?tag=embed" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=embed" target="_blank">embed</a>, <a href="http://en.blog.wordpress.com/?tag=gist" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=gist" target="_blank">Gist</a>, <a href="http://en.blog.wordpress.com/?tag=github" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=github" target="_blank">GitHub</a>, <a href="http://en.blog.wordpress.com/?tag=rdio" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=rdio" target="_blank">Rdio</a>, <a href="http://en.blog.wordpress.com/?tag=spotify" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=spotify" target="_blank">Spotify</a> | Categories: <a href="http://en.blog.wordpress.com/?cat=413" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=413" target="_blank">Audio</a>, <a href="http://en.blog.wordpress.com/?cat=396286" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=396286" target="_blank">Embeds</a>, <a href="http://en.blog.wordpress.com/?cat=35872" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=35872" target="_blank">New Features</a> | URL: <a href="http://wp.me/pf2B5-2LL" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2LL</a>
+</div>
+<p>Â </p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/#respond" target="_blank">Comment</a></td>
+<td> <a href="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/#comments" target="_blank">See all comments</a>
+</td>
+</tr>
+</table> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
+<tr>
+<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
+<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
+<p>
+<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
+<a href="http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/04/18/spotify-rdio-and-github-embeds/</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
+<tr>
+<td align="center">
+<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
+</td>
+</tr>
+</table> <br>
+</td>
+</tr>
+</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©ÀA¸:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
+N©ÀP¸;I"UTC;F@*@/:@created_atf1541858538.9844933:@expires_inf6.048e5

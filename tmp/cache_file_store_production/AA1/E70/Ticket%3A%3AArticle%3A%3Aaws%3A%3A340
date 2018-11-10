@@ -1,0 +1,95 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiTI"ticket_id;TiRI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"8[New post] How to get more page views for your blog;TI"reply_to;T0I"message_id;TI"$<3584907.10642.0@wordpress.com>;TI"message_id_md5;TI"%e94a20a2bbe902ee0a2e6fe9d288a581;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI" WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
+<tr>
+<td>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
+<tr>
+<td>
+<h2> New post on <strong>WordPress.com News</strong>
+</h2>
+</td>
+<td style="text-align: right;"> </td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style=" vertical-align: top;">
+<a href="http://en.blog.wordpress.com/author/pjad/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/pjad/" target="_blank"></a>
+</td>
+<td>
+<h2><a href="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/" target="_blank">How to get more page views for your blog</a></h2>
+<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/pjad/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/pjad/" target="_blank">Pete</a></span>
+</td>
+</tr>
+</table> <div>
+<p><em>This is a guest post by Kristina Chang, Evan Moore, Tony Xu, and Omer Rabin; students at the <a href="http://www.gsb.stanford.edu/" rel="nofollow noreferrer noopener" title="http://www.gsb.stanford.edu/" target="_blank">Stanford Graduate School of Business</a>.</em></p>
+<p>‚ÄúWhat makes a blog popular? What drives page views?‚Äù These are the questions that we've been trying to answer over the last few weeks. We were on a mission to dig into the data and analyze the strongest parameters that influence the flow of visitors to WordPress.com blogs.</p>
+<p>Out of the 30+ million blogs on WordPress.com, we randomly selected a sample of almost 100,000 blogs to perform a regression analysis. Here are our findings, together with a few recommendations. We hope that this provides some new information, and kudos to you in case you‚Äôve already incorporated these tips into your blog ‚Äì the data suggests that you‚Äôre on the right track. Keep it up!</p>
+<p><strong>Make your blog easy to follow</strong> ‚Äì It almost sounds obvious, but the simplest way to build more awareness is to make it easier to do so. Make sure that you have the <a href="http://en.support.wordpress.com/widgets/follow-blog-widget/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/widgets/follow-blog-widget/" target="_blank">follow widget</a> as visible as possible. If your readers receive a notification every time you post, or see your post <a href="http://en.support.wordpress.com/reader/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/reader/" target="_blank">in their reader</a>, there is a much higher chance that they will revisit your blog.</p>
+<p><strong>Comments, Comments, Comments</strong> ‚Äì The most successful blogs, we found, created and encouraged a dialogue with their readers. The best way to make people more engaged with your writing is for you to engage back and start a conversation. In your posts, encourage people to comment. Also, make sure that you reply to people‚Äôs comments and continue the dialogue. This back and forth conversation is a significant driver of page views; holding all else equal, every additional comment can potentially drive up to 18 incremental page views! You can start by simply asking follow-up questions at the end of each post: "have you ever done X?"; "do you think Y is acceptable?". You can read some more thoughts on building a relationship with your audience <a href="http://en.blog.wordpress.com/2012/03/15/build-your-audience/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/03/15/build-your-audience/" target="_blank">in this post</a>.</p>
+<p><strong>Post Frequently and Regularly</strong> ‚Äì Your readers want to know that you are there for them and that you are ‚Äúon it‚Äù. If you post frequently and regularly and have enabled the follow feature as we mentioned above, checking your blog could become a daily routine for your readers. Even if it‚Äôs a short post, write something new as frequently as possible, and at regular intervals. (<a href="http://dailypost.wordpress.com/" rel="nofollow noreferrer noopener" title="http://dailypost.wordpress.com/" target="_blank">The Daily Post can help with ideas for this</a>.)</p>
+<p>While these three tips were shown to be the most important drivers of page views in our analysis, you might consider other parameters, which we found as having a partially significant effect: <a href="http://en.support.wordpress.com/publicize/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/publicize/" target="_blank">syndicating your post to Twitter and Facebook (using Publicize)</a>, for example, could lead to additional page views.</p>
+<p>Happy blogging!</p>
+</div>
+<div>
+<strong><a href="http://en.blog.wordpress.com/author/pjad/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/pjad/" target="_blank">Pete</a></strong> | April 17, 2012 at 4:16 pm | Categories: <a href="http://en.blog.wordpress.com/?cat=1921" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=1921" target="_blank">HowTo</a> | URL: <a href="http://wp.me/pf2B5-2LE" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2LE</a>
+</div>
+<p>¬†</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/#respond" target="_blank">Comment</a></td>
+<td> <a href="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/#comments" target="_blank">See all comments</a>
+</td>
+</tr>
+</table> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
+<tr>
+<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
+<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
+<p>
+<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
+<a href="http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/04/17/how-to-get-more-page-views-for-your-blog/</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
+<tr>
+<td align="center">
+<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
+</td>
+</tr>
+</table> <br>
+</td>
+</tr>
+</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©¿Ω®:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
+N©¿ ¶;I"UTC;F@*@/:@created_atf1541858539.1881855:@expires_inf6.048e5

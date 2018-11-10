@@ -11,7 +11,8 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
-            create_admin_user(firstname,lastname,email,password,@account.subdomain)
+            ActiveRecord::Base.connection.schema_search_path = Apartment.connection.schema_search_path
+	    create_admin_user(firstname,lastname,email,password,@account.subdomain)
             redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index" 
         else
             render action: 'new'

@@ -7,7 +7,7 @@ require 'rubygems'
 # load rails env
 dir = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 Dir.chdir dir
-RAILS_ENV = ENV['RAILS_ENV'] || 'development'
+RAILS_ENV = 'production'
 
 require 'rails/all'
 require 'bundler'
@@ -15,13 +15,15 @@ require File.join(dir, 'config', 'environment')
 require 'daemons'
 
 def before_fork
-
+#  Apartment::Tenant.switch!("chatme")
+#  puts Apartment.connection.schema_search_path
+#  puts ActiveRecord::Base.connection.schema_search_path
   # clear all connections before for, reconnect later ActiveRecord::Base.connection.reconnect!
   # issue #1405 - Scheduler not running because of Bad file descriptor in PGConsumeInput()
   # https://github.com/zammad/zammad/issues/1405
   # see also https://bitbucket.org/ged/ruby-pg/issues/260/frequent-crashes-with-multithreading
   ActiveRecord::Base.clear_all_connections!
-
+  ActiveRecord::Base.connection.schema_search_path = 'ramesh'
   # remember open file handles
   @files_to_reopen = []
   ObjectSpace.each_object(File) do |file|

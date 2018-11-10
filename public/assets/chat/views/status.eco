@@ -1,5 +1,0 @@
-<div class="zammad-chat-status">
-  <div class="zammad-chat-status-inner">
-    <%- @status %>
-  </div>
-</div>

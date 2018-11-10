@@ -1,0 +1,110 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiçI"ticket_id;TiãI"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI"$[New post] Look Before You Leap;TI"reply_to;T0I"message_id;TI"$<3584907.10994.0@wordpress.com>;TI"message_id_md5;TI"%e430cab25d1f2acb8a898657145ddcdc;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"§'WordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
+<tr>
+<td>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
+<tr>
+<td>
+<h2> New post on <strong>WordPress.com News</strong>
+</h2>
+</td>
+<td style="text-align: right;"> </td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style=" vertical-align: top;">
+<a href="http://en.blog.wordpress.com/author/jane/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/jane/" target="_blank"></a>
+</td>
+<td>
+<h2><a href="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/" target="_blank">Look Before You Leap</a></h2>
+<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/jane/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/jane/" target="_blank">Jane Wells</a></span>
+</td>
+</tr>
+</table> <div>
+<p>Trying out new themes is fun, isn't it? I think so! The thing about changing my blog's theme that has traditionally bugged me, though, is the 10-15 minutes right after you click "Activate" when you have to rush through uploading a new custom header, maybe resetting the background, fiddling with a new sidebar configuration, and other transition adjustments so that people won't see your site in a half-switched state. Maybe I'm overly sensitive to that --- I don't like to leave things half-painted either --- but luckily for me we've just finished a new feature to improve this very thing. It is my great pleasure to introduce you to our new theme customization tool* and say good-bye to half-painted websites.</p>
+<p>The customizer provides a live preview as you play with Appearance settings, and can be used to customize a live preview of a new theme before you activate it, or to make changes to your existing theme. It allows you to edit the site title and tagline, custom headers and backgrounds, navigation placement, front page selection, and other options that vary by theme. It works with both free themes and premium themes. Shall we take a test drive?</p>
+<p>Imagine you want to change themes. As you are browsing on the Themes screen, notice the new "Live Preview" link and click it.</p>
+<p>You're taken to the customizer. As you make changes, the preview in the right-hand part of the screen updates live so you can get things just right.</p>
+<p>When things look the way you want them, click the Save &amp; Activate button in the lower left (or Save &amp; Purchase if it is a premium theme) and boom, your new theme and custom settings are live!</p>
+<p>You can also use the live preview feature to customize your existing theme. On the themes screen in your dashboard, you'll now see a "Customize" button that launches the previewer.</p>
+<p>And don't worry, you still have access to the regular screens for adjusting these and other features. Just use the navigation for the Appearance section like you always have.</p>
+<p>So, please try it out, and let us know what you think in the comments! I hope you like it as much as we do. If you hit any snags, <a href="http://en.forums.wordpress.com/" rel="nofollow noreferrer noopener" title="http://en.forums.wordpress.com/" target="_blank">let us know in the forums</a> so that we can help.</p>
+<p><strong>But wait, there's more!</strong></p>
+<p>Yes, more! Here are a couple of smaller additions also aimed at making it easier to customize your site and make it look just the way you want it.</p>
+<ul>
+<li>When choosing a custom header image, you can now choose from your Media Library. I looove this, because I have uploaded the same header image at least a dozen times to re-use it when I changed themes.</li>
+<li>For themes that support it, custom headers now have a recommended size rather than a fixed required size, so you can be flexible with the height and width of your header images. I love this too, because sometimes I really like a theme but the header image I want to use is taller or shorter than the theme design allows. Now, the power is in your hands to decide! The goal is for as many themes as possible on WordPress.com to support this feature, but you can see if we've added it to yours yet by checking the <a href="http://theme.wordpress.com/themes/features/flexible-header/" rel="nofollow noreferrer noopener" title="http://theme.wordpress.com/themes/features/flexible-header/" target="_blank">list of supported themes</a>.</li>
+</ul>
+<p><strong>And one last thing...</strong><br> If you know HTML, you can now add links and a little bit of formatting to your image captions. This is great for people who want to link a photo credit to the photographer's blog or to a Creative Commons license, or want to make some text bold or italicized. At some point in the future we may add a WYSIWYG option, but for now you'll just need to learn some basic HTML tags if you want to use this one. Just type the HTML right into the caption field in the image uploader, and your links will appear like magic. So this:</p>
+<p>becomes this:</p>
+<p>¬†</p>
+<div>
+<a href="http://www.humanesociety.org" rel="nofollow noreferrer noopener" title="http://www.humanesociety.org" target="_blank"></a>
+<p>You can adopt <strong>adorable</strong> kittens at your local <a href="http://www.humanesociety.org" rel="nofollow noreferrer noopener" title="http://www.humanesociety.org" target="_blank">Humane Society</a>.<br>Make a new friend and save a life today!<br><small><em>Photo by <a href="http://jane.wordpress.com" rel="nofollow noreferrer noopener" title="http://jane.wordpress.com" target="_blank">Jane Wells</a>, saver of kittens</em></small></p>
+</div>
+<p>I've been wanting this feature for four years now, so I'm really excited.</p>
+<p>Have fun with these new features!</p>
+<small>*Fun Fact: While this feature was in development, it was originally conceived as a wizard, or guided walkthrough. We codenamed it Gandalf. :)</small> </div>
+<div>
+<strong><a href="http://en.blog.wordpress.com/author/jane/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/jane/" target="_blank">Jane Wells</a></strong> | May 18, 2012 at 7:31 pm | Tags: <a href="http://en.blog.wordpress.com/?tag=captions" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=captions" target="_blank">captions</a>, <a href="http://en.blog.wordpress.com/?tag=customization" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=customization" target="_blank">Customization</a>, <a href="http://en.blog.wordpress.com/?tag=headers" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=headers" target="_blank">headers</a>, <a href="http://en.blog.wordpress.com/?tag=images" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=images" target="_blank">images</a>, <a href="http://en.blog.wordpress.com/?tag=themes" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?tag=themes" target="_blank">Themes</a> | Categories: <a href="http://en.blog.wordpress.com/?cat=9548" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/?cat=9548" target="_blank">Features</a> | URL: <a href="http://wp.me/pf2B5-2Rk" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2Rk</a>
+</div>
+<p>¬†</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/#respond" target="_blank">Comment</a></td>
+<td> <a href="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/#comments" target="_blank">See all comments</a>
+</td>
+</tr>
+</table> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
+<tr>
+<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
+<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
+<p>
+<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
+<a href="http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/05/18/look-before-you-leap/</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
+<tr>
+<td align="center">
+<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
+</td>
+</tr>
+</table> <br>
+</td>
+</tr>
+</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©¿r¿z:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
+N©¿ æz;I"UTC;F@*@/:@created_atf1541858671.2185676:@expires_inf6.048e5

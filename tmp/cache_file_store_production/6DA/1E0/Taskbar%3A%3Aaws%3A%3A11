@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"user_id;TiI"client_id;TI"123;TI"key;TI"Search;TI"callback;TI"Search;TI"	prio;TiI"notify;TFI"active;TFI"
+state;TC:-ActiveSupport::HashWithIndifferentAccess{I"
+query;TI"welcome to;TI"
+model;TI"Ticket;TI"params;TC;{I"
+query;TI"welcome;TI"	init;TTI"last_contact;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©Àgáe	:	zoneI"UTC;F:nano_numi¤:nano_deni:submicro"@I"UTC;T@"I"preferences;TC;{I"
+tasks;T[C;{	I"id;TiI"user_id;TiI"last_contact;TU;	[Iu;
+N©Àgáe	;I"UTC;F;i¤;i;"@I"Etc/UTC;T@0I"changed;TTI"created_at;TU;	[Iu;
+M©À„*ÿ´;I"UTC;F@#@7I"updated_at;TU;	[Iu;
+N©Àöàe;I"UTC;F@#@<:@created_atf1541859930.1369216:@expires_inf6.048e5

@@ -6,19 +6,20 @@ class Scheduler < ApplicationModel
   # rubocop:disable Style/ClassVars
   @@jobs_started = {}
   # rubocop:enable Style/ClassVars
+  
 
   # start threads
   def self.threads
-
-    Thread.abort_on_exception = true
-
+    
+    Thread.abort_on_exception = true  
+#    ActiveRecord::Base.connection.schema_search_path = "ramesh"	
     # reconnect in case db connection is lost
     begin
       ActiveRecord::Base.connection.reconnect!
     rescue => e
       logger.error "Can't reconnect to database #{e.inspect}"
     end
-
+    
     # cleanup old background jobs
     cleanup
 
@@ -35,6 +36,7 @@ class Scheduler < ApplicationModel
       rescue => e
         logger.error "Can't reconnect to database #{e.inspect}"
       end
+      
 
       # read/load jobs and check if it is alredy started
       jobs = Scheduler.where('active = ?', true).order('prio ASC')
@@ -234,6 +236,8 @@ class Scheduler < ApplicationModel
       # start loop for periods equal or under 5 minutes
       if job.period && job.period <= 5.minutes
         loop do
+	puts ActiveRecord::Base.connection.schema_search_path
+         ActiveRecord::Base.connection.schema_search_path = "ramesh"
           _start_job(job)
           job = Scheduler.lookup(id: job.id)
 
@@ -250,6 +254,7 @@ class Scheduler < ApplicationModel
           sleep job.period
         end
       else
+	  ActiveRecord::Base.connection.schema_search_path = "ramesh"
         _start_job(job)
       end
       job.pid = ''
@@ -345,10 +350,12 @@ class Scheduler < ApplicationModel
       sleep wait
 
       logger.info "Starting worker thread #{Delayed::Job}"
-
+      ActiveRecord::Base.connection.schema_search_path = "ramesh"
+      puts   ActiveRecord::Base.connection.schema_search_path 	
       loop do
         ApplicationHandleInfo.current = 'scheduler'
         result = nil
+	  ActiveRecord::Base.connection.schema_search_path = "ramesh"
 
         realtime = Benchmark.realtime do
           logger.debug { "*** worker thread, #{Delayed::Job.all.count} in queue" }

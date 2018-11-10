@@ -1,0 +1,100 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETi¤I"ticket_id;Ti¢I"type_id;TiI"sender_id;TiI"	from;TI"4"WordPress.com News" <donotreply@wordpress.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI";[New post] A Little Boost to Your Photos and Galleries;TI"reply_to;T0I"message_id;TI"$<3584907.11171.0@wordpress.com>;TI"message_id_md5;TI"%e3cf4d89ea32665e8823a91b49619f04;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"hWordPress.com <table border="0" cellspacing="0" cellpadding="0" bgcolor="#DDDDDD" style="background: #dddddd;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 10px;">
+<tr>
+<td>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color: #fff; text-align: left; margin: 0 auto;">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style="color: #0088cc; margin: 0 0 5px 0; font-size: 1.6em; color: #0088cc; margin: 0 0 0px 0; font-size: 1.6em; background-color: #efefef; padding: 0; border-bottom: 1px solid #ddd;">
+<tr>
+<td>
+<h2> New post on <strong>WordPress.com News</strong>
+</h2>
+</td>
+<td style="text-align: right;"> </td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#ffffff">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style=" vertical-align: top;">
+<a href="http://en.blog.wordpress.com/author/azaozz/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/azaozz/" target="_blank"></a>
+</td>
+<td>
+<h2><a href="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/" target="_blank">A Little Boost to Your Photos and Galleries</a></h2>
+<span style="color: #888;">by <a href="http://en.blog.wordpress.com/author/azaozz/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/azaozz/" target="_blank">Andrew Ozz</a></span>
+</td>
+</tr>
+</table> <div>
+<p>If a picture is worth a thousand words, then a digital photo is worth even more. All digital cameras embed extra information in each photo --- things like camera make and model, date and time the photo was taken, focal length of the lens, shutter speed, etc.</p>
+<p>We're happy to announce two new features on WordPress.com for digital photos that will take advantage of your digital photo's EXIF information!</p>
+<h3>Automatic Rotation</h3>
+<p>From now on JPEG images will be <strong>rotated automatically after uploading</strong> according to the camera's original orientation. No more manually rotating all those portrait photos! What's more, the rotation is "lossless" and preserves all embedded information in the image file (the JPEG image format is <a title="Lossy compression" href="http://en.wikipedia.org/wiki/Lossy_compression" rel="nofollow noreferrer noopener" target="_blank">"lossy"</a>, meaning that each time the image is edited, some of the fine color nuances may be lost). In short: your photos' orientation/rotation is automatic and their image quality is preserved 100%!</p>
+<h3>Gallery Sorting</h3>
+<p>There are two <strong>new sorting options for galleries</strong>: Image Date/Time and Upload Order. These additional sort options are also available for previously-published galleries, offering you more fine control on how you display your images on your WordPress.com site. <em>Have you ever inserted a Gallery in a post or page? <a href="http://en.support.wordpress.com/images/gallery/" rel="nofollow noreferrer noopener" title="http://en.support.wordpress.com/images/gallery/" target="_blank">Get started with Galleries</a>.</em></p>
+<p>Â </p>
+<div>
+<a href="https://en.blog.files.wordpress.com/2012/05/gallery-settings.png" rel="nofollow noreferrer noopener" title="https://en.blog.files.wordpress.com/2012/05/gallery-settings.png" target="_blank"></a>
+<p>The Gallery Settings dialog</p>
+</div>
+<p>Both of these new features depend on the <a title="Exchangeable image file format" href="http://en.wikipedia.org/wiki/Exchangeable_image_file_format" rel="nofollow noreferrer noopener" target="_blank">EXIF data</a> saved in the JPEG image files, so if you edit your photos before uploading, make sure the software you use preserves that data.</p>
+<p><strong>So, upload few photos, create a gallery or edit an existing gallery and let us know what you think in the comments. Need photography inspiration? Check out the <a href="http://wordpress.com/#!/read/topic/photography/" rel="nofollow noreferrer noopener" title="http://wordpress.com/#!/read/topic/photography/" target="_blank">Photography topic in the WordPress.com Reader!</a></strong></p>
+</div>
+<div>
+<strong><a href="http://en.blog.wordpress.com/author/azaozz/" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/author/azaozz/" target="_blank">Andrew Ozz</a></strong> | May 30, 2012 at 8:12 pm | URL: <a href="http://wp.me/pf2B5-2Ub" rel="nofollow noreferrer noopener" target="_blank">http://wp.me/pf2B5-2Ub</a>
+</div>
+<p>Â </p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/#respond" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/#respond" target="_blank">Comment</a></td>
+<td> <a href="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/#comments" rel="nofollow noreferrer noopener" title="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/#comments" target="_blank">See all comments</a>
+</td>
+</tr>
+</table> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="20" bgcolor="#efefef" style="background-color: #efefef; text-align: left; border-top: 1px solid #dddddd;">
+<tr>
+<td style="border-top: 1px solid #f3f3f3; color: #888; font-size: 14px; background: #efefef;">
+<p> Unsubscribe or change your email settings at <a href="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" rel="nofollow noreferrer noopener" title="https://subscribe.wordpress.com/?key=958bda2588fd75f706bd54d15e94d9d2&amp;email=vaibhavblogger@gmail.com" target="_blank">Manage Subscriptions</a>.</p>
+<p>
+<strong>Trouble clicking?</strong> Copy and paste this URL into your browser: <br>
+<a href="http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/" rel="nofollow noreferrer noopener" target="_blank">http://en.blog.wordpress.com/2012/05/30/a-little-boost-to-your-photos-and-galleries/</a>
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" style=" background-color: #43a4d0;">
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table> <table border="0" cellspacing="0" cellpadding="0" align="center" style="padding-bottom: 2em; color: #555555; font-size: 12px; text-align: center;">
+<tr>
+<td align="center">
+<a href="http://wordpress.com" rel="nofollow noreferrer noopener" title="http://wordpress.com" target="_blank">Thanks for flying with WordPress.com</a>
+</td>
+</tr>
+</table> <br>
+</td>
+</tr>
+</table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;TiI"created_by_id;TiI"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©Àï¯g:	zoneI"UTC;FI"UTC;T@)I"updated_at;TU;	[Iu;
+N©ÀØ¬g;I"UTC;F@*@/:@created_atf1541858725.3884795:@expires_inf6.048e5

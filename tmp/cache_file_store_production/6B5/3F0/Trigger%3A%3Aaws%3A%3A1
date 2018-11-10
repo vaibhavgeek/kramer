@@ -1,0 +1,14 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETiI"	name;TI" auto reply (on new tickets);TI"active;TFI"condition;TC:-ActiveSupport::HashWithIndifferentAccess{	I"ticket.action;TC;{I"operator;TI"is;TI"
+value;TI"create;TI"ticket.state_id;TC;{I"operator;TI"is not;TI"
+value;TI"4;TI"article.type_id;TC;{I"operator;TI"is;TI"
+value;T[I"1;TI"5;TI"11;TI"article.sender_id;TC;{I"operator;TI"is;TI"
+value;TI"2;TI"perform;TC;{I"notification.email;TC;{I"	body;TI"?<div>Your request <b>(#{config.ticket_hook}#{ticket.number})</b> has been received and will be reviewed by our support staff.</div>
+<br>
+<div>To provide additional information, please reply to this email or click on the following link (for initial login, please request a new password):
+<a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
+</div>
+<br>
+<div>Your #{config.product_name} Team</div>
+<br>
+<div><i><a href="https://zammad.com">Zammad</a>, your customer support system</i></div>;TI"recipient;TI"article_last_sender;TI"subject;TI".Thanks for your inquiry (#{ticket.title});TI"disable_notification;TTI"	note;T0I"updated_by_id;TiI"created_by_id;TiI"created_at;TU: ActiveSupport::TimeWithZone[Iu:	Time7©¿U[,':	zoneI"UTC;FI"UTC;T@:I"updated_at;TU;	[Iu;
+@©¿∞‹Œ1;I"UTC;F@;@@:@created_atf1541808749.0018635:@expires_inf6.048e5

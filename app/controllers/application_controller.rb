@@ -23,6 +23,7 @@ class ApplicationController < ActionController::Base
       account = Account.where(subdomain: request.subdomain).first
       if account
          Apartment::Tenant.switch!(account.subdomain)
+         ActiveRecord::Base.connection.schema_search_path = Apartment.connection.schema_search_path
       else
         redirect_to subdomain: false, :controller => 'welcome', :action => "index"
       end

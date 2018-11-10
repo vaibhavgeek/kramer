@@ -1,0 +1,265 @@
+o: ActiveSupport::Cache::Entry:@value{I"id:ETi‰I"ticket_id;Ti‡I"type_id;TiI"sender_id;TiI"	from;TI"1Telerik Newsletter <newsletters@telerik.com>;TI"to;TI"vaibhavblogger@gmail.com;TI"cc;T0I"subject;TI";Windows 8 Dev Club and 13 Top Tools for Web Developers;TI"reply_to;TI"newsletters@telerik.com;TI"message_id;TI"-<20120516180577.454251F7AA23@elabs5.com>;TI"message_id_md5;TI"%b869beaff968abea73d0936d7caf467d;TI"in_reply_to;T0I"content_type;TI"text/html;TI"references;T0I"	body;TI"ÄTelerik Newsletter<table border="0" cellspacing="0" cellpadding="0" align="center" style="text-align: left; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody>
+<tr>
+<td style="border-bottom: #e6e6e6 1px solid; padding-bottom: 10px; margin: 0px;padding-left: 0px; padding-right: 0px; background: #fffef6; font-size: 11px; padding-top: 10px;"> </td>
+<td colspan="4" style="border-bottom: #e6e6e6 1px solid; text-align: center; padding-bottom: 10px; margin: 0px; padding-left: 0px; padding-right: 0px; background: #fffef6; color: #666666; font-size: 11px; padding-top: 10px;">If this message is not displaying properly, <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,37dq,jru5,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,37dq,jru5,62w5,2rhm" target="_blank">click here</a> to launch your browser. <br>
+</td>
+<td style="border-bottom: #e6e6e6 1px solid; padding-bottom: 10px; margin: 0px; padding-left: 0px; padding-right: 0px; background: #fffef6; font-size: 11px; padding-top: 10px;"> </td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="2" style="border-bottom: #e6e6e6 1px solid; text-align: left;"></td>
+<td colspan="2" style="border-bottom: #e6e6e6 1px solid; text-align: right;">
+<h1>Monthly Newsletter</h1>
+<span style="color: #888a8f;">May 2012 </span>
+</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td valign="top" colspan="4"><table border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 0px; margin: 0px;padding-left: 0px; padding-right: 0px; padding-top: 0px;"><tbody><tr>
+<td valign="top" style=" padding-top: 27px;"><div></div></td>
+<td style=" color: #666666; font-size: 12px; vertical-align: top;">
+<h2>Editor's Note</h2>
+<div>
+<p>Over the past year youâ€™ve seen Telerik introduce new products to help you build great applications for an increasingly mobile world, where platforms like Apple iOS and Google Android are dominating. <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2aks,deve,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2aks,deve,62w5,2rhm" target="_blank">Kendo UI Mobile</a> is a prime example of how we are helping you build native looking and feeling apps and sites for mobile devices, using technology you already know - HTML5 and JavaScript. You may also have seen our <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,ifab,fvb7,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,ifab,fvb7,62w5,2rhm" target="_blank">Test Studio for iOS beta release</a> enabling you to create and run automated functional tests on an iOS device - the iPhone, iPad or iPod - without jail breaking it.</p>
+<p>We are also staying on top of the Microsoft mobile platform stack, and like you, eagerly awaiting Windows 8 (especially in its ARM form factor). As you think about your strategy for Windows 8 Metro style applications take a few minutes and read how we recently <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2q7u,12tj,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2q7u,12tj,62w5,2rhm" target="_blank">designed a Windows 8 Metro style application</a> by starting with a very popular Windows Phone 7 application.</p>In the coming weeks we will be releasing great new features for the Telerik products you love. We will also be revealing an exciting new product designed to help you take over the world of cross-platform mobile development, enabling you to use your existing skills to quickly and easily build applications for the platforms that matter. If you want to be among the first to learn about this revolutionary new product, stay tuned to our social channels and if youâ€™re going to TechEd next month, stop by the Telerik booth!<p>Doug Seven<br>Executive Vice President, Black Ops <br><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,aze0,hpgd,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,aze0,hpgd,62w5,2rhm" target="_blank">@dseven</a> <br></p>
+</div>
+</td>
+</tr></tbody></table></td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="4" style="border-bottom: #e6e6e6 1px solid; padding-top: 20px;"><h3>In this issue</h3></td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td valign="top" colspan="4" style="padding-bottom: 30px;"><table border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td valign="top" style="padding-bottom: 15px; padding-left:0px; padding-right: 0px; padding-top: 18px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 15px;"><p><a href="http:#t1" rel="nofollow noreferrer noopener" title="http://#t1" target="_blank">Saving Time for MVC Developers </a></p></td>
+<td valign="top" style="padding-bottom: 15px; padding-left:0px; padding-right: 0px; padding-top: 18px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 15px;"><p><a href="http:#t7" rel="nofollow noreferrer noopener" title="http://#t7" target="_blank">New Resources Just For You </a></p></td>
+</tr>
+<tr>
+<td valign="top" style="padding-bottom: 15px; padding-left:0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t2" rel="nofollow noreferrer noopener" title="http://#t2" target="_blank">Tools for the Ninja Web Developer </a></p></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px;padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t8" rel="nofollow noreferrer noopener" title="http://#t8" target="_blank">One Engine, Two Tools </a></p></td>
+</tr>
+<tr>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t3" rel="nofollow noreferrer noopener" title="http://#t3" target="_blank">Take your ASP.NET Controls to the Gym </a></p></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t9" rel="nofollow noreferrer noopener" title="http://#t9" target="_blank">JustTrace, Data is Knowledge </a></p></td>
+</tr>
+<tr>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t4" rel="nofollow noreferrer noopener" title="http://#t4" target="_blank">Missed the XAMLflix webinars? </a></p></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t10" rel="nofollow noreferrer noopener" title="http://#t10" target="_blank">Test Studio for iOS Out of Beta (Soon) </a></p></td>
+</tr>
+<tr>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t5" rel="nofollow noreferrer noopener" title="http://#t5" target="_blank">Designing a Windows 8 App </a></p></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t11" rel="nofollow noreferrer noopener" title="http://#t11" target="_blank">TeamPulse and Test Studio Team Up </a></p></td>
+</tr>
+<tr>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t6" rel="nofollow noreferrer noopener" title="http://#t6" target="_blank">Monetize Better from Your App </a></p></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 1px;"></td>
+<td valign="top" style="padding-bottom: 15px; padding-left: 0px; padding-right: 0px; padding-top: 0px;"><p><a href="http:#t12" rel="nofollow noreferrer noopener" title="http://#t12" target="_blank">CMS &amp; Ecommerce in One Application </a></p></td>
+</tr>
+</tbody></table></td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="4" style="background: #ccc;">win8apps@telerik.com?subject=SignmeupfortheTelerikWindows8DevClub</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td> </td>
+</tr>
+<tr>
+<td style="padding-bottom: 3px; padding-left: 20px; padding-right: 0px; padding-top: 30px;"> </td>
+<td colspan="4" style="padding-bottom: 3px; padding-left: 20px; padding-right: 0px;padding-top: 30px;"><h3>News &amp; Updates</h3></td>
+<td style="padding-bottom: 3px; padding-left: 20px; padding-right: 0px; padding-top:30px;"> </td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="4">
+<table cellspacing="0" cellpadding="0" style="text-align: left;"><tbody>
+<tr>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kz12,ceqb,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kz12,ceqb,62w5,2rhm" target="_blank"></a> <h3>Saving Time for MVC Developers</h3>
+<p>Telerik Evangelist Joshua Holt recently reacquainted himself with our ASP.NET MVC Extensions and was surprised to find some not so popular, but great, time-saving features in the toolkit. Get a walkthrough of the awesome features he found in the suite and learn how they can help cut down your development time!</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kz12,ceqb,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kz12,ceqb,62w5,2rhm" target="_blank">Read the post</a> </p>
+</td>
+<td style="text-align: left;padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l0g2,hnke,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l0g2,hnke,62w5,2rhm" target="_blank"></a> <h3>13 Tools for the Ninja Web Developer</h3>
+<p>What are your favorite tools for smarter web development? Take a look at our list of HTTP and client-side debugging and inspection tools, image tools, as well as VS-specific tools we find really useful. The best part, almost all of them are free. Make sure to share your top tools as well!</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l0g2,hnke,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l0g2,hnke,62w5,2rhm" target="_blank">Check out the blog</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,clpm,kpkt,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,clpm,kpkt,62w5,2rhm" target="_blank"></a> <h3>Take your ASP.NET Controls to the Gym</h3>
+<p>How often do you write an Eval() or Bind() statement and accidentally screw up the spelling of your entity or field names? Frustrated with having to use a declarative DataSource control, or the DataSource property and DataBind() function in your code-behind? That's all behind you thanks to VS11's strongly typed controls.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,clpm,kpkt,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,clpm,kpkt,62w5,2rhm" target="_blank">Check the how-to post</a> </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,id0v,f0xf,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,id0v,f0xf,62w5,2rhm" target="_blank"></a> <h3>Missed the XAMLflix webinars?</h3>
+<p>No worries! XAML Evangelists Evan Hutnick, Michael Crump, and Jesse Liberty are making their webinars available on-demand. The wrap-up blog posts with links to the recordings for Data Visualization and Diagramming Framework are available now! Jesse's RadGridView webinar recording will be available later this week.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,id0v,f0xf,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,id0v,f0xf,62w5,2rhm" target="_blank">DataViz Webinar</a><br><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8ja,cas3,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8ja,cas3,62w5,2rhm" target="_blank">Diagramming Webinar</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2q7u,12tj,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2q7u,12tj,62w5,2rhm" target="_blank"></a> <h3>Designing a Windows 8 App <br>
+</h3>
+<p>This case study gives insight into porting the design of an existing Windows Phone app to a Windows 8 Metro app. It discusses what can and cannot be reused. Maybe you're thinking: from Metro to Metro - it has to be pretty easy and straightforward, doesn't it? See for yourself - read our blog and download a copy of the PDF.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2q7u,12tj,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2q7u,12tj,62w5,2rhm" target="_blank">Find out today</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left:20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,mu2,bt3w,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,mu2,bt3w,62w5,2rhm" target="_blank"></a> <h3>Monetize Better from Your App</h3>
+<p>How to make money from your Windows Phone app? Join this free webinar that provides a framework for thinking about mobile app marketing co-hosted by Telerik and Tapjoy. We'll talk about developers' in-app tricks as well as how to get the most from your app distribution efforts.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,mu2,bt3w,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,mu2,bt3w,62w5,2rhm" target="_blank">Secure your seat now</a> </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8rw0,15s0,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8rw0,15s0,62w5,2rhm" target="_blank"></a> <h3>New Resources Just For You</h3>
+<p>A whole host of new learning resources to help you improve your code and productivity just went live with the new product pages. Be sure to check out the JustCode introductory video and step-by-step instructions on how to make your first mock.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8rw0,15s0,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8rw0,15s0,62w5,2rhm" target="_blank">Improve your productivity</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kknq,gror,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kknq,gror,62w5,2rhm" target="_blank"></a> <h3>One Engine, Two Tools</h3>
+<p>MSDN and JustDecompile recently joined forces for the webcast "One Engine Two Tools". The webcast demonstrated how to use JustDecompile and JustCode to easily recover lost source code or peer into assemblies to discover the root cause of an external bug.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kknq,gror,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,kknq,gror,62w5,2rhm" target="_blank">Watch the recording now</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l3c7,dbrz,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l3c7,dbrz,62w5,2rhm" target="_blank"></a> <h3>JustTrace, Data is Knowledge</h3>
+<p>JustTrace collects an impressive amount of data which can now be easily navigated and filtered. In addition, more data can be seen by collapsing the context help. Download JustTrace and see how better data will improve your code.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l3c7,dbrz,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,l3c7,dbrz,62w5,2rhm" target="_blank">Download JustTrace</a> </p>
+</td>
+</tr>
+<tr>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,knr5,2scj,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,knr5,2scj,62w5,2rhm" target="_blank"></a> <h3>Test Studio for iOS Out of Beta (Soon)</h3>
+<p>With its official launch, Test Studio for iOS will add a premium cloud syncing feature. You'll be able to deploy &amp; sync up tests and results across all devices, keeping everyone on your team in the loop. The release comes in two weeks but you can download the Beta now!</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,knr5,2scj,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,knr5,2scj,62w5,2rhm" target="_blank">Download Beta</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,4z0o,c7nm,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,4z0o,c7nm,62w5,2rhm" target="_blank"></a> <h3>TeamPulse &amp; Test Studio Team Up</h3>
+<p>To help teams build better software Telerik has integrated its project management and automated testing solutions - TeamPulse and Test Studio. Thanks to this integration you can now ensure that all your requirements are properly defined, thoroughly tested and that each and every bug is captured and managed effectively.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,4z0o,c7nm,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,4z0o,c7nm,62w5,2rhm" target="_blank">Learn about the integration</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px;padding-left: 20px; padding-right: 23px; padding-top: 15px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,fnv2,9uo5,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,fnv2,9uo5,62w5,2rhm" target="_blank"></a> <h3>CMS &amp; Ecommerce in One Application</h3>
+<p>For organizations that are managing online stores and web content there are numerous benefits of integrating Content Management Systems and Ecommerce into a single application. Read this whitepaper to see how combining these components with Sitefinity can provide a better experience for the user while simultaneously creating new business value.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,fnv2,9uo5,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,fnv2,9uo5,62w5,2rhm" target="_blank">Download whitepaper</a> </p>
+</td>
+</tr>
+</tbody></table> </td>
+<td> </td>
+</tr>
+<tr>
+<td></td>
+<td colspan="4"></td>
+<td></td>
+</tr>
+<tr>
+<td> </td>
+<td valign="top" colspan="2" style="border-bottom: #e6e6e6 1px solid; border-left: #e6e6e6 1px solid; padding-bottom: 10px; padding-left: 0px; padding-right: 5px; background: #f7f7f7; border-top: #e6e6e6 1px solid; padding-top: 10px;"><table><tbody><tr>
+<td style="text-align: right; padding-bottom: 5px; padding-left: 0px; padding-right: 5px; padding-top: 5px;">
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,h50k,8975,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,h50k,8975,62w5,2rhm" target="_blank">Find us on Facebook</a></p>
+<p>Take part in community contests</p>
+</td>
+<td valign="top" style="text-align: center; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px;"><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,h50k,8975,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,h50k,8975,62w5,2rhm" target="_blank"> </a></td>
+</tr></tbody></table></td>
+<td valign="top" colspan="2" style="border-bottom: #e6e6e6 1px solid; padding-bottom: 10px; padding-left: 5px; padding-right: 0px; background: #f7f7f7; border-top: #e6e6e6 1px solid; border-right: #e6e6e6 1px solid; padding-top: 10px;"><table><tbody><tr>
+<td valign="top" style="text-align:center; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px;"><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8j51,lorq,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8j51,lorq,62w5,2rhm" target="_blank"></a></td>
+<td style="text-align: left; padding-bottom: 5px; padding-left: 5px; padding-right: 0px; padding-top: 5px;">
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8j51,lorq,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,8j51,lorq,62w5,2rhm" target="_blank">Follow us on Twitter</a></p>
+<p>Stay tuned for the latest from Telerik</p>
+</td>
+</tr></tbody></table></td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="4" style="padding-top: 30px;">
+<table cellspacing="0" cellpadding="0" style="text-align: left;"><tbody>
+<tr>
+<td style="padding-bottom: 10px;"><h3>Events</h3></td>
+<td style="padding-bottom: 10px;"><h3>Here We Grow Again</h3></td>
+<td style="padding-bottom: 10px;"><h3>Tips and Tricks</h3></td>
+</tr>
+<tr>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;"> <p><strong><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,b9s2,5qyc,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,b9s2,5qyc,62w5,2rhm" target="_blank">TechEd North America 2012</a></strong> - Telerik has not one but two big surprises for you! Make sure to stop by booth 1841/1843 to get exclusive access.</p>
+<p><strong><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,33j4,20jm,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,33j4,20jm,62w5,2rhm" target="_blank">Big Design 2012</a></strong> - Addison, TX from May 31-June 2, stop by the Telerik booth for Kendo UI swag and a chance to win a Blackberry Playbook 7-Inch Tablet!</p>
+<p><strong><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,4tzf,19t,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,4tzf,19t,62w5,2rhm" target="_blank">Free Q&amp;A Panel: The Agile Buffet Table</a></strong> - Want to implement a process that matches your needs? Join this webinar and let our experts help pick the right ingredients for your needs.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,brdh,e5py,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,brdh,e5py,62w5,2rhm" target="_blank">See all events</a> </p>
+</td>
+<td style="text-align: left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;"> <p>Telerik Acquires NimblePros! We are extremely happy to welcome industry experts like NimblePros to the Telerik family. NimblePros helps build our professional consulting services division and will help us to continue delivering quality products to customers like you. This marks our 5th office in the USA, and 11th worldwide!</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,89a3,665b,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,89a3,665b,62w5,2rhm" target="_blank">Read the full press release</a> </p>
+</td>
+<td style="text-align:left; padding-bottom: 0px; padding-left: 20px; padding-right: 23px; padding-top: 15px;"> <p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,m1kg,4h3e,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,m1kg,4h3e,62w5,2rhm" target="_blank">A Match Made in Http Heaven - ASP.NET Web Forms and WebAPI</a> </p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,668r,1uc4,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,668r,1uc4,62w5,2rhm" target="_blank">The Present and Future of Using JSON in Web Forms</a> </p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2n6m,18w7,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,2n6m,18w7,62w5,2rhm" target="_blank">New Exploratory Testing Tool: Test Studio Explore</a> </p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,1phf,eob6,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,1phf,eob6,62w5,2rhm" target="_blank">Bend OpenAccess ORM to Your Will with Type Converters</a> </p>
+<p>Â </p>
+</td>
+</tr>
+</tbody></table> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="4" style="padding-bottom: 4px; padding-left:0px; padding-right: 0px; padding-top: 30px;"><h3>Telerik Product Divisions</h3></td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td valign="top" colspan="2">
+<br><p>The industry's leading UI components for <i>.</i>NET, essential tools for code analysis, decompiling, mocking, reporting and data access.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,a7ee,2a4o,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,a7ee,2a4o,62w5,2rhm" target="_blank">Learn more</a> </p>
+</td>
+<td valign="top" colspan="2"> <p>Agile project management tools for requirements management, planning, scheduling, and project health monitoring.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,mcwb,35mt,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,mcwb,35mt,62w5,2rhm" target="_blank">Learn more</a> </p>
+</td>
+<td> </td>
+</tr>
+<tr>
+<td style="padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 20px;"> </td>
+<td valign="top" colspan="2" style="padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 20px;"> <p>Solutions for fast and easy test automation of web and desktop applications:<br>HTML | AJAX | Silverlight | WPF.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,bjbl,1uyz,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,bjbl,1uyz,62w5,2rhm" target="_blank">Learn more</a> </p>
+</td>
+<td valign="top" colspan="2" style="padding-bottom: 20px;padding-left: 0px; padding-right: 0px; padding-top: 20px;"> <p>A flexible ASP<i>.</i>NET CMS for the construction and management of commercial websites, community portals, and intranets.</p>
+<p><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,57de,hjxa,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,57de,hjxa,62w5,2rhm" target="_blank">Learn more</a> </p>
+</td>
+<td style="padding-bottom: 20px; padding-left: 0px; padding-right: 0px; padding-top: 20px;"> </td>
+</tr>
+<tr>
+<td style="border-bottom: #e6e6e6 1px solid; padding-bottom: 20px; margin: 0px; padding-left: 0px; padding-right: 0px; background: #fffef6; border-top: #e6e6e6 1px solid;padding-top: 20px;"> </td>
+<td colspan="4" style="border-bottom: #e6e6e6 1px solid; text-align: center; padding-bottom: 20px; margin: 0px; padding-left: 0px; padding-right: 0px; background: #fffef6; font-size: 12px; border-top: #e6e6e6 1px solid; padding-top:20px;">
+<a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,xwt,1vje,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,xwt,1vje,62w5,2rhm" target="_blank">Contact Us</a> | <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,dnra,dt4w,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,dnra,dt4w,62w5,2rhm" target="_blank">Terms of Use</a> | <a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,bv3w,jd05,62w5,2rhm" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,bv3w,jd05,62w5,2rhm" target="_blank">Privacy Policy</a><br><span style=" color: #c0c0c0;">Copyright Â© 2002-2012 Telerik. All rights reserved.</span>
+</td>
+<td style="border-bottom: #e6e6e6 1px solid; padding-bottom: 20px; margin: 0px; padding-left: 0px; padding-right: 0px; background: #fffef6; border-top: #e6e6e6 1pxsolid; padding-top: 20px;"> </td>
+</tr>
+<tr>
+<td style="padding-top: 20px;"> </td>
+<td colspan="4" style="text-align: center; margin: 0px; background: #ffffff; color: #666666; font-size: 12px; padding-top: 20px;">
+<p>If you'd prefer not to receive e-mail like this from Telerik in the future,<br><a href="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,3yxt,cpqx,62w5,2rhm&amp;EMAIL_ADDRESS=vaibhavblogger@gmail.com&amp;SHA1%20Hashed%20Unique%20Client%20Code=D096785C85D37A044EE646AF67EC8DD7E6F1E0C6" rel="nofollow noreferrer noopener" title="http://emarketing.telerik.com/c.html?rtr=on&amp;s=jaz5u,eroq,i84,3yxt,cpqx,62w5,2rhm&amp;EMAIL_ADDRESS=vaibhavblogger@gmail.com&amp;SHA1%20Hashed%20Unique%20Client%20Code=D096785C85D37A044EE646AF67EC8DD7E6F1E0C6" target="_blank">manage your subscriptions here</a>.</p>
+<br>
+</td>
+<td style="padding-top:20px;"> </td>
+</tr>
+</tbody></table>;TI"internal;TFI"preferences;TC:-ActiveSupport::HashWithIndifferentAccess{I"send-auto-response;TFI"is-auto-response;TTI"updated_by_id;Ti I"created_by_id;Ti I"origin_by_id;T0I"created_at;TU: ActiveSupport::TimeWithZone[Iu:	TimeN©À•«Þ:	zoneI"UTC;FI"UTC;T@*I"updated_at;TU;	[Iu;
+N©Àè©Þ;I"UTC;F@+@0:@created_atf1541858671.4681532:@expires_inf6.048e5
