@@ -1,17 +1,0 @@
-o: ActiveSupport::Cache::Entry:@value{	I"	name:ETI"
-India;TI"timezone;TI"Asia/Kolkata;TI"business_hours;T{I"mon;T{I"active;TTI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"tue;T{I"active;TTI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"wed;T{I"active;TTI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"thu;T{I"active;TTI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"fri;T{I"active;TTI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"sat;T{I"active;TFI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"sun;T{I"active;TFI"timeframes;T[[I"
-09:00;TI"
-17:00;TI"ical_url;TI"khttp://www.google.com/calendar/ical/en.indian%23holiday%40group.v.calendar.google.com/public/basic.ics;T:@created_atf1541947825.58389:@expires_inf
-1.8e3
