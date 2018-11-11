@@ -1,0 +1,51 @@
+I".(function() {
+  var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.ControllerIntegrationBase = (function(superClass) {
+    extend(ControllerIntegrationBase, superClass);
+
+    ControllerIntegrationBase.prototype.events = {
+      'change .js-switch input': 'switch'
+    };
+
+    ControllerIntegrationBase.prototype.featureIntegration = 'tbd_integration';
+
+    ControllerIntegrationBase.prototype.featureName = 'Tbd';
+
+    function ControllerIntegrationBase() {
+      this.render = bind(this.render, this);
+      this["switch"] = bind(this["switch"], this);
+      ControllerIntegrationBase.__super__.constructor.apply(this, arguments);
+      this.title(this.featureName, true);
+      this.initalRender = true;
+      App.Setting.fetchFull(this.render, {
+        force: false
+      });
+    }
+
+    ControllerIntegrationBase.prototype["switch"] = function() {
+      var value;
+      value = this.$('.js-switch input').prop('checked');
+      return App.Setting.set(this.featureIntegration, value);
+    };
+
+    ControllerIntegrationBase.prototype.render = function() {
+      if (this.initalRender) {
+        this.html(App.view('integration/base')({
+          header: this.featureName,
+          description: this.description,
+          feature: this.featureIntegration,
+          featureEnabled: App.Setting.get(this.featureIntegration)
+        }));
+        return this.initalRender = false;
+      }
+    };
+
+    return ControllerIntegrationBase;
+
+  })(App.Controller);
+
+}).call(this);
+:ET

@@ -1,0 +1,68 @@
+I"q
+(function() {
+  var Index, State,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  Index = (function(superClass) {
+    extend(Index, superClass);
+
+    function Index() {
+      this.render = bind(this.render, this);
+      return Index.__super__.constructor.apply(this, arguments);
+    }
+
+    Index.prototype.featureIntegration = 'check_mk_integration';
+
+    Index.prototype.featureName = 'Check_MK';
+
+    Index.prototype.featureConfig = 'check_mk_config';
+
+    Index.prototype.description = [['This service receives http requests or emails from %s and creates tickets with host and service.', 'Check_MK'], ['If the host and service is recovered again, the ticket will be closed automatically.']];
+
+    Index.prototype.render = function() {
+      Index.__super__.render.apply(this, arguments);
+      new App.SettingsForm({
+        area: 'Integration::CheckMK',
+        el: this.$('.js-form')
+      });
+      new App.ScriptSnipped({
+        el: this.$('.js-scriptSnipped'),
+        facility: 'check_mk',
+        style: 'bash',
+        content: "#!/bin/bash\n\ncurl -X POST -F \"event_id=$NOTIFY_SERVICEPROBLEMID\" -F \"host=$NOTIFY_HOSTNAME\" -F \"service=$NOTIFY_SERVICEDESC\" -F \"state=$NOTIFY_SERVICESTATE\" -F \"text=$NOTIFY_SERVICEOUTPUT\" " + (App.Config.get('http_type')) + "://" + (App.Config.get('fqdn')) + "/api/v1/integration/check_mk/" + (App.Setting.get('check_mk_token')),
+        description: [['To enable %s for sending http requests to %s, you need create a own "notification rule" in %s.', 'Check_MK', 'Zammad', 'Check_MK'], ['Configurable in the admin interface of %s.', 'Check_MK'], ['You can use the following script to post the data to %s.', 'Zammad']]
+      });
+      return new App.HttpLog({
+        el: this.$('.js-log'),
+        facility: 'check_mk'
+      });
+    };
+
+    return Index;
+
+  })(App.ControllerIntegrationBase);
+
+  State = (function() {
+    function State() {}
+
+    State.current = function() {
+      return App.Setting.get('check_mk_integration');
+    };
+
+    return State;
+
+  })();
+
+  App.Config.set('IntegrationCheckMk', {
+    name: 'Check_MK',
+    target: '#system/integration/check_mk',
+    description: 'An open source monitoring tool.',
+    controller: Index,
+    state: State,
+    permission: ['admin.integration.check_mk']
+  }, 'NavBarIntegrations');
+
+}).call(this);
+:ET

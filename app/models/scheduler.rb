@@ -9,7 +9,7 @@ class Scheduler < ApplicationModel
   
 
   # start threads
-  def self.threads
+  def self.threads(schema)
     
     Thread.abort_on_exception = true  
 #    ActiveRecord::Base.connection.schema_search_path = "ramesh"	
@@ -49,7 +49,7 @@ class Scheduler < ApplicationModel
         next if job.last_run && job.period && job.last_run > (Time.zone.now - job.period)
 
         # run job as own thread
-        @@jobs_started[ job.id ] = start_job(job)
+        @@jobs_started[ job.id ] = start_job(job,schema)
         sleep 10
       end
       sleep 60
@@ -225,7 +225,7 @@ class Scheduler < ApplicationModel
     end
   end
 
-  def self.start_job(job)
+  def self.start_job(job,schema)
 
     # start job and return thread handle
     Thread.new do
@@ -236,8 +236,7 @@ class Scheduler < ApplicationModel
       # start loop for periods equal or under 5 minutes
       if job.period && job.period <= 5.minutes
         loop do
-#	puts ActiveRecord::Base.connection.schema_search_path
-         ActiveRecord::Base.connection.schema_search_path = Apartment.connection.schema_search_path
+         ActiveRecord::Base.connection.schema_search_path = schema
           _start_job(job)
           job = Scheduler.lookup(id: job.id)
 
@@ -254,7 +253,7 @@ class Scheduler < ApplicationModel
           sleep job.period
         end
       else
-	    ActiveRecord::Base.connection.schema_search_path = Apartment.connection.schema_search_path
+	    ActiveRecord::Base.connection.schema_search_path = schema
         _start_job(job)
       end
       job.pid = ''

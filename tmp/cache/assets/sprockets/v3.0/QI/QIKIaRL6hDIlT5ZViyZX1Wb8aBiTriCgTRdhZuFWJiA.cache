@@ -1,0 +1,145 @@
+I"Î
+/*
+
+check if browser is supported
+
+  result = App.Browser.check()
+
+  result = true # true/false
+
+get used browser
+
+  browser = App.Browser.detection()
+
+  browser = {
+    browser: {
+      major: "48",
+      name: "Chrome",
+      version: "48.0.2564.109",
+    },
+    os: {
+      name: "Mac OS",
+      version: "10.11.3",
+    }
+  }
+ */
+
+(function() {
+  var Modal,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  App.Browser = (function() {
+    function Browser() {}
+
+    Browser.detection = function() {
+      var data, parser;
+      parser = new UAParser();
+      return data = {
+        browser: parser.getBrowser(),
+        device: parser.getDevice(),
+        os: parser.getOS()
+      };
+    };
+
+    Browser.check = function() {
+      var data, map;
+      data = this.detection();
+      map = {
+        Chrome: 37,
+        Firefox: 36,
+        Explorer: 10,
+        Safari: 6,
+        Opera: 22
+      };
+      if (data.browser) {
+        if (map[data.browser.name] && data.browser.major < map[data.browser.name]) {
+          new Modal({
+            data: data,
+            version: map[data.browser.name]
+          });
+          App.Log.error('Browser', 'Browser not supported');
+          return false;
+        }
+      }
+      return true;
+    };
+
+    Browser.fingerprint = function() {
+      var data, fingerprint, hashCode, localStorage, resolution, timezone;
+      localStorage = window['localStorage'];
+      if (localStorage) {
+        fingerprint = localStorage.getItem('fingerprint');
+      }
+      if (fingerprint) {
+        return fingerprint;
+      }
+      data = this.detection();
+      resolution = window.screen.availWidth + "x" + window.screen.availHeight + "/" + window.screen.pixelDepth;
+      timezone = new Date().toString().match(/\s\(.+?\)$/);
+      hashCode = function(s) {
+        return s.split('').reduce(function(a, b) {
+          a = ((a << 5) - a) + b.charCodeAt(0);
+          return a & a;
+        }, 0);
+      };
+      fingerprint = hashCode("" + data.browser.name + data.browser.major + data.os + resolution + timezone);
+      if (localStorage) {
+        localStorage.setItem('fingerprint', fingerprint);
+      }
+      return fingerprint;
+    };
+
+    Browser.magicKey = function() {
+      var browser, magicKey;
+      browser = this.detection();
+      magicKey = 'ctrl';
+      if (browser && browser.os && browser.os.name.toString().match(/mac/i)) {
+        magicKey = 'cmd';
+      }
+      return magicKey;
+    };
+
+    Browser.hotkeys = function() {
+      var browser, hotkeys;
+      browser = this.detection();
+      hotkeys = 'ctrl+shift';
+      if (browser && browser.os && browser.os.name.toString().match(/mac/i)) {
+        hotkeys = 'alt+ctrl';
+      }
+      return hotkeys;
+    };
+
+    return Browser;
+
+  })();
+
+  Modal = (function(superClass) {
+    extend(Modal, superClass);
+
+    function Modal() {
+      return Modal.__super__.constructor.apply(this, arguments);
+    }
+
+    Modal.prototype.buttonClose = false;
+
+    Modal.prototype.buttonCancel = false;
+
+    Modal.prototype.buttonSubmit = false;
+
+    Modal.prototype.backdrop = false;
+
+    Modal.prototype.keyboard = false;
+
+    Modal.prototype.head = 'Browser too old!';
+
+    Modal.prototype.content = function() {
+      return "Your Browser is not supported (" + this.data.browser.name + " " + this.data.browser.major + " on " + this.data.os.name + "). Please use a newer one (e. g. " + this.data.browser.name + " " + this.version + " or higher).";
+    };
+
+    return Modal;
+
+  })(App.ControllerModal);
+
+}).call(this);
+:ET

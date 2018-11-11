@@ -1,7 +1,8 @@
-require 'rake'
+require 'daemons'
 class AccountsController < ApplicationController
     layout 'welcome' 
     def new
+        #scheduler_start("public")
         @account = Account.new
       #  @account.build_owner 
     end
@@ -11,7 +12,6 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
-            sleep(3)
 	        create_admin_user(firstname,lastname,email,password,@account.subdomain)
             redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index" 
         else
@@ -64,19 +64,27 @@ class AccountsController < ApplicationController
     end
 
     def scheduler_start(sub)
-        dir = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+        dir = File.expand_path(File.join(File.dirname(__FILE__), '..' , '..'))
         Dir.chdir dir
+        puts dir
         daemon_options = {
-                multiple: false,
-                dir_mode: :normal,
-                dir: File.join(dir, 'tmp', 'pids'),
-                backtrace: true
-            }
-        name = sub + 'scheduler'
-        Daemons.run_proc(name, daemon_options) do
-            require 'scheduler'
-            Scheduler.threads
-        end
+                 multiple: true,
+                 dir_mode: :normal,
+                 dir: File.join(dir, 'tmp', 'pids'),
+                 backtrace: true
+             }
+          name = sub + 'scheduler'
+          begin
+            Daemons.call(daemon_options) do
+                at_exit do
+                    Rails.logger.info 'Scheduler stopped. for #{name}'
+                end
+               Scheduler.threads(sub)
+           end
+          rescue Exception => e
+            puts e.message
+          end
+          
     end
     private
     def account_params

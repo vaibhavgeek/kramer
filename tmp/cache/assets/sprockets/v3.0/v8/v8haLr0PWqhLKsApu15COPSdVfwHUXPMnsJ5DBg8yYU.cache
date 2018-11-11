@@ -1,0 +1,54 @@
+I"¬(function() {
+  App.TicketNavigable = {
+    taskOpenTicket: function(ticket_id, url) {
+      if (ticket_id instanceof App.Ticket) {
+        ticket_id = ticket_id.id;
+      }
+      this.taskLoadTicket(ticket_id);
+      return this.navigate(url != null ? url : "ticket/zoom/" + ticket_id);
+    },
+    taskLoadTicket: function(ticket_id) {
+      return App.TaskManager.execute({
+        key: "Ticket-" + ticket_id,
+        controller: 'TicketZoom',
+        params: {
+          ticket_id: ticket_id,
+          overview_id: this.overview_id
+        },
+        show: true
+      });
+    },
+    taskOpenNextTicketInOverview: function() {
+      var next_ticket;
+      if (!((this.overview_id != null) && (this.ticket != null))) {
+        this.taskCloseTicket(true);
+        return;
+      }
+      next_ticket = App.Overview.find(this.overview_id).nextTicket(this.ticket);
+      if (next_ticket) {
+        this.taskCloseTicket();
+        this.taskLoadTicket(next_ticket.id);
+        return;
+      }
+      return this.taskCloseTicket(true);
+    },
+    taskCloseTicket: function(openNext) {
+      var nextTaskUrl;
+      if (openNext == null) {
+        openNext = false;
+      }
+      App.TaskManager.remove(this.taskKey);
+      if (!openNext) {
+        return;
+      }
+      nextTaskUrl = App.TaskManager.nextTaskUrl();
+      if (nextTaskUrl) {
+        this.navigate(nextTaskUrl);
+        return;
+      }
+      return this.navigate('#');
+    }
+  };
+
+}).call(this);
+:ET
