@@ -11,17 +11,14 @@ class AccountsController < ApplicationController
         if @account.save
             Apartment::Tenant.create(@account.subdomain)
             Apartment::Tenant.switch!(@account.subdomain)
-            ActiveRecord::Base.connection.schema_search_path = Apartment.connection.schema_search_path
-	    create_admin_user(firstname,lastname,email,password,@account.subdomain)
+            sleep(3)
+	        create_admin_user(firstname,lastname,email,password,@account.subdomain)
             redirect_to subdomain: @account.subdomain, :controller => 'welcome', :action => "index" 
         else
             render action: 'new'
         end
     end
     def create_admin_user(firstname,lastname,email,password,subdomain)
-        
-        set_all_settings_user(subdomain)
-
         group_ids = []
         role_ids  = []
 
@@ -44,6 +41,8 @@ class AccountsController < ApplicationController
         user.password = password
         user.save!
 
+        set_all_settings_user(subdomain)
+        scheduler_start(subdomain)
     end
 
     def set_all_settings_user(sub)
@@ -51,7 +50,7 @@ class AccountsController < ApplicationController
         Setting.set('es_url', 'http://localhost:9200')
         Calendar.init_setup(request.remote_ip)
         #begin
-        #TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
+        TextModule.load(request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us')
         #rescue => e
         #    logger.error "Unable to load text modules #{request.env['HTTP_ACCEPT_LANGUAGE'] || 'en-us'}: #{e.message}"
         #end
@@ -62,6 +61,22 @@ class AccountsController < ApplicationController
           Setting.set('models_searchable', models_current)
         end
         Setting.set('fqdn' , sub + ".chaturbots.com")
+    end
+
+    def scheduler_start(sub)
+        dir = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+        Dir.chdir dir
+        daemon_options = {
+                multiple: false,
+                dir_mode: :normal,
+                dir: File.join(dir, 'tmp', 'pids'),
+                backtrace: true
+            }
+        name = sub + 'scheduler'
+        Daemons.run_proc(name, daemon_options) do
+            require 'scheduler'
+            Scheduler.threads
+        end
     end
     private
     def account_params

@@ -12,7 +12,7 @@ default: &default
 
   adapter: postgresql
   username: vaibhavm
-  password: codesuccess
+  password: nonsense
 
   #### mysql config #####
 
