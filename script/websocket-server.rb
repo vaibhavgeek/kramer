@@ -106,7 +106,7 @@ end
 
 if ARGV[0] == 'start' && @options[:d]
   puts "Starting websocket server on #{@options[:b]}:#{@options[:p]} (secure: #{@options[:s]}, pidfile: #{@options[:i]})"
-
+#  ActiveRecord::Base.connection.schema_search_path = 'error'
   # Use Daemons.rb's built-in facility for generating PID files
   Daemons.daemonize(
     app_name: File.basename(@options[:i], '.pid'),
@@ -121,7 +121,7 @@ end
 Rails.configuration.interface = 'websocket'
 EventMachine.run do
   EventMachine::WebSocket.start( host: @options[:b], port: @options[:p], secure: @options[:s], tls_options: tls_options ) do |ws|
-
+#   ActiveRecord::Base.connection.schema_search_path = 'error'
     # register client connection
     ws.onopen do |handshake|
       headers = handshake.headers

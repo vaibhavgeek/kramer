@@ -18,8 +18,8 @@ class User < ApplicationModel
   has_many                :tokens,         after_add: :cache_update, after_remove: :cache_update
   has_many                :authorizations, after_add: :cache_update, after_remove: :cache_update
   belongs_to              :organization,   inverse_of: :members
-  belongs_to              :account 
-  has_one :owned_account, class_name: 'Account', foreign_key: 'owner_id'
+#  belongs_to              :account 
+#  has_one :owned_account, class_name: 'Account', foreign_key: 'owner_id'
 
   before_validation :check_name, :check_email, :check_login, :check_mail_delivery_failed, :ensure_uniq_email, :ensure_password, :ensure_roles, :ensure_identifier
   before_create   :check_preferences_default, :validate_preferences, :validate_ooo, :domain_based_assignment, :set_locale
